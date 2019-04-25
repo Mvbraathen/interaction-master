@@ -1,11 +1,13 @@
 import React from 'react';
-import Circle from './components/Circle';
+import Circle from './components/circle/Circle';
+import Polygon from './components/polygon/Polygon';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Circle />
+    	<Polygon />
+    	<Circle />
     </div>
   );
 }
