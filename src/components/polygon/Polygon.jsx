@@ -8,31 +8,15 @@ class Polygon extends Component {
   	}
     
   	drawPolygon() {
-        var x = d3.scaleLinear().range([0, 500]);
-        var y = d3.scaleLinear().range([500, 0]);
-
-        x.domain([0, 50]);
-        y.domain([0, 50]);
-
-        var poly = [{"x":10, "y":50},
-                    {"x":20,"y":20},
-                    {"x":50,"y":10},
-                    {"x":30,"y":30}];
-
-
         let svgContainer = d3.select("body")
-        	.append("svg")
-        	.attr("width", 500)
-        	.attr("height", 500)
-                      
-        svgContainer.selectAll("polygon")
-            .data([poly])
-            .enter().append("polygon")
-            .attr("points",function(d) { 
-                return d.map(function(d) {
-                    return [x(d.x),y(d.y)].join(",");
-                }).join(" ");
-            });
+        .append("svg")
+        .attr("width", 500)
+        .attr("height", 500)
+                  
+        svgContainer.append("polygon")
+        .attr("class", "polygonStyle")
+        .attr("fill", "blue")
+        .attr("points", "99,42, 13,65, 85,80");
   	}
         
   	render(){
