@@ -3,31 +3,19 @@ import * as d3 from "d3";
 
 class Circle extends Component {
 	componentDidMount() {
-    	this.drawChart();
+    	this.drawCircle();
   	}
     
-  	drawChart() {
-    	const data = [12, 5, 6, 6, 9, 10];
-
-    	let w = 700;
-    	let h = 500;
-    
-    	const svg = d3.select("body")
+  	drawCircle() {
+    	let svgContainer = d3.select("body")
     	.append("svg")
-    	.attr("width", w)
-    	.attr("height", h)
-    	.style("margin-left", 100);
+    	.attr("width", 200)
+    	.attr("height", 200)
                   
-    	svg.selectAll("rect")
-      	.data(data)
-      	.enter()
-      	.append("rect")
-      	.attr("x", (d, i) => i * 70)
-      	.attr("y", (d, i) => h - 10 * d)
-      	.attr("width", 65)
-      	.attr("height", (d, i) => d * 10)
-      	.attr("fill", "green")
-        .attr("fill-opacity", 0.45)
+    	svgContainer.append("circle")
+      	.attr("cx", 120)
+      	.attr("cy", 120)
+      	.attr("r", 80);
   	}
         
   	render(){
