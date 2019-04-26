@@ -1,3 +1,19 @@
 .polygonStyle:hover {
 	fill-opacity: 0.5;
 }
+
+.slice1:hover {
+	fill-opacity: 0.6;
+}
+
+.slice1 {
+	fill: red;
+}
+
+.slice2:hover {
+	fill-opacity: 0.6;
+}
+
+.slice2 {
+	fill: blue;
+}
