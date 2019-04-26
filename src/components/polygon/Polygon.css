@@ -1,19 +1,33 @@
-.polygonStyle:hover {
-	fill-opacity: 0.5;
+.circleMenu {
+	margin-top: 250px;
+	margin-left: 10%;
 }
 
-.slice1:hover {
+.slice1:hover, .slice2:hover, .slice3:hover, .slice4:hover, .slice5:hover, .slice6:hover {
 	fill-opacity: 0.6;
 }
 
 .slice1 {
-	fill: red;
-}
-
-.slice2:hover {
-	fill-opacity: 0.6;
+	fill: #B5BFC2;
 }
 
 .slice2 {
-	fill: blue;
+	fill: #86208A;
 }
+
+.slice3 {
+	fill: #488798;
+}
+
+.slice4 {
+	fill: #FF9200;
+}
+
+.slice5 {
+	fill: #767676;
+}
+
+.slice6 {
+	fill: #B8005D;
+}
+
