@@ -3,9 +3,16 @@ import * as d3 from "d3";
 import "./Polygon.css";
 
 class Polygon extends Component {
-	componentDidMount() {
-    	//this.drawPolygon();
-  	}
+	constructor(props) {
+        super(props);
+        this.state = {
+            pageInfo: false
+        }
+    }
+
+    componentDidMount() {
+        //this.drawPolygon();
+    }
     
   	/*drawPolygon() {
         let svgContainer = d3.select("body")
@@ -20,9 +27,11 @@ class Polygon extends Component {
 
   	}*/
 
-    handleSlice1Click = () => {
+     handleSlice1Click = () => {
         console.log('Slice 1 clicked');
-
+        this.setState = {
+            pageInfo: true
+        }
     }
 
     handleSlice2Click = () => {
@@ -31,6 +40,8 @@ class Polygon extends Component {
     }
         
   	render(){
+        const {pageInfo} = this.state;
+        if(!pageInfo) {
     	return <div className="circleMenu">
             <svg width="430" height="430">
                 <g>
@@ -294,8 +305,11 @@ class Polygon extends Component {
                     </g>
                 </g>
             </svg>
-        </div>
-  	}
+            </div>
+        } if (pageInfo) {
+            return <div> hehe </div>
+        }
+    }
 }
 
 export default Polygon;
