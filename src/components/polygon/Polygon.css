@@ -29,5 +29,17 @@
 
 .slice6 {
 	fill: #B8005D;
+} 
+
+.arrows {
+	fill: green;
 }
 
+.circle {
+	fill: #3B96BC;
+	fill-opacity: 1.0;
+}
+
+.mobile {
+	fill: #FFFDF8;
+}
