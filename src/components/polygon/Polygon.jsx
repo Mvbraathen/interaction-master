@@ -3,7 +3,7 @@ import * as d3 from "d3";
 import "./Polygon.css";
 
 class Polygon extends Component {
-	constructor(props) {
+    constructor(props) {
         super(props);
         this.state = {
             pageInfo: false
@@ -13,8 +13,10 @@ class Polygon extends Component {
     componentDidMount() {
         //this.drawPolygon();
     }
+
     
-  	/*drawPolygon() {
+    
+    /*drawPolygon() {
         let svgContainer = d3.select("body")
         .append("svg")
         .attr("width", 500)
@@ -24,10 +26,9 @@ class Polygon extends Component {
         .attr("class", "polygonStyle")
         .attr("fill", "blue")
         .attr("points", "190 49,181 94,164 109,149 122,136 133,127 141,125 141,117 138,109 136,91 136,83 137,75 139,69 141,63 113,57 81,54 72,51 69,15 37,1 25,1 23,15 16,26 12,47 6,55 4,62 3,82 1,115 1,131 3,140 5,148 7,154 8,164 12,166 12,195 25");
+    }*/
 
-  	}*/
-
-     handleSlice1Click = () => {
+    handleSlice1Click = () => {
         console.log('Slice 1 clicked');
         this.setState = {
             pageInfo: true
@@ -39,13 +40,13 @@ class Polygon extends Component {
 
     }
         
-  	render(){
+    render(){
         const {pageInfo} = this.state;
         if(!pageInfo) {
-    	return <div className="circleMenu">
-            <svg width="430" height="430">
-                <g>
-                    <g className="slice1" onClick={this.handleSlice1Click}>
+            return <div className="circleMenu">
+                <svg width="430" height="430">
+                    <g>
+                         <g className="slice1" onClick={this.handleSlice1Click}>
                         <path d="M217.35,27.5c-28.61-0.36-55.82,5.77-80.23,17.01l35.15,31.01l14.86,68.89c8.9-3.57,18.63-5.5,28.82-5.37
                             c9.76,0.12,19.04,2.13,27.55,5.63l54.44-46.44l9.57-46.2C280.88,36.8,250.14,27.91,217.35,27.5z M217.41,22.5c33.09,0.42,64.15,9.23,91.16,24.39l3.95-19.07c-28.39-14.91-60.62-23.52-94.88-23.95
                             c-35.96-0.45-69.92,8.17-99.71,23.72l15.1,13.32C158.61,28.77,187.25,22.12,217.41,22.5z M135.21,25.96c0.36-0.16,0.71-0.24,1.04-0.25c0.34-0.01,0.65,0.04,0.95,0.15c0.29,0.11,0.55,0.28,0.78,0.49
@@ -302,9 +303,9 @@ class Polygon extends Component {
                         s-0.21,0.86-0.46,0.86H208.7c-0.26,0-0.46-0.38-0.46-0.86S208.44,186.83,208.7,186.83z M213.77,235.59c-1.25,0-2.27-1.02-2.27-2.27
                         s1.02-2.27,2.27-2.27c1.25,0,2.26,1.01,2.26,2.27C216.03,234.57,215.01,235.59,213.77,235.59z M224.92,227.82h-22.31v-37.15h22.31
                         C224.92,190.67,224.92,227.82,224.92,227.82z"/>
+                        </g>
                     </g>
-                </g>
-            </svg>
+                </svg>
             </div>
         } if (pageInfo) {
             return <div> hehe </div>
