@@ -9,6 +9,10 @@ import {
 import Home from './pages/home/Home';
 import ResourceExtractionPage from './pages/resourceExtraction/ResourceExtractionPage';
 import UsePage from './pages/use/UsePage';
+import DesignPage from './pages/design/DesignPage';
+import DistributionPage from './pages/distribution/DistributionPage';
+import ManufacturingPage from './pages/manufacturing/ManufacturingPage';
+import EndOfLifePage from './pages/endOfLife/EndOfLifePage';
 import NotFound from './pages/components/notFound/NotFound';
 import './App.css';
 
@@ -20,6 +24,10 @@ function App() {
 	    		<Route path="/start" component={Home}/>
 	    		<Route path="/resourceExtraction" component={ResourceExtractionPage}/>
 	    		<Route path="/use" component={UsePage}/>
+	    		<Route path="/design" component={DesignPage}/>
+	    		<Route path="/distribution" component={DistributionPage}/>
+	    		<Route path="/manufacturing" component={ManufacturingPage}/>
+	    		<Route path="/endoflife" component={EndOfLifePage}/>
 	    		<Redirect exact from="/" to="/start" />
 	    		<Route path="/" component={NotFound} />
 	    	</Switch>
