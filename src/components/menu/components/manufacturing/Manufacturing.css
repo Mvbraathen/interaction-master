@@ -1,0 +1,7 @@
+.manufacturing {
+	fill: #86208A;
+}
+
+.manufacturing:hover {
+	fill-opacity: 0.4;
+}

@@ -1,0 +1,7 @@
+.resourceExtraction {
+	fill: #B5BFC2;
+}
+
+.resourceExtraction:hover {
+	fill-opacity: 0.4;
+}

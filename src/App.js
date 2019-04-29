@@ -1,13 +1,21 @@
 import React from 'react';
-import Circle from './components/circle/Circle';
-import Polygon from './components/polygon/Polygon';
+import {
+	Route,
+	NavLink,
+	HashRouter
+} from "react-router-dom";
+
+//import Circle from './components/circle/Circle';
+import Menu from './components/menu/Menu';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-    	<Polygon />
-    </div>
+  	<HashRouter>
+	    <div>
+	    	<Menu />
+	    </div>
+	</HashRouter>
   );
 }
 

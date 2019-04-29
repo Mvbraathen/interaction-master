@@ -1,0 +1,7 @@
+.use {
+	fill: #FF9200;
+}
+
+.use:hover {
+	fill-opacity: 0.4;
+}

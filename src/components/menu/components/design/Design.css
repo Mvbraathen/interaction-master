@@ -1,0 +1,7 @@
+.design {
+	fill: #B8005D;
+}
+
+.design:hover {
+	fill-opacity: 0.4;
+}

@@ -1,0 +1,7 @@
+.distribution {
+	fill: #488798;
+}
+
+.distribution:hover {
+	fill-opacity: 0.4;
+}

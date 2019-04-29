@@ -1,0 +1,16 @@
+.arrows {
+	fill: green;
+}
+
+.circle {
+	fill: #3B96BC;
+}
+
+.circle:hover {
+	fill-opacity: 0.4;
+}
+
+.mobile {
+	fill: white;
+}
+

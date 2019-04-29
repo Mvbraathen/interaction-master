@@ -1,0 +1,7 @@
+.endOfLife {
+	fill: #767676;
+}
+
+.endOfLife:hover {
+	fill-opacity: 0.4;
+}
