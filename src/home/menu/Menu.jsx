@@ -8,26 +8,7 @@ import EndOfLife from "./components/endOfLife/EndOfLife";
 import Design from "./components/design/Design";
 import CenterObjects from "./components/centerObjects/CenterObjects";
 
-class Menu extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            pageInfo: false
-        }
-    }
-
-    handleSlice1Click = () => {
-        console.log('Resource Extraction clicked');
-        this.setState = ({
-            pageInfo: true
-        });
-    }
-
-    handleSlice2Click = () => {
-        console.log('Slice 2 clicked');
-
-    }
-        
+class Menu extends Component {        
     render(){
         return <div className="circleMenu">
             <svg width="430" height="430">

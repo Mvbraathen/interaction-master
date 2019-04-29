@@ -1,21 +1,28 @@
 import React from 'react';
+import { Switch, Redirect } from 'react-router';
 import {
-	Route,
-	NavLink,
-	HashRouter
-} from "react-router-dom";
+    BrowserRouter as Router,
+    Route
+} from 'react-router-dom'
 
 //import Circle from './components/circle/Circle';
-import Menu from './components/menu/Menu';
+import Home from './home/Home';
+import Use from './home/menu/components/use/Use';
+import NotFound from './home/menu/components/notFound/NotFound';
 import './App.css';
 
 function App() {
   return (
-  	<HashRouter>
+  	<Router>
 	    <div>
-	    	<Menu />
+	    	<Switch>
+	    		<Route path="/start" component={Home}/>
+	    		<Redirect exact from="/" to="/start" />
+	    		<Route path="/use" component={Use}/>
+	    		<Route path="/" component={NotFound} />
+	    	</Switch>
 	    </div>
-	</HashRouter>
+	</Router>
   );
 }
 
