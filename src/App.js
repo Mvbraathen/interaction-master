@@ -6,9 +6,10 @@ import {
 } from 'react-router-dom'
 
 //import Circle from './components/circle/Circle';
-import Home from './home/Home';
-import Use from './home/menu/components/use/Use';
-import NotFound from './home/menu/components/notFound/NotFound';
+import Home from './pages/home/Home';
+import ResourceExtractionPage from './pages/resourceExtraction/ResourceExtractionPage';
+import UsePage from './pages/use/UsePage';
+import NotFound from './pages/components/notFound/NotFound';
 import './App.css';
 
 function App() {
@@ -17,8 +18,9 @@ function App() {
 	    <div>
 	    	<Switch>
 	    		<Route path="/start" component={Home}/>
+	    		<Route path="/resourceExtraction" component={ResourceExtractionPage}/>
+	    		<Route path="/use" component={UsePage}/>
 	    		<Redirect exact from="/" to="/start" />
-	    		<Route path="/use" component={Use}/>
 	    		<Route path="/" component={NotFound} />
 	    	</Switch>
 	    </div>
