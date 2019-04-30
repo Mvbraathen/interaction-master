@@ -3,6 +3,11 @@
 	pointer-events: bounding-box;
 }
 
+.design:active {
+	stroke: white;
+	stroke-width: 1px;
+}
+
 .design:hover {
 	fill-opacity: 0.4;
 }

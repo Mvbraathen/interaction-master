@@ -1,11 +1,5 @@
 .arrows {
 	fill: green;
-	animation:rotate 3s  infinite;
-}
-
-@-webkit-keyframes rotate {
-    from { -webkit-transform: rotate(0deg) } 
-    to { -webkit-transform: rotate(360deg) } 
 }
 
 .circle {
@@ -18,6 +12,11 @@
 
 .centerObjects:hover {
 	fill-opacity: 0.5;
+}
+
+.centerObjects:active {
+	stroke: white;
+	stroke-width: 1px;
 }
 
 .mobile {
