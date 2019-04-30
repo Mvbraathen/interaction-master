@@ -7,7 +7,7 @@ import "./Distribution.css";
 class Distribution extends Component {
 	    render() {
 	    	return (
-                <g> <NavLink className="use" to ="/distribution">
+                <g> <NavLink className="distribution" to ="/distribution">
                     <path d="M374.43,306.09c14.62-24.6,22.91-51.23,25.38-77.99l-44.43,14.93l-67.1-21.58
                             c-1.35,9.49-4.56,18.88-9.76,27.64c-4.98,8.39-11.36,15.43-18.65,21.04l13,70.36l35.22,31.39
                             C334.61,356.45,357.68,334.28,374.43,306.09z M378.73,308.64c-16.91,28.45-40.07,50.94-66.7,66.76l14.54,12.96c27.1-17.13,50.68-40.74,68.18-70.2

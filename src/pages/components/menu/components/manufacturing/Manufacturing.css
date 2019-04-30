@@ -1,5 +1,6 @@
 .manufacturing {
 	fill: #86208A;
+	pointer-events: bounding-box;
 }
 
 .manufacturing:hover {

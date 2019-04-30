@@ -1,5 +1,6 @@
 .distribution {
 	fill: #488798;
+	pointer-events: bounding-box;
 }
 
 .distribution:hover {

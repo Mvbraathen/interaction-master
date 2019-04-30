@@ -1,5 +1,6 @@
 .design {
 	fill: #B8005D;
+	pointer-events: bounding-box;
 }
 
 .design:hover {

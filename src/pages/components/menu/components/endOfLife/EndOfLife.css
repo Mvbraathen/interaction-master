@@ -1,7 +1,12 @@
 .endOfLife {
 	fill: #767676;
+	pointer-events: bounding-box;
 }
 
 .endOfLife:hover {
 	fill-opacity: 0.4;
+}
+
+.endOfLife:onclick {
+	fill: red;
 }

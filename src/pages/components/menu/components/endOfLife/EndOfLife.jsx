@@ -7,7 +7,7 @@ import "./EndOfLife.css";
 class EndOfLife extends Component {
 	    render() {
 	    	return (
-                <g> <NavLink className="use" to ="/endOfLife">
+                <g> <NavLink className="endOfLife" to ="/end-of-life">
                     <path d="M54.63,302.83c13.99,24.96,32.91,45.45,54.85,60.97l9.28-45.94l52.23-47.32
                             c-7.54-5.92-14.08-13.39-19.06-22.27c-4.77-8.51-7.68-17.56-8.9-26.67L75.6,197.67L30.8,212.48
                             C30.92,243.16,38.59,274.22,54.63,302.83z M50.27,305.28c-16.19-28.87-24.08-60.17-24.46-91.14l-18.49,6.11c1.28,32.04,9.94,64.26,26.7,94.15

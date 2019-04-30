@@ -2,21 +2,20 @@
   	text-align: center;
   	margin-top: 300px;
     border-top: 50%;
-    position: fixed;
-    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
     height: 100%;
 }
 
 .error-text {
 	margin: 0 auto;
-	font-weight: 200;
+	font-weight: 300;
 	color: red;
-	font-size: 40px;
+	font-size: 3em;
 } 
 
 .page-message {
-	color: grey;
+	color: #202020;
 	font-weight: bold;
-	font-size: 20px;
-	vertical-align: middle;
+	font-size: 1.5em;
 }

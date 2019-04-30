@@ -7,7 +7,7 @@ import "./Manufacturing.css";
 class Manufacturing extends Component {
 	    render() {
 	    	return (
-    	    	  <g> <NavLink className="use" to ="/manufacturing">
+    	    	  <g> <NavLink className="manufacturing" to ="/manufacturing">
                             <path d="M376.31,121.45c-13.99-24.96-32.91-45.45-54.85-60.97l-9.28,45.94l-52.23,47.32
                                 c7.54,5.92,14.08,13.39,19.06,22.27c4.77,8.51,7.68,17.56,8.9,26.67l67.43,23.93l44.79-14.81
                                 C400.02,181.12,392.35,150.05,376.31,121.45z M380.68,119c16.19,28.87,24.08,60.17,24.46,91.14l18.49-6.11c-1.28-32.04-9.94-64.26-26.7-94.15

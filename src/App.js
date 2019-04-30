@@ -22,12 +22,12 @@ function App() {
 	    <div>
 	    	<Switch>
 	    		<Route path="/start" component={Home}/>
-	    		<Route path="/resourceExtraction" component={ResourceExtractionPage}/>
+	    		<Route path="/resource-extraction" component={ResourceExtractionPage}/>
 	    		<Route path="/use" component={UsePage}/>
 	    		<Route path="/design" component={DesignPage}/>
 	    		<Route path="/distribution" component={DistributionPage}/>
 	    		<Route path="/manufacturing" component={ManufacturingPage}/>
-	    		<Route path="/endoflife" component={EndOfLifePage}/>
+	    		<Route path="/end-of-life" component={EndOfLifePage}/>
 	    		<Redirect exact from="/" to="/start" />
 	    		<Route path="/" component={NotFound} />
 	    	</Switch>

@@ -1,4 +1,4 @@
-.endOfLifeTxt {
+.homeTxt {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -8,6 +8,6 @@
   font-family: Tahoma;
 }
 
-.endOfLifeColor {
-  background-color: #767676;
+.homeColor {
+	background-color: #202020;
 }

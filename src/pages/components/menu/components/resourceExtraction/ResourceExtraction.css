@@ -1,5 +1,6 @@
 .resourceExtraction {
 	fill: #B5BFC2;
+	pointer-events: bounding-box;
 }
 
 .resourceExtraction:hover {

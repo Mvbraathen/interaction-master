@@ -1,5 +1,6 @@
 .use {
 	fill: #FF9200;
+	pointer-events: bounding-box;
 }
 
 .use:hover {
