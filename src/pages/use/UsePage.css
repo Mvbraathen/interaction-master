@@ -10,3 +10,14 @@
 .useColor {
 	background-color: #FF9200;
 }
+
+.breadcrumb {
+	font-family: Tahoma;
+	color: white;
+	font-size: 1.2em;
+	margin-left: 20px;
+}
+
+.prevPage {
+	color: #0099ff;
+}

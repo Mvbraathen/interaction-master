@@ -8,6 +8,6 @@
 	stroke-width: 1px;
 }
 
-.design:focus {
-	fill: red;
+.design:hover {
+	fill-opacity: 0.4;
 }

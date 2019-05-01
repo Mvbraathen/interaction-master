@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Menu from "../components/menu/Menu";
 import MobileMenu from "../components/mobileMenu/MobileMenu";
 import MediaQuery from 'react-responsive';
+import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import "./DistributionPage.css";
 import "../pageStyle.css";
 
@@ -11,6 +12,13 @@ class DistributionPage extends Component {
             <div>
                 <MediaQuery minWidth="850px">
                     <div className="split left">
+                        <div className ="breadcrumb">
+                            <Breadcrumb tag="nav" listTag="div">
+                                <BreadcrumbItem className="prevPage" tag="a" href="/">Home</BreadcrumbItem>
+                                {' | '}
+                                <BreadcrumbItem active tag="span">Distribution</BreadcrumbItem>
+                            </Breadcrumb>
+                        </div>
                         <div className="centerMenu">
                             <Menu />
                         </div>
