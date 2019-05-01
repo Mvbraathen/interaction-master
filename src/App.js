@@ -4,8 +4,6 @@ import {
     BrowserRouter as Router,
     Route
 } from 'react-router-dom'
-
-//import Circle from './components/circle/Circle';
 import Home from './pages/home/Home';
 import ResourceExtractionPage from './pages/resourceExtraction/ResourceExtractionPage';
 import UsePage from './pages/use/UsePage';

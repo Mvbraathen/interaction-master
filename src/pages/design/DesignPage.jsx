@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Menu from "../components/menu/Menu";
+import MobileMenu from "../components/mobileMenu/MobileMenu";
+import MediaQuery from 'react-responsive';
 import "./DesignPage.css";
 import "../pageStyle.css";
 
@@ -7,7 +9,8 @@ class DesignPage extends Component {
     render(){
         return (
             <div>
-                <div className="split left">
+                <MediaQuery minWidth="850px">
+                    <div className="split left">
                     <div className="centerMenu">
                         <Menu />
                     </div>
@@ -18,6 +21,21 @@ class DesignPage extends Component {
                         Du er nå på Design-siden!
                     </div> 
                 </div>
+                </MediaQuery>
+                <MediaQuery maxWidth={849}>
+                    <div className="mobilePage">
+                        <div className="mobileSize">
+                            <div className="homeMobileTxt">
+                                <h1> Design </h1>
+                                <div>Design Design Design Design Design Design Design Design Design Design 
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <MobileMenu />
+                        </div>
+                    </div>
+                </MediaQuery>
             </div>
         );
     }

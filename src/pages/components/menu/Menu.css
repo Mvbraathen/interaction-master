@@ -1,3 +1,9 @@
-
+.menuTxt {
+  position: absolute;
+  top: -250px;
+  text-align: center;
+  color: white;
+  font-family: Tahoma;
+}
 
 
