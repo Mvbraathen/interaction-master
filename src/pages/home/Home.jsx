@@ -9,6 +9,7 @@ class Home extends Component {
     render(){
         return (
             <div>
+                {/* render if screen width is <= 850px */}
                 <MediaQuery minWidth="850px">
                     <div className="split left">
                         <div className="homeMenuTxt">  
@@ -25,6 +26,7 @@ class Home extends Component {
                         </div> 
                     </div>
                 </MediaQuery>
+            {/* render if screen width is < 850px */}
                 <MediaQuery maxWidth={849}>
                     <div className="mobilePage">
                         <div className="mobileSize">

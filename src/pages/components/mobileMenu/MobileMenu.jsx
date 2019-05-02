@@ -10,6 +10,9 @@ class Menu extends Component {
     render(){
         return (
             <div>
+                <div className="burgerLabel">
+                Menu
+                </div>
                 <BurgerMenu>
                     <ul className = "bm-item-list">
                         <li><NavLink className="bm-item" to ="/start"> Home </NavLink></li>
