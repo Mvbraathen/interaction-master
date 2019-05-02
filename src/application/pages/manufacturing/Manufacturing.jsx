@@ -1,26 +1,26 @@
 import React, {Component} from 'react';
-import Menu from "../components/menu/Menu";
-import MobileMenu from "../components/mobileMenu/MobileMenu";
+import Desktop from "../../menus/desktop/Desktop";
+import Mobile from "../../menus/mobile/Mobile";
 import MediaQuery from 'react-responsive';
 import {
     NavLink
 } from "react-router-dom";
-import "./ManufacturingPage.css";
+import "./Manufacturing.css";
 import "../pageStyle.css";
 
-class ManufacturingPage extends Component {        
+class Manufacturing extends Component {        
     render(){
         return (
            <div>
                 <MediaQuery minWidth="850px">
                     <div className="split left">
                         <div className ="breadcrumb">
-                            <NavLink className="prevPage" to ="/start">Home</NavLink>
+                            <NavLink className="prevPage" to ="/home">Home</NavLink>
                             {' | '}
                             <div className="activePage">Manufacturing</div>
                         </div>
                         <div className="centerMenu">
-                            <Menu />
+                            <Desktop />
                         </div>
                     </div>
                     <div className="split right manufacturingColor"> 
@@ -40,7 +40,7 @@ class ManufacturingPage extends Component {
                             </div>
                         </div>
                         <div>
-                            <MobileMenu />
+                            <Mobile />
                         </div>
                     </div>
                 </MediaQuery>
@@ -49,4 +49,4 @@ class ManufacturingPage extends Component {
     }
 }
 
-export default ManufacturingPage;
+export default Manufacturing;

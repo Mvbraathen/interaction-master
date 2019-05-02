@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import ResourceExtraction from "./components/resourceExtraction/ResourceExtraction";
+import ResourceExtraction from "./components/resource-extraction/ResourceExtraction";
 import Manufacturing from "./components/manufacturing/Manufacturing";
 import Distribution from "./components/distribution/Distribution";
 import Use from "./components/use/Use";
-import EndOfLife from "./components/endOfLife/EndOfLife";
+import EndOfLife from "./components/end-of-life/EndOfLife";
 import Design from "./components/design/Design";
-import CenterObjects from "./components/centerObjects/CenterObjects";
-import "./Menu.css";
+import Home from "./components/home/Home";
+import "./Desktop.css";
 
 class Menu extends Component {        
     render(){
@@ -21,7 +21,7 @@ class Menu extends Component {
                             <Use />
                             <EndOfLife />
                             <Design />
-                            <CenterObjects />
+                            <Home />
                         </g>
                     </svg>
                 </div>

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Menu from "../components/menu/Menu";
-import MobileMenu from "../components/mobileMenu/MobileMenu";
+import Desktop from "../../menus/desktop/Desktop";
+import Mobile from "../../menus/mobile/Mobile";
 import MediaQuery from 'react-responsive';
 import "./Home.css";
 import "../pageStyle.css";
@@ -16,7 +16,7 @@ class Home extends Component {
                             <h1> The Lifecycle of Mobile Phones </h1>
                         </div>
                         <div className="centerMenu">
-                            <Menu />                
+                            <Desktop />                
                         </div>
                     </div>
                     <div className="split right homeColor"> 
@@ -44,7 +44,7 @@ class Home extends Component {
                             </div>
                         </div>
                         <div>
-                            <MobileMenu />
+                            <Mobile />
                         </div>
                     </div>
                 </MediaQuery>

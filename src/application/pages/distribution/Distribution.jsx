@@ -1,32 +1,32 @@
 import React, {Component} from 'react';
-import Menu from "../components/menu/Menu";
-import MobileMenu from "../components/mobileMenu/MobileMenu";
+import Desktop from "../../menus/desktop/Desktop";
+import Mobile from "../../menus/mobile/Mobile";
 import MediaQuery from 'react-responsive';
 import {
     NavLink
 } from "react-router-dom";
-import "./EndOfLifePage.css";
+import "./Distribution.css";
 import "../pageStyle.css";
 
-class EndOfLifePage extends Component {        
+class DistributionPage extends Component {        
     render(){
         return (
             <div>
                 <MediaQuery minWidth="850px">
                     <div className="split left">
                         <div className ="breadcrumb">
-                            <NavLink className="prevPage" to ="/start">Home</NavLink>
+                            <NavLink className="prevPage" to ="/home">Home</NavLink>
                             {' | '}
-                            <div className="activePage">End of Life</div>
+                            <div className="activePage">Distribution</div>
                         </div>
                         <div className="centerMenu">
-                            <Menu />
+                            <Desktop />
                         </div>
                     </div>
-                    <div className="split right endOfLifeColor"> 
-                        <div className="endOfLifeTxt">
-                            <h1> End of Life </h1>
-                            Du er nå på End of Life-siden!
+                    <div className="split right distributionColor"> 
+                        <div className="distributionTxt">
+                            <h1> Distribution </h1>
+                            Du er nå på Distribution-siden!
                         </div> 
                     </div>
                 </MediaQuery>
@@ -34,13 +34,13 @@ class EndOfLifePage extends Component {
                     <div className="mobilePage">
                         <div className="mobileSize">
                             <div className="homeMobileTxt">
-                                <h1> End of Life </h1>
-                                <div>End of Life End of Life
+                                <h1> Distribution Page </h1>
+                                <div>Distribution Page Distribution Page Distribution Page 
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <MobileMenu />
+                            <Mobile />
                         </div>
                     </div>
                 </MediaQuery>
@@ -49,4 +49,4 @@ class EndOfLifePage extends Component {
     }
 }
 
-export default EndOfLifePage;
+export default DistributionPage;

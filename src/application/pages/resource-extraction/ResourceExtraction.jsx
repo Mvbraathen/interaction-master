@@ -1,32 +1,32 @@
 import React, {Component} from 'react';
-import Menu from "../components/menu/Menu";
-import MobileMenu from "../components/mobileMenu/MobileMenu";
+import Desktop from "../../menus/desktop/Desktop";
+import Mobile from "../../menus/mobile/Mobile";
 import MediaQuery from 'react-responsive';
 import {
     NavLink
 } from "react-router-dom";
-import "./DistributionPage.css";
+import "./ResourceExtraction.css";
 import "../pageStyle.css";
 
-class DistributionPage extends Component {        
+class ResourceExtraction extends Component {        
     render(){
         return (
             <div>
                 <MediaQuery minWidth="850px">
                     <div className="split left">
                         <div className ="breadcrumb">
-                            <NavLink className="prevPage" to ="/start">Home</NavLink>
+                            <NavLink className="prevPage" to ="/home">Home</NavLink>
                             {' | '}
-                            <div className="activePage">Distribution</div>
+                            <div className="activePage">Resource Extraction</div>
                         </div>
                         <div className="centerMenu">
-                            <Menu />
+                            <Desktop />
                         </div>
                     </div>
-                    <div className="split right distributionColor"> 
-                        <div className="distributionTxt">
-                            <h1> Distribution </h1>
-                            Du er nå på Distribution-siden!
+                    <div className="split right resourceExtractionColor"> 
+                        <div className="resourceExtractionTxt">
+                            <h1> Resource Extraction </h1>
+                            Du er nå på Resource Extraction-siden!
                         </div> 
                     </div>
                 </MediaQuery>
@@ -34,13 +34,13 @@ class DistributionPage extends Component {
                     <div className="mobilePage">
                         <div className="mobileSize">
                             <div className="homeMobileTxt">
-                                <h1> Distribution Page </h1>
-                                <div>Distribution Page Distribution Page Distribution Page 
+                                <h1> Resource Extraction </h1>
+                                <div>Resource Extraction Resource Extraction Resource Extraction 
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <MobileMenu />
+                            <Mobile />
                         </div>
                     </div>
                 </MediaQuery>
@@ -49,4 +49,4 @@ class DistributionPage extends Component {
     }
 }
 
-export default DistributionPage;
+export default ResourceExtraction;

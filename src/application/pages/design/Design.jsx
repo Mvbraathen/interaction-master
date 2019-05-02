@@ -1,26 +1,26 @@
 import React, {Component} from 'react';
-import Menu from "../components/menu/Menu";
-import MobileMenu from "../components/mobileMenu/MobileMenu";
+import Desktop from "../../menus/desktop/Desktop";
+import Mobile from "../../menus/mobile/Mobile";
 import MediaQuery from 'react-responsive';
 import {
     NavLink
 } from "react-router-dom";
-import "./DesignPage.css";
+import "./Design.css";
 import "../pageStyle.css";
 
-class DesignPage extends Component {        
+class Design extends Component {        
     render(){
         return (
             <div>
                 <MediaQuery minWidth="850px">
                     <div className="split left">
                         <div className ="breadcrumb">
-                            <NavLink className="prevPage" to ="/start">Home</NavLink>
+                            <NavLink className="prevPage" to ="/home">Home</NavLink>
                             {' | '}
                             <div className="activePage">Design</div>
                         </div>
                         <div className="centerMenu">
-                            <Menu />
+                            <Desktop />
                         </div>
                     </div>
                     <div className="split right designColor"> 
@@ -40,7 +40,7 @@ class DesignPage extends Component {
                             </div>
                         </div>
                         <div>
-                            <MobileMenu />
+                            <Mobile />
                         </div>
                     </div>
                 </MediaQuery>
@@ -49,4 +49,4 @@ class DesignPage extends Component {
     }
 }
 
-export default DesignPage;
+export default Design;

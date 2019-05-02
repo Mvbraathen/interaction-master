@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 import {
     NavLink
 } from "react-router-dom";
-import "./CenterObjects.css";
+import "./Home.css";
 
 class CenterObjects extends Component {
 	    render() {
 	    	return (
-                <g><NavLink className="centerObjects" to ="/start">
+                <g><NavLink className="centerObjects" to ="/home">
                     <g className="arrows">
                         <path d="M223.58,156.03l-10.47-10.81v5.86c-32.72,0.79-59.1,27.63-59.1,60.53c0,3.56,0.33,7.05,0.92,10.44l3.38-5.45
                         l5.34,3.08c-0.42-2.63-0.64-5.33-0.64-8.08c0-27.94,22.34-50.75,50.1-51.53v6.76L223.58,156.03z M264.89,237.52l13.55-6.55l-5.56-1.84c9.54-31.31-7.65-64.79-38.89-75.13c-3.38-1.12-6.79-1.9-10.2-2.41

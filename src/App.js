@@ -4,14 +4,14 @@ import {
     BrowserRouter as Router,
     Route
 } from 'react-router-dom'
-import Home from './pages/home/Home';
-import ResourceExtractionPage from './pages/resourceExtraction/ResourceExtractionPage';
-import UsePage from './pages/use/UsePage';
-import DesignPage from './pages/design/DesignPage';
-import DistributionPage from './pages/distribution/DistributionPage';
-import ManufacturingPage from './pages/manufacturing/ManufacturingPage';
-import EndOfLifePage from './pages/endOfLife/EndOfLifePage';
-import NotFound from './pages/components/notFound/NotFound';
+import Home from './application/pages/home/Home';
+import ResourceExtraction from './application/pages/resource-extraction/ResourceExtraction';
+import Use from './application/pages/use/Use';
+import Design from './application/pages/design/Design';
+import Distribution from './application/pages/distribution/Distribution';
+import Manufacturing from './application/pages/manufacturing/Manufacturing';
+import EndOfLife from './application/pages/end-of-life/EndOfLife';
+import NotFound from './application/pages/not-found/NotFound';
 import './App.css';
 
 function App() {
@@ -19,14 +19,14 @@ function App() {
   	<Router>
 	    <div>
 	    	<Switch>
-	    		<Route path="/start" component={Home}/>
-	    		<Route path="/resource-extraction" component={ResourceExtractionPage}/>
-	    		<Route path="/use" component={UsePage}/>
-	    		<Route path="/design" component={DesignPage}/>
-	    		<Route path="/distribution" component={DistributionPage}/>
-	    		<Route path="/manufacturing" component={ManufacturingPage}/>
-	    		<Route path="/end-of-life" component={EndOfLifePage}/>
-	    		<Redirect exact from="/" to="/start" />
+	    		<Route path="/home" component={Home}/>
+	    		<Route path="/design" component={Design}/>
+	    		<Route path="/resource-extraction" component={ResourceExtraction}/>
+	    		<Route path="/manufacturing" component={Manufacturing}/>
+	    		<Route path="/distribution" component={Distribution}/>
+	    		<Route path="/use" component={Use}/>
+	    		<Route path="/end-of-life" component={EndOfLife}/>
+	    		<Redirect exact from="/" to="/home" />
 	    		<Route path="/" component={NotFound} />
 	    	</Switch>
 	    </div>
