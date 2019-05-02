@@ -1,22 +1,22 @@
 import React, {Component} from 'react';
 import Menu from "../components/menu/Menu";
 import MobileMenu from "../components/mobileMenu/MobileMenu";
+import {
+    NavLink
+} from "react-router-dom";
 import MediaQuery from 'react-responsive';
-import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import "./UsePage.css";
 
-class UsePage extends Component {        
+class UsePage extends Component {     
     render(){
         return (
             <div>
                 <MediaQuery minWidth="850px">
                     <div className="split left">
                         <div className ="breadcrumb">
-                            <Breadcrumb tag="nav" listTag="div">
-                                <BreadcrumbItem className="prevPage" tag="a" href="/">Home</BreadcrumbItem>
-                                {' | '}
-                                <BreadcrumbItem active tag="span">Use</BreadcrumbItem>
-                            </Breadcrumb>
+                            <NavLink className="prevPage" to ="/start">Home</NavLink>
+                            {' | '}
+                            <div className="activePage">Use</div>
                         </div>
                         <div className="centerMenu">
                             <Menu />

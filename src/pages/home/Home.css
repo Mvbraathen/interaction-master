@@ -1,3 +1,14 @@
+.homeMenuTxt {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: Tahoma;
+}
+
+
 .homeTxt {
   position: absolute;
   top: 30%;

@@ -11,6 +11,9 @@ class Home extends Component {
             <div>
                 <MediaQuery minWidth="850px">
                     <div className="split left">
+                        <div className="homeMenuTxt">  
+                            <h1> The Lifecycle of Mobile Phones </h1>
+                        </div>
                         <div className="centerMenu">
                             <Menu />                
                         </div>
@@ -18,7 +21,7 @@ class Home extends Component {
                     <div className="split right homeColor"> 
                         <div className="homeTxt">
                             <h1> The Mobile Lifecycle </h1>
-                            Click on the menu to learn more about the mobile lifecycle!
+                            <div>In the modern world, a mobile phone is a usual attribute that is presented in the life of every person. However, few people think about the risks that arise during the producton and operation of this device. This visualization is aimed to promote insight on the newest research in this field.</div>  
                         </div> 
                     </div>
                 </MediaQuery>
