@@ -33,7 +33,7 @@ class EndOfLife extends Component {
                 </MediaQuery>
                 <MediaQuery maxWidth={849}>
                     <div className="mobilePage">
-                        <div className="mobileSize">
+                        <div className="mobileContent">
                             <div className="homeMobileTxt">
                                 <h1> End of Life </h1>
                                 <div>End of Life End of Life

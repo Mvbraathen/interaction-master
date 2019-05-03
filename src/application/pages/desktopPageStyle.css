@@ -35,4 +35,16 @@
 /* Position of active page */
 .activePage {
   display:inline-block;
+  color: white;
+}
+
+.breadcrumbSpacing {
+    margin-left: 20px;
+    margin-right: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -o-user-select: none;
+    -moz-user-select: none;
 }

@@ -30,7 +30,7 @@ class Home extends Component {
             {/* render if screen width is < 850px */}
                 <MediaQuery maxWidth={849}>
                     <div className="mobilePage">
-                        <div className="mobileSize">
+                        <div className="mobileContent">
                             <div className="homeMobileTxt">
                                 <h1> Life Cycle of Mobile Phones </h1>
                                 <div>In the modern world, a mobile phone 

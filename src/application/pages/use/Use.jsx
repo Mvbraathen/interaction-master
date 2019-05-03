@@ -17,32 +17,27 @@ class Use extends Component {
                     <div className="split left">
                         <div className ="breadcrumb">
                             <NavLink className="prevPage" to ="/home">Home</NavLink>
-                            {' | '}
-                            <div className="activePage">Use</div>
+                            <div className="activePage breadcrumbSpacing"> > </div>
+                            <NavLink to ="/use"><div className="activePage">Use</div></NavLink>
                         </div>
-                        <div>
-                            <Desktop />
-                        </div>
+                        <Desktop />
                     </div>
                     <div className="split right useColor"> 
-                        <div className="useTxt">
+                        <div className="useContent">
                             <h1> Use </h1>
-                            Du er nå på Use-siden!
+                            <div> Du er nå på Use-siden! </div>
                         </div> 
                     </div>
                 </MediaQuery>
                 <MediaQuery maxWidth={849}>
                     <div className="mobilePage">
-                        <div className="mobileSize">
+                        <div className="mobileContent">
                             <div className="homeMobileTxt">
                                 <h1> Use </h1>
-                                <div> Use Use Use
-                                </div>
+                                <div> Use Use Use </div>
                             </div>
                         </div>
-                        <div>
-                            <Mobile />
-                        </div>
+                        <Mobile />
                     </div>
                 </MediaQuery>
             </div>

@@ -33,7 +33,7 @@ class ResourceExtraction extends Component {
                 </MediaQuery>
                 <MediaQuery maxWidth={849}>
                     <div className="mobilePage">
-                        <div className="mobileSize">
+                        <div className="mobileContent">
                             <div className="homeMobileTxt">
                                 <h1> Resource Extraction </h1>
                                 <div>Resource Extraction Resource Extraction Resource Extraction 

@@ -20,29 +20,24 @@ class DistributionPage extends Component {
                             {' | '}
                             <div className="activePage">Distribution</div>
                         </div>
-                        <div>
-                            <Desktop />
-                        </div>
+                        <Desktop />
                     </div>
                     <div className="split right distributionColor"> 
-                        <div className="distributionTxt">
+                        <div className="distributionContent">
                             <h1> Distribution </h1>
-                            Du er nå på Distribution-siden!
+                            <div> Du er nå på Distribution-siden! </div>
                         </div> 
                     </div>
                 </MediaQuery>
                 <MediaQuery maxWidth={849}>
                     <div className="mobilePage">
-                        <div className="mobileSize">
-                            <div className="homeMobileTxt">
-                                <h1> Distribution Page </h1>
-                                <div>Distribution Page Distribution Page Distribution Page 
-                                </div>
+                        <div className="mobileContent">
+                            <h1> Distribution Page </h1>
+                            <div>
+                                Distribution Page Distribution Page Distribution Page 
                             </div>
                         </div>
-                        <div>
-                            <Mobile />
-                        </div>
+                        <Mobile />
                     </div>
                 </MediaQuery>
             </div>

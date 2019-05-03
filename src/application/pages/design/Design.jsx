@@ -31,7 +31,7 @@ class Design extends Component {
                 </MediaQuery>
                 <MediaQuery maxWidth={849}>
                     <div className="mobilePage">
-                        <div className="mobileSize">
+                        <div className="mobileContent">
                             <h1> Design </h1>
                             <div>
                                 Design Design Design Design 

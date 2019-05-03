@@ -6,20 +6,21 @@
 	fill: #3B96BC;
 }
 
-.centerObjects {
+.mobile {
+	fill: white;
+}
+
+.home {
 	pointer-events: bounding-box;
 }
 
-.centerObjects:hover {
+.home:hover {
 	fill-opacity: 0.5;
 }
 
-.centerObjects:active {
+.home:active {
 	stroke: white;
 	stroke-width: 1px;
 }
 
-.mobile {
-	fill: white;
-}
 

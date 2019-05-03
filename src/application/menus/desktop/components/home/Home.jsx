@@ -7,7 +7,8 @@ import "./Home.css";
 class CenterObjects extends Component {
 	    render() {
 	    	return (
-                <g><NavLink className="centerObjects" to ="/home">
+                <g><NavLink className="home" to ="/home">
+                    <title>Menu selection for the home page</title>
                     <g className="arrows">
                         <path d="M223.58,156.03l-10.47-10.81v5.86c-32.72,0.79-59.1,27.63-59.1,60.53c0,3.56,0.33,7.05,0.92,10.44l3.38-5.45
                         l5.34,3.08c-0.42-2.63-0.64-5.33-0.64-8.08c0-27.94,22.34-50.75,50.1-51.53v6.76L223.58,156.03z M264.89,237.52l13.55-6.55l-5.56-1.84c9.54-31.31-7.65-64.79-38.89-75.13c-3.38-1.12-6.79-1.9-10.2-2.41
@@ -19,11 +20,9 @@ class CenterObjects extends Component {
                         L263.73,240.93z"/>   
                     </g> 
                     <g className="circle">
-                        <title>Home</title>
                         <circle cx="214.81" cy="212.14" r="40.79"/>
                     </g>
                     <g className="mobile">
-                        <title>Home</title>
                         <path d="M224.03,184.67H203.5c-1.96,0-3.55,1.59-3.55,3.55v47.32c0,1.96,1.59,3.55,3.55,3.55h20.53
                         c1.96,0,3.55-1.59,3.55-3.55v-47.32C227.58,186.27,225.99,184.67,224.03,184.67z M208.7,186.83h10.13c0.26,0,0.46,0.38,0.46,0.86
                         s-0.21,0.86-0.46,0.86H208.7c-0.26,0-0.46-0.38-0.46-0.86S208.44,186.83,208.7,186.83z M213.77,235.59c-1.25,0-2.27-1.02-2.27-2.27

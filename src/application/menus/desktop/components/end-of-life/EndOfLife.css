@@ -11,7 +11,3 @@
 .endOfLife:hover {
 	fill-opacity: 0.4;
 }
-
-.endOfLife:onclick {
-	fill: red;
-}

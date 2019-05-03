@@ -33,7 +33,7 @@ class Manufacturing extends Component {
                 </MediaQuery>
                 <MediaQuery maxWidth={849}>
                     <div className="mobilePage">
-                        <div className="mobileSize">
+                        <div className="mobileContent">
                             <div className="homeMobileTxt">
                                 <h1> Manufacturing </h1>
                                 <div> Manufacturing Manufacturing Manufacturing
