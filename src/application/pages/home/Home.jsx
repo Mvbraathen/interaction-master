@@ -3,7 +3,8 @@ import Desktop from "../../menus/desktop/Desktop";
 import Mobile from "../../menus/mobile/Mobile";
 import MediaQuery from 'react-responsive';
 import "./Home.css";
-import "../pageStyle.css";
+import "../desktopPageStyle.css";
+import "../mobilePageStyle.css";
 
 class Home extends Component {        
     render(){
@@ -15,7 +16,7 @@ class Home extends Component {
                         <div className="homeMenuTxt">  
                             <h1> The Lifecycle of Mobile Phones </h1>
                         </div>
-                        <div className="desktopMenu">
+                        <div>
                             <Desktop />                
                         </div>
                     </div>

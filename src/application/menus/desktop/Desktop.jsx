@@ -11,7 +11,7 @@ import "./Desktop.css";
 class Menu extends Component {        
     render(){
         return (
-            <div>
+            <div className="desktopMenu">
                 <div>
                     <svg width="430" height="430">
                         <g>

@@ -6,7 +6,8 @@ import {
     NavLink
 } from "react-router-dom";
 import "./Distribution.css";
-import "../pageStyle.css";
+import "../desktopPageStyle.css";
+import "../mobilePageStyle.css";
 
 class DistributionPage extends Component {        
     render(){
@@ -19,7 +20,7 @@ class DistributionPage extends Component {
                             {' | '}
                             <div className="activePage">Distribution</div>
                         </div>
-                        <div className="desktopMenu">
+                        <div>
                             <Desktop />
                         </div>
                     </div>

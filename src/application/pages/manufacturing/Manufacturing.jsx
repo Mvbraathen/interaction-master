@@ -6,7 +6,8 @@ import {
     NavLink
 } from "react-router-dom";
 import "./Manufacturing.css";
-import "../pageStyle.css";
+import "../desktopPageStyle.css";
+import "../mobilePageStyle.css";
 
 class Manufacturing extends Component {        
     render(){
@@ -19,7 +20,7 @@ class Manufacturing extends Component {
                             {' | '}
                             <div className="activePage">Manufacturing</div>
                         </div>
-                        <div className="desktopMenu">
+                        <div>
                             <Desktop />
                         </div>
                     </div>

@@ -6,7 +6,8 @@ import {
     NavLink
 } from "react-router-dom";
 import "./Design.css";
-import "../pageStyle.css";
+import "../desktopPageStyle.css";
+import "../mobilePageStyle.css";
 
 class Design extends Component {        
     render(){
@@ -14,34 +15,31 @@ class Design extends Component {
             <div>
                 <MediaQuery minWidth="850px">
                     <div className="split left">
-                        <div className ="breadcrumb">
+                        <div className="breadcrumb">
                             <NavLink className="prevPage" to ="/home">Home</NavLink>
                             {' | '}
                             <div className="activePage">Design</div>
                         </div>
-                        <div className="desktopMenu">
-                            <Desktop />
-                        </div>
+                        <Desktop />
                     </div>
                     <div className="split right designColor"> 
-                        <div className="designTxt">
+                        <div className="designContent">
                             <h1> Design </h1>
-                            Du er nå på Design-siden!
+                            <div> Du er nå på Design-siden! </div>
                         </div> 
                     </div>
                 </MediaQuery>
                 <MediaQuery maxWidth={849}>
                     <div className="mobilePage">
                         <div className="mobileSize">
-                            <div className="homeMobileTxt">
-                                <h1> Design </h1>
-                                <div>Design Design Design Design Design Design Design Design Design Design 
-                                </div>
+                            <h1> Design </h1>
+                            <div>
+                                Design Design Design Design 
+                                Design Design Design Design 
+                                Design Design 
                             </div>
                         </div>
-                        <div>
-                            <Mobile />
-                        </div>
+                        <Mobile />
                     </div>
                 </MediaQuery>
             </div>

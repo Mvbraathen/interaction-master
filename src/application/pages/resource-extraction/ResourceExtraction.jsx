@@ -6,7 +6,8 @@ import {
     NavLink
 } from "react-router-dom";
 import "./ResourceExtraction.css";
-import "../pageStyle.css";
+import "../desktopPageStyle.css";
+import "../mobilePageStyle.css";
 
 class ResourceExtraction extends Component {        
     render(){
@@ -19,7 +20,7 @@ class ResourceExtraction extends Component {
                             {' | '}
                             <div className="activePage">Resource Extraction</div>
                         </div>
-                        <div className="desktopMenu">
+                        <div>
                             <Desktop />
                         </div>
                     </div>

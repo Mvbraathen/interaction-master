@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 import MediaQuery from 'react-responsive';
 import "./Use.css";
+import "../desktopPageStyle.css";
+import "../mobilePageStyle.css";
 
 class Use extends Component {     
     render(){
@@ -18,7 +20,7 @@ class Use extends Component {
                             {' | '}
                             <div className="activePage">Use</div>
                         </div>
-                        <div className="desktopMenu">
+                        <div>
                             <Desktop />
                         </div>
                     </div>

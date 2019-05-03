@@ -6,7 +6,8 @@ import {
     NavLink
 } from "react-router-dom";
 import "./EndOfLife.css";
-import "../pageStyle.css";
+import "../desktopPageStyle.css";
+import "../mobilePageStyle.css";
 
 class EndOfLife extends Component {        
     render(){
@@ -19,7 +20,7 @@ class EndOfLife extends Component {
                             {' | '}
                             <div className="activePage">End of Life</div>
                         </div>
-                        <div className="desktopMenu">
+                        <div>
                             <Desktop />
                         </div>
                     </div>
