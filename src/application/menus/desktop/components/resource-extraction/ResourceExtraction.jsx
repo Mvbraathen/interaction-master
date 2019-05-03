@@ -10,6 +10,7 @@ class ResourceExtraction extends Component {
 	    		<g> 
                     <NavLink className="resourceExtraction" to ="/resource-extraction">
                         <g>
+                            <title>Menu selection for the resource extraction page</title>
                             <path d="M246.5,13.1l-2.1-0.3l-0.4,2.4l2.1,0.3c0.4,0.1,0.8,0,1-0.1c0.2-0.2,0.4-0.5,0.5-0.9c0.1-0.4,0-0.7-0.2-1
                             S246.9,13.1,246.5,13.1z M184.7,13.3c-0.2-0.1-0.6-0.2-1-0.1l-2.1,0.4L182,16l2.1-0.3c0.4-0.1,0.7-0.2,0.9-0.5c0.2-0.2,0.2-0.6,0.2-1
                             C185.1,13.8,185,13.5,184.7,13.3z M136.2,27.5c-0.3-0.1-0.6,0-1,0.1l-1.9,0.9l1,2.2l1.9-0.8c0.4-0.2,0.7-0.4,0.8-0.7c0.1-0.3,0.1-0.6-0.1-1

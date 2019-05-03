@@ -7,7 +7,8 @@ import "./Use.css";
 class Use extends Component {
 	    render() {
 	    	return (
-                <g><NavLink className="use" to ="/use">
+                <g><NavLink className="use" to ="/use"> 
+                    <title>Menu selection for the use page</title>
                     <path d="M297.9,383.5c-25.6,12-54.2,18.7-84.4,18.3c-33.1-0.4-64.1-9.2-91.2-24.4l-3.9,19.1
                             c28.4,14.9,60.6,23.5,94.9,24c36,0.5,69.9-8.2,99.7-23.7L297.9,383.5z M201,412.6c0.1,1.2-0.4,2.1-1.1,2.7c-0.8,0.5-1.7,0.8-3,0.7
                             c-1.2-0.1-2.2-0.5-2.8-1.1c-0.6-0.6-0.9-1.6-0.8-2.9l0.5-5.8l2,0.2l-0.5,5.8c0,0.2,0,0.5,0,0.7s0.1,0.5,0.2,0.7s0.3,0.4,0.5,0.5

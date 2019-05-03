@@ -10,6 +10,7 @@ class Manufacturing extends Component {
     	    	<g> 
                     <NavLink className="manufacturing" to ="/manufacturing">
                         <g>
+                            <title>Menu selection for the manufacturing page</title>
                             <path d="M348.6,150.2c-1.1,0.8-1.3,2.4-0.4,3.5c0.9,1.1,2.4,1.4,3.5,0.5c1.1-0.7,1.3-2.3,0.4-3.5
                             C351.2,149.6,349.7,149.3,348.6,150.2z M358.9,168c0.3-0.2,0.6-0.5,0.8-0.7l-0.1-0.2c-0.3,0-0.7,0-1.1,0h-0.4l-1-1.1v-0.4c0-0.4,0.1-0.8,0.1-1.1
                             l-0.2-0.1c-0.2,0.2-0.5,0.5-0.8,0.7l-0.3,0.3l-1.5-0.1l-0.2-0.3c-0.2-0.3-0.5-0.6-0.7-0.8l-0.2,0.1c0,0.3,0,0.7,0,1.1v0.4l-1.1,1
