@@ -19,7 +19,7 @@ class Design extends Component {
                             {' | '}
                             <div className="activePage">Design</div>
                         </div>
-                        <div className="centerMenu">
+                        <div className="desktopMenu">
                             <Desktop />
                         </div>
                     </div>

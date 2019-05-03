@@ -15,7 +15,7 @@ class Home extends Component {
                         <div className="homeMenuTxt">  
                             <h1> The Lifecycle of Mobile Phones </h1>
                         </div>
-                        <div className="centerMenu">
+                        <div className="desktopMenu">
                             <Desktop />                
                         </div>
                     </div>

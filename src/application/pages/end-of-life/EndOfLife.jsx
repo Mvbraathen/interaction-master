@@ -19,7 +19,7 @@ class EndOfLife extends Component {
                             {' | '}
                             <div className="activePage">End of Life</div>
                         </div>
-                        <div className="centerMenu">
+                        <div className="desktopMenu">
                             <Desktop />
                         </div>
                     </div>

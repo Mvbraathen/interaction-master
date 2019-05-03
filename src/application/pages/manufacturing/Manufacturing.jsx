@@ -19,7 +19,7 @@ class Manufacturing extends Component {
                             {' | '}
                             <div className="activePage">Manufacturing</div>
                         </div>
-                        <div className="centerMenu">
+                        <div className="desktopMenu">
                             <Desktop />
                         </div>
                     </div>

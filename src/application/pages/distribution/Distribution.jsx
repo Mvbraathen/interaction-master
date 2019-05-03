@@ -19,7 +19,7 @@ class DistributionPage extends Component {
                             {' | '}
                             <div className="activePage">Distribution</div>
                         </div>
-                        <div className="centerMenu">
+                        <div className="desktopMenu">
                             <Desktop />
                         </div>
                     </div>

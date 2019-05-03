@@ -23,6 +23,7 @@
   width: 50vw;
 } 
 
+/* Style breadcrumbs*/
 .breadcrumb {
   font-family: Tahoma;
   color: white;
@@ -31,11 +32,13 @@
   margin-top: 10px;
 } 
 
+/* Position of active page */
 .activePage {
   display:inline-block;
 }
 
-.centerMenu {
+/* Positioning of the dektop menu */
+.desktopMenu {
   position: absolute;
   top: 50%;
   left: 50%;

@@ -18,7 +18,7 @@ class Use extends Component {
                             {' | '}
                             <div className="activePage">Use</div>
                         </div>
-                        <div className="centerMenu">
+                        <div className="desktopMenu">
                             <Desktop />
                         </div>
                     </div>

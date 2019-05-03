@@ -19,7 +19,7 @@ class ResourceExtraction extends Component {
                             {' | '}
                             <div className="activePage">Resource Extraction</div>
                         </div>
-                        <div className="centerMenu">
+                        <div className="desktopMenu">
                             <Desktop />
                         </div>
                     </div>
