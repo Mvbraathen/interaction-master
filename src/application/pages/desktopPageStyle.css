@@ -30,16 +30,17 @@
   left: 0;
   width: 600px;
   height: 100vh;
-  background-color: #303030;
+  background-color: #292929;
 }
 
 /* Control the big right side */
 .rightBig {
   height: 100vh;
   width: auto;
+  color: white;
   top:30%;
   text-align: center;
-  background-color: #FF9200;
+  background-color: #AD6200;
 } 
 
 .bigDefaultContent {
@@ -60,7 +61,7 @@
   z-index: 1;
   top: 0;
   overflow-x: hidden;
-  background-color: #303030;
+  background-color: #292929;
 }
 
 /* Style breadcrumbs*/

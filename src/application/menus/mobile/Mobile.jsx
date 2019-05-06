@@ -4,6 +4,7 @@ import {
     NavLink
 } from "react-router-dom";
 import './Mobile.css';
+import Dropdown from "./dropdown/Dropdown.jsx";
 
 class Menu extends Component {  
        
@@ -20,7 +21,7 @@ class Menu extends Component {
                         <li><NavLink className="bm-item" to ="/resource-extraction"> Resource Extraction </NavLink></li>
                         <li><NavLink className="bm-item" to ="/manufacturing"> Manufacturing </NavLink></li>
                         <li><NavLink className="bm-item" to ="/transport"> Transport </NavLink></li>
-                        <li><NavLink className="bm-item" to ="/use"> Use </NavLink></li>
+                        <Dropdown />
                         <li><NavLink className="bm-item" to ="/end-of-life"> End of Life </NavLink></li>
                     </ul>
                 </BurgerMenu>
