@@ -23,6 +23,36 @@
   width: 50vw;
 } 
 
+/* Control the big left side */
+.leftBig {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 100vh;
+  background-color: #303030;
+}
+
+/* Control the big right side */
+.rightBig {
+  height: 100vh;
+  width: auto;
+  top:30%;
+  text-align: center;
+  background-color: #FF9200;
+} 
+
+.bigDefaultContent {
+  position: fixed;
+  top: 30%;
+  right: 0;
+  left: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  transform: translate(-0%, -50%);
+  font-family: Tahoma;
+}
+
 .nestedPageStyle {
   height: 100%;
   width: 100%;
