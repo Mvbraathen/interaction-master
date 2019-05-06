@@ -3,15 +3,16 @@
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
   text-align: center;
   font-family: Tahoma;
 }
 
 .defaultColor {
-	background-color: #FF9200;
+	background-color: #AD6200;
 }
 
 .lifetimeLink {
-	color: black;
+	color: white;
 	text-decoration: underline;
 }

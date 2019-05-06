@@ -3,10 +3,11 @@
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
   text-align: center;
   font-family: Tahoma;
 }
 
 .resourceExtractionColor {
-	background-color: #B5BFC2;
+	background-color: #6C777F;
 }
