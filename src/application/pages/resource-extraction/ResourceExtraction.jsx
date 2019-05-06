@@ -15,10 +15,10 @@ class ResourceExtraction extends Component {
             <div>
                 <MediaQuery minWidth="850px">
                     <div className="split left">
-                        <div className ="breadcrumb">
-                            <NavLink className="prevPage" to ="/home">Home</NavLink>
-                            {' | '}
-                            <div className="activePage">Resource Extraction</div>
+                        <div className="breadcrumb">
+                            <NavLink to ="/home"><div className="prevPage">Home</div></NavLink>
+                            <div className="breadcrumbSpacing"> <span className="breadcrumbArrow">&#8594;</span></div>
+                            <NavLink to ="/resource-extraction"><div className="activePage">Resource Extraction</div></NavLink>
                         </div>
                         <div>
                             <Desktop />

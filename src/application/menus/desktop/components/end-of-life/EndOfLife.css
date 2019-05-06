@@ -3,20 +3,21 @@
 } 
 
 .endTxt {
-	fill: #303030;
+	fill: white;
 } 
 
 .endIcon {
-	fill: #303030;
+	fill: white;
 }
 
 .endLine {
 	fill: #303030;
 }
 
-.endOfLife:active {
-	stroke: white;
+.endOfLife:not(.endLine):active {
+	fill: #7F0000;
 	stroke-width: 1px;
+	fill-opacity: 1;
 }
 
 .endOfLife:hover {

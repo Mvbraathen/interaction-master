@@ -1,13 +1,13 @@
 .resourceExtraction {
-	fill: #B5BFC2;
+	fill: #6C777F;
 }
 
 .resourceTxt {
-	fill: #303030;
+	fill: white;
 }
 
 .resourceIcon {
-	fill: #303030;
+	fill: white;
 } 
 
 .resourceLine {
@@ -15,12 +15,12 @@
 }
 
 .mountain {
-	fill: #303030;
+	fill: white;
 } 
 
-.resourceExtraction:active {
-	stroke: white;
-	stroke-width: 1px;
+.resourceExtraction:not(.resourceExtractionLine):active {
+	fill: #7F0000;
+	fill-opacity: 1;
 }
 
 .resourceExtraction:hover {

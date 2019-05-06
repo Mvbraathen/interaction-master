@@ -95,3 +95,7 @@
     -o-user-select: none;
     -moz-user-select: none;
 }
+
+.breadcrumbArrow {
+  color: #b3b3b3;
+}

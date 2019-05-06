@@ -14,11 +14,11 @@ class Use extends Component {
             <div>
                 <MediaQuery minWidth="850px">
                     <div className="nestedPageStyle">
-                        <div className ="breadcrumb">
+                        <div className="breadcrumb">
                             <NavLink to ="/home"><div className="prevPage">Home</div></NavLink>
-                            <div className="activePage breadcrumbSpacing"> > </div>
+                            <div className="breadcrumbSpacing"> <span className="breadcrumbArrow">&#8594;</span></div>
                             <NavLink to ="/use"><div className="prevPage">Use</div></NavLink>
-                            <div className="breadcrumbSpacing"> > </div>
+                            <div className="breadcrumbSpacing"> <span className="breadcrumbArrow">&#8594;</span></div>
                             <NavLink to ="/use/lifetime"><div className="activePage">Lifetime</div></NavLink>
                         </div>
                         <div className="lifetimeContent">

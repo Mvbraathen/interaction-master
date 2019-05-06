@@ -3,20 +3,20 @@
 }
 
 .manufacturingText {
-	fill: #303030;
+	fill: white;
 }
 
 .manufacturingIcon {
-	fill: #303030;
+	fill: white;
 }
 
 .manuLine {
 	fill: #303030;
 }
 
-.manufacturing:active {
-	stroke: white;
-	stroke-width: 1px;
+.manufacturing:not(.manufacturingLine):active {
+	fill: #7F0000;
+	fill-opacity: 1;
 }
 
 .manufacturing:hover {

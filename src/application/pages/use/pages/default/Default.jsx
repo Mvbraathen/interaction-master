@@ -15,9 +15,9 @@ class Use extends Component {
             <div>
                 <MediaQuery minWidth="850px" maxWidth="1199px">
                     <div className="split left">
-                        <div className ="breadcrumb">
+                        <div className="breadcrumb">
                             <NavLink to ="/home"><div className="prevPage">Home</div></NavLink>
-                            <div className="breadcrumbSpacing"> > </div>
+                            <div className="breadcrumbSpacing"> <span className="breadcrumbArrow">&#8594;</span></div>
                             <NavLink to ="/use"><div className="activePage">Use</div></NavLink>
                         </div>
                         <Desktop />
@@ -34,9 +34,9 @@ class Use extends Component {
 
                 <MediaQuery minWidth="1200px">
                     <div className="split leftBig">
-                        <div className ="breadcrumb">
+                        <div className="breadcrumb">
                             <NavLink to ="/home"><div className="prevPage">Home</div></NavLink>
-                            <div className="breadcrumbSpacing"> > </div>
+                            <div className="breadcrumbSpacing"> <span className="breadcrumbArrow">&#8594;</span></div>
                             <NavLink to ="/use"><div className="activePage">Use</div></NavLink>
                         </div>
                         <Desktop />

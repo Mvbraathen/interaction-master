@@ -19,8 +19,7 @@
 }
 
 .home:active {
-	stroke: white;
-	stroke-width: 1px;
+	fill-opacity: 1;
 }
 
 

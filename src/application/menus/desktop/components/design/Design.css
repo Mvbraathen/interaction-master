@@ -3,20 +3,20 @@
 }  
 
 .designTxt {
-	fill: #303030;
+	fill: white;
 } 
 
 .designIcon {
-	fill: #303030;
+	fill: white;
 } 
 
 .designLine {
 	fill: #303030;
 }
 
-.design:active {
-	stroke: white;
-	stroke-width: 1px;
+.design:not(.designLine):active {
+	fill: #7F0000;
+	fill-opacity: 1;
 }
 
 .design:hover {

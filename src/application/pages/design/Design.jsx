@@ -16,9 +16,9 @@ class Design extends Component {
                 <MediaQuery minWidth="850px">
                     <div className="split left">
                         <div className="breadcrumb">
-                            <NavLink className="prevPage" to ="/home">Home</NavLink>
-                            {' | '}
-                            <div className="activePage">Design</div>
+                            <NavLink to ="/home"><div className="prevPage">Home</div></NavLink>
+                            <div className="breadcrumbSpacing"> <span className="breadcrumbArrow">&#8594;</span></div>
+                            <NavLink to ="/design"><div className="activePage">Design</div></NavLink>
                         </div>
                         <Desktop />
                     </div>

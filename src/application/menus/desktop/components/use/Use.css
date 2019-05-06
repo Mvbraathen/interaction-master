@@ -1,22 +1,23 @@
 .use {
-	fill: #FF9200;
+	fill: #AD6200;
 }
 
 .useTxt {
-	fill: #303030;
+	fill: white;
 } 
 
 .useIcon {
-	fill: #303030;
+	fill: white;
 } 
 
 .useLine {
 	fill: #303030;
 }
 
-.use:active {
-	stroke: white;
+.use:not(.useLine):active {
+	fill: #7F0000;
 	stroke-width: 1px;
+	fill-opacity: 1;
 }
 
 .use:hover {

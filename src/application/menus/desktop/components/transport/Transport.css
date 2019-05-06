@@ -1,22 +1,22 @@
 .transport {
-	fill: #488798;
+	fill: #437E8E;
 } 
 
 .transportTxt {
-	fill: #303030;
+	fill: white;
 } 
 
 .transportIcon {
-	fill: #303030;
+	fill: white;
 }
 
 .transportLine {
 	fill: #303030;
 }
 
-.transport:active {
-	stroke: white;
-	stroke-width: 1px;
+.transport:not(.transportLine):active {
+	fill: #7F0000;
+	fill-opacity: 1;
 }
 
 .transport:hover {
