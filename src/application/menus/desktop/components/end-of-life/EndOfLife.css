@@ -10,6 +10,10 @@
 	fill: #303030;
 }
 
+.endLine {
+	fill: #303030;
+}
+
 .endOfLife:active {
 	stroke: white;
 	stroke-width: 1px;

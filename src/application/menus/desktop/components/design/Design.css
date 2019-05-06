@@ -1,12 +1,16 @@
 .design {
 	fill: #B8005D;
-} 
+}  
 
 .designTxt {
 	fill: #303030;
 } 
 
 .designIcon {
+	fill: #303030;
+} 
+
+.designLine {
 	fill: #303030;
 }
 

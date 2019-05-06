@@ -8,6 +8,10 @@
 
 .useIcon {
 	fill: #303030;
+} 
+
+.useLine {
+	fill: #303030;
 }
 
 .use:active {

@@ -10,9 +10,13 @@
 	fill: #303030;
 } 
 
-.mountain {
+.resourceLine {
 	fill: #303030;
 }
+
+.mountain {
+	fill: #303030;
+} 
 
 .resourceExtraction:active {
 	stroke: white;

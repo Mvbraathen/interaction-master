@@ -10,6 +10,10 @@
 	fill: #303030;
 }
 
+.manuLine {
+	fill: #303030;
+}
+
 .manufacturing:active {
 	stroke: white;
 	stroke-width: 1px;
