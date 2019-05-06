@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ResourceExtraction from "./components/resource-extraction/ResourceExtraction";
 import Manufacturing from "./components/manufacturing/Manufacturing";
-import Distribution from "./components/distribution/Distribution";
+import Transport from "./components/transport/Transport";
 import Use from "./components/use/Use";
 import EndOfLife from "./components/end-of-life/EndOfLife";
 import Design from "./components/design/Design";
@@ -17,7 +17,7 @@ class Menu extends Component {
                         <g>
                             <ResourceExtraction />              
                             <Manufacturing />
-                            <Distribution />
+                            <Transport />
                             <Use />
                             <EndOfLife />
                             <Design />

@@ -1,20 +1,20 @@
-.design {
-	fill: #B8005D;
+.transport {
+	fill: #488798;
 } 
 
-.designTxt {
+.transportTxt {
 	fill: #303030;
 } 
 
-.designIcon {
+.transportIcon {
 	fill: #303030;
 }
 
-.design:active {
+.transport:active {
 	stroke: white;
 	stroke-width: 1px;
 }
 
-.design:hover {
+.transport:hover {
 	fill-opacity: 0.4;
 }

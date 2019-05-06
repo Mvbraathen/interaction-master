@@ -1,4 +1,4 @@
-.distributionContent {
+.transportContent {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -8,6 +8,6 @@
   font-family: Tahoma;
 }
 
-.distributionColor {
+.transportColor {
   background-color: #488798;
 }

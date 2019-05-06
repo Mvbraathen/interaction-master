@@ -1,6 +1,13 @@
 .endOfLife {
 	fill: #767676;
-	pointer-events: bounding-box;
+} 
+
+.endTxt {
+	fill: #303030;
+} 
+
+.endIcon {
+	fill: #303030;
 }
 
 .endOfLife:active {

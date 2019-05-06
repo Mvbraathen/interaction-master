@@ -1,6 +1,13 @@
 .use {
 	fill: #FF9200;
-	pointer-events: bounding-box;
+}
+
+.useTxt {
+	fill: #303030;
+} 
+
+.useIcon {
+	fill: #303030;
 }
 
 .use:active {

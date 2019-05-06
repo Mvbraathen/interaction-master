@@ -19,7 +19,7 @@ class Menu extends Component {
                         <li><NavLink className="bm-item" to ="/design"> Design </NavLink></li>
                         <li><NavLink className="bm-item" to ="/resource-extraction"> Resource Extraction </NavLink></li>
                         <li><NavLink className="bm-item" to ="/manufacturing"> Manufacturing </NavLink></li>
-                        <li><NavLink className="bm-item" to ="/distribution"> Distribution </NavLink></li>
+                        <li><NavLink className="bm-item" to ="/transport"> Transport </NavLink></li>
                         <li><NavLink className="bm-item" to ="/use"> Use </NavLink></li>
                         <li><NavLink className="bm-item" to ="/end-of-life"> End of Life </NavLink></li>
                     </ul>

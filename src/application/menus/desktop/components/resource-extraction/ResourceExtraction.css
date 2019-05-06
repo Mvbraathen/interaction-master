@@ -1,6 +1,17 @@
 .resourceExtraction {
 	fill: #B5BFC2;
-	pointer-events: bounding-box;
+}
+
+.resourceTxt {
+	fill: #303030;
+}
+
+.resourceIcon {
+	fill: #303030;
+} 
+
+.mountain {
+	fill: #303030;
 }
 
 .resourceExtraction:active {

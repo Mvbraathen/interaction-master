@@ -1,6 +1,13 @@
 .manufacturing {
 	fill: #86208A;
-	pointer-events: bounding-box;
+}
+
+.manufacturingText {
+	fill: #303030;
+}
+
+.manufacturingIcon {
+	fill: #303030;
 }
 
 .manufacturing:active {

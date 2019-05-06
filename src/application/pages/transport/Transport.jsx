@@ -5,11 +5,11 @@ import MediaQuery from 'react-responsive';
 import {
     NavLink
 } from "react-router-dom";
-import "./Distribution.css";
+import "./Transport.css";
 import "../desktopPageStyle.css";
 import "../mobilePageStyle.css";
 
-class DistributionPage extends Component {        
+class Transport extends Component {        
     render(){
         return (
             <div>
@@ -18,23 +18,23 @@ class DistributionPage extends Component {
                         <div className ="breadcrumb">
                             <NavLink className="prevPage" to ="/home">Home</NavLink>
                             {' | '}
-                            <div className="activePage">Distribution</div>
+                            <div className="activePage">Transport</div>
                         </div>
                         <Desktop />
                     </div>
-                    <div className="split right distributionColor"> 
-                        <div className="distributionContent">
-                            <h1> Distribution </h1>
-                            <div> Du er nå på Distribution-siden! </div>
+                    <div className="split right transportColor"> 
+                        <div className="transportContent">
+                            <h1> Transport </h1>
+                            <div> Du er nå på Transport-siden! </div>
                         </div> 
                     </div>
                 </MediaQuery>
                 <MediaQuery maxWidth={849}>
                     <div className="mobilePage">
                         <div className="mobileContent">
-                            <h1> Distribution Page </h1>
+                            <h1> Transport Page </h1>
                             <div>
-                                Distribution Page Distribution Page Distribution Page 
+                                Transport Page Transport Page Transport Page 
                             </div>
                         </div>
                         <Mobile />
@@ -45,4 +45,4 @@ class DistributionPage extends Component {
     }
 }
 
-export default DistributionPage;
+export default Transport;
