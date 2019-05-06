@@ -19,7 +19,7 @@ class Use extends Component {
                             <div className="activePage breadcrumbSpacing"> > </div>
                             <NavLink to ="/use"><div className="prevPage">Use</div></NavLink>
                             <div className="breadcrumbSpacing"> > </div>
-                            <NavLink to ="/use/lifetime"><div className="activePage">Home</div></NavLink>
+                            <NavLink to ="/use/lifetime"><div className="activePage">Lifetime</div></NavLink>
                         </div>
                         <div className="lifetimeContent">
                             <h1> Lifetime </h1>
