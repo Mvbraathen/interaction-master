@@ -11,19 +11,23 @@ import "./Desktop.css";
 class Menu extends Component {        
     render(){
         return (
-            <div className="desktopMenu">
-                <div>
-                    <svg width="430" height="430">
-                        <g>
-                            <ResourceExtraction />              
-                            <Manufacturing />
-                            <Transport />
-                            <Use />
-                            <EndOfLife />
-                            <Design />
-                            <Home />
-                        </g>
-                    </svg>
+            <div>
+                <div className="mobileHeader">
+                </div>
+                <div className="desktopMenu">
+                    <div>
+                        <svg width="430" height="430">
+                            <g>
+                                <ResourceExtraction />              
+                                <Manufacturing />
+                                <Transport />
+                                <Use />
+                                <EndOfLife />
+                                <Design />
+                                <Home />
+                            </g>
+                        </svg>
+                    </div>
                 </div>
             </div>
         );

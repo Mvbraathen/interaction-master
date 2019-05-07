@@ -4,8 +4,7 @@
 }
 
 .testSubMenuMain {
-	margin-left: -25px;
-    list-style: none;
+	list-style-type: square;
     font-size: 0.8em;
 }
 
