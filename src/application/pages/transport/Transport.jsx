@@ -23,10 +23,24 @@ class Transport extends Component {
                         <Desktop />
                     </div>
                     <div className="split right transportColor"> 
-                        <div className="transportContent">
-                            <h1> Transport </h1>
-                            <div> Du er nå på Transport-siden! </div>
-                        </div> 
+                        <div className="placeUls">
+                            <h1 className="pageHeader"> Transport </h1>
+                            <h2 className="impactsTxt"> Impacts of transportation </h2>
+                            <ul className="transportUlGreen">
+                                <li className="transportLiHeaderGreen liHeader">Environmental impacts</li>
+                                
+                                <NavLink className="navLinkStyle" to ="/transport"><li className="liHover transportLiGreen">Acidification</li></NavLink>
+                                
+                                <li className="liHover transportLiGreen">CO2 emissions</li>
+                                <li className="liHover transportLiGreen">Eutrophication</li>  
+                                <li className="liHover transportLiGreen">Ecotoxity</li>
+                                <li className="liHover transportLiGreen">Particulate matter</li>
+                            </ul>
+                            <ul className="transportUlBlue">
+                                <li className="transportLiHeaderBlue liHeader">Social impacts</li>
+                                <li className="liHover transportLiBlue">Toxicity</li>
+                            </ul>
+                        </div>  
                     </div>
                 </MediaQuery>
                 <MediaQuery maxWidth={849}>

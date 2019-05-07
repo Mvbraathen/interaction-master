@@ -23,10 +23,58 @@ class Use extends Component {
                         <Desktop />
                     </div>
                     <div className="split right defaultColor"> 
-                        <div className="defaultContent">
-                            <h1> Use </h1>
-                            <div> Du er nå på Use-siden! </div>
-                            <NavLink to ="/use/lifetime"><div className="lifetimeLink">Go to Lifetime</div></NavLink>
+                        <div>
+                            <h1 className="pageHeader"> Use (normal) </h1>
+                            <div className="flex-container">
+                                <h1 className="impactHeader">Environmental Impacts</h1>
+                                
+                                <NavLink className="environmentalImpacts" to ="/use/lifetime">
+                                    <div className="removeUnderline">
+                                        Acidification
+                                        <span className="flexArrow">&#8594;</span>
+                                    </div>
+                                </NavLink>
+                                
+                                <div className="environmentalImpacts">
+                                    CO2 emissions
+                                    <span className="flexArrow">&#8594;</span>
+                                </div>
+                                <div className="environmentalImpacts">
+                                    Eutrophication
+                                    <span className="flexArrow">&#8594;</span>
+                                </div>  
+                                <div className="environmentalImpacts">
+                                    Ecotoxity
+                                    <span className="flexArrow">&#8594;</span>
+                                </div>
+                                <div className="environmentalImpacts">
+                                    Particulate matter
+                                    <span className="flexArrow">&#8594;</span> 
+                                </div>
+                            </div>
+                            <div className="flex-container2">
+                                <h1 className="impactHeader">Social Impacts</h1>
+                                <div className="socialImpacts">
+                                    Acidification
+                                    <span className="flexArrow">&#8594;</span>
+                                </div>
+                                <div className="socialImpacts">
+                                    CO2 emissions
+                                    <span className="flexArrow">&#8594;</span>
+                                </div>
+                                <div className="socialImpacts">
+                                    Eutrophication
+                                    <span className="flexArrow">&#8594;</span>
+                                </div>  
+                                <div className="socialImpacts">
+                                    Ecotoxity
+                                    <span className="flexArrow">&#8594;</span>
+                                </div>
+                                <div className="socialImpacts">
+                                    Particulate matter
+                                    <span className="flexArrow">&#8594;</span>
+                                </div>
+                            </div>
                         </div> 
                     </div>
                 </MediaQuery>
@@ -41,11 +89,59 @@ class Use extends Component {
                         </div>
                         <Desktop />
                     </div>
-                    <div className="split rightBig"> 
-                        <div className="bigDefaultContent">
-                            <h1> Use </h1>
-                            <div> Du er nå på Use-siden! </div>
-                            <NavLink to ="/use/lifetime"><div className="lifetimeLink">Go to Lifetime</div></NavLink>
+                    <div className="split rightBig defaultColor bigDefaultContent"> 
+                        <div>
+                            <div>
+                            <h1 className="pageHeader"> Use (big) </h1>
+                            <div className="flex-container">
+                                <h1 className="impactHeader">Environmental Impacts</h1>
+                                <NavLink className="environmentalImpacts" to ="/use/lifetime">
+                                    <div className="removeUnderline">
+                                        Acidification
+                                        <span className="flexArrow">&#8594;</span>
+                                    </div>
+                                </NavLink>
+                                <div className="environmentalImpacts">
+                                    CO2 emissions
+                                    <span className="flexArrow">&#8594;</span>
+                                </div>
+                                <div className="environmentalImpacts">
+                                    Eutrophication
+                                    <span className="flexArrow">&#8594;</span>
+                                </div>  
+                                <div className="environmentalImpacts">
+                                    Ecotoxity
+                                    <span className="flexArrow">&#8594;</span>
+                                </div>
+                                <div className="environmentalImpacts">
+                                    Particulate matter
+                                    <span className="flexArrow">&#8594;</span> 
+                                </div>
+                            </div>
+                            <div className="flex-container2">
+                                <h1 className="impactHeader">Social Impacts</h1>
+                                <div className="socialImpacts">
+                                    Acidification
+                                    <span className="flexArrow">&#8594;</span>
+                                </div>
+                                <div className="socialImpacts">
+                                    CO2 emissions
+                                    <span className="flexArrow">&#8594;</span>
+                                </div>
+                                <div className="socialImpacts">
+                                    Eutrophication
+                                    <span className="flexArrow">&#8594;</span>
+                                </div>  
+                                <div className="socialImpacts">
+                                    Ecotoxity
+                                    <span className="flexArrow">&#8594;</span>
+                                </div>
+                                <div className="socialImpacts">
+                                    Particulate matter
+                                    <span className="flexArrow">&#8594;</span>
+                                </div>
+                            </div>
+                        </div> 
                         </div> 
                     </div>
                 </MediaQuery>

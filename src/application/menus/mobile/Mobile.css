@@ -5,6 +5,12 @@
     top: 38px;
     font-family: Open Sans;
     color: #f2f2f2;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -o-user-select: none;
+    -moz-user-select: none;
 }
 
 /* Position and sizing of burger button */
