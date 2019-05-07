@@ -14,10 +14,6 @@
   font-size: 1.3em;
 }
 
-.removeUnderline {
-  
-}
-
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -30,7 +26,7 @@
 
 .flex-container > .environmentalImpacts {  
   background-color: #68A02C;
-  width: 180px;
+  width: 152px;
   list-style: none;
   margin: 15px;
   font-family: Tahoma;
@@ -39,7 +35,8 @@
   color: white;
   text-align: left;
   padding-left: 10px;
-  line-height: 70px;
+  line-height: 70px; 
+  text-decoration: none;
 }
 
 .environmentalImpacts:hover {
@@ -58,7 +55,7 @@
 
 .flex-container2 > .socialImpacts {
   background-color: #9CC2E5;
-  width: 180px;
+  width: 152px;
   list-style: none;
   margin: 15px;
   font-family: Tahoma;

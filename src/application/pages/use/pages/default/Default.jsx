@@ -96,10 +96,8 @@ class Use extends Component {
                             <div className="flex-container">
                                 <h1 className="impactHeader">Environmental Impacts</h1>
                                 <NavLink className="environmentalImpacts" to ="/use/lifetime">
-                                    <div className="removeUnderline">
                                         Acidification
                                         <span className="flexArrow">&#8594;</span>
-                                    </div>
                                 </NavLink>
                                 <div className="environmentalImpacts">
                                     CO2 emissions
