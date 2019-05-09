@@ -6,16 +6,19 @@ import {
     NavLink
 } from "react-router-dom";
 import "./Manufacturing.css";
-import "../css/desktopNormal.css";
-import "../css/mobilePageStyle.css";
+import "../css/DesktopNormal.css";
+import "../css/MobilePageStyle.css";
 
 class Manufacturing extends Component {        
     render(){
         return (
            <div>
                 <MediaQuery minWidth="850px">
-                    <div className="split left">
-                        <div className="mobileHeader"></div>
+                    <div className="split leftBig">
+                        <div className="header"></div>
+                        <div className="pageHeaderBigScreen">  
+                            <h1> Manufacturing </h1>
+                        </div>
                         <div className="breadcrumb">
                             <NavLink to ="/home"><div className="prevPage">Home</div></NavLink>
                             <div className="breadcrumbSpacing"> <span className="breadcrumbArrow">&#8594;</span></div>
@@ -25,7 +28,7 @@ class Manufacturing extends Component {
                             <Desktop />
                         </div>
                     </div>
-                    <div className="split right">
+                    <div className="split rightBig bigDefaultContent">
                         <div className="mobileHeader"></div> 
                         <div className="pageHeader">
                              <h1> Manufacturing </h1>

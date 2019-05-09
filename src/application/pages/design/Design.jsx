@@ -6,16 +6,20 @@ import {
     NavLink
 } from "react-router-dom";
 import "./Design.css";
-import "../css/desktopNormal.css";
-import "../css/mobilePageStyle.css";
+import "../css/DesktopNormal.css";
+import "../css/MobilePageStyle.css";
+import "../css/Header.css";
 
 class Design extends Component {        
     render(){
         return (
             <div>
                 <MediaQuery minWidth="850px">
-                    <div className="split left">
-                        <div className="mobileHeader"></div>
+                    <div className="split leftBig">
+                        <div className="header"></div>
+                        <div className="pageHeaderBigScreen">  
+                            <h1> Design </h1>
+                        </div>
                         <div className="breadcrumb">
                             <NavLink to ="/home"><div className="prevPage">Home</div></NavLink>
                             <div className="breadcrumbSpacing"> <span className="breadcrumbArrow">&#8594;</span></div>
@@ -23,8 +27,8 @@ class Design extends Component {
                         </div>
                         <Desktop />
                     </div>
-                    <div className="split right"> 
-                        <div className="mobileHeader"></div>
+                    <div className="split rightBig bigDefaultContent"> 
+                        <div className="header"></div>
                         <div className="designContent">
                             <h1> Design </h1>
                             <div> Du er nå på Design-siden! </div>

@@ -14,7 +14,7 @@ class Menu extends Component {
                 <div className="burgerLabel">
                 Menu
                 </div>
-                <div className="mobileHeader"></div>
+                <div className="header"></div>
                 <BurgerMenu>
                     <ul className = "bm-item-list">
                         <li><NavLink className="bm-item" to ="/home"> Home </NavLink></li>

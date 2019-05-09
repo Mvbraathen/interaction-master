@@ -3,7 +3,7 @@ import Mobile from "../../../../../menus/mobile/Mobile";
 import {
     NavLink
 } from "react-router-dom";
-import "../../../../css/mobilePageStyle.css";
+import "../../../../css/MobilePageStyle.css";
 
 class MobileContent extends React.Component {
 	render() {
@@ -11,8 +11,24 @@ class MobileContent extends React.Component {
 			<div>
                 <div className="mobilePage">
                     <div className="mobileContent">
-                        <div className="mobileHeader"></div>
+                        <div className="header"></div>
+                        <div className="pageHeaderBigScreen">  
+                            <h1> Use </h1>
+                        </div>
                             <div>
+                                <div>
+                                    INSERT CODE HERE, MARIUS
+                                </div>
+
+
+
+
+
+
+
+
+
+                                {/*
                                 <div className="mobile-flex-container">
                                     <h1 className="impactHeader">Environmental Impacts</h1>
                                     
@@ -67,6 +83,8 @@ class MobileContent extends React.Component {
                                     <div className="hacky-flex-fix">  
                                     </div>
                                 </div>
+                                */}
+
                             </div>
                         </div>
                         <Mobile />

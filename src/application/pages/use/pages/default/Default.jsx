@@ -3,9 +3,9 @@ import MobileContent from "./components/MobileContent";
 import DesktopContent from "./components/DesktopContent";
 import MediaQuery from 'react-responsive';
 import "./Default.css";
-import "../../../css/desktopNormal.css";
-import "../../../css/desktopBig.css";
-import "../../../css/mobilePageStyle.css";
+import "../../../css/DesktopNormal.css";
+import "../../../css/DesktopBig.css";
+import "../../../css/MobilePageStyle.css";
 
 class Use extends Component {     
     render(){

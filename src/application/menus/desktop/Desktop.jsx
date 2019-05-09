@@ -14,7 +14,7 @@ class Menu extends Component {
     render(){
         return (
             <div>
-                <div className="mobileHeader"></div>
+                <div className="header"></div>
                 <div className="desktopMenu">
                     <div>
                         <svg className="svg">

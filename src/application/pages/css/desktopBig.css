@@ -1,3 +1,8 @@
+.split {
+  width: 100vw;
+  height: 100vh;
+}
+
 .leftBig {
   position: absolute;
   top: 0;
@@ -38,71 +43,4 @@
   text-align: center;
   color: white;
   font-family: Tahoma;
-}
-
-
-/************* Flex box styling ***************/
-/* big screen flex box 1 */
-.big-screen-flex-container {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: #292929;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 150px; 
-}
-
-.big-screen-flex-container > .environmentalImpacts {  
-  background-color: #68A02C;
-  width: 80%;
-  max-width: 800px;
-  -webkit-box-shadow: 1px 2px 4px 2px #101010;
-  -moz-box-shadow:    1px 2px 4px 2px #101010;
-  box-shadow:         3px 2px 4px 2px #101010;
-  list-style: none;
-  margin-right: 18px;
-  margin-left: 18px;
-  margin-bottom: 10px;
-  font-family: Tahoma;
-  font-size: 0.85em;
-  font-weight: bold;
-  color: black;
-  text-align: left;
-  padding-left: 10px;
-  line-height: 70px; 
-  text-decoration: none;
-}
-
-/* big screen flex box 2 */
-.big-screen-flex-container2 {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: #292929;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 30px;
-  margin-bottom: 50px; 
-}
-
-.big-screen-flex-container2 > .socialImpacts {
-  background-color: #9CC2E5;
-  width: 80%;
-  max-width: 800px;
-  -webkit-box-shadow: 1px 2px 4px 2px #101010;
-  -moz-box-shadow:    1px 2px 4px 2px #101010;
-  box-shadow:         3px 2px 4px 2px #101010;
-  list-style: none;
-  margin-right: 18px;
-  margin-left: 18px;
-  margin-bottom: 10px;
-  font-family: Tahoma;
-  font-size: 0.85em;
-  font-weight: bold;
-  color: black;
-  text-align: left;
-  padding-left: 10px;
-  line-height: 70px; 
-  text-decoration: none;
 }

@@ -6,15 +6,19 @@ import {
     NavLink
 } from "react-router-dom";
 import "./EndOfLife.css";
-import "../css/desktopNormal.css";
-import "../css/mobilePageStyle.css";
+import "../css/DesktopNormal.css";
+import "../css/MobilePageStyle.css";
 
 class EndOfLife extends Component {        
     render(){
         return (
             <div>
                 <MediaQuery minWidth="850px">
-                    <div className="split left">
+                    <div className="split leftBig">
+                        <div className="header"></div>
+                        <div className="pageHeaderBigScreen">  
+                            <h1> End Of Life </h1>
+                        </div>
                         <div className="breadcrumb">
                             <NavLink to ="/home"><div className="prevPage">Home</div></NavLink>
                             <div className="breadcrumbSpacing"> <span className="breadcrumbArrow">&#8594;</span></div>
@@ -24,7 +28,7 @@ class EndOfLife extends Component {
                             <Desktop />
                         </div>
                     </div>
-                    <div className="split right">
+                    <div className="split rightBig bigDefaultContent">
                         <div className="endOfLifeTxt">
                             <h1> End of Life </h1>
                             Du er nå på End of Life-siden!

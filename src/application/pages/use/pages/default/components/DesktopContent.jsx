@@ -3,14 +3,19 @@ import Desktop from "../../../../../menus/desktop/Desktop";
 import {
     NavLink
 } from "react-router-dom";
-import "../../../../css/desktopBig.css";
+import "../../../../css/DesktopBig.css";
+import "../../../../css/FlexBox.css";
+import "../../../../css/Breadcrumbs.css";
 
 class DesktopContent extends React.Component {
 	render() {
 		return (
 			<div>
                <div className="split leftBig">
-                    <div className="mobileHeader"></div>
+                    <div className="header"></div>
+                    <div className="pageHeaderBigScreen">  
+                        <h1> Use </h1>
+                    </div>
                     <div className="breadcrumb">
                         <NavLink to ="/home"><div className="prevPage">Home</div></NavLink>
                         <div className="breadcrumbSpacing"> <span className="breadcrumbArrow">&#8594;</span></div>

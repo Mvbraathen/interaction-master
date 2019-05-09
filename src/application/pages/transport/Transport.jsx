@@ -6,15 +6,19 @@ import {
     NavLink
 } from "react-router-dom";
 import "./Transport.css";
-import "../css/desktopNormal.css";
-import "../css/mobilePageStyle.css";
+import "../css/DesktopNormal.css";
+import "../css/MobilePageStyle.css";
 
 class Transport extends Component {        
     render(){
         return (
             <div>
                 <MediaQuery minWidth="850px">
-                    <div className="split left">
+                    <div className="split leftBig">
+                        <div className="header"></div>
+                        <div className="pageHeaderBigScreen">  
+                            <h1> Transport </h1>
+                        </div>
                         <div className="breadcrumb">
                             <NavLink to ="/home"><div className="prevPage">Home</div></NavLink>
                             <div className="breadcrumbSpacing"> <span className="breadcrumbArrow">&#8594;</span></div>
@@ -22,7 +26,7 @@ class Transport extends Component {
                         </div>
                         <Desktop />
                     </div>
-                    <div className="split right"> 
+                    <div className="split rightBig bigDefaultContent"> 
                         <div className="placeUls">
                             <h1 className="pageHeader"> Transport </h1>
                             <h2 className="impactsTxt"> Impacts of transportation </h2>

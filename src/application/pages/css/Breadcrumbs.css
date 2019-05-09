@@ -1,0 +1,39 @@
+/* Style breadcrumbs*/
+.breadcrumb {
+    position: fixed;
+    z-index: 99;
+    font-family: Tahoma;
+    font-size: 1.2em;
+    margin-left: 20px;
+    margin-top: 35px;
+} 
+
+.breadcrumbSpacing {
+    display:inline-block;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+}
+
+.breadcrumbArrow {
+    color: #b3b3b3;
+}
+
+.prevPage {
+    text-decoration: underline;
+    display:inline-block;
+    color: #8080ff;
+}
+
+/* Position of active page */
+.activePage {
+    display:inline-block;
+    color: white;
+}
+

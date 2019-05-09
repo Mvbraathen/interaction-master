@@ -5,8 +5,8 @@ import {
 } from "react-router-dom";
 import MediaQuery from 'react-responsive';
 import "./Lifetime.css";
-import "../../../css/desktopNormal.css";
-import "../../../css/mobilePageStyle.css";
+import "../../../css/DesktopNormal.css";
+import "../../../css/MobilePageStyle.css";
 
 class Use extends Component {     
     render(){
@@ -14,7 +14,10 @@ class Use extends Component {
             <div>
                 <MediaQuery minWidth="850px">
                     <div className="nestedPageStyle">
-                        <div className="mobileHeader"></div>
+                        <div className="header"></div>
+                        <div className="pageHeaderBigScreen">  
+                            <h1> Lifetime </h1>
+                        </div>
                         <div className="breadcrumb">
                             <NavLink to ="/home"><div className="prevPage">Home</div></NavLink>
                             <div className="breadcrumbSpacing"> <span className="breadcrumbArrow">&#8594;</span></div>
