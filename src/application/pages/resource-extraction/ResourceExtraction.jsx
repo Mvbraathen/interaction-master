@@ -6,8 +6,8 @@ import {
     NavLink
 } from "react-router-dom";
 import "./ResourceExtraction.css";
-import "../desktopPageStyle.css";
-import "../mobilePageStyle.css";
+import "../css/desktopNormal.css";
+import "../css/mobilePageStyle.css";
 
 class ResourceExtraction extends Component {        
     render(){
@@ -24,7 +24,7 @@ class ResourceExtraction extends Component {
                             <Desktop />
                         </div>
                     </div>
-                    <div className="split right resourceExtractionColor"> 
+                    <div className="split right"> 
                         <div className="placeUls">
                             <h1 className="pageHeader"> Resource Extraction </h1>
                             <h2 className="impactsTxt"> Impacts of transportation </h2>

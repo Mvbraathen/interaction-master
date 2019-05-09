@@ -6,8 +6,8 @@ import {
     NavLink
 } from "react-router-dom";
 import "./Transport.css";
-import "../desktopPageStyle.css";
-import "../mobilePageStyle.css";
+import "../css/desktopNormal.css";
+import "../css/mobilePageStyle.css";
 
 class Transport extends Component {        
     render(){
@@ -22,7 +22,7 @@ class Transport extends Component {
                         </div>
                         <Desktop />
                     </div>
-                    <div className="split right transportColor"> 
+                    <div className="split right"> 
                         <div className="placeUls">
                             <h1 className="pageHeader"> Transport </h1>
                             <h2 className="impactsTxt"> Impacts of transportation </h2>

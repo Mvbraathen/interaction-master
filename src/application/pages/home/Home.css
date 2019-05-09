@@ -1,6 +1,6 @@
 .homeMenuTxt {
   position: absolute;
-  top: 15%;
+  top: 165px;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -22,8 +22,4 @@
 .homeMobileTxt {
   	color: white;
   	font-family: Tahoma;
-}
-
-.homeColor {
-	background-color: #202020;
 }

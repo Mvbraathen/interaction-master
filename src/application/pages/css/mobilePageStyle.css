@@ -19,10 +19,12 @@
 }
 
 .mobileHeader {
+	z-index: 1;
 	padding-top: 100px;
 	overflow: hidden;
   	background-color: #202020;
   	position: fixed;
   	top: 0;
+  	color: red;
   	width: 100%;
 }

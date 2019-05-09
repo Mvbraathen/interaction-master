@@ -6,8 +6,8 @@ import {
     NavLink
 } from "react-router-dom";
 import "./EndOfLife.css";
-import "../desktopPageStyle.css";
-import "../mobilePageStyle.css";
+import "../css/desktopNormal.css";
+import "../css/mobilePageStyle.css";
 
 class EndOfLife extends Component {        
     render(){
@@ -24,7 +24,7 @@ class EndOfLife extends Component {
                             <Desktop />
                         </div>
                     </div>
-                    <div className="split right endOfLifeColor"> 
+                    <div className="split right">
                         <div className="endOfLifeTxt">
                             <h1> End of Life </h1>
                             Du er nå på End of Life-siden!
