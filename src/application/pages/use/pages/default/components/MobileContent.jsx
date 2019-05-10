@@ -11,20 +11,62 @@ class MobileContent extends React.Component {
 			<div>
                 <div className="mobilePage">
                     <div className="mobileContent">
-                        <div className="header"></div>
+                        <div className="mobileHeader"></div>
                         <div className="pageHeaderBigScreen">  
                             <h1> Use </h1>
                         </div>
                             <div className="pappa-salah">
                                 <div className="salah">
-                                    INSERT CODE HERE, MARIUS
+                                    <div className="salah-header"> Acidification </div>
+                                    <img className="salah-image" src={require('./images/smart-test-image.jpg')} />
+                                    <div className="salah-info"> More than half of the world population uses mobile 
+                                    phone today. The popularity of mobile phones has lead to significant environmental 
+                                    risk in the form of CO2 emissions. CO2 emissions in the use phase is the result 
+                                    of using energy for internet connections between networks, servers and a mobile 
+                                    phone, and also for charging the batter. </div>
+                                    <NavLink to="/use/lifetime">
+                                        <button className="salah-button"> Learn more </button>
+                                    </NavLink>
                                 </div>
+                                <div className="fill-empty-space-salah"> </div>
+                                <div className="hazard">
+                                    <div className="salah-header"> Acidification </div>
+                                    <img className="salah-image" src={require('./images/smart-test-image.jpg')} />
+                                    <div className="salah-info"> More than half of the world population uses mobile 
+                                    phone today. The popularity of mobile phones has lead to significant environmental 
+                                    risk in the form of CO2 emissions. CO2 emissions in the use phase is the result 
+                                    of using energy for internet connections between networks, servers and a mobile 
+                                    phone, and also for charging the batter. </div>
+                                    <NavLink to="/use/lifetime">
+                                        <button className="salah-button"> Learn more </button>
+                                    </NavLink>
+                                </div>
+                                <div className="fill-empty-space-salah"> </div>
                                 <div className="salah">
-                                    INSERT CODE HERE, MARIUS
+                                    <div className="salah-header"> Acidification </div>
+                                    <img className="salah-image" src={require('./images/smart-test-image.jpg')} />
+                                    <div className="salah-info"> More than half of the world population uses mobile 
+                                    phone today. The popularity of mobile phones has lead to significant environmental 
+                                    risk in the form of CO2 emissions. CO2 emissions in the use phase is the result 
+                                    of using energy for internet connections between networks, servers and a mobile 
+                                    phone, and also for charging the batter. </div>
+                                    <NavLink to="/use/lifetime">
+                                        <button className="salah-button"> Learn more </button>
+                                    </NavLink>
                                 </div>
-                                <div className="salah">
-                                    INSERT CODE HERE, MARIUS
-                                </div>
+                                <div className="fill-empty-space-salah"> </div>
+                                <div className="hazard">
+                                    <div className="salah-header"> Acidification </div>
+                                    <img className="salah-image" src={require('./images/smart-test-image.jpg')} />
+                                    <div className="salah-info"> More than half of the world population uses mobile 
+                                    phone today. The popularity of mobile phones has lead to significant environmental 
+                                    risk in the form of CO2 emissions. CO2 emissions in the use phase is the result 
+                                    of using energy for internet connections between networks, servers and a mobile 
+                                    phone, and also for charging the batter. </div>
+                                    <NavLink to="/use/lifetime">
+                                        <button className="salah-button"> Learn more </button>
+                                    </NavLink>
+                                </div>                                
 
 
 

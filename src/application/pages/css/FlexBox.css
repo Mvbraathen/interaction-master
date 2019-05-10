@@ -1,28 +1,70 @@
-.pappa-salah {
-  width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: flex-start; /* align items in Main Axis */
-    align-items: stretch; /* align items in Cross Axis */
-    align-content: stretch; /* Extra space in Cross Axis */
-            
-    background-color: black;
+.salah-pappa{
+  display:flex;
+}
+.salah {
+  margin: auto;
 }
 
+.hazard {
+  margin: auto;
+}
+
+/* just aesthetics */
+.salah-pappa {
+  width: 100vw;
+  height: 90vh;
+  border: 3px solid steelblue;
+  margin: auto;
+}
+
+.fill-empty-space-salah {
+  padding: 5%;
+}
 
 .salah {
-  margin-left: 5%;
+  background: #F5F5F5;
   margin-top: 5%;
-  margin-bottom: 5%;
-  width: 90%;
-  height: 80vh;
-  border: 2px solid white;
   border-radius: 8px;
+  width: 85vw; height: 75vh;
+  -webkit-box-shadow: 3px 2px 4px 2px #202020;
+  -moz-box-shadow:    3px 2px 4px 2px #202020;
+  box-shadow:         3px 2px 4px 2px #202020;
 }
 
+.hazard {
+  background: tomato;
+  margin-top: 2%;
+  border-radius: 8px;
+  width: 85vw; height: 70vh;
+  -webkit-box-shadow: 3px 2px 4px 2px #202020;
+  -moz-box-shadow:    3px 2px 4px 2px #202020;
+  box-shadow:         3px 2px 4px 2px #202020;
+}
+
+.salah-info {
+  color: #202020;
+  font-family: Open Sans;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+}
+
+.salah-header {
+  color: #202020;
+  padding-top: 20px;
+  font-family: Open Sans;
+  font-size: 1.5em;
+}
+
+.salah-image {
+  margin-top: 20px;
+  width: 70%;
+}
+
+.salah-button {
+  margin-top: 10px;
+  color: green;
+}
 
 
 
