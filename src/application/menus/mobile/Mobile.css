@@ -42,7 +42,9 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-    background: #bdc3c7;
+    background: white;
+
+
 }
 
 /*
@@ -56,7 +58,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-    background: #373a47;
+    background: #353535;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
 }
@@ -65,6 +67,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
+    margin-top: -10px;
     list-style: none;
     color: #b8b7ad;
     padding: 0.8em;
@@ -78,6 +81,18 @@ Note: Beware of modifying this element as it can break the animations - you shou
   	font-family: Open Sans;
   	color: white;
   	padding-bottom: 12px;
+}
+
+.menu-element {
+    border-style: solid;
+    border-color: #353535;
+    background-color: #151515;
+    border-width: 2px;
+    padding-top: 12px;
+    padding-left: 80px;
+    padding-right: 52px;
+    margin-left: -80px;
+    width: 100%;
 }
 
 .bm-item:hover {

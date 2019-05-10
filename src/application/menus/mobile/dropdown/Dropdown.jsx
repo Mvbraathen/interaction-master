@@ -29,7 +29,7 @@ class Dropdown extends Component {
     render() {
         return (
             <div>
-                <div className="bm-item" onClick={this.showMenu}>
+                <div className="bm-item menu-element" onClick={this.showMenu}>
                     Use
                 </div>
 
@@ -43,11 +43,11 @@ class Dropdown extends Component {
                                 }}
                             >   
                                 <ul>
-                                    <li className="testSubMenuMain"><NavLink className="bm-item" to ="/use"> Mobile phone usage </NavLink></li>
-                                    <li className="testSubMenu"><NavLink className="bm-item" to ="/use/lifetime"> Lifetime </NavLink></li>
-                                    <li className="testSubMenu"><NavLink className="bm-item" to ="/transport"> Transport(test) </NavLink></li>
-                                    <li className="testSubMenu"><NavLink className="bm-item" to ="/manufacturing"> Manufacturing(test) </NavLink></li>
-                                    <li className="testSubMenu"><NavLink className="bm-item" to ="/resource-extraction"> Resource Extraction </NavLink></li>
+                                    <li className="subMenu sub-menu-element"><NavLink className="bm-item" to ="/use"> Mobile phone usage </NavLink></li>
+                                    <li className="subMenu sub-menu-element"><NavLink className="bm-item" to ="/use/lifetime"> Lifetime </NavLink></li>
+                                    <li className="subMenu sub-menu-element"><NavLink className="bm-item" to ="/transport"> Transport(test) </NavLink></li>
+                                    <li className="subMenu sub-menu-element"><NavLink className="bm-item" to ="/manufacturing"> Manufacturing(test) </NavLink></li>
+                                    <li className="subMenu sub-menu-element"><NavLink className="bm-item" to ="/resource-extraction"> Resource Extraction </NavLink></li>
                                 </ul>
                             </div>
                         )

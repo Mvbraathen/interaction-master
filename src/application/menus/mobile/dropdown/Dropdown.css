@@ -1,11 +1,19 @@
-.testSubMenu {
+.subMenu {
+	list-style-position: inside;
     list-style-type: square;
     font-size: 0.8em;
 }
 
-.testSubMenuMain {
-	list-style-type: square;
-    font-size: 0.8em;
+.sub-menu-element {
+	border-style: solid;
+    border-color: #353535;
+    background-color: #151515;
+    border-width: 2px;
+    padding-top: 12px;
+    padding-left: 80px;
+    padding-right: 43px;
+    margin-left: -100px;
+    width: 120%;
 }
 
 .dropdownLink {

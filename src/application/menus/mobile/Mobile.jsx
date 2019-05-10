@@ -17,13 +17,13 @@ class Menu extends Component {
                 <div className="header"></div>
                 <BurgerMenu>
                     <ul className = "bm-item-list">
-                        <li><NavLink className="bm-item" to ="/home"> Home </NavLink></li>
-                        <li><NavLink className="bm-item" to ="/design"> Design </NavLink></li>
-                        <li><NavLink className="bm-item" to ="/resource-extraction"> Resource Extraction </NavLink></li>
-                        <li><NavLink className="bm-item" to ="/manufacturing"> Manufacturing </NavLink></li>
-                        <li><NavLink className="bm-item" to ="/transport"> Transport </NavLink></li>
+                        <li><NavLink className="bm-item menu-element" to ="/home"> Home </NavLink></li>
+                        <li><NavLink className="bm-item menu-element" to ="/design"> Design </NavLink></li>
+                        <li><NavLink className="bm-item menu-element" to ="/resource-extraction"> Resource Extraction </NavLink></li>
+                        <li><NavLink className="bm-item menu-element" to ="/manufacturing"> Manufacturing </NavLink></li>
+                        <li><NavLink className="bm-item menu-element" to ="/transport"> Transport </NavLink></li>
                         <Dropdown />
-                        <li><NavLink className="bm-item" to ="/end-of-life"> End of Life </NavLink></li>
+                        <li><NavLink className="bm-item menu-element" to ="/end-of-life"> End of Life </NavLink></li>
                     </ul>
                 </BurgerMenu>
             </div>
