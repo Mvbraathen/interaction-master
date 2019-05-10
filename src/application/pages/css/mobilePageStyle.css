@@ -20,3 +20,83 @@
   	margin-top: 100px;
   	margin-bottom: 50px;
 }
+
+/****** Scroll snap ******/
+.page-one-header {
+    position: absolute;
+    top: 10px;
+    color: #202020;
+    padding-top: 20px;
+    font-family: Open Sans;
+    font-size: 1.5em;
+}
+
+.page-one-info {
+    position: absolute;
+    max-width: 500px;
+    top:330px;
+    color: #202020;
+    font-family: Open Sans;
+}
+
+.page-one-image {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    max-height: 220px;
+    display:inline-block;
+}
+
+.page-one-button {
+    color: green;
+    margin-left: 2px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+}
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top: 2px solid #202020;
+    border-bottom: 2px solid #202020;
+    font-family: Open Sans;
+    color: black;
+    background-color: white;
+}
+.first-page {
+    background-color: #F5F5F5;
+    height: 95%;
+    min-height: 95%;
+}
+.second-page {
+    background-color: grey;
+    height: 90%;
+    min-height: 90%;
+}
+.third-page {
+    background-color: #F5F5F5;
+    height: 90%;
+    min-height: 90%;
+}
+.fourth-page {
+    background-color: grey;
+    height: 95%;
+    min-height: 95%;
+}
+.hint {
+    position: absolute;
+    bottom: 15%;
+    font-weight: bold;
+}
