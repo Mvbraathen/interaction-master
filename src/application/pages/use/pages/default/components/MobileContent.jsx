@@ -15,8 +15,14 @@ class MobileContent extends React.Component {
                         <div className="pageHeaderBigScreen">  
                             <h1> Use </h1>
                         </div>
-                            <div>
-                                <div>
+                            <div className="pappa-salah">
+                                <div className="salah">
+                                    INSERT CODE HERE, MARIUS
+                                </div>
+                                <div className="salah">
+                                    INSERT CODE HERE, MARIUS
+                                </div>
+                                <div className="salah">
                                     INSERT CODE HERE, MARIUS
                                 </div>
 
