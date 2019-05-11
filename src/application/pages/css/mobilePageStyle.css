@@ -7,7 +7,7 @@
 	overflow-x: hidden;
 	background-color: #292929;
 	overflow-y: scroll; /* has to be scroll, not auto */
-  -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
 
 }
 
@@ -82,21 +82,78 @@
 }
 .second-page {
     background-color: grey;
-    height: 90%;
-    min-height: 90%;
+    height: 95%;
+    min-height: 95%;
 }
 .third-page {
     background-color: #F5F5F5;
-    height: 90%;
-    min-height: 90%;
+    height: 95%;
+    min-height: 95%;
 }
 .fourth-page {
     background-color: grey;
     height: 95%;
     min-height: 95%;
 }
+
 .hint {
     position: absolute;
     bottom: 15%;
     font-weight: bold;
+}
+
+/****** iPhone 5/SE******/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) { 
+        .page-one-header {
+            padding-top: 10px;
+            font-size: 1.3em;
+    }
+        .page-one-image {
+            top: 65px;
+    } 
+        .page-one-info {
+            top: 250px;
+    }
+
+        .hint {
+            bottom: 2%;
+    }
+} 
+
+/****** iPhone 6,7 & 8 ******/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+        .page-one-info {
+            top: 300px;
+    }
+
+        .hint {
+            bottom: 10%;
+    }
+} 
+
+/****** iPhone X ******/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+     .page-one-info {
+            top: 350px;
+    }
+}
+
+/****** Samsung Galaxy S5 ******/
+@media only screen 
+and (device-width: 360px)
+and (device-height: 640px) 
+and (-webkit-device-pixel-ratio: 3) {
+        .page-one-info {
+            top: 300px;
+        }
+         .hint {
+            bottom: 5%;
+        }
 }
