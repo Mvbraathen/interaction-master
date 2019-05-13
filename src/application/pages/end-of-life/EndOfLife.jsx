@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import "./EndOfLife.css";
 import "../css/DesktopNormal.css";
-import "../css/MobilePageStyle.css";
+import "../css/MobileResolutionStyle.css";
 
 class EndOfLife extends Component {        
     render(){

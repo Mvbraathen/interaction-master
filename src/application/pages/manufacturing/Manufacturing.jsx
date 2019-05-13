@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import "./Manufacturing.css";
 import "../css/DesktopNormal.css";
-import "../css/MobilePageStyle.css";
+import "../css/MobileResolutionStyle.css";
 
 class Manufacturing extends Component {        
     render(){

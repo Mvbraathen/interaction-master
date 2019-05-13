@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import "./ResourceExtraction.css";
 import "../css/DesktopNormal.css";
-import "../css/MobilePageStyle.css";
+import "../css/MobileResolutionStyle.css";
 
 class ResourceExtraction extends Component {        
     render(){

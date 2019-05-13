@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import "./Transport.css";
 import "../css/DesktopNormal.css";
-import "../css/MobilePageStyle.css";
+import "../css/MobileResolutionStyle.css";
 
 class Transport extends Component {        
     render(){

@@ -4,7 +4,7 @@ import Mobile from "../../menus/mobile/Mobile";
 import MediaQuery from 'react-responsive';
 import "./Home.css";
 import "../css/DesktopNormal.css";
-import "../css/MobilePageStyle.css";
+import "../css/MobileResolutionStyle.css";
 
 class Home extends Component {        
     render(){

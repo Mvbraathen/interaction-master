@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import "./Design.css";
 import "../css/DesktopNormal.css";
-import "../css/MobilePageStyle.css";
+import "../css/MobileResolutionStyle.css";
 import "../css/Header.css";
 
 class Design extends Component {        

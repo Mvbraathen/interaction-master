@@ -3,7 +3,7 @@ import Mobile from "../../../../../menus/mobile/Mobile";
 import {
     NavLink
 } from "react-router-dom";
-import "../../../../css/MobilePageStyle.css";
+import "../../../../css/MobileResolutionStyle.css";
 import ScrollSnap from 'scroll-snap';
 
 const snapConfig = {

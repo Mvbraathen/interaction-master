@@ -6,7 +6,7 @@ import {
 import MediaQuery from 'react-responsive';
 import "./Lifetime.css";
 import "../../../css/DesktopNormal.css";
-import "../../../css/MobilePageStyle.css";
+import "../../../css/MobileResolutionStyle.css";
 
 class Use extends Component {     
     render(){

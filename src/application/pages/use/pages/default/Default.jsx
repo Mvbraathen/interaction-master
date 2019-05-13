@@ -5,7 +5,7 @@ import MediaQuery from 'react-responsive';
 import "./Default.css";
 import "../../../css/DesktopNormal.css";
 import "../../../css/DesktopBig.css";
-import "../../../css/MobilePageStyle.css";
+import "../../../css/MobileResolutionStyle.css";
 
 class Use extends Component {     
     render(){
