@@ -26,8 +26,7 @@ class Use extends Component {
                             <NavLink to ="/use/lifetime"><div className="activePage">Lifetime</div></NavLink>
                         </div>
                         <div className="lifetimeContent">
-                            <h1> Lifetime </h1>
-                            <div> Du er nå på Lifetime-siden! </div>
+                            <div> Lifetime </div>
                         </div> 
                     </div>
                 </MediaQuery>

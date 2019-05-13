@@ -12,7 +12,7 @@ import "../css/MobileResolutionStyle.css";
 class Manufacturing extends Component {        
     render(){
         return (
-           <div>
+           <div id="manufacturing-page">
                 <MediaQuery minWidth="850px">
                     <div className="split leftBig">
                         <div className="header"></div>

@@ -10,7 +10,7 @@ import "../../../../css/Breadcrumbs.css";
 class DesktopContent extends React.Component {
 	render() {
 		return (
-			<div>
+			<div id="use-page">
                <div className="split leftBig">
                     <div className="header"></div>
                     <div className="pageHeaderBigScreen">  

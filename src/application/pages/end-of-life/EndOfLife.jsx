@@ -12,7 +12,7 @@ import "../css/MobileResolutionStyle.css";
 class EndOfLife extends Component {        
     render(){
         return (
-            <div>
+            <div id="end-of-life-page">
                 <MediaQuery minWidth="850px">
                     <div className="split leftBig">
                         <div className="header"></div>

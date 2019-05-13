@@ -11,7 +11,7 @@
 }
 
 .big-screen-flex-container > .environmentalImpacts {  
-  background-color: #68A02C;
+  background-color: #00AD00;
   width: 80%;
   max-width: 800px;
   -webkit-box-shadow: 1px 2px 4px 2px #101010;
@@ -24,7 +24,7 @@
   font-family: Tahoma;
   font-size: 0.85em;
   font-weight: bold;
-  color: black;
+  color: white;
   text-align: left;
   padding-left: 10px;
   line-height: 70px; 

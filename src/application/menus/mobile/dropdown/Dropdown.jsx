@@ -29,9 +29,9 @@ class Dropdown extends Component {
     render() {
         return (
             <div>
-                <div className="bm-item menu-element" onClick={this.showMenu}>
-                    Use
-                </div>
+            
+                    <NavLink onClick={this.showMenu} to="/use" className="bm-item menu-element">Use</NavLink>
+                
 
                 {
                     this.state.showMenu

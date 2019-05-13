@@ -9,7 +9,7 @@ class EndOfLife extends Component {
 	    	return (
                 <g>
                     <NavLink className="endOfLife" to ="/end-of-life">
-                        <title>Menu selection for the end of life page</title>
+                        <title>End of life</title>
                         <path d="M54.6,302.8c14,25,32.9,45.5,54.8,61l9.3-45.9l52.2-47.3c-7.5-5.9-14.1-13.4-19.1-22.3
                                 c-4.8-8.5-7.7-17.6-8.9-26.7l-67.4-23.9l-44.8,14.8C30.9,243.2,38.6,274.2,54.6,302.8z M50.3,305.3c-16.2-28.9-24.1-60.2-24.5-91.1l-18.5,6.1c1.3,32,9.9,64.3,26.7,94.2
                                 c17.6,31.4,42,56.5,70.4,74.5l4-19.7C85.1,353.1,65,331.6,50.3,305.3z"/>

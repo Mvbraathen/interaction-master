@@ -1,12 +1,9 @@
+/* Standard End of Life color and effects */
 .use {
-	fill: #AD6200;
-}
+	fill: #EB0000;
+}  
 
-.useTxt {
-	fill: white;
-} 
-
-.useIcon {
+.useTxt, .useIcon {
 	fill: white;
 } 
 
@@ -14,12 +11,53 @@
 	fill: #303030;
 }
 
-.use:not(.useLine):active {
-	fill: #7F0000;
-	stroke-width: 1px;
+.use:hover {
+	fill-opacity: 0.4;
+}
+
+.use:active {
 	fill-opacity: 1;
 }
 
-.use:hover {
-	fill-opacity: 0.4;
+
+
+/******************* Styling when on End of Life page *******************/ 
+
+
+
+
+/* Prevents active element from fading on hover */
+#use-page .use:hover {
+	fill-opacity: 1;
+} 
+
+/* Colors on inactive menu elements */
+#use-page .resourceExtraction, #use-page .endOfLife, #use-page .design, #use-page .manufacturing, #use-page .transport{
+	fill: #505050;
+}
+
+/* Colors when hovering inactive menu elements */
+#use-page .design:hover {
+	fill: #E00070;
+	fill-opacity: 1;
+}
+
+#use-page .resourceExtraction:hover {
+	fill: #336600;
+	fill-opacity: 1;
+}
+
+#use-page .manufacturing:hover {
+	fill: #BD2EC2;
+	fill-opacity: 1;
+}
+
+#use-page .transport:hover {
+	fill: #437E8E;
+	fill-opacity: 1;
+}
+
+#use-page .endOfLife:hover {
+	fill: #FF6633;
+	fill-opacity: 1;
 }

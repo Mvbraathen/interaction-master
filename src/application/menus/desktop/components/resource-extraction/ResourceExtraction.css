@@ -1,12 +1,9 @@
+/* Standard End of Life color and effects */
 .resourceExtraction {
-	fill: #6C777F;
-}
+	fill: #00AD00;
+}  
 
-.resourceTxt {
-	fill: white;
-}
-
-.resourceIcon {
+.resourceTxt, .resourceIcon, .mountain {
 	fill: white;
 } 
 
@@ -14,15 +11,53 @@
 	fill: #303030;
 }
 
-.mountain {
-	fill: white;
-} 
+.resourceExtraction:hover {
+	fill-opacity: 0.4;
+}
 
-.resourceExtraction:not(.resourceExtractionLine):active {
-	fill: #7F0000;
+.resourceExtraction:active {
 	fill-opacity: 1;
 }
 
-.resourceExtraction:hover {
-	fill-opacity: 0.4;
+
+
+/******************* Styling when on End of Life page *******************/ 
+
+
+
+
+/* Prevents active element from fading on hover */
+#resource-extraction-page .resourceExtraction:hover {
+	fill-opacity: 1;
+} 
+
+/* Colors on inactive menu elements */
+#resource-extraction-page .manufacturing, #resource-extraction-page .transport, #resource-extraction-page .use, #resource-extraction-page .endOfLife, #resource-extraction-page .design{
+	fill: #505050;
+}
+
+/* Colors when hovering inactive menu elements */
+#resource-extraction-page .design:hover {
+	fill: #E00070;
+	fill-opacity: 1;
+}
+
+#resource-extraction-page .manufacturing:hover {
+	fill: #BD2EC2;
+	fill-opacity: 1;
+}
+
+#resource-extraction-page .transport:hover {
+	fill: #437E8E;
+	fill-opacity: 1;
+}
+
+#resource-extraction-page .use:hover {
+	fill: #AD6200;
+	fill-opacity: 1;
+}
+
+#resource-extraction-page .endOfLife:hover {
+	fill: #FF6633;
+	fill-opacity: 1;
 }

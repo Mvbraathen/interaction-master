@@ -13,7 +13,7 @@ import "../css/Header.css";
 class Design extends Component {        
     render(){
         return (
-            <div>
+            <div id="design-page">
                 <MediaQuery minWidth="850px">
                     <div className="split leftBig">
                         <div className="header"></div>
@@ -30,7 +30,7 @@ class Design extends Component {
                     <div className="split rightBig bigDefaultContent"> 
                         <div className="header"></div>
                         <div className="designContent">
-                            <h1> Design </h1>
+                            <h1> Design </h1>z
                             <div> Du er nå på Design-siden! </div>
                         </div> 
                     </div>

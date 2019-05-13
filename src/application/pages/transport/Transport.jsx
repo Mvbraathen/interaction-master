@@ -12,7 +12,7 @@ import "../css/MobileResolutionStyle.css";
 class Transport extends Component {        
     render(){
         return (
-            <div>
+            <div id="transport-page">
                 <MediaQuery minWidth="850px">
                     <div className="split leftBig">
                         <div className="header"></div>

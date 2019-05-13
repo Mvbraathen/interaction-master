@@ -7,7 +7,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 700px;
+  width: 50%;
   height: 100vh;
   background-color: #292929;
   overflow: auto;
@@ -24,7 +24,7 @@
 
 .bigDefaultContent {
   position: fixed;
-  left: 600px;
+  left: 50%;
   height: 100vh;
   width: auto;
   margin-right: auto;

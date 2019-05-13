@@ -36,15 +36,28 @@
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-    height: 24px;
-    width: 24px;
+    padding-left: 5px;
+    padding-top: 6px;
+    margin-right: 160px;
+    min-height: 25px;
+    min-width: 110px;
 }
 
-/* Color/shape of close button cross */
-.bm-cross {
-    background: white;
+.custom-cross {
+    background-color: #353535;
+    color: white;
+    font-size: 1em;
+}
 
+.underline-link {
+    text-decoration: underline;
+    background-color: #353535;
+    color: white;
+    font-size: 1em;
+}
 
+.bm-item.active {
+    color: #c94e50;
 }
 
 /*
@@ -63,11 +76,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
     font-size: 1.15em;
 }
 
-
-
 /* Wrapper for item list */
 .bm-item-list {
-    margin-top: -10px;
+    margin-top: -15px;
     list-style: none;
     color: #b8b7ad;
     padding: 0.8em;
@@ -80,6 +91,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   	display: inline-block;
   	font-family: Open Sans;
   	color: white;
+    margin-bottom: 3px;
   	padding-bottom: 12px;
 }
 
@@ -97,6 +109,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .bm-item:hover {
     color: #c94e50;
+}
+
+.lol:hover {
+    color:green;
 }
 
 /* Styling of overlay */

@@ -8,7 +8,7 @@ class Transport extends Component {
 	    render() {
 	    	return (
                 <g> <NavLink className="transport" to ="/transport">
-                        <title>Menu selection for the transport page</title>
+                        <title>Transport</title>
                         <path d="M374.4,306.1c14.6-24.6,22.9-51.2,25.4-78L355.4,243l-67.1-21.6
                               c-1.4,9.5-4.6,18.9-9.8,27.6c-5,8.4-11.4,15.4-18.6,21l13,70.4l35.2,31.4C334.6,356.5,357.7,334.3,374.4,306.1z M378.7,308.6c-16.9,28.5-40.1,50.9-66.7,66.8l14.5,13c27.1-17.1,50.7-40.7,68.2-70.2
                               c18.4-30.9,27.9-64.6,29.3-98.2l-19.1,6.4C402.7,254.6,394.1,282.7,378.7,308.6z"/>
