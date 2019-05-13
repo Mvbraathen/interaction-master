@@ -48,16 +48,16 @@
 }
 
 #resource-extraction-page .transport:hover {
-	fill: #437E8E;
+	fill: #0066FF;
 	fill-opacity: 1;
 }
 
 #resource-extraction-page .use:hover {
-	fill: #AD6200;
+	fill: #EB0000;
 	fill-opacity: 1;
 }
 
 #resource-extraction-page .endOfLife:hover {
-	fill: #FF6633;
+	fill: #C75000;
 	fill-opacity: 1;
 }

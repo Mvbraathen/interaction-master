@@ -43,7 +43,7 @@
 }
 
 #design-page .resourceExtraction:hover {
-	fill: #336600;
+	fill: #00AD00;
 	fill-opacity: 1;
 }
 
@@ -53,16 +53,16 @@
 }
 
 #design-page .transport:hover {
-	fill: #437E8E;
+	fill: #0066FF;
 	fill-opacity: 1;
 }
 
 #design-page .use:hover {
-	fill: #AD6200;
+	fill: #EB0000;
 	fill-opacity: 1;
 }
 
 #design-page .endOfLife:hover {
-	fill: #FF6633;
+	fill: #C75000;
 	fill-opacity: 1;
 }

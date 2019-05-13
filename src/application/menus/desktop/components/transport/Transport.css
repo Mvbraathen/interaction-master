@@ -43,7 +43,7 @@
 }
 
 #transport-page .resourceExtraction:hover {
-	fill: #336600;
+	fill: #00AD00;
 	fill-opacity: 1;
 }
 
@@ -53,11 +53,11 @@
 }
 
 #transport-page .use:hover {
-	fill: #AD6200;
+	fill: #EB0000;
 	fill-opacity: 1;
 }
 
 #transport-page .endOfLife:hover {
-	fill: #FF6633;
+	fill: #C75000;
 	fill-opacity: 1;
 }
