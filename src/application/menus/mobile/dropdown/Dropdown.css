@@ -5,11 +5,8 @@
 }
 
 .sub-menu-element {
-	border-style: solid;
-    border-color: #353535;
-    background-color: #151515;
+    background-color: none;
     border-width: 2px;
-    padding-top: 12px;
     padding-left: 80px;
     padding-right: 43px;
     margin-left: -100px;

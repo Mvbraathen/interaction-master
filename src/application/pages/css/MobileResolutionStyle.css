@@ -10,49 +10,62 @@
 }
 
 .mobileContent {
-    font-family: Open Sans;
-    color: white;
+    font-family: Avenir Next;
+    color: black;
     width: 100%;
     text-align: center;
 }
 
-.fill-margin-height {
+.top-txt {
     position: relative;
-    height: 100px;
-    width: 100%;
-    background-color: white;
-}
-
-.scroll-out-of-bounds {
-    position: relative;
-    font-family: Open Sans;
-    font-style: italic;
-    color: grey;
-}
-
-.joke-header {
-    font-style: normal;
-    display: block;
+    margin-top: 150px;
     color: black;
-    font-weight: bold;
+}
+
+.top-txt2 {
+    position: relative;
+    margin-top: 100px;
+    color: black;
+}
+
+.purple-line {
+    color: #BD2EDC;
+    font-size: 80px;
+    margin-top: -90px;
 }
 
 .page-one {
-    margin-top: -22px;
-    height: 100vh;
-    background: #202020;
+    margin-top: 100px;
+    margin-left: 5%;
+    width: 90%;
+    height: 800px;
+    background: white;
+    -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    -moz-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    
 }
 
 .page-two {
-    margin-top: -22px;
-    height: 100vh;
-    background: blue;
+    margin-top: 100px;
+    margin-left: 5%;
+    width: 90%;
+    height: 800px;
+    background: white;
+    -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    -moz-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
 }
 
 .page-three {
-    margin-top: -22px;
-    height: 100vh;
-    background: green;
+    margin-top: 100px;
+    margin-left: 5%;
+    width: 90%;
+    height: 800px;
+    background: white;
+    -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    -moz-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
 }
 
 
@@ -61,17 +74,55 @@
 }
 
 .txt-child {
-    font-family: Open Sans;
+    padding-top: 30px;
+    font-family: Avenir Next;
 }
 
 .img-tst {
     width: 100%;
 }
 
+.footer, .push {
+    margin-top: 100px;
+    height: 350px; /* To look ok on mobile phones */
+    background: white;
+    -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    -moz-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+}
 
+.footer-info {
+    /* something */
+}
 
-.hint {
-    position: relative;
-    margin-top: 50px;
-    font-weight: bold;
+.smart-footer-txt {
+    color: black;
+    margin-right: 20%;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.social-network {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.facebook {
+    height: 25px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.twitter {
+    height: 25px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.gmail {
+    height: 25px;
+    padding-left: 3px;
+    padding-right: 3px;
 }

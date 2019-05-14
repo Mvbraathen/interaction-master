@@ -10,19 +10,18 @@ class MobileContent extends React.Component {
 	render() {
 		return (
 			<div className="mobilePage">
-                    <div className="mobileContent">
                     <Mobile />
-                        <div className="fill-margin-height"> 
-                            <div className="scroll-out-of-bounds"> 
-                                <div className="joke-header">
-                                    You're really at the top..
-                                </div> 
-                                "A climate scientist and a climate change denier walk into a bar. 
-                                The denier says, nice to see you. The climate scientist says, nice to CO2"   
-                            </div>
+                    <div className="mobileContent">
+                        <div className="top-txt">
+                            <h1>
+                                The Mobile Lifecycle
+                            </h1>
+                            <div className="purple-line">
+                                ___
+                            </div> 
                         </div>
                         <div className="page-one">
-                            <h1 className="info-header"> This is a header! </h1>
+                            <h1 className="info-header"> Acidification </h1>
                             <figure className="img-item">
                                 <img
                                     className="img-tst"
@@ -30,21 +29,29 @@ class MobileContent extends React.Component {
                                     src={require('./images/smart-test-image.jpg')} 
                                     />
                                     <figcaption className="txt-child">
-                                        More than half of the world population uses mobile 
-                                        phone today. The popularity of..
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                                        in culpa qui officia deserunt mollit anim id est laborum.
                                     <NavLink to="/use/lifetime">
                                         <button className="page-one-button"> Read more </button>
                                     </NavLink>
-                                    <div className="hint">
-                                        Scroll down for next element <span>&darr;</span>
-                                    </div>
                                 </figcaption>
                             </figure>
                         </div>
 
-
+                        <div className="top-txt2">
+                            <h1>
+                                Is the shit
+                            </h1>
+                            <div className="purple-line">
+                                ___
+                            </div> 
+                        </div>
                          <div className="page-two">
-                            <h1 className="info-header"> This is a header! </h1>
+                            <h1 className="info-header"> CO2 emissions </h1>
                             <figure className="img-item">
                                 <img
                                     className="img-tst"
@@ -52,38 +59,86 @@ class MobileContent extends React.Component {
                                     src={require('./images/smart-test-image.jpg')} 
                                     />
                                     <figcaption className="txt-child">
-                                        More than half of the world population uses mobile 
-                                        phone today. The popularity of..
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                                        in culpa qui officia deserunt mollit anim id est laborum.
                                     <NavLink to="/use/lifetime">
                                         <button className="page-one-button"> Read more </button>
                                     </NavLink>
-                                    <div className="hint">
-                                        Scroll down for next element <span>&darr;</span>
-                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div className="top-txt2">
+                            <h1>
+                                For real
+                            </h1>
+                            <div className="purple-line">
+                                ___
+                            </div> 
+                        </div>
+                        <div className="page-three">
+
+                            <h1 className="info-header"> Particulate matter </h1>
+                            <figure className="img-item">
+                                <img
+                                    className="img-tst"
+                                    alt="A road "
+                                    src={require('./images/smart-test-image.jpg')} 
+                                    />
+                                    <figcaption className="txt-child">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                                        in culpa qui officia deserunt mollit anim id est laborum.
+                                    <NavLink to="/use/lifetime">
+                                        <button className="page-one-button"> Read more </button>
+                                    </NavLink>
                                 </figcaption>
                             </figure>
                         </div>
 
 
-                        <div className="page-three">
-                            <h1 className="info-header"> This is a header! </h1>
-                            <figure className="img-item">
-                                <img
-                                    className="img-tst"
-                                    alt="A road "
-                                    src={require('./images/smart-test-image.jpg')} 
-                                    />
-                                    <figcaption className="txt-child">
-                                        More than half of the world population uses mobile 
-                                        phone today. The popularity of..
-                                    <NavLink to="/use/lifetime">
-                                        <button className="page-one-button"> Read more </button>
-                                    </NavLink>
-                                    <div className="hint">
-                                        Scroll down for next element <span>&darr;</span>
-                                    </div>
-                                </figcaption>
-                            </figure>
+                        {/* Fiks footer som et eget komponent */}
+                        <div className="footer"> 
+                            <div className="footer-info">
+                                <div className="social-network">
+                                    <a href="https://www.facebook.com/UniOsloSMART/">
+                                        <img
+                                            className="facebook"
+                                            alt="facebook logo"
+                                            src={require('./social-network-logos/facebook-logo.png')} 
+                                        />
+                                    </a>
+                                    <a href="https://twitter.com/UniOsloSMART">
+                                        <img
+                                            className="twitter"
+                                            alt="twitter logo"
+                                            src={require('./social-network-logos/twitter-logo.png')} 
+                                        />
+                                    </a>
+                                    <a href="mailto:info@smart.uio.no">
+                                        <img
+                                            className="gmail"
+                                            alt="gmail logo"
+                                            src={require('./social-network-logos/gmail-logo.png')} 
+                                        />
+                                    </a>
+                                </div>
+                                <div className="smart-footer-txt">
+                                    SMART has received funding from the European Union’s Horizon 2020 
+                                    research and innovation programme under grant agreement No 693642. 
+                                    The contents of this website are the sole responsibility of the 
+                                    SMART project and do not necessarily reflect the views of the 
+                                    European Union.
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
             </div>

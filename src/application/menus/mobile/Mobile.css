@@ -14,58 +14,59 @@
     -moz-user-select: none;
 }
 
-.burger {
-  width: 35px;
-  height: 5px;
-  background-color: WHITE;
-  margin: 6px 0;
-  margin-left: 25px;
-}
-
-.burger-txt {
-    float: left;
-    color: white;
-    padding-top: 7px;
-    font-family: Open Sans;
-    margin-left: -30px;
-    margin-top: -5px;
-}
-
-/* Position and sizing of burger button */
-.bm-burger-button {
-    padding-left: 50px;
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    margin-top: 5px;
+    min-height: 50px;
+    min-width: 50px;
+    margin-right: 15px;
     z-index: 99;
     position: fixed;
-    left: 10px;
     top: 36px;
 }
 
-
-
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-    padding-left: 5px;
-    padding-top: 6px;
-    margin-right: 160px;
-    min-height: 25px;
-    min-width: 110px;
+.close-burger-container {
+    background-color: none;
 }
 
 .custom-cross {
-    background-color: #353535;
+    font-size: 50px;
+    padding-left: 6px;
     color: white;
-    font-size: 1em;
 }
 
 .underline-link {
     text-decoration: underline;
-    background-color: #353535;
+    background-color: none;
     color: white;
     font-size: 1em;
 }
 
+.burger-container {
+    padding-left: 10px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    margin-top: -15px;
+    margin-left: 15px;
+    padding-right: 10px;
+    z-index: 99;
+    position: fixed;
+    top: 36px;
+}
+
 .bm-item.active {
-    color: #c94e50;
+    color: white;
 }
 
 /*
@@ -79,7 +80,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-    background: #353535;
+    background-color:rgba(0, 0, 0, 0.85);
+    fill-opacity: 0.5;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
 }
@@ -98,17 +100,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
 	text-decoration: none;
   	display: inline-block;
   	font-family: Open Sans;
-  	color: white;
+  	color: rgba(255, 255, 255, 0.6);
+    font-size: 1.2em;
     margin-bottom: 3px;
   	padding-bottom: 12px;
 }
 
 .menu-element {
-    border-style: solid;
-    border-color: #353535;
-    background-color: #151515;
+    background-color: none;
     border-width: 2px;
-    padding-top: 12px;
+    padding-top: 5px;
     padding-left: 80px;
     padding-right: 52px;
     margin-left: -80px;
@@ -116,7 +117,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .bm-item:hover {
-    color: #c94e50;
+    color: white;
 }
 
 .lol:hover {
