@@ -11,11 +11,14 @@ class Menu extends Component {
     render(){
         return (
             <div>
-                <div className="burgerLabel">
+                {/*<div className="burgerLabel">
                 Menu
-                </div>
+                </div>*/}
                 <div className="header"></div>
-                <BurgerMenu disableAutoFocus customCrossIcon={<div><span className="custom-cross">&#10005;</span> <span className="underline-link">Close menu</span></div>}>
+                <BurgerMenu 
+                    disableAutoFocus 
+                    customCrossIcon={<div><span className="custom-cross">&#10005;</span> <span className="underline-link">Close menu</span></div>} 
+                    customBurgerIcon={<div> <span className="burger-txt"> Menu </span> <span> <div className="burger"></div><div className="burger"></div><div className="burger"></div>  </span></div>}>
                     <ul className = "bm-item-list">
                         <li title="Home"><NavLink className="bm-item menu-element" to ="/home"> Home </NavLink></li>
                         <li title="Design"><NavLink className="bm-item menu-element" to ="/design"> Design </NavLink></li>
@@ -32,3 +35,5 @@ class Menu extends Component {
 }
 
 export default Menu;
+
+

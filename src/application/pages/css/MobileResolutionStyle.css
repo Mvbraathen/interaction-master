@@ -1,158 +1,77 @@
-.mobilePage {
-	height: 100%;
-	width: 100%;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	overflow-x: hidden;
-	background-color: #292929;
-	overflow-y: scroll; /* has to be scroll, not auto */
-    -webkit-overflow-scrolling: touch;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+.mobilePage {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: white;
 }
 
 .mobileContent {
-	font-family: Tahoma;
-	color: white;
-	position: absolute;
-	width: 100%;
-  	text-align: center;
-  	margin-top: 100px;
-  	margin-bottom: 50px;
-}
-
-/****** Scroll snap ******/
-.page-one-header {
-    position: absolute;
-    top: 10px;
-    color: #202020;
-    padding-top: 20px;
     font-family: Open Sans;
-    font-size: 1.5em;
-}
-
-.page-one-info {
-    position: absolute;
-    max-width: 500px;
-    top:330px;
-    color: #202020;
-    font-family: Open Sans;
-}
-
-.page-one-image {
-    position: absolute;
-    top: 90px;
-    max-height: 220px;
-    display:inline-block;
-}
-
-.page-one-button {
-    color: green;
-    margin-left: 2px;
-}
-
-#container {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    left: 0;
+    color: white;
     width: 100%;
-    height: 80vh;
+    text-align: center;
 }
-.page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.fill-margin-height {
     position: relative;
+    height: 100px;
     width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    border-top: 2px solid #202020;
-    border-bottom: 2px solid #202020;
-    font-family: Open Sans;
-    color: black;
     background-color: white;
 }
-.first-page {
-    background-color: #F5F5F5;
-    height: 95%;
-    min-height: 95%;
-}
-.second-page {
-    background-color: grey;
-    height: 95%;
-    min-height: 95%;
-}
-.third-page {
-    background-color: #F5F5F5;
-    height: 95%;
-    min-height: 95%;
-}
-.fourth-page {
-    background-color: grey;
-    height: 95%;
-    min-height: 95%;
+
+.scroll-out-of-bounds {
+    position: relative;
+    font-family: Open Sans;
+    font-style: italic;
+    color: grey;
 }
 
-.hint {
-    position: absolute;
-    bottom: 15%;
+.joke-header {
+    font-style: normal;
+    display: block;
+    color: black;
     font-weight: bold;
 }
 
-/****** iPhone 5/SE******/
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) { 
-        .page-one-header {
-            padding-top: 10px;
-            font-size: 1.3em;
-    }
-        .page-one-image {
-            top: 65px;
-    } 
-        .page-one-info {
-            top: 250px;
-    }
-
-        .hint {
-            bottom: 2%;
-    }
-} 
-
-/****** iPhone 6,7 & 8 ******/
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) { 
-        .page-one-info {
-            top: 300px;
-    }
-
-        .hint {
-            bottom: 10%;
-    }
-} 
-
-/****** iPhone X ******/
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) {
-     .page-one-info {
-            top: 350px;
-    }
+.page-one {
+    margin-top: -22px;
+    height: 100vh;
+    background: #202020;
 }
 
-/****** Samsung Galaxy S5 ******/
-@media only screen 
-and (device-width: 360px)
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 3) {
-        .page-one-info {
-            top: 300px;
-        }
-         .hint {
-            bottom: 5%;
-        }
+.page-two {
+    margin-top: -22px;
+    height: 100vh;
+    background: blue;
+}
+
+.page-three {
+    margin-top: -22px;
+    height: 100vh;
+    background: green;
+}
+
+
+.info-header {
+    padding-top: 100px;
+}
+
+.txt-child {
+    font-family: Open Sans;
+}
+
+.img-tst {
+    width: 100%;
+}
+
+
+
+.hint {
+    position: relative;
+    margin-top: 50px;
+    font-weight: bold;
 }

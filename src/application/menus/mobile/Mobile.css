@@ -14,25 +14,33 @@
     -moz-user-select: none;
 }
 
+.burger {
+  width: 35px;
+  height: 5px;
+  background-color: WHITE;
+  margin: 6px 0;
+  margin-left: 25px;
+}
+
+.burger-txt {
+    float: left;
+    color: white;
+    padding-top: 7px;
+    font-family: Open Sans;
+    margin-left: -30px;
+    margin-top: -5px;
+}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
+    padding-left: 50px;
     z-index: 99;
     position: fixed;
-    width: 36px;
-    height: 30px;
-    left: 90px;
+    left: 10px;
     top: 36px;
 }
 
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-    background: #f2f2f2;
-}
 
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-    background: #c94e50;
-}
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
