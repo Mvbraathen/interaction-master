@@ -1,5 +1,6 @@
 import React from 'react';
 import Desktop from "../../../../../menus/desktop/Desktop";
+import Test from "./Test";
 import {
     NavLink
 } from "react-router-dom";
@@ -7,17 +8,7 @@ import "../../../../css/DesktopBig.css";
 import "../../../../css/Breadcrumbs.css";
 
 class DesktopContent extends React.Component {
-    constructor() {
-     super();
-     this.state = {
-       moreInfo: false
-     }
-   }
-
 	render() {
-
-    
-
 		return (
 			<div id="use-page">
                <div className="split left-half">
@@ -29,16 +20,6 @@ class DesktopContent extends React.Component {
                     <Desktop />
                 </div>
                 <div className="split right-half">
-
-                    <div>
-                        <div>
-                        <p> hehe {this.state.moreInfo} </p>
-                        <button onClick={() => this.setState({ moreInfo: true })}>
-                          
-                        </button>
-                      </div>
-                    </div>
-
                     <div className="desktop-header-txt">
                         <h1>
                             Environmental Impacts
@@ -50,9 +31,7 @@ class DesktopContent extends React.Component {
 
                     <div className="right-half-flex-container">
                         
-                        <div className="environmental-info-element">
-                            <div className="info-box-content"> Acidification </div>
-                        </div>
+                        <Test />
 
                        <div className="environmental-info-element">
                             <div className="info-box-content"> CO2 emissions </div>
