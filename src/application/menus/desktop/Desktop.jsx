@@ -13,8 +13,8 @@ import "./Desktop.css";
 class Menu extends Component {        
     render(){
         return (
-            <div className="scaling-svg-containter">
-                <svg viewBox="-50 0 500 500" className="scaling-svg desktopMenu">
+            <div className="scaling-svg-container">
+                <svg viewBox="-30 0 500 500" className="scaling-svg desktopMenu">
                     <g>
                         <ResourceExtraction />              
                         <Manufacturing />

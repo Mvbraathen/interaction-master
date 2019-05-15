@@ -1,0 +1,51 @@
+.home-scaling-svg-container {
+	position: absolute; 
+	margin-top: 5%;
+ 	height: 80%; 
+ 	width: 100%; 
+
+/* override this inline for aspect ratio other than square */
+}
+.home-scaling-svg {
+	/* border line to help center svg elements */
+	/*border-width: 5px;
+	border-style: solid;
+	border-color: black;*/
+}
+
+.svg-arrow {
+	fill: #46CBD8;;
+	transition: 0.5s ease-in-out;
+}
+
+.svg-arrow:hover {
+	fill: #BD2EDC;
+}
+
+.svg-text {
+	fill: red;
+	font-family: Avenir Next;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.svg-text2 {
+	fill: blue;
+	font-family: Avenir Next;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.svg-text3 {
+	fill: purple;
+	font-family: Avenir Next;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.svg-text4 {
+	fill: green;
+	font-family: Avenir Next;
+	font-size: 2em;
+	font-weight: bold;
+}
