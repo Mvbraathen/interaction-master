@@ -8,7 +8,7 @@
 } 
 
 .transportLine {
-	fill: #303030;
+	fill: none;
 }
 
 .transport:hover {

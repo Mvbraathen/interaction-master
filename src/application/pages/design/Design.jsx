@@ -8,7 +8,6 @@ import {
 import "./Design.css";
 import "../css/DesktopNormal.css";
 import "../css/MobileResolutionStyle.css";
-import "../css/Header.css";
 
 class Design extends Component {        
     render(){

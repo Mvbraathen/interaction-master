@@ -22,18 +22,18 @@
 }
 
 .breadcrumbArrow {
-    color: #b3b3b3;
+    color: black;
 }
 
 .prevPage {
     text-decoration: underline;
     display:inline-block;
-    color: #8080ff;
+    color: blue;
 }
 
 /* Position of active page */
 .activePage {
     display:inline-block;
-    color: white;
+    color: black;
 }
 

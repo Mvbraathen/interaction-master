@@ -8,7 +8,7 @@
 } 
 
 .endLine {
-	fill: #303030;
+	fill: none;
 }
 
 .endOfLife:hover {

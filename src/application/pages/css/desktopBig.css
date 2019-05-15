@@ -1,52 +1,79 @@
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('http://fonts.googleapis.com/css?family=Open+Sans'); /* IE9 Compat Modes */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('http://fonts.googleapis.com/css?family=Open+Sans'); /* IE9 Compat Modes */
 }
 
 .split {
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
 }
 
-.leftBig {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100vh;
-  background-color: #292929;
-  overflow: auto;
+.left-half {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    overflow: auto;
 }
 
-.rightBig {
-  position: absolute;
-  right: 0;
-  top: 0;
-  overflow: auto;
-  width: auto;
-  text-align: center;
+.right-half {
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: auto;
+    width: 50%;
+    text-align: center;
 } 
 
-.bigDefaultContent {
-  position: fixed;
-  left: 50%;
-  height: 100vh;
-  width: auto;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #292929; 
+.desktop-header-txt {
+    position: relative;
+    margin-top: 50px;
+    color: black;
 }
 
-.pageHeaderBigScreen {
-  position: fixed;
-  z-index: 99;
-  max-width: 30%;
-  left: 50%;
-  top: 50px;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  font-family: Open Sans;
+.desktop-purple-line {
+    color: #BD2EDC;
+    font-size: 80px;
+    margin-top: -90px;
 }
+
+/* Flex container */
+.right-half-flex-container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+/* Flex elements */
+.right-half-flex-container > .environmental-info-element, .social-info-element {
+    position: relative;
+    display: inline-grid;
+    margin: 10px;
+    width: 45%;
+    padding-top: 20%; /* Aspect Ratio */
+    padding-bottom: 20%; /* Aspect Ratio */
+    background: white;
+    -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    -moz-box-shadow:    0px 0px 33px -8px rgba(166,166,166,1);
+    box-shadow:         0px 0px 33px -8px rgba(166,166,166,1);
+    transition: 1.2s;
+}
+
+.environmental-info-element:hover {
+    background-color: #FE6F6F;
+}
+
+.social-info-element:hover {
+    background-color: #b3d1ff;
+}
+
+.info-box-content {
+    position: relative;
+    font-family: Avenir Next;
+    font-size: 1.2em;
+}
+

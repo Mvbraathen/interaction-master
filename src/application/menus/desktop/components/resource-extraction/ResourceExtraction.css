@@ -8,7 +8,7 @@
 } 
 
 .resourceLine {
-	fill: #303030;
+	fill: none;
 }
 
 .resourceExtraction:hover {

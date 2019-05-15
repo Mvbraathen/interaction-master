@@ -8,14 +8,3 @@
   overflow-x: hidden;
   background-color: #292929;
 }
-
-.pageHeader {
-  position: fixed;
-  z-index: 99;
-  width: 400px;
-  top: 30px;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  font-family: Tahoma;
-}
