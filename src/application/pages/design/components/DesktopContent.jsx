@@ -11,10 +11,10 @@ class DesktopContent extends React.Component {
 			<div id="design-page">
                <div className="split left-half">
                     <div className="breadcrumb">
-                            <NavLink to ="/home"><div className="prevPage">Home</div></NavLink>
-                            <div className="breadcrumbSpacing"> <span className="breadcrumbArrow">&#8594;</span></div>
-                            <NavLink to ="/design"><div className="activePage">Design</div></NavLink>
-                        </div>
+                        <NavLink to ="/home"><div className="prevPage">Home</div></NavLink>
+                        <div className="breadcrumbSpacing"> <span className="breadcrumbArrow">&#8594;</span></div>
+                        <NavLink to ="/design"><div className="activePage">Design</div></NavLink>
+                    </div>
                     <Desktop />
                 </div>
                 <div className="split right-half">

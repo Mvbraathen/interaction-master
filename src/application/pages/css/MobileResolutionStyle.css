@@ -59,6 +59,16 @@
     background-color: #46CBD8;
 }
 
+.design-icon-mobile {
+    fill: #BD2EDC;
+    transition: 0.8s;
+}
+
+.design-icon-mobile:hover {
+    fill: #46CBD8;
+    
+}
+
 .page-one {
     margin-top: 100px;
     margin-left: 5%;
@@ -101,6 +111,11 @@
 
 .txt-child {
     padding-top: 30px;
+    font-family: Avenir Next;
+}
+
+.txt-child-under-svg {
+    padding-top: 10px;
     font-family: Avenir Next;
 }
 
