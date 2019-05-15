@@ -33,7 +33,7 @@
 
 /* Colors on inactive menu elements */
 #resource-extraction-page .manufacturing, #resource-extraction-page .transport, #resource-extraction-page .use, #resource-extraction-page .endOfLife, #resource-extraction-page .design{
-	fill: #505050;
+	fill: #858585;
 }
 
 /* Colors when hovering inactive menu elements */

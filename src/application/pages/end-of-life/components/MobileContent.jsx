@@ -1,9 +1,8 @@
 import React from 'react';
-import Mobile from "../../../../../menus/mobile/Mobile";
+import Mobile from "../../../menus/mobile/Mobile";
 import {
     NavLink
 } from "react-router-dom";
-import "../../../../css/MobileResolutionStyle.css";
 
 class MobileContent extends React.Component {
 
@@ -14,7 +13,7 @@ class MobileContent extends React.Component {
                     <div className="mobileContent">
                         <div className="top-txt">
                             <h1>
-                                Use
+                                End Of Life
                             </h1>
                             <div className="purple-line">
                                 ___
@@ -26,7 +25,7 @@ class MobileContent extends React.Component {
                                 <img
                                     className="img-tst"
                                     alt="A road "
-                                    src={require('../../../../images/smart-test-image.jpg')} 
+                                    src={require('../../images/smart-test-image.jpg')} 
                                     />
                                     <figcaption className="txt-child">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -56,7 +55,7 @@ class MobileContent extends React.Component {
                                 <img
                                     className="img-tst"
                                     alt="A road "
-                                    src={require('../../../../images/smart-test-image.jpg')} 
+                                    src={require('../../images/smart-test-image.jpg')} 
                                     />
                                     <figcaption className="txt-child">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -87,7 +86,7 @@ class MobileContent extends React.Component {
                                 <img
                                     className="img-tst"
                                     alt="A road "
-                                    src={require('../../../../images/smart-test-image.jpg')} 
+                                    src={require('../../images/smart-test-image.jpg')} 
                                     />
                                     <figcaption className="txt-child">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -112,21 +111,21 @@ class MobileContent extends React.Component {
                                         <img
                                             className="facebook"
                                             alt="facebook logo"
-                                            src={require('../../../../images/social-network-logos/facebook-logo.png')} 
+                                            src={require('../../images/social-network-logos/facebook-logo.png')} 
                                         />
                                     </a>
                                     <a href="https://twitter.com/UniOsloSMART">
                                         <img
                                             className="twitter"
                                             alt="twitter logo"
-                                            src={require('../../../../images/social-network-logos/twitter-logo.png')} 
+                                            src={require('../../images/social-network-logos/twitter-logo.png')} 
                                         />
                                     </a>
                                     <a href="mailto:info@smart.uio.no">
                                         <img
                                             className="gmail"
                                             alt="gmail logo"
-                                            src={require('../../../../images/social-network-logos/gmail-logo.png')} 
+                                            src={require('../../images/social-network-logos/gmail-logo.png')} 
                                         />
                                     </a>
                                 </div>

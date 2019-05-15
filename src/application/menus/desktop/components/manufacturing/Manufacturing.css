@@ -33,7 +33,7 @@
 
 /* Colors on inactive menu elements */
 #manufacturing-page .resourceExtraction, #manufacturing-page .transport, #manufacturing-page .use, #manufacturing-page .endOfLife, #manufacturing-page .design{
-	fill: #505050;
+	fill: #858585;
 }
 
 /* Colors when hovering inactive menu elements */

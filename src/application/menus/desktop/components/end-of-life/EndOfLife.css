@@ -33,7 +33,7 @@
 
 /* Colors on inactive menu elements */
 #end-of-life-page .design, #end-of-life-page .resourceExtraction, #end-of-life-page .manufacturing, #end-of-life-page .transport, #end-of-life-page .use{
-	fill: #505050;
+	fill: #858585;
 }
 
 /* Colors when hovering inactive menu elements */

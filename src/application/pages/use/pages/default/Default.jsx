@@ -7,7 +7,7 @@ import "../../../css/DesktopNormal.css";
 import "../../../css/DesktopBig.css";
 import "../../../css/MobileResolutionStyle.css";
 
-class Use extends Component {     
+class Default extends Component {     
     render(){
         return (
             <div>
@@ -24,4 +24,4 @@ class Use extends Component {
     }
 }
 
-export default Use;
+export default Default;
