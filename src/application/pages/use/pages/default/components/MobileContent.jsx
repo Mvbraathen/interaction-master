@@ -35,10 +35,10 @@ class MobileContent extends React.Component {
                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
                                         eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
                                         in culpa qui officia deserunt mollit anim id est laborum.
-                                    <NavLink to="/use/lifetime">
-                                        <button className="page-one-button"> Read more </button>
-                                    </NavLink>
                                 </figcaption>
+                                <NavLink to="/use/lifetime">
+                                    <button className="page-one-button"> Read more </button>
+                                </NavLink>
                             </figure>
                         </div>
 
@@ -65,10 +65,10 @@ class MobileContent extends React.Component {
                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
                                         eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
                                         in culpa qui officia deserunt mollit anim id est laborum.
-                                    <NavLink to="/use/lifetime">
-                                        <button className="page-one-button"> Read more </button>
-                                    </NavLink>
                                 </figcaption>
+                                <NavLink to="/use/lifetime">
+                                    <button className="page-one-button"> Read more </button>
+                                </NavLink>
                             </figure>
                         </div>
 
@@ -96,10 +96,10 @@ class MobileContent extends React.Component {
                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
                                         eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
                                         in culpa qui officia deserunt mollit anim id est laborum.
-                                    <NavLink to="/use/lifetime">
-                                        <button className="page-one-button"> Read more </button>
-                                    </NavLink>
                                 </figcaption>
+                                <NavLink to="/use/lifetime">
+                                    <button className="page-one-button"> Read more </button>
+                                </NavLink>
                             </figure>
                         </div>
 

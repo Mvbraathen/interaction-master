@@ -34,6 +34,31 @@
     margin-top: -90px;
 }
 
+.page-one-button {
+    position: relative;
+    margin-top:40px;
+    border: none;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Avenir Next;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 14px 60px;
+    cursor: pointer;
+    background-color: #BD2EDC;
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow:    2px 2px 6px 0px rgba(0,0,0,0.55);
+    box-shadow:         2px 2px 6px 0px rgba(0,0,0,0.55);
+    transition: 0.8s;
+}
+
+.page-one-button:hover {
+    background-color: #46CBD8;
+}
+
 .page-one {
     margin-top: 100px;
     margin-left: 5%;
@@ -41,8 +66,8 @@
     height: 800px;
     background: white;
     -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
-    -moz-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
-    box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    -moz-box-shadow:    0px 0px 33px -8px rgba(166,166,166,1);
+    box-shadow:         0px 0px 33px -8px rgba(166,166,166,1);
     
 }
 
@@ -70,7 +95,8 @@
 
 
 .info-header {
-    padding-top: 100px;
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 
 .txt-child {
