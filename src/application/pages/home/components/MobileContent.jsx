@@ -105,7 +105,6 @@ class MobileContent extends React.Component {
 
                         {/* Fiks footer som et eget komponent */}
                         <div className="footer"> 
-                            <div className="footer-info">
                                 <div className="social-network">
                                     <a href="https://www.facebook.com/UniOsloSMART/">
                                         <img
@@ -135,12 +134,10 @@ class MobileContent extends React.Component {
                                     The contents of this website are the sole responsibility of the 
                                     SMART project and do not necessarily reflect the views of the 
                                     European Union.
-                                </div>
                             </div>
-                            
-                        </div>
+                         </div>
                     </div>
-            </div>
+                </div>
 		)
 	}
 }

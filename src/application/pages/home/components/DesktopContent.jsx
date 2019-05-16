@@ -21,7 +21,7 @@ class DesktopContent extends React.Component {
                 </div>
                 <div className="split right-half">
                     <div className="hehe-container">
-                        <div className="hehe"> 
+                        <div className="introTxt"> 
                             Ahoy, pirate 🏴‍☠️! If you want 
                             to learn more about the 
                             {' '} 
@@ -31,9 +31,9 @@ class DesktopContent extends React.Component {
                             , please interact with the circular menu 😁 
                         </div>
                     </div>
-                </div>
-                <div className="desktop-footer">
-                    <div className="footer-info">
+                </div> 
+                
+                 <div className="desktop-footer"> 
                                 <div className="social-network">
                                     <a href="https://www.facebook.com/UniOsloSMART/">
                                         <img
@@ -55,18 +55,24 @@ class DesktopContent extends React.Component {
                                             alt="gmail logo"
                                             src={require('../../images/social-network-logos/gmail-logo.png')} 
                                         />
-                                    </a>
+                                    </a> 
+                                    <a href="https://www.uio.no">
+                                        <img
+                                            className="uio"
+                                            alt="uio logo"
+                                            src={require('../../images/social-network-logos/uio-logo.png')} 
+                                        />
+                                    </a> 
                                 </div>
                                 <div className="desktop-footer-txt">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                                        eu fugiat nulla pariatur.
-                                </div>
-                            </div>
+                                    SMART has received funding from the European Union’s Horizon 2020 
+                                    research and innovation programme under grant agreement No 693642. 
+                                    The contents of this website are the sole responsibility of the 
+                                    SMART project and do not necessarily reflect the views of the 
+                                    European Union. 
+                         </div>
+                    </div>
                 </div>
-            </div>
         )
     }
 }

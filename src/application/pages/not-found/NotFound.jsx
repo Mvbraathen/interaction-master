@@ -9,7 +9,7 @@ class NotFound extends React.Component {
 		return (
 			<div className="lok">
 				<div className="not-found">
-					<span className="error-text">404 - Oops! 😬</span>
+					<span className="error-text" role="img" aria-label="grin">404 - Oops! 😬</span>
 					<br />
 					<div className="page-message">
 						We can't seem to find the page you're looking for. 

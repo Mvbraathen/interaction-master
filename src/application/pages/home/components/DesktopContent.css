@@ -1,14 +1,13 @@
-.hehe {
-  margin: 0;
+.introTxt {
+    margin: 0;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-
-  font-family: Avenir Next;
-  margin-right: 20px;
-  font-size: 2em;
-  max-width: 600px;
+    font-family: Avenir Next;
+    margin-right: 20px;
+    font-size: 2em;
+    max-width: 600px;
 }
 
 .color-some-text {
@@ -45,7 +44,7 @@
 }
 
 .desktop-footer {
-  position:absolute;
+    position:absolute;
     bottom:0;
     width:100%;
     height:100px;   /* Height of the footer */
@@ -58,9 +57,17 @@
 
 .desktop-footer-txt {
   position: absolute;
-  margin-top: -75px;
-  padding-left: 200px;
+  margin-right: 20%;
+  margin-left: 200px;
+  margin-top: -60px;
   max-width: 800px;
+} 
+
+.uio {
+  position: absolute;
+  right: 50px;
+  height: 50px;
+  margin-top: -10px; 
 }
 
 
