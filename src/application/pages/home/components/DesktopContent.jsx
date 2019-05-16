@@ -6,9 +6,9 @@ import Desktop from "../../../menus/desktop/Desktop";
 import "./DesktopContent.css";
 
 class DesktopContent extends React.Component {
-	render() {
-		return (
-			<div id="home-page">
+    render() {
+        return (
+            <div id="home-page">
                 <div className="desktop-header">
                     <div className="home-header-txt">
                         <NavLink className="header-link" to="/home"><h1>
@@ -66,9 +66,9 @@ class DesktopContent extends React.Component {
                                 </div>
                             </div>
                 </div>
-			</div>
-		)
-	}
+            </div>
+        )
+    }
 }
 
 export default DesktopContent;
