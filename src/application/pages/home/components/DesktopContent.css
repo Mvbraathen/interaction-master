@@ -23,29 +23,11 @@
 }
 
 .svg-text {
-	fill: red;
 	font-family: Avenir Next;
-	font-size: 2em;
-	font-weight: bold;
+	font-size: 1.5em;
 }
 
-.svg-text2 {
-	fill: blue;
-	font-family: Avenir Next;
-	font-size: 2em;
-	font-weight: bold;
-}
-
-.svg-text3 {
-	fill: purple;
-	font-family: Avenir Next;
-	font-size: 2em;
-	font-weight: bold;
-}
-
-.svg-text4 {
-	fill: green;
-	font-family: Avenir Next;
-	font-size: 2em;
-	font-weight: bold;
+.pointer { 
+	fill-opacity: 1;
+	fill: black; 
 }

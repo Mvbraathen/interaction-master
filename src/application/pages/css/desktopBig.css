@@ -66,16 +66,18 @@
 
 .environmental-info-element:hover {
     background-color: #FE6F6F;
+    cursor: pointer;
 }
 
 .social-info-element:hover {
     background-color: #b3d1ff;
+    cursor: pointer;
 }
 
 .info-box-content {
     position: relative;
     font-family: Avenir Next;
-    font-size: 1.2em;
+    font-size: 1.2em; 
 }
 
 .place-menu-header {
