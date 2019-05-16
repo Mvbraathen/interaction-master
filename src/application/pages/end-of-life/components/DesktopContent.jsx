@@ -9,6 +9,13 @@ class DesktopContent extends React.Component {
     render() {
         return (
             <div id="end-of-life-page">
+                <div className="desktop-header">
+                    <div className="home-header-txt">
+                        <NavLink className="header-link" to="/home"><h1>
+                            The Mobile Lifecycle
+                        </h1></NavLink>
+                    </div>
+                </div>
                <div className="split left-half">
                     <div className="breadcrumb">
                             <NavLink to ="/home"><div className="prevPage">Home</div></NavLink>

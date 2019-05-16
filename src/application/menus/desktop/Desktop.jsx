@@ -9,22 +9,38 @@ import Design from "./components/design/Design";
 import Home from "./components/home/Home";
 // Styling
 import "./Desktop.css";
+import MediaQuery from 'react-responsive';
+import {
+    NavLink
+} from "react-router-dom";
 
 class Menu extends Component {        
     render(){
         return (
             <div className="scaling-svg-container">
-                <svg viewBox="-30 0 500 500" className="scaling-svg desktopMenu">
-                    <g>
-                        <ResourceExtraction />              
-                        <Manufacturing />
-                        <Transport />
-                        <Use />
-                        <EndOfLife />
-                        <Design />
-                        <Home />
-                    </g>
-                </svg>
+                <MediaQuery minHeight="540px">
+                    <svg viewBox="0 0 425 425" className="scaling-svg desktopMenu">
+                        <g>
+                            <ResourceExtraction />              
+                            <Manufacturing />
+                            <Transport />
+                            <Use />
+                            <EndOfLife />
+                            <Design />
+                            <Home />
+                        </g>
+                    </svg>
+                </MediaQuery>
+                <MediaQuery maxHeight="539px">
+                    <div className="mini-menu-flex-container">
+                        <NavLink to="/design"><div className="mini-menu-flex-element design-color">Design</div></NavLink>
+                        <NavLink to="/resource-extraction"><div className="mini-menu-flex-element resource-extraction-color">Resource Extraction</div></NavLink>
+                        <NavLink to="/manufacturing"><div className="mini-menu-flex-element manufacturing-color">Manufacturing</div></NavLink>
+                        <NavLink to="/transport"><div className="mini-menu-flex-element transport-color">Transport</div></NavLink>
+                        <NavLink to="/use"><div className="mini-menu-flex-element use-color">Use</div></NavLink>
+                        <NavLink to="/end-of-life"><div className="mini-menu-flex-element end-of-life-color">End of Life</div></NavLink>
+                    </div>
+                </MediaQuery>
             </div>
         );
     }

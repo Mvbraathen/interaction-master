@@ -1,51 +1,91 @@
-.home-scaling-svg-container {
-	position: absolute; 
-	margin-top: 5%;
- 	height: 80%; 
- 	width: 100%; 
+.hehe {
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
 
-/* override this inline for aspect ratio other than square */
-}
-.home-scaling-svg {
-	/* border line to help center svg elements */
-	/*border-width: 5px;
-	border-style: solid;
-	border-color: black;*/
-}
-
-.svg-arrow {
-	fill: #46CBD8;;
-	transition: 0.5s ease-in-out;
-}
-
-.svg-arrow:hover {
-	fill: #BD2EDC;
-}
-
-.svg-text {
-	fill: red;
 	font-family: Avenir Next;
+	margin-right: 20px;
 	font-size: 2em;
-	font-weight: bold;
+	max-width: 600px;
 }
 
-.svg-text2 {
-	fill: blue;
-	font-family: Avenir Next;
-	font-size: 2em;
-	font-weight: bold;
+.color-some-text {
+	display: inline-block;
+
+	-webkit-animation: color-change 3s infinite;
+        -moz-animation: color-change 3s infinite;
+        -o-animation: color-change 3s infinite;
+        -ms-animation: color-change 3s infinite;
+        animation: color-change 8s infinite;
 }
 
-.svg-text3 {
-	fill: purple;
-	font-family: Avenir Next;
-	font-size: 2em;
-	font-weight: bold;
+.desktop-header {
+	z-index: 99;
+	position: absolute;
+	width: 100%;
+	height: 120px;
+	background-color: white;
+
+	-webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    -moz-box-shadow:    0px 0px 33px -8px rgba(166,166,166,1);
+    box-shadow:         0px 0px 33px -8px rgba(166,166,166,1);
 }
 
-.svg-text4 {
-	fill: green;
-	font-family: Avenir Next;
-	font-size: 2em;
-	font-weight: bold;
+.home-header-txt {
+	padding-left: 150px;
+	margin-top: 70px;
+  width: 320px;
 }
+
+.header-link {
+  text-decoration: none;
+  color: #404040;
+}
+
+.desktop-footer {
+	position:absolute;
+   	bottom:0;
+   	width:100%;
+   	height:100px;   /* Height of the footer */
+   	background: white;
+
+   	-webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    -moz-box-shadow:    0px 0px 33px -8px rgba(166,166,166,1);
+    box-shadow:         0px 0px 33px -8px rgba(166,166,166,1);
+}
+
+.desktop-footer-txt {
+	position: absolute;
+	margin-top: -75px;
+	padding-left: 200px;
+	max-width: 800px;
+}
+
+
+ @-webkit-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @-moz-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @-ms-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @-o-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
