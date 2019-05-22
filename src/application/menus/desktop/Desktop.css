@@ -31,8 +31,9 @@
 	margin-top: 20px;
 }
 
-.mini-menu-flex-container .mini-menu-flex-element {
+.mini-menu-flex-container .mini-menu-flex-element:hover {
 	position: relative;
+  width: 150px;
 	margin: 10px;
   border: none;
   display: block;

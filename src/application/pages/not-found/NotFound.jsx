@@ -7,7 +7,7 @@ import './NotFound.css';
 class NotFound extends React.Component {
 	render() {
 		return (
-			<div className="lok">
+			<div className="notFoundAlign">
 				<div className="not-found">
 					<span className="error-text" role="img" aria-label="grimacing face">404 - Oops! 😬</span>
 					<br />
