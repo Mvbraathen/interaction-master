@@ -66,10 +66,12 @@
 
 .environmental-info-element:hover {
     background-color: #FE6F6F;
+    cursor: pointer;
 }
 
 .social-info-element:hover {
     background-color: #b3d1ff;
+    cursor: pointer;
 }
 
 .info-box-content {

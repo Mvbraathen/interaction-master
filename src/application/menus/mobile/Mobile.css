@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 .burgerLabel {
     z-index: 99;
     position: fixed;
@@ -49,10 +50,10 @@
 }
 
 .bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
 }
 
 /* Position and sizing of burger button */
@@ -119,12 +120,4 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .bm-item:hover {
     color: white;
-}
-
-.lol:hover {
-    color:green;
-}
-
-/* Styling of overlay */
-.bm-overlay {
 }

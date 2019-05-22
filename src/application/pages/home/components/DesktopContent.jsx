@@ -22,13 +22,15 @@ class DesktopContent extends React.Component {
                 <div className="split right-half">
                     <div className="hehe-container">
                         <div className="introTxt"> 
-                            Ahoy, pirate 🏴‍☠️! If you want 
+                            Hey there! 
+                            <span role="img" aria-label="waving hand"> 👋 </span> 
+                            <br></br> If you want 
                             to learn more about the 
                             {' '} 
                             <div className="color-some-text">
                                 Mobile Lifecycle
                             </div>
-                            , please interact with the circular menu 😁 
+                            , please interact with the circular menu to you´re left. 
                         </div>
                     </div>
                 </div> 
