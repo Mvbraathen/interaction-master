@@ -19,7 +19,7 @@ class Menu extends Component {
         return (
             <div className="scaling-svg-container">
                 <MediaQuery minHeight="540px">
-                    <svg viewBox="0 0 425 425" className="scaling-svg desktopMenu">
+                    <svg viewBox="0 0 425 425" className="scaling-svg">
                         <g>
                             <ResourceExtraction />              
                             <Manufacturing />

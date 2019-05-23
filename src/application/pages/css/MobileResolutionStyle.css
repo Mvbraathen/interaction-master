@@ -62,6 +62,18 @@
 .design-icon-mobile {
     fill: #BD2EDC;
     transition: 0.8s;
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 10000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+
 }
 
 .design-icon-mobile:hover {
