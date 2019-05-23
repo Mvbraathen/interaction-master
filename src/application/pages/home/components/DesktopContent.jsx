@@ -58,6 +58,15 @@ class DesktopContent extends React.Component {
                                             src={require('../../images/social-network-logos/gmail-logo.png')} 
                                         />
                                     </a> 
+                                </div>
+                                <div className="desktop-footer-txt">
+                                    SMART has received funding from the European Union’s Horizon 2020 
+                                    research and innovation programme under grant agreement No 693642. 
+                                    The contents of this website are the sole responsibility of the 
+                                    SMART project and do not necessarily reflect the views of the 
+                                    European Union.     
+                                </div>  
+                                <div>
                                     <a href="https://www.uio.no">
                                         <img
                                             className="uio"
@@ -65,16 +74,9 @@ class DesktopContent extends React.Component {
                                             src={require('../../images/social-network-logos/uio-logo.png')} 
                                         />
                                     </a> 
-                                </div>
-                                <div className="desktop-footer-txt">
-                                    SMART has received funding from the European Union’s Horizon 2020 
-                                    research and innovation programme under grant agreement No 693642. 
-                                    The contents of this website are the sole responsibility of the 
-                                    SMART project and do not necessarily reflect the views of the 
-                                    European Union. 
-                         </div>
-                    </div>
-                </div>
+                                </div>   
+                            </div>
+                        </div>
         )
     }
 }

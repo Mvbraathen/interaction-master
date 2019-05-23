@@ -56,22 +56,46 @@
 	background-color: #E00070;
 } 
 
+.design-color:hover {
+  opacity: 0.5;
+}
+
 .resource-extraction-color {
 	background-color: #00AD00;
+}
+
+.resource-extraction-color:hover {
+  opacity: 0.5;
 }
 
 .manufacturing-color {
 	background-color: #BD2EC2;
 }
 
+.manufacturing-color:hover {
+  opacity: 0.5;
+}
+
 .transport-color {
 	background-color: #0066FF;
+}
+
+.transport-color:hover {
+  opacity: 0.5;
 }
 
 .use-color {
 	background-color: #EB0000;
 }
 
+.use-color:hover {
+  opacity: 0.5;
+}
+
 .end-of-life-color {
 	background-color: #C75000;
+}
+
+.end-of-life-color:hover {
+  opacity: 0.5;
 }
