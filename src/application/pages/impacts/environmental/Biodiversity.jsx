@@ -16,8 +16,8 @@ class Biodiversity extends React.Component {
             )
         } else {
             return (
-                <div className="environmental-info-element" onClick={() => this.setState({ biodiversity: true })}> 
-                    <div className="info-box-content"> Lorem impsum lorem impsum lorem impsum </div>
+                <div className="active-environmental-info-element" onClick={() => this.setState({ biodiversity: true })}> 
+                    <div className="active-info-box-content"> Lorem impsum lorem impsum lorem impsum </div>
                 </div>
             )
         }

@@ -58,6 +58,28 @@
     transition: 1.2s;
 }
 
+/* Active flex elements */
+.right-half-flex-container > .active-environmental-info-element {
+    position: relative;
+    margin: 20px;
+    width: 100%;
+    max-width: 620px;
+    max-height: 620px;
+    background: #FE6F6F;
+    color: white;
+    -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    -moz-box-shadow:    0px 0px 33px -8px rgba(166,166,166,1);
+    box-shadow:         0px 0px 33px -8px rgba(166,166,166,1);
+    transition: 1.2s;
+}
+
+.right-half-flex-container > .active-environmental-info-element:before {
+    content: "";
+    display: block;
+    padding-top: 100%;  /* ratio of 1:1*/
+}
+
+
 .environmental-info-element:hover {
     background-color: #FE6F6F;
     cursor: pointer;
@@ -70,6 +92,13 @@
 
 .info-box-content {
     position: relative;
+    font-family: Avenir Next;
+    font-size: 1.2em;
+}
+
+.active-info-box-content {
+    position: relative;
+    width: 100%;
     font-family: Avenir Next;
     font-size: 1.2em;
 }
