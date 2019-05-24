@@ -15,9 +15,7 @@ class MobileContent extends React.Component {
                             <h1>
                                 Design
                             </h1>
-                            <div className="purple-line">
-                                ___
-                            </div> 
+                            <div className="purple-line"></div> 
                         </div>
                         <div className="page-one">
                             <h1 className="info-header"> Acidification </h1>
@@ -56,9 +54,7 @@ class MobileContent extends React.Component {
                             <h1>
                                 Is the shit
                             </h1>
-                            <div className="purple-line">
-                                ___
-                            </div> 
+                            <div className="purple-line"></div> 
                         </div>
                          <div className="page-two">
                             <h1 className="info-header"> CO2 emissions </h1>
@@ -86,9 +82,7 @@ class MobileContent extends React.Component {
                             <h1>
                                 For real
                             </h1>
-                            <div className="purple-line">
-                                ___
-                            </div> 
+                            <div className="purple-line"></div> 
                         </div>
                         <div className="page-three">
 

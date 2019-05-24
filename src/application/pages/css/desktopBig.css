@@ -34,12 +34,6 @@
     color: black;
 }
 
-.desktop-purple-line {
-    color: #BD2EDC;
-    font-size: 80px;
-    margin-top: -90px;
-}
-
 /* Flex container */
 .right-half-flex-container {
     justify-content: center;

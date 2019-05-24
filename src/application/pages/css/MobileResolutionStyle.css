@@ -29,9 +29,11 @@
 }
 
 .purple-line {
-    color: #BD2EDC;
-    font-size: 80px;
-    margin-top: -90px;
+    margin: 0 auto;
+    margin-top: -8px;
+    width: 140px;
+    border-bottom: 5px solid #BD2EDC;
+
 }
 
 .page-one-button {

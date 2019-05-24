@@ -29,9 +29,7 @@ class DesktopContent extends React.Component {
                         <h1>
                             Environmental Impacts
                         </h1>
-                        <div className="desktop-purple-line"> {/* style from mobile */}
-                            ____
-                        </div> 
+                        <div className="purple-line"></div>  
                     </div>
 
                     <div className="right-half-flex-container">
@@ -56,9 +54,7 @@ class DesktopContent extends React.Component {
                         <h1>
                             Social Impacts
                         </h1>
-                        <div className="desktop-purple-line"> {/* style from mobile */}
-                            ____
-                        </div> 
+                        <div className="purple-line"></div> 
                     </div>
 
                     <div className="right-half-flex-container">
