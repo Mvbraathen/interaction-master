@@ -12,6 +12,16 @@ import OzoneDepletion from "../../impacts/environmental/OzoneDepletion";
 import ParticulateMatter from "../../impacts/environmental/ParticulateMatter";
 /* Social impacts */
 import FoodInsecurity from "../../impacts/social/FoodInsecurity";
+import PrecariousWork from "../../impacts/social/PrecariousWork";
+import PollutedDrinkingWater from "../../impacts/social/PollutedDrinkingWater";
+import HumanToxicity from "../../impacts/social/HumanToxicity";
+import ChildLabour from "../../impacts/social/ChildLabour";
+import LackOfCleanHouseholdEnergy from "../../impacts/social/LackOfCleanHouseholdEnergy";
+import GenderInequality from "../../impacts/social/GenderInequality";
+import Discrimination from "../../impacts/social/Discrimination";
+import Marginalisation from "../../impacts/social/Marginalisation";
+import ViolentConflict from "../../impacts/social/ViolentConflict";
+import LivingInSlums from "../../impacts/social/LivingInSlums";
 
 import {
     NavLink
@@ -68,6 +78,16 @@ class DesktopContent extends React.Component {
                     <div className="right-half-flex-container">
                         
                         <FoodInsecurity />
+                        <PrecariousWork />
+                        <PollutedDrinkingWater />
+                        <HumanToxicity />
+                        <ChildLabour />
+                        <LackOfCleanHouseholdEnergy />
+                        <GenderInequality />
+                        <Discrimination />
+                        <Marginalisation />
+                        <ViolentConflict />
+                        <LivingInSlums />
 
                     </div>
                 </div>
