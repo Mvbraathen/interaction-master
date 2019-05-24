@@ -1,6 +1,18 @@
 import React from 'react';
 import Desktop from "../../../menus/desktop/Desktop";
-import Test from "./Test";
+/* Environmental impacts */
+import Acidification from "../../impacts/environmental/Acidification";
+import Biodiversity from "../../impacts/environmental/Biodiversity";
+import Co2 from "../../impacts/environmental/Co2";
+import Deforestation from "../../impacts/environmental/Deforestation";
+import Eutrophication from "../../impacts/environmental/Eutrophication";
+import ExcessiveWaterUse from "../../impacts/environmental/ExcessiveWaterUse";
+import Ecotoxicity from "../../impacts/environmental/Ecotoxicity";
+import OzoneDepletion from "../../impacts/environmental/OzoneDepletion";
+import ParticulateMatter from "../../impacts/environmental/ParticulateMatter";
+/* Social impacts */
+import FoodInsecurity from "../../impacts/social/FoodInsecurity";
+
 import {
     NavLink
 } from "react-router-dom";
@@ -34,19 +46,15 @@ class DesktopContent extends React.Component {
 
                     <div className="right-half-flex-container">
                         
-                        <Test />
-
-                       <div className="environmental-info-element">
-                            <div className="info-box-content"> CO2 emissions </div>
-                        </div>
-
-                        <div className="environmental-info-element">
-                            <div className="info-box-content"> Particulate matter </div>
-                        </div>
-
-                        <div className="environmental-info-element">
-                            <div className="info-box-content"> Ecotoxicity </div>
-                        </div>
+                        <Acidification /> 
+                        <Biodiversity />
+                        <Co2 />
+                        <Deforestation />
+                        <Eutrophication />
+                        <ExcessiveWaterUse />
+                        <Ecotoxicity />
+                        <OzoneDepletion />
+                        <ParticulateMatter />
 
                     </div>
 
@@ -59,25 +67,7 @@ class DesktopContent extends React.Component {
 
                     <div className="right-half-flex-container">
                         
-                        <div className="social-info-element">
-                            <div className="info-box-content"> Acidification </div>
-                        </div>
-
-                       <div className="social-info-element">
-                            <div className="info-box-content"> CO2 emissions </div>
-                        </div>
-
-                        <div className="social-info-element">
-                            <div className="info-box-content"> Particulate matter </div>
-                        </div>
-
-                        <div className="social-info-element">
-                            <div className="info-box-content"> Ecotoxicity </div>
-                        </div>
-
-                        <div className="social-info-element">
-                            <div className="info-box-content"> Ecotoxicity </div>
-                        </div>
+                        <FoodInsecurity />
 
                     </div>
                 </div>
