@@ -1,18 +1,10 @@
 .arrows {
 	fill: green;
-}
-
-.circle {
-	fill: #3B96BC;
-}
-
-.mobile {
-	fill: white;
 
 	transform-box: fill-box;
     transform-origin: 50% 50%;
     -webkit-animation-name: spin;
-    -webkit-animation-duration: 20000ms;
+    -webkit-animation-duration: 100000ms;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
 }
@@ -21,6 +13,14 @@
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
 
+}
+
+.circle {
+	fill: #3B96BC;
+}
+
+.mobile {
+	fill: white;
 }
 
 .home {
