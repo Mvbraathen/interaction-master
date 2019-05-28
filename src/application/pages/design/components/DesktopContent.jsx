@@ -1,15 +1,6 @@
 import React from 'react';
 import Desktop from "../../../menus/desktop/Desktop";
-/* Environmental impacts */
-import Acidification from "../../impacts/environmental/Acidification";
-import Biodiversity from "../../impacts/environmental/Biodiversity";
-import Co2 from "../../impacts/environmental/Co2";
-import Deforestation from "../../impacts/environmental/Deforestation";
-import Eutrophication from "../../impacts/environmental/Eutrophication";
-import ExcessiveWaterUse from "../../impacts/environmental/ExcessiveWaterUse";
-import Ecotoxicity from "../../impacts/environmental/Ecotoxicity";
-import OzoneDepletion from "../../impacts/environmental/OzoneDepletion";
-import ParticulateMatter from "../../impacts/environmental/ParticulateMatter";
+
 /* Social impacts */
 import FoodInsecurity from "../../impacts/social/FoodInsecurity";
 import PrecariousWork from "../../impacts/social/PrecariousWork";
@@ -23,12 +14,17 @@ import Marginalisation from "../../impacts/social/Marginalisation";
 import ViolentConflict from "../../impacts/social/ViolentConflict";
 import LivingInSlums from "../../impacts/social/LivingInSlums";
 
+
+import EnvironmentalInfoComponent from "./EnvironmentalInfoComponent";
+
 import {
     NavLink
 } from "react-router-dom";
 
 class DesktopContent extends React.Component {
-	render() {
+   render () {
+        const fromPage = "design";
+
 		return (
 			<div id="design-page">
                 <div className="desktop-header">
@@ -53,20 +49,8 @@ class DesktopContent extends React.Component {
                         </h1>
                         <div className="purple-line"></div> 
                     </div>
-
-                    <div className="right-half-flex-container">
-                        
-                        <Acidification /> 
-                        <Biodiversity />
-                        <Co2 />
-                        <Deforestation />
-                        <Eutrophication />
-                        <ExcessiveWaterUse />
-                        <Ecotoxicity />
-                        <OzoneDepletion />
-                        <ParticulateMatter />
-
-                    </div>
+                    
+                    <EnvironmentalInfoComponent fromPage={fromPage}/>
 
                     <div className="desktop-header-txt">
                         <h1>
@@ -77,7 +61,7 @@ class DesktopContent extends React.Component {
 
                     <div className="right-half-flex-container">
                         
-                        <FoodInsecurity />
+                        {/*<FoodInsecurity />
                         <PrecariousWork />
                         <PollutedDrinkingWater />
                         <HumanToxicity />
@@ -87,7 +71,7 @@ class DesktopContent extends React.Component {
                         <Discrimination />
                         <Marginalisation />
                         <ViolentConflict />
-                        <LivingInSlums />
+                        <LivingInSlums />*/}
 
                     </div>
                 </div>
