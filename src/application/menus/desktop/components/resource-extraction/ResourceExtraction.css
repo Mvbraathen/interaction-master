@@ -3,13 +3,9 @@
 	fill: #00AD00;
 }  
 
-.resourceTxt, .resourceIcon, .mountain {
+.resourceTxt, .resourceIcon, .mountainIcon {
 	fill: white;
 } 
-
-.resourceLine {
-	fill: none;
-}
 
 .resourceExtraction:hover {
 	fill-opacity: 0.4;
