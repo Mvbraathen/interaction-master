@@ -72,7 +72,7 @@
 
 /* Active flex elements */
 .right-half-flex-container > .active-environmental-info-element {
-
+    cursor: pointer;
     margin: 20px;
     width: 100%;
     padding-top: 5%;
@@ -94,6 +94,56 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+.expand {
+    position: absolute;
+    right: 0;
+    margin-top: -23px;
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    line-height: 17px;
+    text-align: center;
+    /* expand remains hidden until hover */
+    color: #FFFFFF; 
+    background: #FFFFFF;
+}
+
+.environmental-info-element:hover .expand {
+    color: #FE6F6F;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    -moz-box-shadow:    0px 0px 33px -8px rgba(166,166,166,1);
+    box-shadow:         0px 0px 1px 1px white;
+    cursor: pointer;
+
+}
+
+.collapse {
+    position: absolute;
+    right: 0;
+    margin-top: -37px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 3.5em;
+    color: #FE6F6F;
+    line-height: 42px;
+    text-align: center;
+    background: #FFFFFF;
+}
+
+.collapse:hover {
+    color: white;
+    background-color: #FE6F6F;
+    -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    -moz-box-shadow:    0px 0px 33px -8px rgba(166,166,166,1);
+    box-shadow:         0px 0px 1px 1px white;
+    cursor: pointer;
+
 }
 
 
