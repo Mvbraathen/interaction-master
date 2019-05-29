@@ -1,30 +1,35 @@
 import React from 'react';
 /* Environmental impacts */
-import Acidification from "./environmental/Acidification";
-import Biodiversity from "./environmental/Biodiversity";
-import Co2 from "./environmental/Co2";
-import Deforestation from "./environmental/Deforestation";
-import Eutrophication from "./environmental/Eutrophication";
-import ExcessiveWaterUse from "./environmental/ExcessiveWaterUse";
-import Ecotoxicity from "./environmental/Ecotoxicity";
-import OzoneDepletion from "./environmental/OzoneDepletion";
-import ParticulateMatter from "./environmental/ParticulateMatter";
+import ChildLabour from "./social/ChildLabour";
+import Discrimination from "./social/Discrimination";
+import FoodInsecurity from "./social/FoodInsecurity";
+import GenderInequality from "./social/GenderInequality";
+import HumanToxicity from "./social/HumanToxicity";
+import LackOfCleanHouseholdEnergy from "./social/LackOfCleanHouseholdEnergy";
+import LivingInSlums from "./social/LivingInSlums";
+import Marginalisation from "./social/Marginalisation";
+import PollutedDrinkingWater from "./social/PollutedDrinkingWater";
+import PrecariousWork from "./social/PrecariousWork";
+import ViolentConflict from "./social/ViolentConflict";
 
-class Environmental extends React.Component {
+
+class Social extends React.Component {
     constructor() {
         super();
         this.state = {
             /* show all info elements */
             designInfoElementClicked: false,
-            Acidification: false,
-            Biodiversityloss: false,
-            CO2emissions: false,
-            Deforestation: false,
-            Eutrophication: false,
-            Excessivewateruse: false,
-            Ecotoxicity: false,
-            Ozonedepletion: false,
-            Particulatematter: false
+            Childlabour: false,
+            Discrimination: false,
+            Foodinsecurity: false,
+            Genderinequality: false,
+            Humantoxicity: false,
+            Lackofcleanhouseholdenergy: false,
+            Livinginslums: false,
+            Marginalisation: false,
+            Polluteddrinkingwater: false,
+            Precariouswork: false,
+            Violentconflict: false
         }
     }
 
@@ -37,11 +42,11 @@ class Environmental extends React.Component {
     }
 	render() {
         let info;
-        let resourceExtractionArray = ['Acidification', 'Biodiversity loss', 'CO2 emissions', 'Deforestation', 'Eutrophication', 'Excessive water use', 'Ecotoxicity', 'Ozone depletion', 'Particulate matter'];
-        let manufacturingArray = ['Acidification', 'Biodiversity loss', 'CO2 emissions', 'Eutrophication', 'Excessive water use', 'Ecotoxicity', 'Ozone depletion', 'Particulate matter'];
-        let transportArray = ['Acidification', 'CO2 emissions', 'Eutrophication', 'Ecotoxicity', 'Particulate matter'];
-        let useArray = ['Acidification', 'CO2 emissions', 'Eutrophication', 'Ecotoxicity', 'Particulate matter'];
-        let endOfLifeArray = ['Biodiversity loss', 'CO2 emissions', 'Ecotoxicity', 'Particulate matter'];
+        let resourceExtractionArray = ['Child labour', 'Discrimination', 'Food insecurity', 'Gender inequality', 'Human toxicity', 'Lack of clean household energy', 'Living in slums', 'Marginalisation', 'Polluted drinking water', 'Precarious work', 'Violent conflict'];
+        let manufacturingArray = ['Child labour', 'Discrimination', 'Food insecurity', 'Gender inequality', 'Human toxicity', 'Lack of clean household energy', 'Polluted drinking water', 'Precarious work'];
+        let transportArray = ['Human toxicity'];
+        let useArray = ['Human toxicity'];
+        let endOfLifeArray = ['Child labour', 'Food insecurity', 'Human toxicity', 'Lack of clean household energy', 'Living in slums', 'Polluted drinking water', 'Precarious work', 'Violent conflict'];
         
         
         /* Determines which elements to render based on the fromPage prop from parent component */
@@ -116,105 +121,115 @@ class Environmental extends React.Component {
         }
         
 
-
-
         /* All environmental impacts */
-        if(this.state.Acidification ===  true){
+        if(this.state.Childlabour ===  true){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Acidification: false })}> 
-                        <div className="active-info-box-content"> <Acidification /> </div>
+                    <div className="active-environmental-info-element" onClick={() => this.setState({ Childlabour: false })}> 
+                        <div className="active-info-box-content"> <ChildLabour /> </div>
 
                     </div>
                 </div>
         }
 
-        if(this.state.Biodiversityloss){
+        if(this.state.Discrimination){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Biodiversityloss: false })}> 
-                        <div className="active-info-box-content"> <Biodiversity /> </div>
+                    <div className="active-environmental-info-element" onClick={() => this.setState({ Discrimination: false })}> 
+                        <div className="active-info-box-content"> <Discrimination /> </div>
 
                     </div>
                 </div>
-
         }
 
-        if(this.state.CO2emissions){
+        if(this.state.Foodinsecurity){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ CO2emissions: false })}> 
-                        <div className="active-info-box-content"> <Co2 /> </div>
+                    <div className="active-environmental-info-element" onClick={() => this.setState({ Foodinsecurity: false })}> 
+                        <div className="active-info-box-content"> <FoodInsecurity /> </div>
 
                     </div>
                 </div>
-
         }
 
-        if(this.state.Deforestation){
+        if(this.state.Genderinequality){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Deforestation: false })}> 
-                        <div className="active-info-box-content"> <Deforestation /> </div>
+                    <div className="active-environmental-info-element" onClick={() => this.setState({ Genderinequality: false })}> 
+                        <div className="active-info-box-content"> <GenderInequality /> </div>
 
                     </div>
                 </div>
-
         }
 
-        if(this.state.Ecotoxicity){
+        if(this.state.Humantoxicity){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Ecotoxicity: false })}> 
-                        <div className="active-info-box-content"> <Ecotoxicity /> </div>
+                    <div className="active-environmental-info-element" onClick={() => this.setState({ Humantoxicity: false })}> 
+                        <div className="active-info-box-content"> <HumanToxicity /> </div>
 
                     </div>
                 </div>
-
         }
 
-        if(this.state.Eutrophication){
+        if(this.state.Lackofcleanhouseholdenergy){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Eutrophication: false })}> 
-                        <div className="active-info-box-content"> <Eutrophication /> </div>
+                    <div className="active-environmental-info-element" onClick={() => this.setState({ Lackofcleanhouseholdenergy: false })}> 
+                        <div className="active-info-box-content"> <LackOfCleanHouseholdEnergy /> </div>
 
                     </div>
                 </div>
-
         }
 
-        if(this.state.Excessivewateruse){
+        if(this.state.Livinginslums){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Excessivewateruse: false })}> 
-                        <div className="active-info-box-content"> <ExcessiveWaterUse /> </div>
+                    <div className="active-environmental-info-element" onClick={() => this.setState({ Livinginslums: false })}> 
+                        <div className="active-info-box-content"> <LivingInSlums /> </div>
 
                     </div>
                 </div>
-
         }
 
-        if(this.state.Ozonedepletion){
+        if(this.state.Marginalisation){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Ozonedepletion: false })}> 
-                        <div className="active-info-box-content"> <OzoneDepletion /> </div>
+                    <div className="active-environmental-info-element" onClick={() => this.setState({ Marginalisation: false })}> 
+                        <div className="active-info-box-content"> <Marginalisation /> </div>
 
                     </div>
                 </div>
-
         }
 
-        if(this.state.Particulatematter){
+        if(this.state.Polluteddrinkingwater){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Particulatematter: false })}> 
-                        <div className="active-info-box-content"> <ParticulateMatter /> </div>
+                    <div className="active-environmental-info-element" onClick={() => this.setState({ Polluteddrinkingwater: false })}> 
+                        <div className="active-info-box-content"> <PollutedDrinkingWater /> </div>
 
                     </div>
                 </div>
+        }
 
+         if(this.state.Precariouswork){
+            info =   
+                <div className="right-half-flex-container">
+                    <div className="active-environmental-info-element" onClick={() => this.setState({ Precariouswork: false })}> 
+                        <div className="active-info-box-content"> <PrecariousWork /> </div>
+
+                    </div>
+                </div>
+        } 
+
+         if(this.state.Violentconflict){
+            info =   
+                <div className="right-half-flex-container">
+                    <div className="active-environmental-info-element" onClick={() => this.setState({ Violentconflict: false })}> 
+                        <div className="active-info-box-content"> <ViolentConflict /> </div>
+
+                    </div>
+                </div>
         }
 
         return (
@@ -223,4 +238,4 @@ class Environmental extends React.Component {
     }
 }
 
-export default Environmental;
+export default Social;

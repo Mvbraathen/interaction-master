@@ -2,6 +2,7 @@ import React from 'react';
 import Desktop from "../../../menus/desktop/Desktop";
 
 import Environmental from "../../impacts/Environmental";
+import Social from "../../impacts/Social";
 
 import {
     NavLink
@@ -46,9 +47,7 @@ class DesktopContent extends React.Component {
                         <div className="purple-line"></div>  
                     </div>
 
-                    <div className="right-half-flex-container">
-                        {/* <Social fromPage={fromPage}/> */}
-                    </div>
+                        <Social fromPage={fromPage}/> 
                 </div>
 			</div>
 		)
