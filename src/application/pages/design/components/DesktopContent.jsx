@@ -1,21 +1,7 @@
 import React from 'react';
 import Desktop from "../../../menus/desktop/Desktop";
 
-/* Social impacts */
-import FoodInsecurity from "../../impacts/social/FoodInsecurity";
-import PrecariousWork from "../../impacts/social/PrecariousWork";
-import PollutedDrinkingWater from "../../impacts/social/PollutedDrinkingWater";
-import HumanToxicity from "../../impacts/social/HumanToxicity";
-import ChildLabour from "../../impacts/social/ChildLabour";
-import LackOfCleanHouseholdEnergy from "../../impacts/social/LackOfCleanHouseholdEnergy";
-import GenderInequality from "../../impacts/social/GenderInequality";
-import Discrimination from "../../impacts/social/Discrimination";
-import Marginalisation from "../../impacts/social/Marginalisation";
-import ViolentConflict from "../../impacts/social/ViolentConflict";
-import LivingInSlums from "../../impacts/social/LivingInSlums";
-
-
-import EnvironmentalInfoComponent from "./EnvironmentalInfoComponent";
+import Environmental from "../../impacts/Environmental";
 
 import {
     NavLink
@@ -23,6 +9,7 @@ import {
 
 class DesktopContent extends React.Component {
    render () {
+        /* to select the correct lists of impacts from the two impact components  */
         const fromPage = "design";
 
 		return (
@@ -50,7 +37,7 @@ class DesktopContent extends React.Component {
                         <div className="purple-line"></div> 
                     </div>
                     
-                    <EnvironmentalInfoComponent fromPage={fromPage}/>
+                    <Environmental fromPage={fromPage}/>
 
                     <div className="desktop-header-txt">
                         <h1>
@@ -60,19 +47,7 @@ class DesktopContent extends React.Component {
                     </div>
 
                     <div className="right-half-flex-container">
-                        
-                        {/*<FoodInsecurity />
-                        <PrecariousWork />
-                        <PollutedDrinkingWater />
-                        <HumanToxicity />
-                        <ChildLabour />
-                        <LackOfCleanHouseholdEnergy />
-                        <GenderInequality />
-                        <Discrimination />
-                        <Marginalisation />
-                        <ViolentConflict />
-                        <LivingInSlums />*/}
-
+                        {/* <Social fromPage={fromPage}/> */}
                     </div>
                 </div>
 			</div>
