@@ -32,6 +32,7 @@ class DesktopContent extends React.Component {
                 </div>
                 <div className="split right-half">
                     <div className="desktop-header-txt">
+                        <div className="fix-first-top-margin-environmental"></div> 
                         <h1>
                             Environmental Impacts
                         </h1>
@@ -39,7 +40,7 @@ class DesktopContent extends React.Component {
                     </div>
                     
                     <Environmental fromPage={fromPage}/>
-
+                    <div className="fix-first-top-margin-social"></div>
                     <div className="desktop-header-txt">
                         <h1>
                             Social Impacts

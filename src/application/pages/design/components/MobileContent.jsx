@@ -52,7 +52,7 @@ class MobileContent extends React.Component {
 
                         <div className="top-txt2">
                             <h1>
-                                Is the shit
+                                This is a header
                             </h1>
                             <div className="purple-line"></div> 
                         </div>
@@ -80,7 +80,7 @@ class MobileContent extends React.Component {
 
                         <div className="top-txt2">
                             <h1>
-                                For real
+                                Another header
                             </h1>
                             <div className="purple-line"></div> 
                         </div>
