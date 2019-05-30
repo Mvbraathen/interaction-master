@@ -1,87 +1,61 @@
 import React from 'react';
 import Desktop from "../../../menus/desktop/Desktop";
-import Test from "./Test";
 import {
     NavLink
 } from "react-router-dom";
 
+import Environmental from "../../impacts/Environmental";
+import Social from "../../impacts/Social";
+
 class DesktopContent extends React.Component {
     render() {
+
+        /* to select the correct lists of impacts from the two impact components  */
+        const fromPage = "manufacturing";
+
         return (
             <div id="manufacturing-page">
+                {/* Header */}
                 <div className="desktop-header">
                     <div className="home-header-txt">
-                        <NavLink className="header-link" to="/home"><h1>
-                            The Mobile Lifecycle
-                        </h1></NavLink>
+                        <NavLink className="header-link" to="/home">
+                            <h1>
+                                The Mobile Lifecycle
+                            </h1>
+                        </NavLink>
                     </div>
                 </div>
+
+                {/* Left half */}
                 <div className="split left-half">
                     <div className="breadcrumb">
-                            <NavLink to ="/home"><div className="prevPage">Home</div></NavLink>
-                            <div className="breadcrumbSpacing"> <span className="breadcrumbArrow">&#8594;</span></div>
-                            <NavLink to ="/manufacturing"><div className="activePage">Manufacturing</div></NavLink>
-                        </div>
+                        <NavLink to ="/home"><div className="prevPage">Home</div></NavLink>
+                        <div className="breadcrumbSpacing"> <span className="breadcrumbArrow">&#8594;</span></div>
+                        <NavLink to ="/manufacturing"><div className="activePage">Manufacturing</div></NavLink>
+                    </div>
                     <Desktop />
                 </div>
+
+                {/* Right half */}
                 <div className="split right-half">
                     <div className="desktop-header-txt">
-                    <div className="fix-top-margin-environmental"></div>
+                        <div className="fix-top-margin-environmental"></div> 
                         <h1>
                             Environmental Impacts
                         </h1>
                         <div className="purple-line"></div> 
                     </div>
-
-                    <div className="right-half-flex-container">
-                        
-                        <Test />
-
-                       <div className="environmental-info-element">
-                            <div className="info-box-content"> CO2 emissions </div>
-                        </div>
-
-                        <div className="environmental-info-element">
-                            <div className="info-box-content"> Particulate matter </div>
-                        </div>
-
-                        <div className="environmental-info-element">
-                            <div className="info-box-content"> Ecotoxicity </div>
-                        </div>
-
-                    </div>
-
-                    <div className="desktop-header-txt">
+                    
+                    <Environmental fromPage={fromPage}/>
                     <div className="fix-top-margin-social"></div>
+                    <div className="desktop-header-txt">
                         <h1>
                             Social Impacts
                         </h1>
-                        <div className="purple-line"></div> 
+                        <div className="purple-line"></div>  
                     </div>
 
-                    <div className="right-half-flex-container">
-                        
-                        <div className="social-info-element">
-                            <div className="info-box-content"> Acidification </div>
-                        </div>
-
-                       <div className="social-info-element">
-                            <div className="info-box-content"> CO2 emissions </div>
-                        </div>
-
-                        <div className="social-info-element">
-                            <div className="info-box-content"> Particulate matter </div>
-                        </div>
-
-                        <div className="social-info-element">
-                            <div className="info-box-content"> Ecotoxicity </div>
-                        </div>
-
-                        <div className="social-info-element">
-                            <div className="info-box-content"> Ecotoxicity </div>
-                        </div>
-
-                    </div>
+                        <Social fromPage={fromPage}/> 
                 </div>
             </div>
         )

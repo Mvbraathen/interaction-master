@@ -130,8 +130,7 @@ class MobileContent extends React.Component {
                                     SMART project and do not necessarily reflect the views of the 
                                     European Union.
                                 </div>
-                            </div>
-                            
+                            </div>     
                         </div>
                     </div>
             </div>

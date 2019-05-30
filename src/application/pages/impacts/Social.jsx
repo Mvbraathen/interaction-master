@@ -50,7 +50,7 @@ class Social extends React.Component {
         
         
         /* Determines which elements to render based on the fromPage prop from parent component */
-        if(this.props.fromPage === 'design') {
+        if(this.props.fromPage === 'resourceExtraction') {
             console.log(this.props.fromPage);
             info =   
                 <div className="right-half-flex-container" >
