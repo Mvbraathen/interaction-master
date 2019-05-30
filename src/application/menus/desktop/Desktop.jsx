@@ -21,12 +21,12 @@ class Menu extends Component {
                 <MediaQuery minHeight="540px">
                     <svg viewBox="0 0 425 425" className="scaling-svg">
                         <g>
+                            <Design />
                             <ResourceExtraction />              
                             <Manufacturing />
                             <Transport />
                             <Use />
-                            <EndOfLife />
-                            <Design />
+                            <EndOfLife /> 
                             <Home />
                         </g>
                     </svg>
