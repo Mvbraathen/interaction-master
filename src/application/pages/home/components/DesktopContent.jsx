@@ -15,6 +15,22 @@ class DesktopContent extends React.Component {
                             The Mobile Lifecycle
                         </h1></NavLink>
                     </div>
+                    <a href="https://www.smart.uio.no">
+                        <div className="desktop-bookmark">
+                            <div className="hidden-bookmark-text">
+                                This website is made in collaboration with the EU Horizon 2020 funded <strong>SMART</strong> project. 
+                            </div>
+                            <img
+                                className="desktop-smart-logo"
+                                alt="SMART"
+                                src={require('../../images/smart-logo-transparent.png')} 
+                            />    
+                            <div className="desktop-smart-text"> 
+                                SMART 
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
                 <div className="split left-half">
                     <Desktop />

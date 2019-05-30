@@ -42,6 +42,64 @@
     margin-bottom: -20px;
 }
 
+.desktop-bookmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    background-color: #1A6667;
+    width: 100px;
+    height: 110px;
+}
+
+.desktop-bookmark:hover {
+    width: 300px;
+}
+
+.desktop-smart-logo {
+    right: 0;
+    margin-right: 5px;
+    position: absolute;
+    max-width: 90px;
+
+}
+
+.desktop-smart-text {
+    position: absolute;
+    color: white;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 5px;
+    margin-right: 22px;
+    font-family: Avenir Next;
+}
+
+.hidden-bookmark-text {
+    position: absolute;
+    z-index: 99;
+    right: 0;
+    top: 0;
+    margin-right: 100px;
+    margin-top: 10px;
+    width: 180px;
+    text-align: center;
+    color: white;
+    font-family: Avenir Next;
+
+    display: none;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+}
+
+.desktop-bookmark:hover .hidden-bookmark-text {
+    display: block;
+} 
+
 /* Flex container */
 .right-half-flex-container {
     justify-content: center;

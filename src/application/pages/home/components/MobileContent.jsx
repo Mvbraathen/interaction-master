@@ -11,16 +11,21 @@ class MobileContent extends React.Component {
 			<div className="mobilePage">
                     <Mobile />
                     <a href="https://www.smart.uio.no">
-                        <img
-                            className="smart-logo"
-                            alt="SMART"
-                            src={require('../../images/smart-logo-transparent.png')} 
-                        />
+                        <div className="bookmark">
+                            <img
+                                className="smart-logo"
+                                alt="SMART"
+                                src={require('../../images/smart-logo-transparent.png')} 
+                            />    
+                            <div className="smart-text"> 
+                                SMART 
+                            </div>
+                        </div>
                     </a>
                     <div className="mobileContent">
                         <div className="top-txt">
                             <h1>
-                                Home
+                                The mobile lifecycle
                             </h1>
                             <div className="purple-line"></div> 
                         </div>
@@ -48,7 +53,7 @@ class MobileContent extends React.Component {
 
                         <div className="top-txt2">
                             <h1>
-                                Is the shit
+                                This is a header
                             </h1>
                             <div className="purple-line"></div> 
                         </div>
@@ -76,7 +81,7 @@ class MobileContent extends React.Component {
 
                         <div className="top-txt2">
                             <h1>
-                                For real
+                                Just another header
                             </h1>
                             <div className="purple-line"></div> 
                         </div>

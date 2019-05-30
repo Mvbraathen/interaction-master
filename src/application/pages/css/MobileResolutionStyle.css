@@ -6,7 +6,7 @@
     padding: 0;
     width: 100%;
     overflow-x: hidden;
-    background-color: #1A6667;
+    background-color: #FFFFFF;
 }
 
 .mobileContent {
@@ -133,18 +133,29 @@
     font-family: Avenir Next;
 }
 
-.smart-logo {
+.bookmark {
     position: absolute;
+    text-align: center;
     right: 0;
-    margin-top: 20px;
     margin-right: 20px;
+    background-color: #1A6667;
+    width: 100px;
+    height: 110px;
+}
+
+.bookmark:hover {
+    opacity: 0.8;
+}
+
+.smart-logo {
     width: 80px;
 }
 
-.smart-logo:hover {
-    filter: invert(100%);
+.smart-text {
+    color: white;
+    margin-top: -5px;
+    font-family: Avenir Next;
 }
-
 
 
 .img-tst {
