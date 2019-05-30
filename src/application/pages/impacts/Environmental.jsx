@@ -10,6 +10,8 @@ import Ecotoxicity from "./environmental/Ecotoxicity";
 import OzoneDepletion from "./environmental/OzoneDepletion";
 import ParticulateMatter from "./environmental/ParticulateMatter";
 
+import Fade from 'react-reveal/Fade';
+
 class Environmental extends React.Component {
     constructor() {
         super();
@@ -74,13 +76,15 @@ class Environmental extends React.Component {
                 <div className="right-half-flex-container" >
                     {resourceExtractionArray.map((value, index) => {
                         return (
-                            <div tabIndex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
-                                <div className="info-box-content"> {value} </div> 
-                                <div className={this.state.changeTextStyle} onMouseEnter={this.onMouseover.bind(this)}
-                                onMouseLeave={this.onMouseout.bind(this)}>
-                                    {text}
-                                </div> 
-                            </div>
+                            <Fade delay="100">
+                                <div tabIndex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
+                                    <div className="info-box-content"> {value} </div> 
+                                    <div className={this.state.changeTextStyle} onMouseEnter={this.onMouseover.bind(this)}
+                                    onMouseLeave={this.onMouseout.bind(this)}>
+                                        {text}
+                                    </div> 
+                                </div>
+                            </Fade>
                         );
                     })}
                 </div>
