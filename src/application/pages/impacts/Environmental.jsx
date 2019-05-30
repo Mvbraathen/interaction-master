@@ -53,7 +53,9 @@ class Environmental extends React.Component {
                         return (
                             <div key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
                                 <div className="info-box-content"> {value} </div> 
-                                <div class="expand">+</div> 
+                                <div class="expand">
+                                    +
+                                </div> 
                             </div>
                         );
                     })}
