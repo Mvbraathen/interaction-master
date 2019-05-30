@@ -10,6 +10,13 @@ class MobileContent extends React.Component {
 		return (
 			<div className="mobilePage">
                     <Mobile />
+                    <a href="https://www.smart.uio.no">
+                        <img
+                            className="smart-logo"
+                            alt="SMART"
+                            src={require('../../images/smart-logo-transparent.png')} 
+                        />
+                    </a>
                     <div className="mobileContent">
                         <div className="top-txt">
                             <h1>

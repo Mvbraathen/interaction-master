@@ -23,7 +23,10 @@ class Environmental extends React.Component {
             Excessivewateruse: false,
             Ecotoxicity: false,
             Ozonedepletion: false,
-            Particulatematter: false
+            Particulatematter: false,
+            /* expand text will change on hover */
+            expandText: '+',
+            changeTextStyle: 'default-style'
         }
     }
 
@@ -42,6 +45,17 @@ class Environmental extends React.Component {
       }
     }
 
+    //set the text
+    onMouseover (e) {
+        this.setState({ expandText : 'Explore',
+                        changeTextStyle: 'not-default-style'})
+    }
+    //clear the text
+    onMouseout (e) {
+        this.setState({ expandText : '+',
+                        changeTextStyle: 'default-style'})
+    }
+
 	render() {
         let info;
         let resourceExtractionArray = ['Acidification', 'Biodiversity loss', 'CO2 emissions', 'Deforestation', 'Eutrophication', 'Excessive water use', 'Ecotoxicity', 'Ozone depletion', 'Particulate matter'];
@@ -50,6 +64,8 @@ class Environmental extends React.Component {
         let useArray = ['Acidification', 'CO2 emissions', 'Eutrophication', 'Ecotoxicity', 'Particulate matter'];
         let endOfLifeArray = ['Biodiversity loss', 'CO2 emissions', 'Ecotoxicity', 'Particulate matter'];
         
+        const text = this.state.expandText;
+        console.log(text);
         
         /* Determines which elements to render based on the fromPage prop from parent component */
         if(this.props.fromPage === 'resourceExtraction') {
@@ -58,10 +74,11 @@ class Environmental extends React.Component {
                 <div className="right-half-flex-container" >
                     {resourceExtractionArray.map((value, index) => {
                         return (
-                            <div tabindex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
+                            <div tabIndex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
                                 <div className="info-box-content"> {value} </div> 
-                                <div className="expand">
-                                    +
+                                <div className={this.state.changeTextStyle} onMouseEnter={this.onMouseover.bind(this)}
+                                onMouseLeave={this.onMouseout.bind(this)}>
+                                    {text}
                                 </div> 
                             </div>
                         );
