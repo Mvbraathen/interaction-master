@@ -14,8 +14,7 @@ class Environmental extends React.Component {
     constructor() {
         super();
         this.state = {
-            /* show all info elements */
-            designInfoElementClicked: false,
+            /* States to expand or collapse all Environmental info elements */
             Acidification: false,
             Biodiversityloss: false,
             CO2emissions: false,
@@ -35,6 +34,14 @@ class Environmental extends React.Component {
             [value]: true
         })
     }
+
+    /* function that makes elements accessible through tab navigation  */
+    keyPressed(event, value) {
+      if (event.key === "Enter") {
+        this.handleClick(event, value)
+      }
+    }
+
 	render() {
         let info;
         let resourceExtractionArray = ['Acidification', 'Biodiversity loss', 'CO2 emissions', 'Deforestation', 'Eutrophication', 'Excessive water use', 'Ecotoxicity', 'Ozone depletion', 'Particulate matter'];
@@ -51,9 +58,9 @@ class Environmental extends React.Component {
                 <div className="right-half-flex-container" >
                     {resourceExtractionArray.map((value, index) => {
                         return (
-                            <div key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
+                            <div tabindex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
                                 <div className="info-box-content"> {value} </div> 
-                                <div class="expand">
+                                <div className="expand">
                                     +
                                 </div> 
                             </div>

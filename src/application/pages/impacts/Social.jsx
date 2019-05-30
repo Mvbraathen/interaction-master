@@ -17,8 +17,7 @@ class Social extends React.Component {
     constructor() {
         super();
         this.state = {
-            /* show all info elements */
-            designInfoElementClicked: false,
+            /* States to expand or collapse all Environmental info elements */
             Childlabour: false,
             Discrimination: false,
             Foodinsecurity: false,
@@ -40,6 +39,14 @@ class Social extends React.Component {
             [value]: true
         })
     }
+
+    /* function that makes elements accessible through tab navigation  */
+    keyPressed(event, value) {
+      if (event.key === "Enter") {
+        this.handleClick(event, value)
+      }
+    }
+
 	render() {
         let info;
         let resourceExtractionArray = ['Child labour', 'Discrimination', 'Food insecurity', 'Gender inequality', 'Human toxicity', 'Lack of clean household energy', 'Living in slums', 'Marginalisation', 'Polluted drinking water', 'Precarious work', 'Violent conflict'];
@@ -56,7 +63,7 @@ class Social extends React.Component {
                 <div className="right-half-flex-container" >
                     {resourceExtractionArray.map((value, index) => {
                         return (
-                            <div key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
+                            <div tabindex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
                                 <div className="info-box-content"> {value} </div> 
                             </div>
                         );
