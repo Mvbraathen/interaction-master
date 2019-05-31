@@ -4,6 +4,7 @@ import {
     NavLink
 } from "react-router-dom";
 
+import '../../css/DesktopBig.css';
 import Environmental from "../../impacts/Environmental";
 import Social from "../../impacts/Social";
 
@@ -24,6 +25,21 @@ class DesktopContent extends React.Component {
                             </h1>
                         </NavLink>
                     </div>
+                    <a tabIndex="-1" href="https://www.smart.uio.no">
+                        <div tabIndex="0" className="desktop-bookmark">
+                            <div className="hidden-bookmark-text">
+                                This website is made in collaboration with the EU Horizon 2020 funded <strong>SMART</strong> project. 
+                            </div>
+                            <img
+                                className="desktop-smart-logo"
+                                alt="SMART"
+                                src={require('../../images/smart-logo-transparent.png')} 
+                            />    
+                            <div className="desktop-smart-text"> 
+                                SMART 
+                            </div>
+                        </div>
+                    </a>
                 </div>
 
                 {/* Left half */}

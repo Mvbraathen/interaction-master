@@ -55,6 +55,12 @@
     margin-bottom: -20px;
 }
 
+.lol {
+    z-index: 99;
+    color: black;
+    margin-top: 130px;
+}
+
 .desktop-bookmark {
     position: absolute;
     top: 0;
