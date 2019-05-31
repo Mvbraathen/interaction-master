@@ -10,6 +10,7 @@ import Ecotoxicity from "./environmental/Ecotoxicity";
 import OzoneDepletion from "./environmental/OzoneDepletion";
 import ParticulateMatter from "./environmental/ParticulateMatter";
 
+/* Package to add fade inn effect to environmental impact elements */
 import Fade from 'react-reveal/Fade';
 
 class Environmental extends React.Component {
@@ -67,11 +68,9 @@ class Environmental extends React.Component {
         let endOfLifeArray = ['Biodiversity loss', 'CO2 emissions', 'Ecotoxicity', 'Particulate matter'];
         
         const text = this.state.expandText;
-        console.log(text);
         
         /* Determines which elements to render based on the fromPage prop from parent component */
         if(this.props.fromPage === 'resourceExtraction') {
-            console.log(this.props.fromPage);
             info =   
                 <div className="right-half-flex-container" >
                     {resourceExtractionArray.map((value, index) => {
@@ -91,56 +90,76 @@ class Environmental extends React.Component {
         }
             
         if(this.props.fromPage === 'manufacturing') {
-            console.log(this.props.fromPage);
             info =   
                 <div className="right-half-flex-container" >
                     {manufacturingArray.map((value, index) => {
                         return (
-                            <div key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
-                                <div className="info-box-content"> {value} </div> 
-                            </div>
+                            <Fade delay="100">
+                                <div tabIndex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
+                                    <div className="info-box-content"> {value} </div> 
+                                    <div className={this.state.changeTextStyle} onMouseEnter={this.onMouseover.bind(this)}
+                                    onMouseLeave={this.onMouseout.bind(this)}>
+                                        {text}
+                                    </div> 
+                                </div>
+                            </Fade>
                         );
                     })}
                 </div>
         }
 
         if(this.props.fromPage === 'transport') {
-            console.log(this.props.fromPage);
             info =   
                 <div className="right-half-flex-container" >
                     {transportArray.map((value, index) => {
                         return (
-                            <div key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
-                                <div className="info-box-content"> {value} </div> 
-                            </div>
+                            <Fade delay="100">
+                                <div tabIndex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
+                                    <div className="info-box-content"> {value} </div> 
+                                    <div className={this.state.changeTextStyle} onMouseEnter={this.onMouseover.bind(this)}
+                                    onMouseLeave={this.onMouseout.bind(this)}>
+                                        {text}
+                                    </div> 
+                                </div>
+                            </Fade>
                         );
                     })}
                 </div>
         }
 
         if(this.props.fromPage === 'use') {
-            console.log(this.props.fromPage);
             info =   
                 <div className="right-half-flex-container" >
                     {useArray.map((value, index) => {
                         return (
-                            <div key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
-                                <div className="info-box-content"> {value} </div> 
-                            </div>
+                            <Fade delay="100">
+                                <div tabIndex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
+                                    <div className="info-box-content"> {value} </div> 
+                                    <div className={this.state.changeTextStyle} onMouseEnter={this.onMouseover.bind(this)}
+                                    onMouseLeave={this.onMouseout.bind(this)}>
+                                        {text}
+                                    </div> 
+                                </div>
+                            </Fade>
                         );
                     })}
                 </div>
         }
 
         if(this.props.fromPage === 'endOfLife') {
-            console.log(this.props.fromPage);
             info =   
                 <div className="right-half-flex-container" >
                     {endOfLifeArray.map((value, index) => {
                         return (
-                            <div key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
-                                <div className="info-box-content"> {value} </div> 
-                            </div>
+                            <Fade delay="100">
+                                <div tabIndex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
+                                    <div className="info-box-content"> {value} </div> 
+                                    <div className={this.state.changeTextStyle} onMouseEnter={this.onMouseover.bind(this)}
+                                    onMouseLeave={this.onMouseout.bind(this)}>
+                                        {text}
+                                    </div> 
+                                </div>
+                            </Fade>
                         );
                     })}
                 </div>

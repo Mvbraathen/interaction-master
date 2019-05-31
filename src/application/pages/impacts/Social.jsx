@@ -10,7 +10,10 @@ import LivingInSlums from "./social/LivingInSlums";
 import Marginalisation from "./social/Marginalisation";
 import PollutedDrinkingWater from "./social/PollutedDrinkingWater";
 import PrecariousWork from "./social/PrecariousWork";
-import ViolentConflict from "./social/ViolentConflict";
+import ViolentConflict from "./social/ViolentConflict"; 
+
+/* Package to add fade inn effect to social impact elements */
+import Fade from 'react-reveal/Fade';
 
 
 class Social extends React.Component {
@@ -28,7 +31,10 @@ class Social extends React.Component {
             Marginalisation: false,
             Polluteddrinkingwater: false,
             Precariouswork: false,
-            Violentconflict: false
+            Violentconflict: false,
+             /* expand text will change on hover */
+            expandText: '+',
+            changeTextStyle: 'default-style'
         }
     }
 
@@ -47,6 +53,17 @@ class Social extends React.Component {
       }
     }
 
+     //set the text
+    onMouseover (e) {
+        this.setState({ expandText : 'Explore',
+                        changeTextStyle: 'not-default-style'})
+    }
+    //clear the text
+    onMouseout (e) {
+        this.setState({ expandText : '+',
+                        changeTextStyle: 'default-style'})
+    }
+
 	render() {
         let info;
         let resourceExtractionArray = ['Child labour', 'Discrimination', 'Food insecurity', 'Gender inequality', 'Human toxicity', 'Lack of clean household energy', 'Living in slums', 'Marginalisation', 'Polluted drinking water', 'Precarious work', 'Violent conflict'];
@@ -54,74 +71,101 @@ class Social extends React.Component {
         let transportArray = ['Human toxicity'];
         let useArray = ['Human toxicity'];
         let endOfLifeArray = ['Child labour', 'Food insecurity', 'Human toxicity', 'Lack of clean household energy', 'Living in slums', 'Polluted drinking water', 'Precarious work', 'Violent conflict'];
+
+        const text = this.state.expandText;
         
         
         /* Determines which elements to render based on the fromPage prop from parent component */
         if(this.props.fromPage === 'resourceExtraction') {
-            console.log(this.props.fromPage);
             info =   
                 <div className="right-half-flex-container" >
                     {resourceExtractionArray.map((value, index) => {
                         return (
-                            <div tabindex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
-                                <div className="info-box-content"> {value} </div> 
-                            </div>
+                            <Fade delay="100">
+                                <div tabIndex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="social-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
+                                    <div className="info-box-content"> {value} </div> 
+                                    <div className={this.state.changeTextStyle} onMouseEnter={this.onMouseover.bind(this)}
+                                    onMouseLeave={this.onMouseout.bind(this)}>
+                                        {text}
+                                    </div> 
+                                </div>
+                            </Fade>
                         );
                     })}
                 </div>
         }
             
         if(this.props.fromPage === 'manufacturing') {
-            console.log(this.props.fromPage);
             info =   
                 <div className="right-half-flex-container" >
                     {manufacturingArray.map((value, index) => {
                         return (
-                            <div key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
-                                <div className="info-box-content"> {value} </div> 
-                            </div>
+                            <Fade delay="100">
+                                <div tabIndex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="social-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
+                                    <div className="info-box-content"> {value} </div> 
+                                    <div className={this.state.changeTextStyle} onMouseEnter={this.onMouseover.bind(this)}
+                                    onMouseLeave={this.onMouseout.bind(this)}>
+                                        {text}
+                                    </div> 
+                                </div>
+                            </Fade>
                         );
                     })}
                 </div>
         }
 
         if(this.props.fromPage === 'transport') {
-            console.log(this.props.fromPage);
             info =   
                 <div className="right-half-flex-container" >
                     {transportArray.map((value, index) => {
                         return (
-                            <div key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
-                                <div className="info-box-content"> {value} </div> 
-                            </div>
+                           <Fade delay="100">
+                                <div tabIndex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="social-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
+                                    <div className="info-box-content"> {value} </div> 
+                                    <div className={this.state.changeTextStyle} onMouseEnter={this.onMouseover.bind(this)}
+                                    onMouseLeave={this.onMouseout.bind(this)}>
+                                        {text}
+                                    </div> 
+                                </div>
+                            </Fade>
                         );
                     })}
                 </div>
         }
 
         if(this.props.fromPage === 'use') {
-            console.log(this.props.fromPage);
             info =   
                 <div className="right-half-flex-container" >
                     {useArray.map((value, index) => {
                         return (
-                            <div key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
-                                <div className="info-box-content"> {value} </div> 
-                            </div>
+                           <Fade delay="100">
+                                <div tabIndex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="social-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
+                                    <div className="info-box-content"> {value} </div> 
+                                    <div className={this.state.changeTextStyle} onMouseEnter={this.onMouseover.bind(this)}
+                                    onMouseLeave={this.onMouseout.bind(this)}>
+                                        {text}
+                                    </div> 
+                                </div>
+                            </Fade>
                         );
                     })}
                 </div>
         }
 
         if(this.props.fromPage === 'endOfLife') {
-            console.log(this.props.fromPage);
             info =   
                 <div className="right-half-flex-container" >
                     {endOfLifeArray.map((value, index) => {
                         return (
-                            <div key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
-                                <div className="info-box-content"> {value} </div> 
-                            </div>
+                            <Fade delay="100">
+                                <div tabIndex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="social-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
+                                    <div className="info-box-content"> {value} </div> 
+                                    <div className={this.state.changeTextStyle} onMouseEnter={this.onMouseover.bind(this)}
+                                    onMouseLeave={this.onMouseout.bind(this)}>
+                                        {text}
+                                    </div> 
+                                </div>
+                            </Fade>
                         );
                     })}
                 </div>

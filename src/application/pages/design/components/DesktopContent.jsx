@@ -38,9 +38,7 @@ class DesktopContent extends React.Component {
                         </h1>
                         <div className="purple-line"></div> 
                     </div>
-                    <div className="fix-top-margin-social"></div>
-                    In the design process ... *Please fix me with som badass css*
-                    
+                    <div className="design-info"></div> 
                 </div>
 			</div>
 		)
