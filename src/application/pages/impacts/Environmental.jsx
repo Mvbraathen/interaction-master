@@ -75,7 +75,7 @@ class Environmental extends React.Component {
                 <div className="right-half-flex-container" >
                     {resourceExtractionArray.map((value, index) => {
                         return (
-                            <Fade delay="100">
+                            <Fade duration={1000}>
                                 <div tabIndex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
                                     <div className="info-box-content"> {value} </div> 
                                     <div className={this.state.changeTextStyle} onMouseEnter={this.onMouseover.bind(this)}
@@ -94,7 +94,7 @@ class Environmental extends React.Component {
                 <div className="right-half-flex-container" >
                     {manufacturingArray.map((value, index) => {
                         return (
-                            <Fade delay="100">
+                            <Fade duration={1000}>
                                 <div tabIndex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
                                     <div className="info-box-content"> {value} </div> 
                                     <div className={this.state.changeTextStyle} onMouseEnter={this.onMouseover.bind(this)}
@@ -113,7 +113,7 @@ class Environmental extends React.Component {
                 <div className="right-half-flex-container" >
                     {transportArray.map((value, index) => {
                         return (
-                            <Fade delay="100">
+                            <Fade duration={1000}>
                                 <div tabIndex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
                                     <div className="info-box-content"> {value} </div> 
                                     <div className={this.state.changeTextStyle} onMouseEnter={this.onMouseover.bind(this)}
@@ -132,7 +132,7 @@ class Environmental extends React.Component {
                 <div className="right-half-flex-container" >
                     {useArray.map((value, index) => {
                         return (
-                            <Fade delay="100">
+                            <Fade duration={1000}>
                                 <div tabIndex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
                                     <div className="info-box-content"> {value} </div> 
                                     <div className={this.state.changeTextStyle} onMouseEnter={this.onMouseover.bind(this)}
@@ -151,7 +151,7 @@ class Environmental extends React.Component {
                 <div className="right-half-flex-container" >
                     {endOfLifeArray.map((value, index) => {
                         return (
-                            <Fade delay="100">
+                            <Fade duration={1000}>
                                 <div tabIndex="0" onKeyPress={(e) => {this.keyPressed(e, value)}} key={index} className="environmental-info-element"  onClick={(e) => {this.handleClick(e, value)}}>
                                     <div className="info-box-content"> {value} </div> 
                                     <div className={this.state.changeTextStyle} onMouseEnter={this.onMouseover.bind(this)}
@@ -165,9 +165,6 @@ class Environmental extends React.Component {
                 </div>
         }
         
-
-
-
         /* All environmental impacts */
         if(this.state.Acidification ===  true){
             info =   
