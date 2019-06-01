@@ -11,8 +11,8 @@
 .breadcrumbSpacing {
     display:inline-block;
     color: white;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
@@ -29,11 +29,19 @@
     text-decoration: underline;
     display:inline-block;
     color: blue;
+    font-family: Avenir Next;
+    font-weight: 500;
 }
 
 /* Position of active page */
 .activePage {
     display:inline-block;
     color: black;
+    font-family: Avenir Next;
+    font-weight: 500;
+}
+
+.activePage:hover, .prevPage:hover {
+    opacity: 0.6;
 }
 

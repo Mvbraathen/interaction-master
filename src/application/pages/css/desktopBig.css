@@ -38,11 +38,13 @@
 
 .design-info {
     position: relative;
-    margin-top: 50px;
-    width: 200px;
-    padding: 200px;
-    margin-left: 100px;
-
+    margin-top: 100px;
+    padding: 5%;
+    max-height: 500px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: white;
+    font-family: Avenir Next;
     -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
     -moz-box-shadow:    0px 0px 33px -8px rgba(166,166,166,1);
     box-shadow:         0px 0px 33px -8px rgba(166,166,166,1);
@@ -69,6 +71,8 @@
     background-color: #1A6667;
     width: 100px;
     height: 110px;
+    
+    transition: 1s;
 }
 
 .desktop-bookmark:hover {
@@ -203,23 +207,17 @@
     position: absolute;
     right: 0;
     margin-top: -10px;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    font-size: 3.5em;
-    color: #FE6F6F;
-    line-height: 42px;
+    font-size: 2.5em;
+    color: #FFFFFF;
+    line-height: 25px;
     text-align: center;
-    background: #FFFFFF;
-}
-
-.collapse:hover {
-    color: white;
-    background-color: #FE6F6F;
+    background: #FE6F6F;
     -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
     -moz-box-shadow:    0px 0px 33px -8px rgba(166,166,166,1);
     box-shadow:         0px 0px 1px 1px white;
-    cursor: pointer;
 }
 
 .environmental-info-element:hover {

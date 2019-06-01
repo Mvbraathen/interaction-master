@@ -4,6 +4,7 @@ import '../../css/DesktopBig.css';
 import {
     NavLink
 } from "react-router-dom";
+import Fade from 'react-reveal/Fade';
 
 class DesktopContent extends React.Component {
    render () {
@@ -11,15 +12,17 @@ class DesktopContent extends React.Component {
 			<div id="design-page">
                 <div className="desktop-header">
                     <div className="home-header-txt">
-                        <NavLink className="header-link" to="/home"><h1>
-                            The Mobile Lifecycle
-                        </h1></NavLink>
+                        <NavLink className="header-link" to="/home">
+                            <div className="the">The</div> <div className="mobile">Mobile</div> <div className="lifecycle">Lifecycle</div>
+                        </NavLink>
                     </div>
                     <a tabIndex="-1" href="https://www.smart.uio.no">
                         <div tabIndex="0" className="desktop-bookmark">
-                            <div className="hidden-bookmark-text">
-                                This website is made in collaboration with the EU Horizon 2020 funded <strong>SMART</strong> project. 
-                            </div>
+                            <Fade right duration={1000}>
+                                <div className="hidden-bookmark-text">
+                                    This website is made in collaboration with the EU Horizon 2020 funded <strong>SMART</strong> project. 
+                                </div>
+                            </Fade>
                             <img
                                 className="desktop-smart-logo"
                                 alt="SMART"
@@ -48,7 +51,11 @@ class DesktopContent extends React.Component {
                         </h1>
                         <div className="purple-line"></div> 
                     </div>
-                    <div className="design-info"></div> 
+                    <Fade duration={1000}>
+                        <div className="design-info">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div> 
+                    </Fade>
                 </div>
 			</div>
 		)

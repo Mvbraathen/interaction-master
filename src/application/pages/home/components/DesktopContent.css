@@ -22,10 +22,41 @@
   box-shadow:         0px 0px 33px -8px rgba(166,166,166,1);
 }
 
+.the {
+  margin-top: 10px;
+  font-size: 1.2em;
+  margin-bottom: -10px;
+}
+
+.mobile {
+  font-size: 3.2em;
+  font-weight: 400;
+  margin-bottom: -10px;
+  background: black; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #E00070 , #00AD00, #BD2EC2, #0066FF, #EB0000, #C75000);
+  background: -o-linear-gradient(right, #E00070 , #00AD00, #BD2EC2, #0066FF, #EB0000, #C75000);
+  background: -moz-linear-gradient(right, #E00070 , #00AD00, #BD2EC2, #0066FF, #EB0000, #C75000);
+  background: linear-gradient(to right, #E00070 , #00AD00, #BD2EC2, #0066FF, #EB0000, #C75000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-header-txt:hover .mobile{
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lifecycle {
+  font-size: 1.7em;
+}
+
 .home-header-txt {
-  padding-left: 150px;
-  margin-top: 70px;
-  width: 320px;
+  position: absolute;
+  margin-left: 150px;
+  width: 150px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .header-link {
