@@ -176,7 +176,7 @@ class Social extends React.Component {
         if(this.state.Childlabour ===  true){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Childlabour: false })}> 
+                    <div className="active-social-info-element" onClick={() => this.setState({ Childlabour: false })}> 
                         <div className="active-info-box-content"> <ChildLabour /> </div>
 
                     </div>
@@ -186,7 +186,7 @@ class Social extends React.Component {
         if(this.state.Discrimination){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Discrimination: false })}> 
+                    <div className="active-social-info-element" onClick={() => this.setState({ Discrimination: false })}> 
                         <div className="active-info-box-content"> <Discrimination /> </div>
 
                     </div>
@@ -196,7 +196,7 @@ class Social extends React.Component {
         if(this.state.Foodinsecurity){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Foodinsecurity: false })}> 
+                    <div className="active-social-info-element" onClick={() => this.setState({ Foodinsecurity: false })}> 
                         <div className="active-info-box-content"> <FoodInsecurity /> </div>
 
                     </div>
@@ -206,7 +206,7 @@ class Social extends React.Component {
         if(this.state.Genderinequality){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Genderinequality: false })}> 
+                    <div className="active-social-info-element" onClick={() => this.setState({ Genderinequality: false })}> 
                         <div className="active-info-box-content"> <GenderInequality /> </div>
 
                     </div>
@@ -216,7 +216,7 @@ class Social extends React.Component {
         if(this.state.Humantoxicity){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Humantoxicity: false })}> 
+                    <div className="active-social-info-element" onClick={() => this.setState({ Humantoxicity: false })}> 
                         <div className="active-info-box-content"> <HumanToxicity /> </div>
 
                     </div>
@@ -226,7 +226,7 @@ class Social extends React.Component {
         if(this.state.Lackofcleanhouseholdenergy){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Lackofcleanhouseholdenergy: false })}> 
+                    <div className="active-social-info-element" onClick={() => this.setState({ Lackofcleanhouseholdenergy: false })}> 
                         <div className="active-info-box-content"> <LackOfCleanHouseholdEnergy /> </div>
 
                     </div>
@@ -236,7 +236,7 @@ class Social extends React.Component {
         if(this.state.Livinginslums){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Livinginslums: false })}> 
+                    <div className="active-social-info-element" onClick={() => this.setState({ Livinginslums: false })}> 
                         <div className="active-info-box-content"> <LivingInSlums /> </div>
 
                     </div>
@@ -246,7 +246,7 @@ class Social extends React.Component {
         if(this.state.Marginalisation){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Marginalisation: false })}> 
+                    <div className="active-social-info-element" onClick={() => this.setState({ Marginalisation: false })}> 
                         <div className="active-info-box-content"> <Marginalisation /> </div>
 
                     </div>
@@ -256,7 +256,7 @@ class Social extends React.Component {
         if(this.state.Polluteddrinkingwater){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Polluteddrinkingwater: false })}> 
+                    <div className="active-social-info-element" onClick={() => this.setState({ Polluteddrinkingwater: false })}> 
                         <div className="active-info-box-content"> <PollutedDrinkingWater /> </div>
 
                     </div>
@@ -266,7 +266,7 @@ class Social extends React.Component {
          if(this.state.Precariouswork){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Precariouswork: false })}> 
+                    <div className="active-social-info-element" onClick={() => this.setState({ Precariouswork: false })}> 
                         <div className="active-info-box-content"> <PrecariousWork /> </div>
 
                     </div>
@@ -276,7 +276,7 @@ class Social extends React.Component {
          if(this.state.Violentconflict){
             info =   
                 <div className="right-half-flex-container">
-                    <div className="active-environmental-info-element" onClick={() => this.setState({ Violentconflict: false })}> 
+                    <div className="active-social-info-element" onClick={() => this.setState({ Violentconflict: false })}> 
                         <div className="active-info-box-content"> <ViolentConflict /> </div>
 
                     </div>

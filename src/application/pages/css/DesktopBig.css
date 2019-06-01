@@ -151,7 +151,7 @@
    
 }
 
-/* Active flex elements */
+/* Active environmental flex element */
 .right-half-flex-container > .active-environmental-info-element {
     cursor: pointer;
     margin: 20px;
@@ -163,6 +163,23 @@
     max-height: 620px;
     background: #FE6F6F;
     color: white;
+    -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    -moz-box-shadow:    0px 0px 33px -8px rgba(166,166,166,1);
+    box-shadow:         0px 0px 33px -8px rgba(166,166,166,1);
+    transition: 1.2s;
+}
+
+/* Active social flex element */
+.right-half-flex-container > .active-social-info-element {
+    cursor: pointer;
+    margin: 20px;
+    width: 100%;
+    padding-bottom: 5%;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 620px;
+    max-height: 620px;
+    background: #B3D1FF;
     -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
     -moz-box-shadow:    0px 0px 33px -8px rgba(166,166,166,1);
     box-shadow:         0px 0px 33px -8px rgba(166,166,166,1);
@@ -203,6 +220,7 @@
     color: white;
 }
 
+/* Environmental collapse element*/
 .collapse {
     position: absolute;
     right: 0;
@@ -215,6 +233,24 @@
     line-height: 25px;
     text-align: center;
     background: #FE6F6F;
+    -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    -moz-box-shadow:    0px 0px 33px -8px rgba(166,166,166,1);
+    box-shadow:         0px 0px 1px 1px white;
+}
+
+/* Social collapse element*/
+.collapse-social {
+    position: absolute;
+    right: 0;
+    margin-top: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 2.5em;
+    color: #FFFF;
+    line-height: 25px;
+    text-align: center;
+    background: #B3D1FF;
     -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
     -moz-box-shadow:    0px 0px 33px -8px rgba(166,166,166,1);
     box-shadow:         0px 0px 1px 1px white;

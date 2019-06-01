@@ -1,13 +1,27 @@
 import React from 'react';
 
 class LivingInSlums extends React.Component {
-    render() {
+	render() {
         return (
-            <div style={{color:'blue'}}> 
-                Dette er slummen
+            <div style={{color:'black'}}>
+                <div className="collapse-social">
+                    -
+                </div>  
+                <h1> Living in slums </h1>
+                Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip 
+                ex ea commodo consequat. Duis aute irure dolor 
+                in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim                     
+                id est laborum.
             </div>
         );
-    }
+	}
 }
 
 export default LivingInSlums;
