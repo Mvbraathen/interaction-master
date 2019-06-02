@@ -20,7 +20,20 @@ class DesktopContent extends React.Component {
                 <div className="desktop-header">
                     <div className="home-header-txt">
                         <NavLink className="header-link" to="/home">
-                            <div className="the">The</div> <div className="mobile">Mobile</div> <div className="lifecycle">Lifecycle</div>
+                            <div className="the">
+                                The
+                            </div> 
+                            <div className="mobile">
+                                <span className="m">M</span>
+                                <span className="o">o</span>
+                                <span className="b">b</span>
+                                <span className="i">i</span>
+                                <span className="l">l</span>
+                                <span className="e">e</span>
+                            </div> 
+                            <div className="lifecycle">
+                                Lifecycle
+                            </div>
                         </NavLink>
                     </div>
                      <a tabIndex="-1" href="https://www.smart.uio.no">

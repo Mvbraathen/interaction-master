@@ -23,32 +23,22 @@
 }
 
 .the {
+  font-family: Avenir Next;
   margin-top: 10px;
   font-size: 1.2em;
   margin-bottom: -10px;
 }
 
 .mobile {
+  font-family: Avenir Next;
   font-size: 3.2em;
   font-weight: 400;
-  margin-bottom: -10px;
-  background: black; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #E00070 , #00AD00, #BD2EC2, #0066FF, #EB0000, #C75000);
-  background: -o-linear-gradient(right, #E00070 , #00AD00, #BD2EC2, #0066FF, #EB0000, #C75000);
-  background: -moz-linear-gradient(right, #E00070 , #00AD00, #BD2EC2, #0066FF, #EB0000, #C75000);
-  background: linear-gradient(to right, #E00070 , #00AD00, #BD2EC2, #0066FF, #EB0000, #C75000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.home-header-txt:hover .mobile{
-  background: black;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin-bottom: -15px;
 }
 
 .lifecycle {
-  font-size: 1.7em;
+  font-family: Avenir Next;
+  font-size: 1.6em;
 }
 
 .home-header-txt {
@@ -58,6 +48,35 @@
   padding-left: 5px;
   padding-right: 5px;
 }
+
+.home-header-txt:hover span {
+  color: #505050;
+}
+
+.m {
+  color: #E00070;
+}
+
+.o {
+  color: #00AD00;
+}
+
+.b {
+  color: #BD2EC2;
+}
+
+.i {
+  color: #0066FF;
+}
+
+.l {
+  color: #EB0000;
+}
+
+.e {
+  color: #C75000;
+}
+
 
 .header-link {
   text-decoration: none;
@@ -97,10 +116,10 @@
 
 .color-some-text {
   display: inline-block;
-  -webkit-animation: color-change 3s infinite;
-  -moz-animation: color-change 3s infinite;
-  -o-animation: color-change 3s infinite;
-  -ms-animation: color-change 3s infinite;
+  -webkit-animation: color-change 8s infinite;
+  -moz-animation: color-change 8s infinite;
+  -o-animation: color-change 8s infinite;
+  -ms-animation: color-change 8s infinite;
   animation: color-change 8s infinite;
 }
 
