@@ -1,59 +1,64 @@
 /* Standard Transport color and effects */
 .transport {
-	fill: #0066FF;
-}  
+    fill: #0066FF;
+}
 
-.transportTxt, .transportIcon {
-	fill: white;
-} 
+.transportTxt,
+.transportIcon {
+    fill: white;
+}
 
 .transport:hover {
-	fill-opacity: 0.4;
+    fill-opacity: 0.4;
 }
 
 .transport:active {
-	fill-opacity: 1;
+    fill-opacity: 1;
 }
 
 
 
-/******************* Styling when on Transport page *******************/ 
+/******************* Styling when on Transport page *******************/
 
 
 
 
 /* Prevents active element from fading on hover */
 #transport-page .transport:hover {
-	fill-opacity: 1;
-} 
+    fill-opacity: 1;
+}
 
 /* Colors on inactive menu elements */
-#transport-page .resourceExtraction, #transport-page .use, #transport-page .endOfLife, #transport-page .design, #transport-page .manufacturing{
-	fill: #858585;
+#transport-page .resourceExtraction,
+#transport-page .use,
+#transport-page .endOfLife,
+#transport-page .design,
+#transport-page .manufacturing {
+    fill: #858585;
 }
 
 /* Colors when hovering inactive menu elements */
 #transport-page .design:hover {
-	fill: #E00070;
-	fill-opacity: 1;
+    fill: #E00070;
+    fill-opacity: 1;
 }
 
 #transport-page .resourceExtraction:hover {
-	fill: #00AD00;
-	fill-opacity: 1;
+    fill: #00AD00;
+    fill-opacity: 1;
 }
 
 #transport-page .manufacturing:hover {
-	fill: #BD2EC2;
-	fill-opacity: 1;
+    fill: #BD2EC2;
+    fill-opacity: 1;
 }
 
 #transport-page .use:hover {
-	fill: #EB0000;
-	fill-opacity: 1;
+    fill: #EB0000;
+    fill-opacity: 1;
 }
 
 #transport-page .endOfLife:hover {
-	fill: #C75000;
-	fill-opacity: 1;
+    fill: #C75000;
+    fill-opacity: 1;
 }

@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react';
 import {
     NavLink
 } from "react-router-dom";
 import './NotFound.css';
 
 class NotFound extends React.Component {
-	render() {
-		return (
-			<div className="notFoundAlign">
+    render() {
+        return (
+            <div className="notFoundAlign">
 				<div className="error-text"> Are you lost? </div>
 				<svg 
 					width="100%"
@@ -174,8 +174,8 @@ class NotFound extends React.Component {
 		                </NavLink>
 					</div>
 				</div>
-		)
-	}
+        )
+    }
 }
 
 export default NotFound;

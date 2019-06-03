@@ -1,13 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
     NavLink
 } from "react-router-dom";
 import "./Design.css";
 
 class Design extends Component {
-	    render() {
-	    	return (
-                <g> 
+    render() {
+        return (
+            <g> 
                     <NavLink className="design" to ="/design">
                         <g>
                             <title>Design</title>
@@ -53,8 +53,8 @@ class Design extends Component {
                         </g>
                     </NavLink>
                 </g>
-	    	)
-	    }
-	}
+        )
+    }
+}
 
 export default Design;

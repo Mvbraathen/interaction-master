@@ -1,13 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
     NavLink
 } from "react-router-dom";
 import "./Home.css";
 
 class CenterObjects extends Component {
-	    render() {
-	    	return (
-                <g>
+    render() {
+        return (
+            <g>
                     <NavLink className="home" to ="/home">
                         <title>Home</title>
                         <path className="arrows" d="M264.4,247.4l4.5,3.5l-14.6,1.4l-2.7-14.8l5.5,4.2c6.2-8.5,9.8-18.9,9.8-30.2c0-14.5-5.9-27.5-15.5-36.9
@@ -26,8 +26,8 @@ class CenterObjects extends Component {
                          M226.2,226.5h-22.3v-37.1h22.3C226.2,189.4,226.2,226.5,226.2,226.5z"/>
                     </NavLink>
                 </g>
-	    	)
-	    }
-	}
+        )
+    }
+}
 
 export default CenterObjects;

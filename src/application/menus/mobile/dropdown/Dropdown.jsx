@@ -13,7 +13,7 @@ class Dropdown extends Component {
         this.showMenu = this.showMenu.bind(this);
         this.closeMenu = this.closeMenu.bind(this);
     }
-  
+
     showMenu(event) {
         event.preventDefault();
         this.setState({ showMenu: true }, () => {
@@ -24,7 +24,7 @@ class Dropdown extends Component {
     closeMenu(event) {
         this.setState({ showMenu: false }, () => {
             document.removeEventListener('click', this.closeMenu);
-        });  
+        });
     }
     render() {
         return (

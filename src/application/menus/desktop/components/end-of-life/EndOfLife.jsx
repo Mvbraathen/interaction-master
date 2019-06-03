@@ -1,13 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
     NavLink
 } from "react-router-dom";
 import "./EndOfLife.css";
 
 class EndOfLife extends Component {
-	    render() {
-	    	return (
-                <g>
+    render() {
+        return (
+            <g>
                     <NavLink className="endOfLife" to ="/end-of-life">
                         <title>End of life</title>
                         <path d="M54.6,302.8c14,25,32.9,45.5,54.8,61l9.3-45.9l52.2-47.3c-7.5-5.9-14.1-13.4-19.1-22.3
@@ -35,8 +35,8 @@ class EndOfLife extends Component {
                                 l-3.4-5.4l-9,5.6l6.4,10.3C110.9,269.9,111.9,272.2,111.1,274.9z"/> 
                     </NavLink>
                 </g>
-	    	)
-	    }
-	}
+        )
+    }
+}
 
 export default EndOfLife;

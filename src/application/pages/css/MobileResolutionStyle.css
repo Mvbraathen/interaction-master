@@ -38,7 +38,7 @@
 
 .page-one-button {
     position: relative;
-    margin-top:40px;
+    margin-top: 40px;
     border: none;
     display: block;
     color: white;
@@ -51,9 +51,9 @@
     padding: 14px 60px;
     cursor: pointer;
     background-color: #BD2EDC;
-    -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.55);
-    -moz-box-shadow:    2px 2px 6px 0px rgba(0,0,0,0.55);
-    box-shadow:         2px 2px 6px 0px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.55);
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.55);
     transition: 0.8s;
 }
 
@@ -73,14 +73,19 @@
 }
 
 @keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 
 }
 
 .design-icon-mobile:hover {
     fill: #46CBD8;
-    
+
 }
 
 .page-one {
@@ -89,10 +94,10 @@
     width: 90%;
     height: 800px;
     background: white;
-    -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
-    -moz-box-shadow:    0px 0px 33px -8px rgba(166,166,166,1);
-    box-shadow:         0px 0px 33px -8px rgba(166,166,166,1);
-    
+    -webkit-box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
+    box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
+
 }
 
 .page-two {
@@ -101,9 +106,9 @@
     width: 90%;
     height: 800px;
     background: white;
-    -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
-    -moz-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
-    box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    -webkit-box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
+    box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
 }
 
 .page-three {
@@ -112,9 +117,9 @@
     width: 90%;
     height: 800px;
     background: white;
-    -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
-    -moz-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
-    box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    -webkit-box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
+    box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
 }
 
 
@@ -166,13 +171,15 @@
     width: 100%;
 }
 
-.footer, .push {
+.footer,
+.push {
     margin-top: 100px;
-    height: 350px; /* To look ok on mobile phones */
+    height: 350px;
+    /* To look ok on mobile phones */
     background: white;
-    -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
-    -moz-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
-    box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
+    -webkit-box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
+    box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
 }
 
 .smart-footer-txt {
@@ -205,4 +212,4 @@
     height: 25px;
     padding-left: 3px;
     padding-right: 3px;
-} 
+}

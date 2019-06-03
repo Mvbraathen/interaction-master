@@ -1,13 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
     NavLink
 } from "react-router-dom";
 import "./Manufacturing.css";
 
 class Manufacturing extends Component {
-	    render() {
-	    	return (
-    	    	<g> 
+    render() {
+        return (
+            <g> 
                     <NavLink className="manufacturing" to ="/manufacturing">
                         <g>
                             <title>Manufacturing</title>
@@ -74,8 +74,8 @@ class Manufacturing extends Component {
                             </g>
                     </NavLink> 
                 </g>
-	    	)
-	    }
-	}
+        )
+    }
+}
 
 export default Manufacturing;

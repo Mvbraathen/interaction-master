@@ -15,7 +15,6 @@ import ViolentConflict from "./social/ViolentConflict";
 /* Package to add fade inn effect to social impact elements */
 import Fade from 'react-reveal/Fade';
 
-
 class Social extends React.Component {
     constructor() {
         super();
@@ -32,48 +31,78 @@ class Social extends React.Component {
             Polluteddrinkingwater: false,
             Precariouswork: false,
             Violentconflict: false,
-             /* expand text will change on hover */
-            expandText: '+',
-            changeTextStyle: 'default-style'
-        }
+            /* expand text will change on hover */
+            expandText: "+",
+            changeTextStyle: "default-style"
+        };
     }
 
-    handleClick(event, value){
+    handleClick(event, value) {
         /* removes spaces from array values to correspond with state name */
-        value = value.replace(/\s+/g, '');
+        value = value.replace(/\s+/g, "");
         this.setState({
             [value]: true
-        })
+        });
     }
 
     /* function that makes elements accessible through tab navigation  */
     keyPressed(event, value) {
-      if (event.key === "Enter") {
-        this.handleClick(event, value)
-      }
+        if (event.key === "Enter") {
+            this.handleClick(event, value);
+        }
     }
 
-     //set the text
-    onMouseover (e) {
-        this.setState({ expandText : 'Explore',
-                        changeTextStyle: 'not-default-style'})
+    //set the text
+    onMouseover(e) {
+        this.setState({
+            expandText: "Explore",
+            changeTextStyle: "not-default-style"
+        });
     }
     //clear the text
-    onMouseout (e) {
-        this.setState({ expandText : '+',
-                        changeTextStyle: 'default-style'})
+    onMouseout(e) {
+        this.setState({ expandText: "+", changeTextStyle: "default-style" });
     }
 
-	render() {
+    render() {
         let info;
-        let resourceExtractionArray = ['Child labour', 'Discrimination', 'Food insecurity', 'Gender inequality', 'Human toxicity', 'Lack of clean household energy', 'Living in slums', 'Marginalisation', 'Polluted drinking water', 'Precarious work', 'Violent conflict'];
-        let manufacturingArray = ['Child labour', 'Discrimination', 'Food insecurity', 'Gender inequality', 'Human toxicity', 'Lack of clean household energy', 'Polluted drinking water', 'Precarious work'];
-        let transportArray = ['Human toxicity'];
-        let useArray = ['Human toxicity'];
-        let endOfLifeArray = ['Child labour', 'Food insecurity', 'Human toxicity', 'Lack of clean household energy', 'Living in slums', 'Polluted drinking water', 'Precarious work', 'Violent conflict'];
+        let resourceExtractionArray = [
+            "Child labour",
+            "Discrimination",
+            "Food insecurity",
+            "Gender inequality",
+            "Human toxicity",
+            "Lack of clean household energy",
+            "Living in slums",
+            "Marginalisation",
+            "Polluted drinking water",
+            "Precarious work",
+            "Violent conflict"
+        ];
+        let manufacturingArray = [
+            "Child labour",
+            "Discrimination",
+            "Food insecurity",
+            "Gender inequality",
+            "Human toxicity",
+            "Lack of clean household energy",
+            "Polluted drinking water",
+            "Precarious work"
+        ];
+        let transportArray = ["Human toxicity"];
+        let useArray = ["Human toxicity"];
+        let endOfLifeArray = [
+            "Child labour",
+            "Food insecurity",
+            "Human toxicity",
+            "Lack of clean household energy",
+            "Living in slums",
+            "Polluted drinking water",
+            "Precarious work",
+            "Violent conflict"
+        ];
 
         const text = this.state.expandText;
-        
         
         /* Determines which elements to render based on the fromPage prop from parent component */
         if(this.props.fromPage === 'resourceExtraction') {

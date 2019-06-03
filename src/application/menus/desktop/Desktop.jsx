@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 // Menu elements
 import ResourceExtraction from "./components/resource-extraction/ResourceExtraction";
 import Manufacturing from "./components/manufacturing/Manufacturing";
@@ -10,12 +10,10 @@ import Home from "./components/home/Home";
 // Styling
 import "./Desktop.css";
 import MediaQuery from 'react-responsive';
-import {
-    NavLink
-} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-class Menu extends Component {        
-    render(){
+class Menu extends Component {
+    render() {
         return (
             <div className="scaling-svg-container">
                 <MediaQuery minHeight="540px">

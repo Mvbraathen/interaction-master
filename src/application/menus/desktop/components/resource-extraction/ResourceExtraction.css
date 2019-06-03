@@ -1,59 +1,65 @@
 /* Standard Resource Extraction color and effects */
 .resourceExtraction {
-	fill: #00AD00;
-}  
+    fill: #00AD00;
+}
 
-.resourceTxt, .resourceIcon, .mountainIcon {
-	fill: white;
-} 
+.resourceTxt,
+.resourceIcon,
+.mountainIcon {
+    fill: white;
+}
 
 .resourceExtraction:hover {
-	fill-opacity: 0.4;
+    fill-opacity: 0.4;
 }
 
 .resourceExtraction:active {
-	fill-opacity: 1;
+    fill-opacity: 1;
 }
 
 
 
-/******************* Styling when on Resource Extraction page *******************/ 
+/******************* Styling when on Resource Extraction page *******************/
 
 
 
 
 /* Prevents active element from fading on hover */
 #resource-extraction-page .resourceExtraction:hover {
-	fill-opacity: 1;
-} 
+    fill-opacity: 1;
+}
 
 /* Colors on inactive menu elements */
-#resource-extraction-page .manufacturing, #resource-extraction-page .transport, #resource-extraction-page .use, #resource-extraction-page .endOfLife, #resource-extraction-page .design{
-	fill: #858585;
+#resource-extraction-page .manufacturing,
+#resource-extraction-page .transport,
+#resource-extraction-page .use,
+#resource-extraction-page .endOfLife,
+#resource-extraction-page .design {
+    fill: #858585;
 }
 
 /* Colors when hovering inactive menu elements */
 #resource-extraction-page .design:hover {
-	fill: #E00070;
-	fill-opacity: 1;
+    fill: #E00070;
+    fill-opacity: 1;
 }
 
 #resource-extraction-page .manufacturing:hover {
-	fill: #BD2EC2;
-	fill-opacity: 1;
+    fill: #BD2EC2;
+    fill-opacity: 1;
 }
 
 #resource-extraction-page .transport:hover {
-	fill: #0066FF;
-	fill-opacity: 1;
+    fill: #0066FF;
+    fill-opacity: 1;
 }
 
 #resource-extraction-page .use:hover {
-	fill: #EB0000;
-	fill-opacity: 1;
+    fill: #EB0000;
+    fill-opacity: 1;
 }
 
 #resource-extraction-page .endOfLife:hover {
-	fill: #C75000;
-	fill-opacity: 1;
+    fill: #C75000;
+    fill-opacity: 1;
 }

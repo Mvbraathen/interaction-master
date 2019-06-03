@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { slide as BurgerMenu } from 'react-burger-menu';
 import {
     NavLink
@@ -6,9 +6,9 @@ import {
 import './Mobile.css';
 import Dropdown from "./dropdown/Dropdown.jsx";
 
-class Menu extends Component {  
-       
-    render(){
+class Menu extends Component {
+
+    render() {
         return (
             <div>
                 <BurgerMenu 
@@ -44,5 +44,3 @@ class Menu extends Component {
 }
 
 export default Menu;
-
-

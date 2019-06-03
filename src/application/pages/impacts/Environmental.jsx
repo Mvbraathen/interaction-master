@@ -28,44 +28,81 @@ class Environmental extends React.Component {
             Ozonedepletion: false,
             Particulatematter: false,
             /* expand text will change on hover */
-            expandText: '+',
-            changeTextStyle: 'default-style'
-        }
+            expandText: "+",
+            changeTextStyle: "default-style"
+        };
     }
 
-    handleClick(event, value){
+    handleClick(event, value) {
         /* removes spaces from array values to correspond with state name */
-        value = value.replace(/\s+/g, '');
+        value = value.replace(/\s+/g, "");
         this.setState({
             [value]: true
-        })
+        });
     }
 
     /* function that makes elements accessible through tab navigation  */
     keyPressed(event, value) {
-      if (event.key === "Enter") {
-        this.handleClick(event, value)
-      }
+        if (event.key === "Enter") {
+            this.handleClick(event, value);
+        }
     }
 
     //set the text
-    onMouseover (e) {
-        this.setState({ expandText : 'Explore',
-                        changeTextStyle: 'not-default-style'})
+    onMouseover(e) {
+        this.setState({
+            expandText: "Explore",
+            changeTextStyle: "not-default-style"
+        });
     }
     //clear the text
-    onMouseout (e) {
-        this.setState({ expandText : '+',
-                        changeTextStyle: 'default-style'})
+    onMouseout(e) {
+        this.setState({ expandText: "+", changeTextStyle: "default-style" });
     }
 
-	render() {
+    render() {
         let info;
-        let resourceExtractionArray = ['Acidification', 'Biodiversity loss', 'CO2 emissions', 'Deforestation', 'Eutrophication', 'Excessive water use', 'Ecotoxicity', 'Ozone depletion', 'Particulate matter'];
-        let manufacturingArray = ['Acidification', 'Biodiversity loss', 'CO2 emissions', 'Eutrophication', 'Excessive water use', 'Ecotoxicity', 'Ozone depletion', 'Particulate matter'];
-        let transportArray = ['Acidification', 'CO2 emissions', 'Eutrophication', 'Ecotoxicity', 'Particulate matter'];
-        let useArray = ['Acidification', 'CO2 emissions', 'Eutrophication', 'Ecotoxicity', 'Particulate matter'];
-        let endOfLifeArray = ['Biodiversity loss', 'CO2 emissions', 'Ecotoxicity', 'Particulate matter'];
+        let resourceExtractionArray = [
+            "Acidification",
+            "Biodiversity loss",
+            "CO2 emissions",
+            "Deforestation",
+            "Eutrophication",
+            "Excessive water use",
+            "Ecotoxicity",
+            "Ozone depletion",
+            "Particulate matter"
+        ];
+        let manufacturingArray = [
+            "Acidification",
+            "Biodiversity loss",
+            "CO2 emissions",
+            "Eutrophication",
+            "Excessive water use",
+            "Ecotoxicity",
+            "Ozone depletion",
+            "Particulate matter"
+        ];
+        let transportArray = [
+            "Acidification",
+            "CO2 emissions",
+            "Eutrophication",
+            "Ecotoxicity",
+            "Particulate matter"
+        ];
+        let useArray = [
+            "Acidification",
+            "CO2 emissions",
+            "Eutrophication",
+            "Ecotoxicity",
+            "Particulate matter"
+        ];
+        let endOfLifeArray = [
+            "Biodiversity loss",
+            "CO2 emissions",
+            "Ecotoxicity",
+            "Particulate matter"
+        ];
         
         const text = this.state.expandText;
         

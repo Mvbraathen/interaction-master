@@ -55,7 +55,7 @@
     position: relative;
     color: black;
     margin-bottom: -20px;
-}
+} 
 
 .lol {
     z-index: 99;
@@ -186,40 +186,6 @@
     transition: 1.2s;
 }
 
-.right-half-flex-container > .active-environmental-info-element:before {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.default-style {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-right: 10px;
-    margin-top: 8px;
-    font-size: 2em;
-    line-height: 17px;
-    height: 30%;
-    color: white;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.not-default-style {
-    position: absolute;
-    text-decoration: underline;
-    right: 0;
-    top: 0;
-    height: 30%;
-    margin-top: 8px;
-    margin-right: 10px;
-    font-size: 1em;
-    color: white;
-}
-
 /* Environmental collapse element*/
 .collapse {
     position: absolute;
@@ -265,7 +231,42 @@
 
 .social-info-element:hover {
     background-color: #b3d1ff;
+    transition: 1.2s background-color;
     cursor: pointer;
+}
+
+.right-half-flex-container > .active-environmental-info-element:before {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.default-style {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 10px;
+    margin-top: 8px;
+    font-size: 2em;
+    line-height: 17px;
+    height: 30%;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.not-default-style {
+    position: absolute;
+    text-decoration: underline;
+    right: 0;
+    top: 0;
+    height: 30%;
+    margin-top: 8px;
+    margin-right: 10px;
+    font-size: 1em;
+    color: white;
 }
 
 .info-box-content {

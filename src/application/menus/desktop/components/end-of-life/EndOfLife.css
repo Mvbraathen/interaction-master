@@ -1,59 +1,64 @@
 /* Standard End of Life color and effects */
 .endOfLife {
-	fill: #C75000;
+    fill: #C75000;
 }
 
-.endTxt, .endIcon {
-	fill: white;
-} 
+.endTxt,
+.endIcon {
+    fill: white;
+}
 
 .endOfLife:hover {
-	fill-opacity: 0.4;
+    fill-opacity: 0.4;
 }
 
 .endOfLife:active {
-	fill-opacity: 1;
+    fill-opacity: 1;
 }
 
 
 
-/******************* Styling when on End of Life page *******************/ 
+/******************* Styling when on End of Life page *******************/
 
 
 
 
 /* Prevents active element from fading on hover */
 #end-of-life-page .endOfLife:hover {
-	fill-opacity: 1;
-} 
+    fill-opacity: 1;
+}
 
 /* Colors on inactive menu elements */
-#end-of-life-page .design, #end-of-life-page .resourceExtraction, #end-of-life-page .manufacturing, #end-of-life-page .transport, #end-of-life-page .use{
-	fill: #858585;
+#end-of-life-page .design,
+#end-of-life-page .resourceExtraction,
+#end-of-life-page .manufacturing,
+#end-of-life-page .transport,
+#end-of-life-page .use {
+    fill: #858585;
 }
 
 /* Colors when hovering inactive menu elements */
 #end-of-life-page .design:hover {
-	fill: #E00070;
-	fill-opacity: 1;
+    fill: #E00070;
+    fill-opacity: 1;
 }
 
 #end-of-life-page .resourceExtraction:hover {
-	fill: #00AD00;
-	fill-opacity: 1;
+    fill: #00AD00;
+    fill-opacity: 1;
 }
 
 #end-of-life-page .manufacturing:hover {
-	fill: #BD2EC2;
-	fill-opacity: 1;
+    fill: #BD2EC2;
+    fill-opacity: 1;
 }
 
 #end-of-life-page .transport:hover {
-	fill: #0066FF;
-	fill-opacity: 1;
+    fill: #0066FF;
+    fill-opacity: 1;
 }
 
 #end-of-life-page .use:hover {
-	fill: #EB0000;
-	fill-opacity: 1;
+    fill: #EB0000;
+    fill-opacity: 1;
 }

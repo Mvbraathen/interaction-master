@@ -1,13 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
     NavLink
 } from "react-router-dom";
 import "./Transport.css";
 
 class Transport extends Component {
-	    render() {
-	    	return (
-                <g> <NavLink className="transport" to ="/transport">
+    render() {
+        return (
+            <g> <NavLink className="transport" to ="/transport">
                         <title>Transport</title>
                         <path d="M374.4,306.1c14.6-24.6,22.9-51.2,25.4-78L355.4,243l-67.1-21.6
                               c-1.4,9.5-4.6,18.9-9.8,27.6c-5,8.4-11.4,15.4-18.6,21l13,70.4l35.2,31.4C334.6,356.5,357.7,334.3,374.4,306.1z M378.7,308.6c-16.9,28.5-40.1,50.9-66.7,66.8l14.5,13c27.1-17.1,50.7-40.7,68.2-70.2
@@ -59,8 +59,8 @@ class Transport extends Component {
                               c0.7-0.7,1.5-1,2.4-1s1.7,0.3,2.4,1c0.7,0.7,1,1.5,1,2.4S335.8,302.8,335.1,303.5z"/>
 
                 </NavLink></g>
-	    	)
-	    }
-	}
+        )
+    }
+}
 
 export default Transport;

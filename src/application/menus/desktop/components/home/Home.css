@@ -1,7 +1,7 @@
 .arrows {
-	fill: green;
+    fill: green;
 
-	transform-box: fill-box;
+    transform-box: fill-box;
     transform-origin: 50% 50%;
     -webkit-animation-name: spin;
     -webkit-animation-duration: 100000ms;
@@ -10,29 +10,32 @@
 }
 
 @keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 
 }
 
 .circle {
-	fill: #3B96BC;
+    fill: #3B96BC;
 }
 
 .mobile {
-	fill: white;
+    fill: white;
 }
 
 .home {
-	pointer-events: bounding-box;
+    pointer-events: bounding-box;
 }
 
 .home:hover {
-	fill-opacity: 0.4;
+    fill-opacity: 0.4;
 }
 
 .home:active {
-	fill-opacity: 1;
+    fill-opacity: 1;
 }
-
-

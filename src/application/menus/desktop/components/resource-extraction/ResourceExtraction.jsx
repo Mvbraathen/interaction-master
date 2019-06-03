@@ -1,13 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
     NavLink
 } from "react-router-dom";
 import "./ResourceExtraction.css";
 
 class ResourceExtraction extends Component {
-	    render() {
-	    	return (
-	    		<g> 
+    render() {
+        return (
+            <g> 
                     <NavLink className="resourceExtraction" to ="/resource-extraction">
                         <g>
                             <title>Resource extraction</title>
@@ -88,8 +88,8 @@ class ResourceExtraction extends Component {
                         </g>
                     </NavLink>
                 </g>
-	    	)
-	    }
-	}
+        )
+    }
+}
 
 export default ResourceExtraction;

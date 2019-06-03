@@ -1,13 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
     NavLink
 } from "react-router-dom";
 import "./Use.css";
 
 class Use extends Component {
-	    render() {
-	    	return (
-                <g><NavLink className="use" to ="/use"> 
+    render() {
+        return (
+            <g><NavLink className="use" to ="/use"> 
                     <title>Use</title>
                     <path d="M213.6,396.8c28.6,0.4,55.8-5.8,80.2-17l-35.1-31l-14.9-68.9c-8.9,3.6-18.6,5.5-28.8,5.4
                             c-9.8-0.1-19-2.1-27.6-5.6L133,326l-9.6,46.2C150.1,387.5,180.8,396.4,213.6,396.8z M213.5,401.8c-33.1-0.4-64.1-9.2-91.2-24.4l-3.9,19.1c28.4,14.9,60.6,23.5,94.9,24
@@ -42,8 +42,8 @@ class Use extends Component {
                             C220.6,357.2,220.6,357.5,220.5,357.8z"/> 
                             
                 </NavLink></g>
-	    	)
-	    }
-	}
+        )
+    }
+}
 
 export default Use;

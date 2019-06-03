@@ -6,10 +6,10 @@
     font-size: 1.2em;
     margin-left: 20px;
     margin-top: 135px;
-} 
+}
 
 .breadcrumbSpacing {
-    display:inline-block;
+    display: inline-block;
     color: white;
     margin-left: 10px;
     margin-right: 10px;
@@ -27,7 +27,7 @@
 
 .prevPage {
     text-decoration: underline;
-    display:inline-block;
+    display: inline-block;
     color: blue;
     font-family: Avenir Next;
     font-weight: 500;
@@ -35,13 +35,13 @@
 
 /* Position of active page */
 .activePage {
-    display:inline-block;
+    display: inline-block;
     color: black;
     font-family: Avenir Next;
     font-weight: 500;
 }
 
-.activePage:hover, .prevPage:hover {
+.activePage:hover,
+.prevPage:hover {
     opacity: 0.6;
 }
-

@@ -44,12 +44,14 @@
 }
 
 .burger-container {
-    padding-left: 10px; 
+    padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: black;
@@ -82,7 +84,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-    background-color:rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.85);
     fill-opacity: 0.5;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
@@ -94,18 +96,18 @@ Note: Beware of modifying this element as it can break the animations - you shou
     list-style: none;
     color: #b8b7ad;
     padding: 0.8em;
-  
+
 }
 
 /* Individual item */
 .bm-item {
-	text-decoration: none;
-  	display: inline-block;
-  	font-family: Open Sans;
-  	color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    display: inline-block;
+    font-family: Open Sans;
+    color: rgba(255, 255, 255, 0.6);
     font-size: 1.2em;
     margin-bottom: 3px;
-  	padding-bottom: 12px;
+    padding-bottom: 12px;
 }
 
 .menu-element {
