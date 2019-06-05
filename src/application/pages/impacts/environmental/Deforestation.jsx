@@ -3,7 +3,7 @@ import React from 'react';
 class Deforestation extends React.Component {
     render() {
         return (
-            <div style={{color:'white'}}>
+            <div style={{color:'black'}}>
                 <div className="collapse">
                     -
                 </div>  

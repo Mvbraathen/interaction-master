@@ -213,3 +213,9 @@
     padding-left: 3px;
     padding-right: 3px;
 }
+
+.facebook:hover,
+.gmail:hover,
+.twitter:hover {
+    opacity: 0.5;
+}

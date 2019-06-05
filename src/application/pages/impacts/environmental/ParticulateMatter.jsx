@@ -3,7 +3,7 @@ import React from 'react';
 class ParticulateMatter extends React.Component {
     render() {
         return (
-            <div style={{color:'white'}}>
+            <div style={{color:'black'}}>
                 <div className="collapse">
                     -
                 </div>  

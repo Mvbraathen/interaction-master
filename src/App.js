@@ -15,8 +15,8 @@ import NotFound from './application/pages/not-found/NotFound';
 import './App.css';
 
 function App() {
-  return (
-  	<Router>
+    return (
+        <Router>
 	    <div>
 	    	<Switch>
 	    		<Route path="/home" component={Home}/>
@@ -31,7 +31,7 @@ function App() {
 	    	</Switch>
 	    </div>
 	</Router>
-  );
+    );
 }
 
 export default App;
