@@ -1,6 +1,5 @@
 # Interaction-Master 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 <img src="https://img.shields.io/badge/Made%20with-React-blue.svg" alt="Made with react">
 
 ## Clone repository
