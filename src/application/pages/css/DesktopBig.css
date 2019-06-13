@@ -191,10 +191,8 @@
     font-size: 2.5em;
     line-height: 25px;
     text-align: center;
-    background: #FE6F6F;
-    -webkit-box-shadow: 0px 0px 33px -8px rgba(166,166,166,1);
-    -moz-box-shadow:    0px 0px 33px -8px rgba(166,166,166,1);
-    box-shadow:         0px 0px 1px 1px white;
+    background: none;
+    color: #FFFFFF;
 }
 
 /* Social collapse element*/

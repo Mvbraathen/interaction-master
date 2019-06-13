@@ -21,19 +21,6 @@ class Acidification extends React.Component {
                 id est laborum.
             </div>
         );
-
-        /* Kanskje brukes senere? spørs på innhold
-        let info;
-
-        if(this.props.tag === 'Acidification') {
-            info = <div> acid </div> 
-        } else {
-            info = <div> not acid </div>
-        }
-        return (
-            <div style={{color:'blue'}}> {info} </div>
-        );
-        */
 	}
 }
 
