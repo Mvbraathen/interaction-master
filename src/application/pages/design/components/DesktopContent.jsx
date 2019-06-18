@@ -3,6 +3,7 @@ import Desktop from "../../../menus/desktop/Desktop";
 import "../../css/DesktopBig.css";
 import { NavLink } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import "./DesktopContent.css";
 
 class DesktopContent extends React.Component {
   render() {
@@ -23,6 +24,7 @@ class DesktopContent extends React.Component {
               <div className="lifecycle">Lifecycle</div>
             </NavLink>
           </div>
+          <h1 className="menu-header"> Design </h1>
           <a tabIndex="-1" href="https://www.smart.uio.no">
             <div tabIndex="0" className="desktop-bookmark">
               <Fade right duration={1000}>
@@ -58,7 +60,7 @@ class DesktopContent extends React.Component {
         <div className="split right-half">
           <div className="desktop-header-txt">
             <div className="fix-top-margin-environmental" />
-            <h1>Design</h1>
+            <h1>Where all decisions are being made</h1>
             <div className="purple-line" />
           </div>
           <Fade duration={1000}>

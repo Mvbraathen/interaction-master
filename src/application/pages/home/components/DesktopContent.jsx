@@ -42,7 +42,7 @@ class DesktopContent extends React.Component {
         </div>
         <div className="split right-half">
           <div className="hehe-container">
-            <div className="introTxt">
+            <div lang="it" className="introTxt">
               Hey there!
               <span role="img" aria-label="waving hand">
                 {" "}
