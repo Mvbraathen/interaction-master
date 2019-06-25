@@ -280,8 +280,8 @@ class Environmental extends React.Component {
             onClick={() => this.setState({ Acidification: false })}
           >
             <div className="active-info-box-content">
-              {" "}
-              <Acidification />{" "}
+              <h1> Ocean acidification </h1>
+              <Acidification />
             </div>
           </div>
         </div>

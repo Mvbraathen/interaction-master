@@ -3,22 +3,25 @@ import React from 'react';
 class HumanToxicity extends React.Component {
 	render() {
         return (
-            <div style={{color:'black'}}>
-                <div className="collapse-social">
-                    -
-                </div>  
-                <h1> Human toxicity </h1>
-                Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat. Duis aute irure dolor 
-                in reprehenderit in voluptate velit esse 
-                cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, 
-                sunt in culpa qui officia deserunt mollit anim                     
-                id est laborum.
+            <div>
+                <div className="image-container">
+                    <img width="100%" src={require('./images/HumanToxicity.jpg')} />
+                    <div className="image-credit"> Photo by <a href="https://unsplash.com/@ev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> ev</a></div>
+                </div>
+                <div className="info-positioning">
+                    Emissions of toxic and long-lived substances such as synthetic organic pollutants, 
+                    heavy metal compounds and radioactive materials affecting humans. Miners and 
+                    communities working and living around mines and processing plants have a high risk 
+                    of increased levels of concentrations of toxic materials in their blood. Many of 
+                    these materials can result in acute or long-term health problems. Workers in the 
+                    electronics industry and communities living near these facilities have a high risk 
+                    of increased levels of concentrations of toxic materials in their blood. Many of 
+                    these materials can result in acute or long-term health problems. Workers in the 
+                    electronic waste, both informal and industrial, and communities living near these 
+                    facilities, have a high risk of increased levels of concentrations of toxic 
+                    materials in their blood. Many of these materials can result in acute or long-term 
+                    health problems.
+                </div>
             </div>
         );
 	}

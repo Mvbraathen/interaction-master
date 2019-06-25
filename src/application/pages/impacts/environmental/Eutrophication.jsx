@@ -3,23 +3,15 @@ import React from 'react';
 class Eutrophication extends React.Component {
     render() {
         return (
-            <div style={{color:'black'}}>
-                <div className="collapse">
-                    -
-                </div>  
-                <h1> Eutrophication </h1>
-                Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat. Duis aute irure dolor 
-                in reprehenderit in voluptate velit esse 
-                cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, 
-                sunt in culpa qui officia deserunt mollit anim                     
-                id est laborum.
-            </div>
+        	<div>
+	            <div className="image-container">
+	                    <img width="100%" src={require('./images/Eutrophication.jpg')} />
+	                    <div className="image-credit"> Photo by <a href="https://unsplash.com/@turnlip19?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Jong Marshes</a></div>
+	            </div>
+	            <div className="info-positioning">
+	                Increase of nutrients in a body of water, causing structural changes to an ecosystem. Eutrophication can be the result of mining activities (god, copper, cobalt, etc.) and run-offs from mining activities, such as acid mine drainage. Eutrophication is also found in bodies of water near sites of electronics manufacturing as a result of emissions of waste water containing toxic materials, as well as in bodies of water near sites where electronics are disassembled.
+	            </div>
+	        </div>
         );  
     }
 }

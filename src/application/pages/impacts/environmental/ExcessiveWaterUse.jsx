@@ -3,22 +3,14 @@ import React from 'react';
 class ExcessiveWaterUse extends React.Component {
     render() {
         return (
-            <div style={{color:'black'}}>
-                <div className="collapse">
-                    -
-                </div>  
-                <h1> Excessive water use </h1>
-                Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat. Duis aute irure dolor 
-                in reprehenderit in voluptate velit esse 
-                cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, 
-                sunt in culpa qui officia deserunt mollit anim                     
-                id est laborum.
+            <div>
+            	<div className="image-container">
+                    <img width="100%" src={require('./images/ExcessiveWaterUse.jpg')} />
+                    <div className="image-credit"> Photo by <a href="https://unsplash.com/@mparente?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Micaela Parente</a></div>
+                </div>
+                <div className="info-positioning">
+                	Industrial water use resulting in environmental degradation and decreasing water availability for humans and wildlife. Excessive water use is found in mining and in the manufacturing of mobile phones.
+            	</div>
             </div>
         );  
     }

@@ -5,7 +5,7 @@ import Discrimination from "./social/Discrimination";
 import FoodInsecurity from "./social/FoodInsecurity";
 import GenderInequality from "./social/GenderInequality";
 import HumanToxicity from "./social/HumanToxicity";
-import LackOfCleanHouseholdEnergy from "./social/LackOfCleanHouseholdEnergy";
+import LackOfCleanEnergy from "./social/LackOfCleanEnergy";
 import LivingInSlums from "./social/LivingInSlums";
 import Marginalisation from "./social/Marginalisation";
 import PollutedDrinkingWater from "./social/PollutedDrinkingWater";
@@ -25,7 +25,7 @@ class Social extends React.Component {
       Foodinsecurity: false,
       Genderinequality: false,
       Humantoxicity: false,
-      Lackofcleanhouseholdenergy: false,
+      Lackofcleanenergy: false,
       Livinginslums: false,
       Marginalisation: false,
       Polluteddrinkingwater: false,
@@ -72,7 +72,7 @@ class Social extends React.Component {
       "Food insecurity",
       "Gender inequality",
       "Human toxicity",
-      "Lack of clean household energy",
+      "Lack of clean energy",
       "Living in slums",
       "Marginalisation",
       "Polluted drinking water",
@@ -85,7 +85,7 @@ class Social extends React.Component {
       "Food insecurity",
       "Gender inequality",
       "Human toxicity",
-      "Lack of clean household energy",
+      "Lack of clean energy",
       "Polluted drinking water",
       "Precarious work"
     ];
@@ -95,7 +95,7 @@ class Social extends React.Component {
       "Child labour",
       "Food insecurity",
       "Human toxicity",
-      "Lack of clean household energy",
+      "Lack of clean energy",
       "Living in slums",
       "Polluted drinking water",
       "Precarious work",
@@ -351,16 +351,16 @@ class Social extends React.Component {
       );
     }
 
-    if (this.state.Lackofcleanhouseholdenergy) {
+    if (this.state.Lackofcleanenergy) {
       info = (
         <div className="right-half-flex-container">
           <div
             className="active-social-info-element"
-            onClick={() => this.setState({ Lackofcleanhouseholdenergy: false })}
+            onClick={() => this.setState({ Lackofcleanenergy: false })}
           >
             <div className="active-info-box-content">
               {" "}
-              <LackOfCleanHouseholdEnergy />{" "}
+              <LackOfCleanEnergy />{" "}
             </div>
           </div>
         </div>

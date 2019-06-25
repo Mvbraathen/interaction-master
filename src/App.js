@@ -13,6 +13,9 @@ import Manufacturing from './application/pages/manufacturing/Manufacturing';
 import EndOfLife from './application/pages/end-of-life/EndOfLife';
 import NotFound from './application/pages/not-found/NotFound';
 import './App.css';
+import './application/pages/css/DesktopBig.css';
+import './application/pages/css/MobileResolutionStyle.css';
+import './application/pages/css/Breadcrumbs.css';
 
 function App() {
     return (

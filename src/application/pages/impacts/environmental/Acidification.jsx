@@ -3,22 +3,14 @@ import React from 'react';
 class Acidification extends React.Component {
 	render() {
         return (
-            <div style={{color:'black'}}>
-                <div className="collapse">
-                    -
-                </div>  
-                <h1> Acidification </h1>
-                Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat. Duis aute irure dolor 
-                in reprehenderit in voluptate velit esse 
-                cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, 
-                sunt in culpa qui officia deserunt mollit anim                     
-                id est laborum.
+            <div>
+            	<div className="image-container">
+            		<img width="100%" src={require('./images/Acidification.jpg')} />
+                    <div className="image-credit"> Photo by <a href="https://unsplash.com/@matthardy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Matt Hardy</a></div>
+            	</div>
+                <div className="info-positioning">
+                    Decrease of the ocean’s pH-level as a result of uptake of CO2. Acidification of water bodies is the result of mining and processing of, for example, gold, fossil fuels, and aluminium. Acidification threatens aquatic life (Ecotoxicity) and drinking water (Drinking water pollution)
+                </div>
             </div>
         );
 	}

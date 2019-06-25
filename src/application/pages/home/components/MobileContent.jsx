@@ -1,6 +1,5 @@
 import React from "react";
 import Mobile from "../../../menus/mobile/Mobile";
-import { NavLink } from "react-router-dom";
 
 class MobileContent extends React.Component {
   render() {
@@ -22,82 +21,8 @@ class MobileContent extends React.Component {
             <h1>The mobile lifecycle</h1>
             <div className="purple-line" />
           </div>
-          <div className="page-one">
-            <h1 className="info-header"> Acidification </h1>
-            <figure className="img-item">
-              <img
-                className="img-tst"
-                alt="A road "
-                src={require("../../images/smart-test-image.jpg")}
-              />
-              <figcaption className="txt-child">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </figcaption>
-              <NavLink to="/use/lifetime">
-                <button className="page-one-button"> Read more </button>
-              </NavLink>
-            </figure>
-          </div>
-
-          <div className="top-txt2">
-            <h1>This is a header</h1>
-            <div className="purple-line" />
-          </div>
-          <div className="page-two">
-            <h1 className="info-header"> CO2 emissions </h1>
-            <figure className="img-item">
-              <img
-                className="img-tst"
-                alt="A road "
-                src={require("../../images/smart-test-image.jpg")}
-              />
-              <figcaption className="txt-child">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </figcaption>
-              <NavLink to="/use/lifetime">
-                <button className="page-one-button"> Read more </button>
-              </NavLink>
-            </figure>
-          </div>
-
-          <div className="top-txt2">
-            <h1>Just another header</h1>
-            <div className="purple-line" />
-          </div>
-          <div className="page-three">
-            <h1 className="info-header"> Particulate matter </h1>
-            <figure className="img-item">
-              <img
-                className="img-tst"
-                alt="A road "
-                src={require("../../images/smart-test-image.jpg")}
-              />
-              <figcaption className="txt-child">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </figcaption>
-              <NavLink to="/use/lifetime">
-                <button className="page-one-button"> Read more </button>
-              </NavLink>
-            </figure>
-          </div>
+          
+          <div> <br/><br/><br/><br/> INSERT HOME CONTENT HERE </div>
 
           {/* Fiks footer som et eget komponent */}
           <div className="footer">

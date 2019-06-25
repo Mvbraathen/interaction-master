@@ -3,22 +3,14 @@ import React from 'react';
 class GenderInequality extends React.Component {
 	render() {
         return (
-            <div style={{color:'black'}}>
-                <div className="collapse-social">
-                    -
-                </div>  
-                <h1> Gender inequality </h1>
-                Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat. Duis aute irure dolor 
-                in reprehenderit in voluptate velit esse 
-                cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, 
-                sunt in culpa qui officia deserunt mollit anim                     
-                id est laborum.
+            <div>
+                <div className="image-container">
+                    <img width="100%" src={require('./images/GenderInequality.jpg')} />
+                    <div className="image-credit"> Photo by <a href="https://unsplash.com/@matteopaga?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Matteo Paganelli</a></div>
+                </div>
+                <div className="info-positioning">
+                    Equality of opportunity means “women and men, and girls and boys, enjoy the same rights, resources, opportunities and protections. It does not require that girls and boys, or women and men, be the same, or that they be treated exactly alike” (UNICEF). Equality of opportunity is based on the right not to be discriminated against on the basis of gender, race, religion or national origin established as a human right by the Article 2 of the UDHR.
+                </div>
             </div>
         );
 	}

@@ -3,22 +3,14 @@ import React from 'react';
 class LivingInSlums extends React.Component {
 	render() {
         return (
-            <div style={{color:'black'}}>
-                <div className="collapse-social">
-                    -
-                </div>  
-                <h1> Living in slums </h1>
-                Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip 
-                ex ea commodo consequat. Duis aute irure dolor 
-                in reprehenderit in voluptate velit esse 
-                cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, 
-                sunt in culpa qui officia deserunt mollit anim                     
-                id est laborum.
+            <div>
+                <div className="image-container">
+                    <img width="100%" src={require('./images/LivingInSlums.jpg')} />
+                    <div className="image-credit"> Photo by <a href="https://unsplash.com/@derickray?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Derick McKinney</a></div>
+                </div>
+                <div className="info-positioning">
+                    Housing is about urban population living in slum housing in developing countries. Large slums have been found around informal electronic waste sites, which often lack proper sanitation, access to drinking water.
+                </div>
             </div>
         );
 	}
