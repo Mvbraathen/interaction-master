@@ -70,11 +70,7 @@ class MobileContent extends React.Component {
               Social
             </div>
             {content}
-          </div>
-
-
-          {/* Fiks footer som et eget komponent */}
-          
+          </div>          
         </div>
       </div>
     );

@@ -5,45 +5,17 @@ import { NavLink } from "react-router-dom";
 import "../../css/DesktopBig.css";
 import Environmental from "../../impacts/Environmental";
 import Social from "../../impacts/Social";
+import DesktopHeader from "../../components/DesktopHeader";
 
 class DesktopContent extends React.Component {
   render() {
     /* to select the correct lists of impacts from the two impact components  */
     const fromPage = "resourceExtraction";
+    const pageHeader = "Resource extraction";
 
     return (
       <div id="resource-extraction-page">
-        {/* Header */}
-        <div className="desktop-header">
-          <div className="home-header-txt">
-            <NavLink className="header-link" to="/home">
-              <div className="the">The</div>
-              <div className="mobile">
-                <span className="m">M</span>
-                <span className="o">o</span>
-                <span className="b">b</span>
-                <span className="i">i</span>
-                <span className="l">l</span>
-                <span className="e">e</span>
-              </div>
-              <div className="lifecycle">Lifecycle</div>
-            </NavLink>
-          </div>
-          <a tabIndex="-1" href="https://www.smart.uio.no">
-            <div tabIndex="0" className="desktop-bookmark">
-              <div className="hidden-bookmark-text">
-                This website is made in collaboration with the EU Horizon 2020
-                funded <strong>SMART</strong> project.
-              </div>
-              <img
-                className="desktop-smart-logo"
-                alt="SMART"
-                src={require("../../images/smart-logo-transparent.png")}
-              />
-              <div className="desktop-smart-text">SMART</div>
-            </div>
-          </a>
-        </div>
+        <DesktopHeader pageHeader={pageHeader} />
 
         {/* Left half */}
         <div className="split left-half">
