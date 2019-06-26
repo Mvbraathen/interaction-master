@@ -28,7 +28,7 @@ class Environmental extends React.Component {
       "OzoneDepletion",
       "ParticulateMatter"
     ];
-    let manufacturingArray = [
+    /*let manufacturingArray = [
       "Acidification",
       "Biodiversity",
       "Co2",
@@ -57,7 +57,7 @@ class Environmental extends React.Component {
       "Co2",
       "Ecotoxicity",
       "ParticulateMatter"
-    ];
+    ];*/
 
     /* Determines which elements to render based on the fromPage prop from parent component */
     if (this.props.fromPage === "resourceExtraction") {

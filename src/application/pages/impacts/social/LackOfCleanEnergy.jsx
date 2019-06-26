@@ -5,7 +5,7 @@ class LackOfCleanEnergy extends React.Component {
         return (
             <div>
                 <div className="image-container">
-                    <img width="100%" src={require('./images/LackOfCleanEnergy.jpg')} />
+                    <img alt="burning coal" width="100%" src={require('./images/LackOfCleanEnergy.jpg')} />
                     <div className="image-credit"> Photo by <a href="https://unsplash.com/@thomasq?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Thomas Q</a></div>
                 </div>
                 <div className="info-positioning">

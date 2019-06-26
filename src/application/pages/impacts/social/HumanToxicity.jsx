@@ -5,7 +5,7 @@ class HumanToxicity extends React.Component {
         return (
             <div>
                 <div className="image-container">
-                    <img width="100%" src={require('./images/HumanToxicity.jpg')} />
+                    <img alt="street with smoke" width="100%" src={require('./images/HumanToxicity.jpg')} />
                     <div className="image-credit"> Photo by <a href="https://unsplash.com/@ev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> ev</a></div>
                 </div>
                 <div className="info-positioning">

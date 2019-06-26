@@ -5,7 +5,7 @@ class ParticulateMatter extends React.Component {
         return (
             <div>
             	<div className="image-container">
-                    <img width="100%" src={require('./images/ParticulateMatter.jpg')} />
+                    <img alt="burning" width="100%" src={require('./images/ParticulateMatter.jpg')} />
                     <div className="image-credit"> Photo by <a href="https://unsplash.com/@thesollers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Anton Darius</a></div>
                 </div>
                 <div className="info-positioning">

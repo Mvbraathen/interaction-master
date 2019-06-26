@@ -5,7 +5,7 @@ class Eutrophication extends React.Component {
         return (
         	<div>
 	            <div className="image-container">
-	                    <img width="100%" src={require('./images/Eutrophication.jpg')} />
+	                    <img alt="under water" width="100%" src={require('./images/Eutrophication.jpg')} />
 	                    <div className="image-credit"> Photo by <a href="https://unsplash.com/@turnlip19?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Jong Marshes</a></div>
 	            </div>
 	            <div className="info-positioning">

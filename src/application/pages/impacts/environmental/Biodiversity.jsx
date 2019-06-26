@@ -5,7 +5,7 @@ class Biodiversity extends React.Component {
         return (
             <div>
             	<div className="image-container">
-                    <img width="100%" src={require('./images/Biodiversity.jpg')} />
+                    <img alt ="panda" width="100%" src={require('./images/Biodiversity.jpg')} />
                     <div className="image-credit"> Photo by <a href="https://unsplash.com/@umbriferous?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Theodor Lundqvist</a></div>
                 </div>
                 <div className="info-positioning">

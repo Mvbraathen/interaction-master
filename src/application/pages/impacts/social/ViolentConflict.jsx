@@ -5,7 +5,7 @@ class ViolentConflict extends React.Component {
         return (
             <div>
                 <div className="image-container">
-                    <img width="100%" src={require('./images/ViolentConflict.jpg')} />
+                    <img alt="armed man" width="100%" src={require('./images/ViolentConflict.jpg')} />
                     <div className="image-credit"> Photo by <a href="https://unsplash.com/@specna_arms_4s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Specna Arms</a></div>
                 </div>
                 <div className="info-positioning">

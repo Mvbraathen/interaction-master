@@ -44,7 +44,7 @@ class Environmental extends React.Component {
     ];
     let transportArray = ["HumanToxicity"];
     let useArray = ["HumanToxicity"];
-    let endOfLifeArray = [
+   /* let endOfLifeArray = [
       "ChildLabour",
       "FoodInsecurity",
       "HumanToxicity",
@@ -53,7 +53,7 @@ class Environmental extends React.Component {
       "PollutedDrinkingWater",
       "PrecariousWork",
       "ViolentConflict"
-    ];
+    ]; */
 
     /* Determines which elements to render based on the fromPage prop from parent component */
     if (this.props.fromPage === "resourceExtraction") {

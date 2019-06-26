@@ -5,7 +5,7 @@ class ChildLabour extends React.Component {
         return (
             <div>
                 <div className="image-container">
-                    <img width="100%" src={require('./images/ChildLabour.jpg')} />
+                    <img alt="children" width="100%" src={require('./images/ChildLabour.jpg')} />
                     <div className="image-credit"> Photo by <a href="https://unsplash.com/@sethdoylee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Seth Doyle</a></div>
                 </div>
                 <div className="info-positioning">

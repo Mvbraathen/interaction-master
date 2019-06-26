@@ -5,7 +5,7 @@ class PollutedDrinkingWater extends React.Component {
         return (
             <div>
                 <div className="image-container">
-                    <img width="100%" src={require('./images/PollutedDrinkingWater.jpg')} />
+                    <img alt="drinking water" width="100%" src={require('./images/PollutedDrinkingWater.jpg')} />
                     <div className="image-credit"> Photo by <a href="https://unsplash.com/@belart84?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Artem Beliaikin</a></div>
                 </div>
                 <div className="info-positioning">

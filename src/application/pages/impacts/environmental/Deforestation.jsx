@@ -5,7 +5,7 @@ class Deforestation extends React.Component {
         return (
             <div>
             	<div className="image-container">
-                    <img width="100%" src={require('./images/Deforestation.jpg')} />
+                    <img alt="lumber" width="100%" src={require('./images/Deforestation.jpg')} />
                     <div className="image-credit"> Photo by <a href="https://unsplash.com/@alessiofurlan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Alessio Furlan</a></div>
                 </div>
                 <div className="info-positioning">

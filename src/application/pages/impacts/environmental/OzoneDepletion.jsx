@@ -5,7 +5,7 @@ class OzoneDepletion extends React.Component {
         return (
             <div>
             	<div className="image-container">
-                    <img width="100%" src={require('./images/OzoneDepletion.jpg')} />
+                    <img alt="earth from space" width="100%" src={require('./images/OzoneDepletion.jpg')} />
                     <div className="image-credit"> Photo by <a href="https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> NASA</a></div>
                 </div>
                 <div className="info-positioning">

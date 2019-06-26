@@ -5,7 +5,7 @@ class FoodInsecurity extends React.Component {
         return (
             <div>
                 <div className="image-container">
-                    <img width="100%" src={require('./images/FoodInsecurity.jpg')} />
+                    <img alt="dry crop" width="100%" src={require('./images/FoodInsecurity.jpg')} />
                     <div className="image-credit"> Photo by <a href="https://unsplash.com/@henmankk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Keagan Henman</a></div>
                 </div>
                 <div className="info-positioning">

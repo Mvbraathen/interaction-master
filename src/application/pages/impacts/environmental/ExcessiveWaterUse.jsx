@@ -5,7 +5,7 @@ class ExcessiveWaterUse extends React.Component {
         return (
             <div>
             	<div className="image-container">
-                    <img width="100%" src={require('./images/ExcessiveWaterUse.jpg')} />
+                    <img alt="dry land" width="100%" src={require('./images/ExcessiveWaterUse.jpg')} />
                     <div className="image-credit"> Photo by <a href="https://unsplash.com/@mparente?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Micaela Parente</a></div>
                 </div>
                 <div className="info-positioning">

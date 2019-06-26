@@ -5,7 +5,7 @@ class PrecariousWork extends React.Component {
         return (
             <div>
                 <div className="image-container">
-                    <img width="100%" src={require('./images/PrecariousWork.jpg')} />
+                    <img alt="dangerous work environment" width="100%" src={require('./images/PrecariousWork.jpg')} />
                     <div className="image-credit"> Photo by <a href="https://unsplash.com/@matthardy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Matt Hardy</a></div>
                 </div>
                 <div className="info-positioning">

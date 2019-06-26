@@ -5,7 +5,7 @@ class Co2 extends React.Component {
         return (
             <div>
             	<div className="image-container">
-                    <img width="100%" src={require('./images/Co2.jpg')} />
+                    <img alt="chimney" width="100%" src={require('./images/Co2.jpg')} />
                     <div className="image-credit"> Photo by <a href="https://unsplash.com/@veeterzy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> veeterzy</a></div>
                 </div>
                 <div className="info-positioning">

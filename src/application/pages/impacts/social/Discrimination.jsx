@@ -5,7 +5,7 @@ class Discrimination extends React.Component {
         return (
             <div>
                 <div className="image-container">
-                    <img width="100%" src={require('./images/Discrimination.jpg')} />
+                    <img alt="people demonstrating" width="100%" src={require('./images/Discrimination.jpg')} />
                     <div className="image-credit"> Photo by <a href="https://unsplash.com/@historyhd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> History in HD</a></div>
                 </div>
                 <div className="info-positioning">
