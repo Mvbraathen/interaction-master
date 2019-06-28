@@ -34,7 +34,7 @@
 #manufacturing-page .use,
 #manufacturing-page .endOfLife,
 #manufacturing-page .design {
-    fill: #858585;
+    fill: lightgrey;
 }
 
 /* Colors when hovering inactive menu elements */

@@ -21,7 +21,7 @@
 
 .mobile-header {
     top: 0;
-    z-index: 99;
+    z-index: 90;
     width: 100%;
     position: fixed;
     margin: 0 auto;

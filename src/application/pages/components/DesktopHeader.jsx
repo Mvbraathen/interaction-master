@@ -5,21 +5,15 @@ import './DesktopHeader.css';
 class DesktopHeader extends React.Component {
 	render() {
         return (
-            <div className="new-header">
-                <NavLink className="new-header-link" to="/home">
+            <div className="desktop-header">
+                <NavLink className="desktop-header-link" to="/home">
                     The mobile lifecycle
                 </NavLink>
-                <div className="new-active-page"> 
+                <div className="desktop-active-page"> 
                     {this.props.pageHeader}
                 </div>
-                <a href="https://www.smart.uio.no">
-                    <div className="new-bookmark">
-                        <div className="new-smart-text" style={{fontFamily: 'Avenir Next'}}> 
-                            In collaboration with </div>
-                        <div className="new-smart-text new-bold-text" style={{fontFamily: 'Avenir Next'}}> 
-                            <strong>smart.uio.no</strong> 
-                        </div>
-                  </div>
+                <a href="http://smart.uio.no">
+                    <div className="desktop-bookmark"> SMART </div>
                 </a>
             </div>
         );

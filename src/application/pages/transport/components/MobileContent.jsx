@@ -1,5 +1,6 @@
 import React from "react";
 import Mobile from "../../../menus/mobile/Mobile";
+import MobileHeader from "../../components/MobileHeader";
 import MobileFooter from "../../components/MobileFooter";
 import MobileEnvironmental from "../../impacts/MobileEnvironmental";
 import MobileSocial from "../../impacts/MobileSocial";
@@ -32,6 +33,7 @@ class MobileContent extends React.Component {
 
   render() {
 
+    const pageHeader = "Transport";
     let fromPage = "transport";
     let content;
 
@@ -39,7 +41,9 @@ class MobileContent extends React.Component {
       content = (
         <div>
           <div className="selected-info"> On this page you can learn more about <strong>environmental impacts</strong> within the transport phase of the mobile lifecycle.</div>
-          <MobileEnvironmental fromPage={fromPage} />
+          <div style={{width: '95%', marginLeft: '2.5%'}}>
+            <MobileEnvironmental fromPage={fromPage} />
+          </div>
           <div className="footer">
             <MobileFooter />
           </div>
@@ -50,7 +54,9 @@ class MobileContent extends React.Component {
       content = (
         <div>
           <div className="selected-info"> On this page you can learn more about <strong>social impacts</strong> within the transport phase of the mobile lifecycle.</div>
-          <MobileSocial fromPage={fromPage} />
+          <div style={{width: '95%', marginLeft: '2.5%'}}>
+            <MobileSocial fromPage={fromPage} />
+          </div>
           <div className="footer">
             <MobileFooter />
           </div>
@@ -61,7 +67,7 @@ class MobileContent extends React.Component {
       <div className="mobilePage">
         <Mobile />
         <div className="mobileContent">
-          <div className="mobile-header"> Transport </div>
+          <MobileHeader pageHeader={pageHeader} />
           <div className="impact-selection"> 
             <div className="select-environmental" onClick={this.handleEnvironmentalClicked}>
               Environmental

@@ -3,8 +3,7 @@
     fill: #E00070;
 }
 
-.designTxt,
-.designIcon {
+.designTxt, .designIcon {
     fill: white;
 }
 
@@ -34,7 +33,7 @@
 #design-page .transport,
 #design-page .use,
 #design-page .endOfLife {
-    fill: #858585;
+    fill: lightgrey;
 }
 
 /* Colors when hovering inactive menu elements */

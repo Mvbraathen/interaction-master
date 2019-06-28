@@ -34,7 +34,7 @@
 #transport-page .endOfLife,
 #transport-page .design,
 #transport-page .manufacturing {
-    fill: #858585;
+    fill: lightgrey;
 }
 
 /* Colors when hovering inactive menu elements */

@@ -1,5 +1,6 @@
 import React from "react";
 import Mobile from "../../../menus/mobile/Mobile";
+import MobileHeader from "../../components/MobileHeader";
 import MobileFooter from "../../components/MobileFooter";
 import MobileEnvironmental from "../../impacts/MobileEnvironmental";
 import MobileSocial from "../../impacts/MobileSocial";
@@ -32,6 +33,7 @@ class MobileContent extends React.Component {
 
   render() {
 
+    const pageHeader = "Manufacturing";
     let fromPage = "manufacturing";
     let content;
 
@@ -65,7 +67,7 @@ class MobileContent extends React.Component {
       <div className="mobilePage">
         <Mobile />
         <div className="mobileContent">
-          <div className="mobile-header"> Manufacturing </div>
+          <MobileHeader pageHeader={pageHeader} />
           <div className="impact-selection"> 
             <div className="select-environmental" onClick={this.handleEnvironmentalClicked}>
               Environmental

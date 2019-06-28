@@ -34,7 +34,7 @@
 #use-page .design,
 #use-page .manufacturing,
 #use-page .transport {
-    fill: #858585;
+    fill: lightgrey;
 }
 
 /* Colors when hovering inactive menu elements */

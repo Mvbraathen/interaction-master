@@ -1,16 +1,20 @@
 import React from "react";
 import Mobile from "../../../menus/mobile/Mobile";
+import MobileHeader from "../../components/MobileHeader";
 import MobileFooter from "../../components/MobileFooter";
 import Fade from "react-reveal/Fade";
 
 class MobileContent extends React.Component {
   render() {
+
+    const pageHeader = "Design";
+
     return (
       <div className="mobilePage">
         <Mobile />
         <div className="mobileContent">
-          <div className="mobile-header"> Design </div>
-          <div style={{marginTop: '100px'}}>
+          <MobileHeader pageHeader={pageHeader} />
+          <div style={{marginTop: '100px', width: '95%', marginLeft: '2.5%'}}>
             <Fade duration={1000}>
                   <div className="page-one">
                     <h1 className="info-header"> Where all decisions are made </h1>

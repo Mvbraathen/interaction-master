@@ -1,4 +1,4 @@
-.new-header {
+.desktop-header {
     z-index: 99;
     width: 100%;
     height: 60px;
@@ -6,47 +6,38 @@
 
 }
 
-.new-header-link {
+.desktop-header-link {
     text-decoration: none;
     font-weight: 300;
     color: white;
     top: 0;
     z-index: 99;
     position: fixed;
-    margin-left: 140px;
+    margin-left: 130px;
     background-color: #333333;
     height: 60px;
     line-height: 60px;
     font-size: 1.5em;
 }
 
-.new-bookmark {
-    cursor: pointer;
-    background-color: #1A6667;
-    height: 60px;
-    width: 170px;
-    float: right;
-    margin-right: 140px;
-    color: white;
-    text-align: center;
-    line-height: 20px;
-    display: table;
-}
-
-.new-smart-logo {
-    margin-top: -3px;
-    width: 50px;
-}
-
-.new-smart-text {
-    margin-top: 10px;
-    display: table-cell;
-    display: inline-block; 
-    color: white;
+.desktop-bookmark {
+    position: fixed;
+    top: 0; 
+    right: 0;
+    margin-top: 10px; 
+    margin-right: 130px; 
+    z-index: 99; 
+    background-color: #1A6667; 
+    width: 80px; 
+    height: 40px; 
+    font-size: 1.3em;
     font-family: Avenir Next;
+    line-height: 40px; 
+    text-align: center;
+    color: white;
 }
 
-.new-active-page {
+.desktop-active-page {
     position: absolute;
     width: 100%;
     color: white;

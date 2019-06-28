@@ -1,5 +1,6 @@
 import React from "react";
 import Mobile from "../../../menus/mobile/Mobile";
+import MobileHeader from "../../components/MobileHeader";
 import MobileFooter from "../../components/MobileFooter";
 import MobileEnvironmental from "../../impacts/MobileEnvironmental";
 import MobileSocial from "../../impacts/MobileSocial";
@@ -44,6 +45,7 @@ class MobileContent extends React.Component {
 
   render() {
 
+    const pageHeader = "Resource extraction";
     let fromPage = "resourceExtraction";
     let content;
 
@@ -51,7 +53,9 @@ class MobileContent extends React.Component {
       content = (
         <div>
           <div className="selected-info"> <strong>Environmental impacts</strong></div>
-          <MobileEnvironmental fromPage={fromPage} />
+          <div style={{width: '95%', marginLeft: '2.5%'}}>
+            <MobileEnvironmental fromPage={fromPage} />
+          </div>
           <div className="footer">
             <MobileFooter />
           </div>
@@ -62,7 +66,9 @@ class MobileContent extends React.Component {
       content = (
         <div>
           <div className="selected-info"> <strong>Social impacts</strong></div>
-          <MobileSocial fromPage={fromPage} />
+          <div style={{width: '95%', marginLeft: '2.5%'}}>
+            <MobileSocial fromPage={fromPage} />
+          </div>
           <div className="footer">
             <MobileFooter />
           </div>
@@ -73,7 +79,7 @@ class MobileContent extends React.Component {
       <div className="mobilePage">
         <Mobile />
         <div className="mobileContent">
-          <div className="mobile-header"> Resource extraction </div>
+          <MobileHeader pageHeader={pageHeader} />
           <div style={{marginTop: '80px', fontSize: '2em', fontWeight: '500', marginLeft: '2.5%', marginRight: '2.5%'}}> The resource extraction phase </div> 
           <div style={{marginTop: '10px', marginBottom: '-40px', fontFamiliy: 'Avenir Next', marginLeft: '2.5%', marginRight: '2.5%', textAlign: 'justify', fontSize: '1em'}}>
             Resource extraction is the phase covering activities resulting in 

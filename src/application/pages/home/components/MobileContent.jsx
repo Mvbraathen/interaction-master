@@ -1,16 +1,20 @@
 import React from "react";
 import Mobile from "../../../menus/mobile/Mobile";
+import MobileHeader from "../../components/MobileHeader";
 import MobileFooter from "../../components/MobileFooter";
 import Fade from "react-reveal/Fade";
 
 class MobileContent extends React.Component {
-  render() {
+    render() {
+
+    const pageHeader = "The mobile lifecycle";
+
     return (
       <div className="mobilePage">
         <Mobile />
         <div className="mobileContent">
-          <div className="mobile-header"> The mobile lifecycle </div>
-          <div style={{marginTop: '100px'}}>
+            <MobileHeader pageHeader={pageHeader} />
+         <div style={{marginTop: '100px'}}>
             <div style={{width: '95%', marginLeft: '2.5%'}}>
                 <Fade duration={1000}>
                     <div className="page-one">
