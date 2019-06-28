@@ -92,7 +92,19 @@ class DesktopContent extends React.Component {
                 <div className="default-content">
                     <h1> The resource extraction phase </h1>
                     <div className="default-content-text">
-                        Resource text here
+                        Resource extraction is the phase covering activities resulting in materials that will be used in the manufacturing phase, 
+                        such as mineral extraction and the processing of minerals. 
+                        For example, the extraction and processing of oil to make plastics, 
+                        the mining and processing of cobalt and lithium to make batteries, 
+                        and the mining and processing of tungsten to make your mobile phone vibrate.
+                        <p></p>
+                        Artisanal mining takes place in many African countries. 
+                        Some of the minerals mined for mobile phones and other electronics, 
+                        gold, tin, tantalum, and tungsten, are considered conflict minerals. 
+                        International regulation (USA, EU) restricts the use of conflict minerals.
+                        <p></p>
+                        Most minerals are mined and need further processing. 
+                        Oil is processed in refineries, while minerals found in ore are processed in so-called smelters.
                     </div>
                 </div>
             )
