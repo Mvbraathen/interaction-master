@@ -79,10 +79,10 @@ class DesktopContent extends React.Component {
 
     render() {
         /* To select corresponding components */
-        const fromPage = "resourceExtraction";
+        const fromPage = "transport";
         
         /* To get correct header text */
-        const pageHeader = "Resource extraction";
+        const pageHeader = "Transport";
         
         /* The variable that holds the content */
         let content;
