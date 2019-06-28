@@ -6,6 +6,15 @@
 	font-size: 1.2em;
 }
 
+/* For the design / home page only */
+.sub-menu-without-selection {
+    position: fixed;
+    margin-top: 60px;
+    height: 80px;
+    width: 100vh;
+    background-color: #fafafa;
+}
+
 .sub-menu-left-half {
 	position: absolute; 
     margin-top: 60px;
@@ -49,7 +58,7 @@
 }
 
 .content-manager {
-	margin-top: 200px; 
+	margin-top: 180px; 
 	margin-bottom: 100px;
 	margin-left: 5%;
 	margin-right: 5%;

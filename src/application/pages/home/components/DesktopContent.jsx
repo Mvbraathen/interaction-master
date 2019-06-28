@@ -1,42 +1,41 @@
 import React from "react";
+// Various components
 import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../components/DesktopHeader";
-import Fade from "react-reveal/Fade";
+// Styling
+import "../../css/DesktopBig.css";
+import "../../css/SubMenu.css";
 
 class DesktopContent extends React.Component {
-  
-    render() {
 
-    const fromPage = "fsdfsd";
-    
-    return (
-        <div id="home-page">
-            <DesktopHeader fromPage={fromPage} />
+    render() {    
+        /* To get correct header text */
+        const pageHeader = "Home";
+        
+        return (
+            <div>
+
+                <DesktopHeader pageHeader={pageHeader} />
+
+                {/* Left half */}
                 <div className="split left-half">
-                        <div style={{position: 'absolute', paddingTop: '20px', backgroundColor: '#F5FFFA', width: '100%', textAlign: 'center', zIndex: '99', marginTop: '61px', fontFamiliy: 'Avenir Next', fontSize: '1.5em' }}> 
-                            <div style={{maxWidth: '500px', margin: '0 auto'}}>
-                            Hey there!
-                            <span role="img" aria-label="waving hand">
-                                {" "}👋{" "}
-                            </span>
-                            <br />
-                            If you want to learn more about the Mobile Lifecycle, 
-                            please interact with the circular menu below.
-                            </div>
-                        </div>
+                    <div className="sub-menu-without-selection"></div>
                     <Desktop />
                 </div>
+
+                {/* Right half */}
                 <div className="split right-half">
-                    <div style={{marginTop: '100px', marginBottom: '100px', maxWidth: '700px', fontFamiliy: 'Avenir Next', fontSize: '1.5em'}}>
-                        <Fade duration={1000}>
-                            <div style={{maxWdth: '90%', marginLeft: '5%', marginRight: '5%'}} className="page-one">
-                                <h1 className="info-header"> Lifecycle of mobile phones </h1>
-                                <div>
-                                    <div className="image-container">
+                    <div className="sub-menu-without-selection"></div>
+                        <div className="content-manager">
+                            <div className="default-content">
+                                <h1> Lifecycle of mobile phones </h1>
+                                <div className="default-content-text">
+                                    <div style={{zIndex: '-1'}} className="image-container">
                                         <img alt="iphone" width="100%" src={require('../../images/iphone.jpg')} />
-                                        <div className="image-credit"> Photo by <a href="https://unsplash.com/@williamtm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> William Hook</a></div>
-                                    </div>
-                                    <div style={{textAlign: 'justify'}} className="info-positioning">
+                                        <div className="image-credit"> 
+                                            Photo by <a href="https://unsplash.com/@williamtm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> William Hook</a>
+                                        </div>
+                                    <div>
                                         Mobile phones have become one of the more unsustainable consumer goods. 
                                         In 2015, more than 1.5 billion new mobile phones were shipped worldwide, 
                                         often replacing fully functional phones. 
@@ -82,11 +81,8 @@ class DesktopContent extends React.Component {
                                         Europe; and finally from repair, recycling and discarding.
                                     </div>
                                 </div>
-                                <a href="https://www.smart.uio.no/research/life-cycle-of-mobile-phones/">
-                                    <button className="page-one-button"> Visit SMART for more info </button>
-                                </a>
                             </div>
-                        </Fade>
+                        </div>
                     </div>
                 </div>
             </div>

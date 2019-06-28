@@ -16,7 +16,7 @@ class DesktopHeader extends React.Component {
                     <div className="new-bookmark">
                         <div className="new-smart-text" style={{fontFamily: 'Avenir Next'}}> 
                             In collaboration with </div>
-                        <div lassName="new-smart-text new-bold-text" style={{fontFamily: 'Avenir Next'}}> 
+                        <div className="new-smart-text new-bold-text" style={{fontFamily: 'Avenir Next'}}> 
                             <strong>smart.uio.no</strong> 
                         </div>
                   </div>
