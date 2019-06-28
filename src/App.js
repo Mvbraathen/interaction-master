@@ -4,6 +4,7 @@ import {
     BrowserRouter as Router,
     Route
 } from 'react-router-dom'
+// All pages
 import Home from './application/pages/home/Home';
 import ResourceExtraction from './application/pages/resource-extraction/ResourceExtraction';
 import Use from './application/pages/use/Use';
@@ -12,10 +13,12 @@ import Transport from './application/pages/transport/Transport';
 import Manufacturing from './application/pages/manufacturing/Manufacturing';
 import EndOfLife from './application/pages/end-of-life/EndOfLife';
 import NotFound from './application/pages/not-found/NotFound';
+// Styling
 import './App.css';
 import './application/pages/css/DesktopBig.css';
 import './application/pages/css/MobileResolutionStyle.css';
 import './application/pages/css/Breadcrumbs.css';
+import './application/pages/css/SubMenu.css';
 
 function App() {
     return (

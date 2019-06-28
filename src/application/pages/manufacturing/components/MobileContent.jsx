@@ -39,7 +39,9 @@ class MobileContent extends React.Component {
       content = (
         <div>
           <div className="selected-info"> On this page you can learn more about <strong>environmental impacts</strong> within the manufacturing phase of the mobile lifecycle.</div>
-          <MobileEnvironmental fromPage={fromPage} />
+          <div style={{width: '95%', marginLeft: '2.5%'}}>
+            <MobileEnvironmental fromPage={fromPage} />
+          </div>
           <div className="footer">
             <MobileFooter />
           </div>
@@ -50,7 +52,9 @@ class MobileContent extends React.Component {
       content = (
         <div>
           <div className="selected-info"> On this page you can learn more about <strong>social impacts</strong> within the manufacturing phase of the mobile lifecycle.</div>
-          <MobileSocial fromPage={fromPage} />
+          <div style={{width: '95%', marginLeft: '2.5%'}}>
+            <MobileSocial fromPage={fromPage} />
+          </div>
           <div className="footer">
             <MobileFooter />
           </div>

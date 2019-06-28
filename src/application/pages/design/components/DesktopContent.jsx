@@ -7,7 +7,9 @@ import Fade from "react-reveal/Fade";
 
 class DesktopContent extends React.Component {
   render() {
+    
     const pageHeader = "Design";
+
     return (
       <div id="design-page">
         <DesktopHeader pageHeader={pageHeader}/>

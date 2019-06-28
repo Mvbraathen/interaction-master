@@ -1,6 +1,7 @@
 import React from "react";
 /* Environmental impacts */
-import Acidification from "./environmental/Acidification";
+//import Acidification from "./environmental/Acidification";
+import AcidificationMobile from "./environmental/AcidificationMobile";
 import Biodiversity from "./environmental/Biodiversity";
 import Co2 from "./environmental/Co2";
 import Deforestation from "./environmental/Deforestation";
@@ -141,33 +142,36 @@ class Environmental extends React.Component {
 
     if (this.props.fromPage === "manufacturing") {
       info = (
-        <div className="right-half-flex-container">
-          {manufacturingArray.map((value, index) => {
-            return (
-              <Fade duration={1000} key={value}>
-                <div
-                  tabIndex="0"
-                  onKeyPress={e => {
-                    this.keyPressed(e, value);
-                  }}
-                  key={index}
-                  className="environmental-info-element"
-                  onClick={e => {
-                    this.handleClick(e, value);
-                  }}
-                >
-                  <div className="info-box-content"> {value} </div>
+        <div style={{marginTop: '-50px'}}>
+          <h1>Environmental impacts</h1>
+          <div className="right-half-flex-container">
+            {manufacturingArray.map((value, index) => {
+              return (
+                <Fade duration={1000} key={value}>
                   <div
-                    className={this.state.changeTextStyle}
-                    onMouseEnter={this.onMouseover.bind(this)}
-                    onMouseLeave={this.onMouseout.bind(this)}
+                    tabIndex="0"
+                    onKeyPress={e => {
+                      this.keyPressed(e, value);
+                    }}
+                    key={index}
+                    className="environmental-info-element"
+                    onClick={e => {
+                      this.handleClick(e, value);
+                    }}
                   >
-                    {text}
+                    <div className="info-box-content"> {value} </div>
+                    <div
+                      className={this.state.changeTextStyle}
+                      onMouseEnter={this.onMouseover.bind(this)}
+                      onMouseLeave={this.onMouseout.bind(this)}
+                    >
+                      {text}
+                    </div>
                   </div>
-                </div>
-              </Fade>
-            );
-          })}
+                </Fade>
+              );
+            })}
+          </div>
         </div>
       );
     }
@@ -274,17 +278,9 @@ class Environmental extends React.Component {
     /* All environmental impacts */
     if (this.state.Acidification === true) {
       info = (
-        <div className="right-half-flex-container">
-          <div
-            className="active-environmental-info-element"
-            onClick={() => this.setState({ Acidification: false })}
-          >
-            <div className="active-info-box-content">
-              <h1> Ocean acidification </h1>
-              <Acidification />
-            </div>
+          <div style={{width: '95%', maxWidth: '550px', margin: '0 auto'}} onClick={() => this.setState({ Acidification: false })}>
+            <AcidificationMobile />
           </div>
-        </div>
       );
     }
 
