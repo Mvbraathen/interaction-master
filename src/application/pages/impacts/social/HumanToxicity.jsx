@@ -5,7 +5,7 @@ class HumanToxicityMobile extends React.Component {
 	render() {
         return (
             <Fade duration={1000}>
-                  <div className="page-one">
+                <div className="info-box">
                     <h1 className="info-header">  Human toxicity </h1>
                     <div>
                         <div className="image-container">
@@ -27,9 +27,6 @@ class HumanToxicityMobile extends React.Component {
                             health problems.
                         </div>
                     </div>
-                    <a href="https://www.smart.uio.no/research/life-cycle-of-mobile-phones/">
-                        <button className="page-one-button"> Read more </button>
-                    </a>
                 </div>
             </Fade>
         );

@@ -13,11 +13,11 @@ import ParticulateMatter from "./environmental/ParticulateMatter";
 class Environmental extends React.Component {
 
   render() {
-    let info;
+    let impacts;
    
     /* Determines which elements to render based on the fromPage prop from parent component */
     if (this.props.fromPage === "resourceExtraction") {
-      info = (
+      impacts = (
         <div>
          <Acidification />
          <Biodiversity />
@@ -33,7 +33,7 @@ class Environmental extends React.Component {
     }
 
     if (this.props.fromPage === "manufacturing") {
-      info = (
+      impacts = (
         <div>
           <Acidification />
           <Biodiversity />
@@ -48,7 +48,7 @@ class Environmental extends React.Component {
     }
 
     if (this.props.fromPage === "transport") {
-      info = (
+      impacts = (
         <div>
           <Acidification />
           <Co2 />
@@ -60,7 +60,7 @@ class Environmental extends React.Component {
     }
 
     if (this.props.fromPage === "use") {
-      info = (
+      impacts = (
         <div>
           <Acidification />
           <Co2 />
@@ -72,7 +72,7 @@ class Environmental extends React.Component {
     }
 
     if (this.props.fromPage === "endOfLife") {
-      info = (
+      impacts = (
         <div>
           <Biodiversity />
           <Co2 />
@@ -81,7 +81,7 @@ class Environmental extends React.Component {
         </div>
       );
     }
-    return <div>{info}</div>;
+    return <div>{impacts}</div>;
   }
 }
 

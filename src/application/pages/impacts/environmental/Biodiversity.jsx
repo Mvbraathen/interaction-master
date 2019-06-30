@@ -5,7 +5,7 @@ class BiodiversityMobile extends React.Component {
 	render() {
         return (
             <Fade duration={1000}>
-                  <div className="page-one">
+                <div className="info-box">
                     <h1 className="info-header"> Biodiversity </h1>
                     <div>
                         <div className="image-container">
@@ -16,9 +16,6 @@ class BiodiversityMobile extends React.Component {
                             Biodiversity loss, the drastic reduction or even extinction of certain species in a habitat.  Both artisanal and industrial mining have contributed to the destruction of local habitats (see also Deforestation), resulting in a decline and even extinction of species in particular countries. 
                         </div>
                     </div>
-                    <a href="https://www.smart.uio.no/research/life-cycle-of-mobile-phones/">
-                        <button className="page-one-button"> Read more </button>
-                    </a>
                 </div>
             </Fade>
         );

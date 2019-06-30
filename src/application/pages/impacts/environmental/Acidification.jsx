@@ -5,7 +5,7 @@ class AcidificationMobile extends React.Component {
 	render() {
         return (
             <Fade duration={1000}>
-                  <div className="page-one">
+                <div className="info-box">
                     <h1 className="info-header"> Acidification</h1>
                     <div>
                         <div className="image-container">

@@ -24,11 +24,12 @@
 }
 
 .mini-menu-flex-container {
+    z-index: -1;
     display: flex;
     flex-wrap: wrap;
     background-color: none;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 140px;
 }
 
 .mini-menu-flex-container .mini-menu-flex-element {

@@ -15,11 +15,11 @@ import ViolentConflict from "./social/ViolentConflict";
 class Environmental extends React.Component {
 
   render() {
-    let info;
+    let impacts;
 
     /* Determines which elements to render based on the fromPage prop from parent component */
     if (this.props.fromPage === "resourceExtraction") {
-      info = (
+      impacts = (
         <div>
           <ChildLabour />
           <Discrimination />
@@ -37,7 +37,7 @@ class Environmental extends React.Component {
     }
 
     if (this.props.fromPage === "manufacturing") {
-      info = (
+      impacts = (
         <div>
           <ChildLabour />
           <Discrimination />
@@ -52,7 +52,7 @@ class Environmental extends React.Component {
     }
 
     if (this.props.fromPage === "transport") {
-      info = (
+      impacts = (
         <div>
           <HumanToxicity />
         </div>
@@ -60,7 +60,7 @@ class Environmental extends React.Component {
     }
 
     if (this.props.fromPage === "use") {
-      info = (
+      impacts = (
         <div>
           <HumanToxicity />
         </div>
@@ -68,7 +68,7 @@ class Environmental extends React.Component {
     }
 
     if (this.props.fromPage === "endOfLife") {
-      info = (
+      impacts = (
         <div>
           <ChildLabour />
           <FoodInsecurity />
@@ -82,7 +82,7 @@ class Environmental extends React.Component {
       );
     }
 
-    return <div>{info}</div>;
+    return <div>{impacts}</div>;
   }
 }
 

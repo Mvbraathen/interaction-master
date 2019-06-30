@@ -3,7 +3,7 @@ import React from "react";
 import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../components/DesktopHeader";
 // Styling
-import "../../css/DesktopBig.css";
+import "../../css/Desktop.css";
 import "../../css/SubMenu.css";
 
 class DesktopContent extends React.Component {

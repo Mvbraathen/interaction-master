@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 
+import './Breadcrumb.css';
+
 class Breadcrumb extends React.Component {
     constructor() {
         super();

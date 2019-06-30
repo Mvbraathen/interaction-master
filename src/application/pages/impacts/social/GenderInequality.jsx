@@ -5,7 +5,7 @@ class GenderInequalityMobile extends React.Component {
 	render() {
         return (
             <Fade duration={1000}>
-                  <div className="page-one">
+                <div className="info-box">
                     <h1 className="info-header"> Gender inequality </h1>
                     <div>
                         <div className="image-container">
@@ -22,9 +22,6 @@ class GenderInequalityMobile extends React.Component {
                             established as a human right by the Article 2 of the UDHR.
                         </div>
                     </div>
-                    <a href="https://www.smart.uio.no/research/life-cycle-of-mobile-phones/">
-                        <button className="page-one-button"> Read more </button>
-                    </a>
                 </div>
             </Fade>
         );

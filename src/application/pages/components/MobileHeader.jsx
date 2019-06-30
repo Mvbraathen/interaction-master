@@ -1,4 +1,5 @@
 import React from 'react';
+import './MobileHeader.css';
 
 class MobileHeader extends React.Component {
 	render() {
@@ -8,24 +9,9 @@ class MobileHeader extends React.Component {
                     {this.props.pageHeader} 
                 </div>
                 <a href="http://smart.uio.no">
-                    <div 
-                        style={{
-                            position: 'fixed', 
-                            top: '0', 
-                            right: '0', 
-                            marginTop: '10px', 
-                            marginRight: '20px', 
-                            zIndex: '99', 
-                            backgroundColor: '#1A6667', 
-                            width: '40px', 
-                            height: '40px', 
-                            fontSize: '1.5em',
-                            fontFamily: 'Avenir Next', 
-                            lineHeight:'40px', 
-                            textAlign: 'center', 
-                            color: 'white'
-                        }}
-                    > S </div>
+                    <div className="mobile-bookmark"> 
+                        S 
+                    </div>
                 </a>
             </div>
         );

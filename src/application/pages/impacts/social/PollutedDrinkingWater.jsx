@@ -5,7 +5,7 @@ class PollutedDrinkingWaterMobile extends React.Component {
 	render() {
         return (
             <Fade duration={1000}>
-                  <div className="page-one">
+                <div className="info-box">
                     <h1 className="info-header"> Polluted drinking water </h1>
                     <div>
                         <div className="image-container">
@@ -19,9 +19,6 @@ class PollutedDrinkingWaterMobile extends React.Component {
                             and near informal electronic waste disassembling sites.
                         </div>
                     </div>
-                    <a href="https://www.smart.uio.no/research/life-cycle-of-mobile-phones/">
-                        <button className="page-one-button"> Read more </button>
-                    </a>
                 </div>
             </Fade>
         );

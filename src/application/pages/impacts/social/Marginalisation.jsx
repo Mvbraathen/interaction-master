@@ -5,7 +5,7 @@ class MarginalisationMobile extends React.Component {
 	render() {
         return (
             <Fade duration={1000}>
-                  <div className="page-one">
+                <div className="info-box">
                     <h1 className="info-header"> Marginalisation </h1>
                     <div>
                         <div className="image-container">
@@ -17,9 +17,6 @@ class MarginalisationMobile extends React.Component {
                             disparities, for example for women versus men, or for migrant labourers.
                         </div>
                     </div>
-                    <a href="https://www.smart.uio.no/research/life-cycle-of-mobile-phones/">
-                        <button className="page-one-button"> Read more </button>
-                    </a>
                 </div>
             </Fade>
         );

@@ -4,7 +4,7 @@ import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../components/DesktopHeader";
 import Breadcrumb from "../../components/Breadcrumb";
 // Styling
-import "../../css/DesktopBig.css";
+import "../../css/Desktop.css";
 import "../../css/SubMenu.css";
 
 class DesktopContent extends React.Component {
@@ -33,7 +33,7 @@ class DesktopContent extends React.Component {
                     <div className="sub-menu-without-selection"></div>
                         <div className="content-manager">
                             <div className="default-content">
-                                <h1> Where all decisions are made </h1>
+                                <h1 style={{color: '#E00070'}}> Where all decisions are made </h1>
                                 <div className="default-content-text">
                                     <div className="image-container">
                                         <img alt="broken iphone" width="100%" src={require('../../images/broken-iphone.jpg')} />

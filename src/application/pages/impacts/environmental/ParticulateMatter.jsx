@@ -5,7 +5,7 @@ class ParticulateMatterMobile extends React.Component {
 	render() {
         return (
             <Fade duration={1000}>
-                  <div className="page-one">
+                <div className="info-box">
                     <h1 className="info-header"> Particulate matter </h1>
                     <div>
                         <div className="image-container">
@@ -16,9 +16,6 @@ class ParticulateMatterMobile extends React.Component {
                             Solid and liquid particles in the air, organic and inorganic, mostly hazardous. Mining and smelting operations produce a large amount of particulate matter, containing a wide variety of materials, such as iron, aluminium, mercury, etc. Particulate matter emissions are also related to the use of diesel vehicles. The burning of electronic waste contributes to high emissions of foe example nitrogen oxides, sulphuric acid, chlorine, and volatile organic compounds (VOCs).
                         </div>
                     </div>
-                    <a href="https://www.smart.uio.no/research/life-cycle-of-mobile-phones/">
-                        <button className="page-one-button"> Read more </button>
-                    </a>
                 </div>
             </Fade>
         );

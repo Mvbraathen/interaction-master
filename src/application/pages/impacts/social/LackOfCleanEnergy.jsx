@@ -5,7 +5,7 @@ class LackOfCleanEnergyMobile extends React.Component {
 	render() {
         return (
             <Fade duration={1000}>
-                  <div className="page-one">
+                <div className="info-box">
                     <h1 className="info-header">  Lack of clean energy </h1>
                     <div>
                         <div className="image-container">
@@ -18,9 +18,6 @@ class LackOfCleanEnergyMobile extends React.Component {
                             of energy is covered by the climate gas emissions categories above.
                         </div>
                     </div>
-                    <a href="https://www.smart.uio.no/research/life-cycle-of-mobile-phones/">
-                        <button className="page-one-button"> Read more </button>
-                    </a>
                 </div>
             </Fade>
         );

@@ -7,7 +7,7 @@ import Breadcrumb from "../../components/Breadcrumb";
 import Environmental from "../../impacts/Environmental";
 import Social from "../../impacts/Social";
 // Styling
-import "../../css/DesktopBig.css";
+import "../../css/Desktop.css";
 import "../../css/SubMenu.css";
 
 class DesktopContent extends React.Component {
@@ -19,13 +19,14 @@ class DesktopContent extends React.Component {
             environmental: false,
             social: false,
             // Submenu element's background color
-            defaultColor: '#e6e6e6',
-            environmentalColor: '#fafafa',
-            socialColor: '#fafafa',
+            defaultColor: 'white',
+            environmentalColor: '#D3D3D3',
+            socialColor: '#D3D3D3',
             // Submenu element's font weight
-            defaultFontWeight: '600',
-            environmentalFontWeight: '300',
-            socialFontWeight: '300'
+            defaultFontWeight: '700',
+            environmentalFontWeight: '400',
+            socialFontWeight: '400',
+            image: 'manufacturing-purple'
         }
     }
 
@@ -35,13 +36,14 @@ class DesktopContent extends React.Component {
             social: false,
             environmental: false,
             // Submenu element's background color
-            defaultColor: '#e6e6e6',
-            environmentalColor: '#fafafa',
-            socialColor: '#fafafa',
+            defaultColor: 'white',
+            environmentalColor: '#D3D3D3',
+            socialColor: '#D3D3D3',
             // Submenu element's font weight
-            defaultFontWeight: '600',
-            environmentalFontWeight: '300',
-            socialFontWeight: '300'
+            defaultFontWeight: '700',
+            environmentalFontWeight: '400',
+            socialFontWeight: '400',
+            image: 'manufacturing-purple'
         })
     }
 
@@ -51,13 +53,14 @@ class DesktopContent extends React.Component {
             social: false,
             environmental: true,
             // Submenu element's background color
-            defaultColor: '#fafafa',
-            environmentalColor: '#e6e6e6',
-            socialColor: '#fafafa',
+            defaultColor: '#D3D3D3',
+            environmentalColor: 'white',
+            socialColor: '#D3D3D3',
             // Submenu element's font weight
-            defaultFontWeight: '300',
-            environmentalFontWeight: '600',
-            socialFontWeight: '300'
+            defaultFontWeight: '400',
+            environmentalFontWeight: '700',
+            socialFontWeight: '400',
+            image: 'manufacturing-black'
         })
     }
 
@@ -67,14 +70,34 @@ class DesktopContent extends React.Component {
             environmental: false,
             social: true,
             // Submenu element's background color
-            defaultColor: '#fafafa',
-            environmentalColor: '#fafafa',
-            socialColor: '#e6e6e6',
+            defaultColor: '#D3D3D3',
+            environmentalColor: '#D3D3D3',
+            socialColor: 'white',
             // Submenu element's font weight
-            defaultFontWeight: '300',
-            environmentalFontWeight: '300',
-            socialFontWeight: '600'
+            defaultFontWeight: '400',
+            environmentalFontWeight: '400',
+            socialFontWeight: '700',
+            image: 'manufacturing-black'
         })
+    }
+
+    /* When enter is pressed on sub menu elements, click functions is called */
+    handleDefaultEnterPressed(event) {
+        if(event.key === 'Enter'){
+            this.handleDefaultClick();
+        }
+    }
+
+    handleEnvironmentalEnterPressed(event) {
+        if(event.key === 'Enter'){
+            this.handleEnvironmentalClick();
+        }
+    }
+
+    handleSocialEnterPressed(event) {
+        if(event.key === 'Enter'){
+            this.handleSocialClick();
+        }
     }
 
     render() {
@@ -87,10 +110,13 @@ class DesktopContent extends React.Component {
         /* The variable that holds the content */
         let content;
 
+        /* Decides which icon to render */
+        let image = this.state.image;
+
         if(this.state.default) {
             content = (
                 <div className="default-content">
-                    <h1> The manufacturing phase </h1>
+                    <h1 style={{color: '#BD2EC2'}}> The manufacturing phase </h1>
                     <div className="default-content-text">
                         Manufacturing is the phase in which the different components of the mobile 
                         phone are produced and put together to become the finished product. The 
@@ -108,6 +134,9 @@ class DesktopContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
+                    <div className="selected-info"> 
+                        Environmental impacts
+                    </div>
                     <div className="environmental-content">
                         <Environmental fromPage={fromPage} />
                     </div>
@@ -118,6 +147,9 @@ class DesktopContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
+                    <div className="selected-info"> 
+                        Social impacts
+                    </div>
                     <div className="social-content">
                         <Social fromPage={fromPage} />
                     </div>
@@ -138,33 +170,45 @@ class DesktopContent extends React.Component {
                 {/* Right half */}
                 <div className="split right-half">
                     <div className="sub-menu">
-                        <div className = "default-menu-element"
+                        <div tabIndex="0" className = "default-menu-element"
                             style={{
                                 backgroundColor: this.state.defaultColor, 
                                 fontWeight: this.state.defaultFontWeight
                             }} 
                             onClick={e => {
                                 this.handleDefaultClick(e);
+                            }}
+                            onKeyDown={event => {
+                                this.handleDefaultEnterPressed(event);
                             }}>
-                            Default
+                            
+                            <div>
+                                <img alt="resource extraction icon" style={{maxHeight: '80px', verticalAlign: 'middle'}} src={require('../../images/'+ image +'.svg')} />
+                            </div>
                         </div>
-                        <div className="environmental-menu-element"
+                        <div tabIndex="0" className="environmental-menu-element"
                             style={{
                                 backgroundColor: this.state.environmentalColor,
                                 fontWeight: this.state.environmentalFontWeight
                             }} 
                             onClick={e => {
                                 this.handleEnvironmentalClick(e);
+                            }}
+                            onKeyDown={event => {
+                                this.handleEnvironmentalEnterPressed(event);
                             }}>
                             Environmental
                         </div>
-                        <div className="social-menu-element"
+                        <div tabIndex="0" className="social-menu-element"
                             style={{
                                 backgroundColor: this.state.socialColor,
                                 fontWeight: this.state.socialFontWeight
                             }} 
                             onClick={e => {
                                 this.handleSocialClick(e);
+                            }}
+                            onKeyDown={event => {
+                                this.handleSocialEnterPressed(event);
                             }}>
                             Social
                         </div>
