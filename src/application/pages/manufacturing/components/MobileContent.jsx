@@ -2,8 +2,8 @@ import React from "react";
 import Mobile from "../../../menus/mobile/Mobile";
 import MobileHeader from "../../components/MobileHeader";
 import MobileFooter from "../../components/MobileFooter";
-import MobileEnvironmental from "../../impacts/MobileEnvironmental";
-import MobileSocial from "../../impacts/MobileSocial";
+import Environmental from "../../impacts/Environmental";
+import Social from "../../impacts/Social";
 
 class MobileContent extends React.Component {
   constructor() {
@@ -42,7 +42,7 @@ class MobileContent extends React.Component {
         <div>
           <div className="selected-info"> On this page you can learn more about <strong>environmental impacts</strong> within the manufacturing phase of the mobile lifecycle.</div>
           <div style={{width: '95%', marginLeft: '2.5%'}}>
-            <MobileEnvironmental fromPage={fromPage} />
+            <Environmental fromPage={fromPage} />
           </div>
           <div className="footer">
             <MobileFooter />
@@ -55,7 +55,7 @@ class MobileContent extends React.Component {
         <div>
           <div className="selected-info"> On this page you can learn more about <strong>social impacts</strong> within the manufacturing phase of the mobile lifecycle.</div>
           <div style={{width: '95%', marginLeft: '2.5%'}}>
-            <MobileSocial fromPage={fromPage} />
+            <Social fromPage={fromPage} />
           </div>
           <div className="footer">
             <MobileFooter />

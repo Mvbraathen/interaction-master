@@ -4,8 +4,8 @@ import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../components/DesktopHeader";
 import Breadcrumb from "../../components/Breadcrumb";
 // Impacts
-import MobileEnvironmental from "../../impacts/MobileEnvironmental";
-import MobileSocial from "../../impacts/MobileSocial";
+import Environmental from "../../impacts/Environmental";
+import Social from "../../impacts/Social";
 // Styling
 import "../../css/DesktopBig.css";
 import "../../css/SubMenu.css";
@@ -104,7 +104,7 @@ class DesktopContent extends React.Component {
             content = (
                 <div>
                     <div className="environmental-content">
-                        <MobileEnvironmental fromPage={fromPage} />
+                        <Environmental fromPage={fromPage} />
                     </div>
                 </div>
             )
@@ -114,7 +114,7 @@ class DesktopContent extends React.Component {
             content = (
                 <div>
                     <div className="social-content">
-                        <MobileSocial fromPage={fromPage} />
+                        <Social fromPage={fromPage} />
                     </div>
                 </div>
             )
