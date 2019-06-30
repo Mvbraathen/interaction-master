@@ -13,17 +13,27 @@ class MobileContent extends React.Component {
         super();
         this.state = {
             /* decides which impact category to be shown */
+            default: false,
             environmental: true,
             social: false,
             /* background colors on active and inactive buttons */
-            environmentalButtonColor: '#FC7307',
-            socialButtonColor: '#707070',
+            environmentalButtonColor: '#ff9900',
+            socialButtonColor: '#6699ff',
             /* text colors in active and inactive buttons */
-            environmentalButtonTextColor: 'white',
+            environmentalButtonTextColor: 'black',
             socialButtonTextColor: 'black',
         }
+        this.handleDefaultClicked = this.handleDefaultClicked.bind(this);
         this.handleEnvironmentalClicked = this.handleEnvironmentalClicked.bind(this);
         this.handleSocialClicked = this.handleSocialClicked.bind(this);
+    }
+
+    handleDefaultClicked() {
+        this.setState({
+            default: true,
+            environmental: false,
+            social: false
+        });
     }
 
     handleEnvironmentalClicked() {
@@ -56,35 +66,9 @@ class MobileContent extends React.Component {
         let fromPage = "manufacturing";
         let content;
 
-        if(this.state.environmental) {
+        if(this.state.default) {
             content = (
                 <div>
-                    <div className="selected-info"> 
-                        Environmental impacts
-                    </div>
-                    <div className="mobile-impacts-width">
-                        <Environmental fromPage={fromPage} />
-                    </div>
-                    <MobileFooter />
-                </div>
-            )
-        } 
-        if(this.state.social) {
-            content = (
-                <div>
-                    <div className="selected-info"> <strong>Social impacts</strong></div>
-                    <div className="mobile-impacts-width">
-                        <Social fromPage={fromPage} />
-                    </div>
-                    <MobileFooter />
-                </div>
-            )
-        }
-        return (
-            <div className="mobilePage">
-                <Mobile />
-                <div className="mobileContent">
-                    <MobileHeader pageHeader={pageHeader} />
                     <div className="page-title"> 
                         The manufacturing phase 
                     </div> 
@@ -98,18 +82,75 @@ class MobileContent extends React.Component {
                         Manufacturing takes place in factories, with the largest factory, in Shenzen, 
                         China, housing up to 450.000 workers.
                     </div>
-                    <div className="select-impact-category-text"> 
-                        Select the impact category you want to learn more about 
+                    <p style={{height: '30px'}}></p>
+                    <div style={{marginTop: '-15px', marginBottom: '-6px'}} className="selected-info"> 
+                        Select impact
                     </div>
-                    <div className="impact-selection"> 
-                        <div style={{backgroundColor: this.state.environmentalButtonColor, color: this.state.environmentalButtonTextColor}} className="select-environmental" onClick={this.handleEnvironmentalClicked}>
+                    <div style={{fontFamilty: 'Avenir Next', textAlign: 'center'}}>
+                        <button onClick={this.handleEnvironmentalClicked} style={{position: 'relative',left: '0', marginLeft: '2.5%',marginRight: '2.5%',  width: '45%', marginTop: '20px', marginBottom: '20px', border: 'solid 2px #BD2EC2', color: '#BD2EC2', borderRadius: '5px', padding: '18px 0px', fontWeight: '500', cursor: 'pointer', letterSpacing: '2px', fontFamilty:'Open sans', fontSize:'1.1em'}}>
                             Environmental
-                        </div>
-                        <div style={{backgroundColor: this.state.socialButtonColor, color: this.state.socialButtonTextColor}}  className="select-social" onClick={this.handleSocialClicked}>
+                        </button>
+                        <button onClick={this.handleSocialClicked} style={{position: 'relative',right: '0', marginLeft: '2.5%', marginRight: '2.5%', width: '45%', marginTop: '20px', marginBottom: '20px', border: 'solid 2px #BD2EC2', color: '#BD2EC2', borderRadius: '5px', padding: '18px 50px', fontWeight: '500', cursor: 'pointer', letterSpacing: '2px', fontFamilty:'Open sans', fontSize:'1.1em'}}>
                             Social
-                        </div>
+                        </button>
                         {content}
                     </div>
+                </div>
+            )
+        } 
+
+        if(this.state.environmental) {
+            content = (
+                <div>
+                    <div style={{height: '60px'}}></div>
+                    <button onClick={this.handleDefaultClicked} style={{display: 'block', position: 'relative',right: '0', marginLeft: '3.3%', width: '100px', marginTop: '20px', marginBottom: '0px', border: 'solid 2px lightgrey', color: '#696969', borderRadius: '5px', padding: '5px 0px', fontWeight: '500', cursor: 'pointer', letterSpacing: '2px', fontFamilty:'Open sans', fontSize:'1.1em'}}> 
+                        <span>&crarr;</span>Back 
+                    </button>
+                    <button onClick={this.handleEnvironmentalClicked} style={{backgroundColor: '#BD2EC2', position: 'relative',left: '0', marginLeft: '3.3%',marginRight: '3.3%',  width: '45%', marginTop: '20px', marginBottom: '20px', border: 'solid 2px #BD2EC2', color: 'white', borderRadius: '5px', padding: '18px 0px', fontWeight: '500', cursor: 'pointer', letterSpacing: '2px', fontFamilty:'Open sans', fontSize:'1.1em'}}>
+                        Environmental
+                    </button>
+                    <button onClick={this.handleSocialClicked} style={{position: 'relative',right: '0', marginRight: '3.3%', width: '45%', marginTop: '20px', marginBottom: '20px', border: 'solid 2px #BD2EC2', color: '#BD2EC2', borderRadius: '5px', padding: '18px 50px', fontWeight: '500', cursor: 'pointer', letterSpacing: '2px', fontFamilty:'Open sans', fontSize:'1.1em'}}>
+                        Social
+                    </button>
+                    <div style={{marginTop: '10px', marginBottom: '-50px'}} className="selected-info"> 
+                        Environmental impacts
+                    </div>
+                    <div className="mobile-impacts-width">
+                        <Environmental fromPage={fromPage} />
+                    </div>
+                    <MobileFooter />
+                </div>
+            )
+        } 
+        if(this.state.social) {
+            content = (
+                <div>
+                    <div style={{height: '60px'}}></div>
+                    <button onClick={this.handleDefaultClicked} style={{display: 'block', position: 'relative',right: '0', marginLeft: '3.3%', width: '100px', marginTop: '20px', marginBottom: '0px', border: 'solid 2px lightgrey', color: '#696969', borderRadius: '5px', padding: '5px 0px', fontWeight: '500', cursor: 'pointer', letterSpacing: '2px', fontFamilty:'Open sans', fontSize:'1.1em'}}> 
+                        <span>&crarr;</span>Back 
+                    </button>
+                    <button onClick={this.handleEnvironmentalClicked} style={{position: 'relative',left: '0', marginLeft: '3.3%',marginRight: '3.3%',  width: '45%', marginTop: '20px', marginBottom: '20px', border: 'solid 2px #BD2EC2', color: '#BD2EC2', borderRadius: '5px', padding: '18px 0px', fontWeight: '500', cursor: 'pointer', letterSpacing: '2px', fontFamilty:'Open sans', fontSize:'1.1em'}}>
+                        Environmental
+                    </button>
+                    <button onClick={this.handleSocialClicked} style={{backgroundColor: '#BD2EC2', position: 'relative',right: '0', marginRight: '3.3%', width: '45%', marginTop: '20px', marginBottom: '20px', border: 'solid 2px #BD2EC2', color: 'white', borderRadius: '5px', padding: '18px 50px', fontWeight: '500', cursor: 'pointer', letterSpacing: '2px', fontFamilty:'Open sans', fontSize:'1.1em'}}>
+                        Social
+                    </button>
+                    <div style={{marginTop: '10px', marginBottom: '-50px'}} className="selected-info"> 
+                        Social impacts
+                    </div>
+                    <div className="mobile-impacts-width">
+                        <Social fromPage={fromPage} />
+                    </div>
+                    <MobileFooter />
+                </div>
+            )
+        }
+        return (
+            <div className="mobilePage">
+                <Mobile />
+                <div className="mobileContent">
+                    <MobileHeader pageHeader={pageHeader} />
+                    {content}
                 </div>
             </div>
         );
