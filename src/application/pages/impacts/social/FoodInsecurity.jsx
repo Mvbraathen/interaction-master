@@ -6,11 +6,15 @@ class FoodInsecurityMobile extends React.Component {
         return (
             <Fade duration={1000}>
                 <div className="info-box">
-                    <h1 className="info-header"> FoodInsecurity </h1>
+                    <h1 className="info-header"> Food insecurity </h1>
                     <div>
                         <div className="image-container">
                             <img alt="dry crop" width="100%" src={require('./images/FoodInsecurity.jpg')} />
-                            <div className="image-credit"> Photo by <a href="https://unsplash.com/@henmankk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Keagan Henman</a></div>
+                            <div className="image-credit">
+                                <a href="https://unsplash.com/@henmankk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
+                                    Keagan Henman
+                                </a>
+                            </div>
                         </div>
                         <div className="info-positioning">
                             Food, as a social dimension, refers to the percentage of the population 

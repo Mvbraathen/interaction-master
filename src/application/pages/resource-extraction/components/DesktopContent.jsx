@@ -22,10 +22,7 @@ class DesktopContent extends React.Component {
             defaultColor: 'white',
             environmentalColor: '#D3D3D3',
             socialColor: '#D3D3D3',
-            // Submenu element's font weight
-            defaultFontWeight: '700',
-            environmentalFontWeight: '400',
-            socialFontWeight: '400'
+            image: 'manufacturing-purple'
         }
     }
 
@@ -106,10 +103,13 @@ class DesktopContent extends React.Component {
         /* The variable that holds the content */
         let content;
 
+        /* Decides which icon to render */
+        let image = this.state.image;
+
         if(this.state.default) {
             content = (
                 <div className="default-content">
-                    <h1 style={{color: '#00AD00'}}> The resource extraction phase </h1>
+                    <h1 className="selected-info page-title" style={{color: '#00AD00'}}> The resource extraction phase </h1>
                     <div className="default-content-text">
                         Resource extraction is the phase covering activities resulting in materials that will be used in the manufacturing phase, 
                         such as mineral extraction and the processing of minerals. 
@@ -132,7 +132,7 @@ class DesktopContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div className="selected-info"> 
+                    <div className="selected-info page-title" style={{color: '#00AD00'}}> 
                         Environmental impacts
                     </div>
                     <div className="environmental-content">
@@ -145,7 +145,7 @@ class DesktopContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <div className="selected-info"> 
+                    <div className="selected-info page-title" style={{color: '#00AD00'}}> 
                         Social impacts
                     </div>
                     <div className="social-content">
@@ -179,7 +179,13 @@ class DesktopContent extends React.Component {
                             onKeyDown={event => {
                                 this.handleDefaultEnterPressed(event);
                             }}>
-                            Default
+                            <div>
+                                <img 
+                                    alt="resource extraction icon" 
+                                    style={{maxHeight: '50px', verticalAlign: 'middle'}} 
+                                    src={require('../../images/'+ image +'.svg')} 
+                                />
+                            </div>
                         </div>
                         <div tabIndex="0" className="environmental-menu-element"
                             style={{

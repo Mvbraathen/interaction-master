@@ -14,10 +14,10 @@ import Manufacturing from './application/pages/manufacturing/Manufacturing';
 import EndOfLife from './application/pages/end-of-life/EndOfLife';
 import NotFound from './application/pages/not-found/NotFound';
 // Styling
-import './App.css';
 import './application/pages/css/Desktop.css';
 import './application/pages/css/Mobile.css';
 import './application/pages/css/SubMenu.css';
+import './application/pages/css/ImpactSelection.css';
 
 function App() {
     return (

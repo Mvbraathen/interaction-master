@@ -109,7 +109,7 @@ class DesktopContent extends React.Component {
         if(this.state.default) {
             content = (
                 <div className="default-content">
-                    <h1 style={{color: '#C75000'}}> The end of life phase </h1>
+                    <h1 className="selected-info page-title" style={{color: '#C75000'}}> The end of life phase </h1>
                     <div className="default-content-text">
                         End of life is the phase in which the mobile phone is no longer in use as the result of planned, functional or perceived obsolescence of the phone. 
                         These mobile phones disappear in dusty drawers, get sold or are repaired or thrown away. 
@@ -123,6 +123,9 @@ class DesktopContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
+                    <div className="selected-info page-title" style={{color: '#C75000'}}> 
+                        Environmental impacts
+                    </div>
                     <div className="environmental-content">
                         <Environmental fromPage={fromPage} />
                     </div>
@@ -133,6 +136,9 @@ class DesktopContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
+                    <div className="selected-info page-title" style={{color: '#C75000'}}> 
+                        Social impacts
+                    </div>
                     <div className="social-content">
                         <Social fromPage={fromPage} />
                     </div>

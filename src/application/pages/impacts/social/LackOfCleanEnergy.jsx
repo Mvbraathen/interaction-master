@@ -10,7 +10,11 @@ class LackOfCleanEnergyMobile extends React.Component {
                     <div>
                         <div className="image-container">
                             <img alt="burning coal" width="100%" src={require('./images/LackOfCleanEnergy.jpg')} />
-                            <div className="image-credit"> Photo by <a href="https://unsplash.com/@thomasq?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Thomas Q</a></div>
+                            <div className="image-credit">
+                                <a href="https://unsplash.com/@thomasq?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
+                                    Thomas Q
+                                </a>
+                            </div>
                         </div>
                         <div className="info-positioning">
                             Access to electricity is a critical issue in all aspects of sustainable development. 

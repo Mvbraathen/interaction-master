@@ -109,7 +109,7 @@ class DesktopContent extends React.Component {
         if(this.state.default) {
             content = (
                 <div className="default-content">
-                    <h1 style={{color: '#EB0000'}}> The use phase </h1>
+                    <h1 className="selected-info page-title" style={{color: '#EB0000'}}> The use phase </h1>
                     <div className="default-content-text">
                         Use refers to the phase in which the mobile phone is used for information and communication activities by a mobile phone user. 
                         It is estimated that there are 4.43 billion mobile phone users worldwide, that is 60% of the total population of our planet.
@@ -121,6 +121,9 @@ class DesktopContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
+                    <div className="selected-info page-title" style={{color: '#EB0000'}}> 
+                        Environmental impacts
+                    </div>
                     <div className="environmental-content">
                         <Environmental fromPage={fromPage} />
                     </div>
@@ -131,7 +134,10 @@ class DesktopContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <div className="social-content">
+                    <div className="selected-info page-title" style={{color: '#EB0000'}}> 
+                        Social impacts
+                    </div>
+                    <div className="environmental-content">
                         <Social fromPage={fromPage} />
                     </div>
                 </div>
@@ -151,7 +157,7 @@ class DesktopContent extends React.Component {
                 {/* Right half */}
                 <div className="split right-half">
                     <div className="sub-menu">
-                        <div tabIndex="0" className = "default-menu-element"
+                        <div className = "default-menu-element"
                             style={{
                                 backgroundColor: this.state.defaultColor, 
                                 fontWeight: this.state.defaultFontWeight
@@ -164,7 +170,7 @@ class DesktopContent extends React.Component {
                             }}>
                             Default
                         </div>
-                        <div tabIndex="0" className="environmental-menu-element"
+                        <div className="environmental-menu-element"
                             style={{
                                 backgroundColor: this.state.environmentalColor,
                                 fontWeight: this.state.environmentalFontWeight
@@ -177,7 +183,7 @@ class DesktopContent extends React.Component {
                             }}>
                             Environmental
                         </div>
-                        <div tabIndex="0" className="social-menu-element"
+                        <div className="social-menu-element"
                             style={{
                                 backgroundColor: this.state.socialColor,
                                 fontWeight: this.state.socialFontWeight

@@ -35,6 +35,12 @@
     line-height: 40px; 
     text-align: center;
     color: white;
+    transition: 1s;
+}
+
+
+.desktop-bookmark:hover > .desktop-heaeder-link {
+    filter: blur(2px);
 }
 
 .desktop-active-page {

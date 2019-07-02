@@ -1,23 +1,25 @@
 .footer,
 .push {
-    margin-top: 100px;
+    bottom: 0;
     height: 350px;
     /* To look ok on mobile phones */
-    background: white;
+    background-color: #1A6667;
     -webkit-box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
     -moz-box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
     box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
 }
 
 .smart-footer-txt {
-    color: black;
-    margin-right: 20%;
+    color: white;
+    margin-top: -10px;
+    margin-right: 40px;
     margin-left: 40px;
-    text-align: left;
+    text-align: justify;
+    margin-bottom: 50px;
 }
 
 .social-network {
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 20px;
     text-align: left;
     margin-left: 40px;

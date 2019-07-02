@@ -10,7 +10,11 @@ class HumanToxicityMobile extends React.Component {
                     <div>
                         <div className="image-container">
                             <img alt="street with smoke" width="100%" src={require('./images/HumanToxicity.jpg')} />
-                            <div className="image-credit"> Photo by <a href="https://unsplash.com/@ev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> ev</a></div>
+                            <div className="image-credit">
+                                <a href="https://unsplash.com/@ev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
+                                    ev
+                                </a>
+                            </div>
                         </div>
                         <div className="info-positioning">
                             Emissions of toxic and long-lived substances such as synthetic organic pollutants, 

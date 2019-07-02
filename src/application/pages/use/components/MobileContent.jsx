@@ -13,38 +13,37 @@ class MobileContent extends React.Component {
         super();
         this.state = {
             /* decides which impact category to be shown */
-            environmental: true,
+            default: true,
+            environmental: false,
             social: false,
-            /* background colors on active and inactive buttons */
-            environmentalButtonColor: '#FC7307',
-            socialButtonColor: '#707070',
-            /* text colors in active and inactive buttons */
-            environmentalButtonTextColor: 'white',
-            socialButtonTextColor: 'black',
+            useColor: '#EB0000'
         }
+        this.handleDefaultClicked = this.handleDefaultClicked.bind(this);
         this.handleEnvironmentalClicked = this.handleEnvironmentalClicked.bind(this);
         this.handleSocialClicked = this.handleSocialClicked.bind(this);
     }
 
+    handleDefaultClicked() {
+        this.setState({
+            default: true,
+            environmental: false,
+            social: false
+        });
+    }
+
     handleEnvironmentalClicked() {
         this.setState({
+            default: false,
             environmental: true,
-            social: false,
-            environmentalButtonColor: '#FC7307',
-            socialButtonColor: '#707070',
-            environmentalButtonTextColor: 'white',
-            socialButtonTextColor: 'black',
+            social: false
         });
     }
 
     handleSocialClicked() {
         this.setState({
-            social: true,
+            default: false,
             environmental: false,
-            environmentalButtonColor: '#707070',
-            socialButtonColor: '#FC7307',
-            environmentalButtonTextColor: 'black',
-            socialButtonTextColor: 'white',
+            social: true
         });
     }
 
@@ -56,10 +55,48 @@ class MobileContent extends React.Component {
         let fromPage = "use";
         let content;
 
+        if(this.state.default) {
+            content = (
+                <div>
+                    <div style={{color: this.state.useColor}} className="page-title"> 
+                        The use phase 
+                    </div> 
+                    <div className="page-introduction-text">
+                        Use refers to the phase in which the mobile phone is used for information and 
+                        communication activities by a mobile phone user. It is estimated that there 
+                        are 4.43 billion mobile phone users worldwide, that is 60% of the total 
+                        population of our planet.
+                    </div>
+                    <p style={{height: '30px'}}></p>
+                    <div style={{marginTop: '-15px', marginBottom: '-6px'}} className="selected-info"> 
+                        Select an impact category
+                    </div>
+                    <div style={{fontFamilty: 'Avenir Next', textAlign: 'center'}}>
+                        <button className="commonButtonStyle environmentalButton" onClick={this.handleEnvironmentalClicked} style={{borderColor: this.state.useColor, color: this.state.useColor}}>
+                            Environmental
+                        </button>
+                        <button className="commonButtonStyle socialButton" onClick={this.handleSocialClicked} style={{borderColor: this.state.useColor, color: this.state.useColor}}>
+                            Social
+                        </button>
+                    </div>
+                </div>
+            )
+        }
+
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div className="selected-info"> 
+                    <div style={{height: '60px'}}></div>
+                    <button className="defaultButton" onClick={this.handleDefaultClicked}> 
+                        <span>&crarr;</span>Back 
+                    </button>
+                    <button  className="commonButtonStyle environmentalButton" onClick={this.handleEnvironmentalClicked} style={{backgroundColor: this.state.useColor, borderColor: this.state.useColor, color: 'white'}}>
+                        Environmental
+                    </button>
+                    <button className="commonButtonStyle socialButton" onClick={this.handleSocialClicked} style={{borderColor: this.state.useColor, color: this.state.useColor}}>
+                        Social
+                    </button>
+                    <div style={{marginTop: '10px'}} className="selected-info"> 
                         Environmental impacts
                     </div>
                     <div className="mobile-impacts-width">
@@ -68,11 +105,22 @@ class MobileContent extends React.Component {
                     <MobileFooter />
                 </div>
             )
-        } 
+        }
+
         if(this.state.social) {
             content = (
                 <div>
-                    <div className="selected-info"> 
+                    <div style={{height: '60px'}}></div>
+                    <button className="defaultButton" onClick={this.handleDefaultClicked}> 
+                        <span>&crarr;</span>Back 
+                    </button>
+                    <button  className="commonButtonStyle environmentalButton" onClick={this.handleEnvironmentalClicked} style={{borderColor: this.state.useColor, color: this.state.useColor}}>
+                        Environmental
+                    </button>
+                    <button className="commonButtonStyle socialButton" onClick={this.handleSocialClicked} style={{backgroundColor: this.state.useColor, borderColor: this.state.useColor, color: 'white'}}>
+                        Social
+                    </button>
+                    <div style={{marginTop: '10px'}} className="selected-info"> 
                         Social impacts
                     </div>
                     <div className="mobile-impacts-width">
@@ -82,30 +130,14 @@ class MobileContent extends React.Component {
                 </div>
             )
         }
+
         return (
-            <div className="mobilePage">
+            <div>
                 <Mobile />
-                <div className="mobileContent">
-                    <MobileHeader pageHeader={pageHeader} />
-                    <div className="page-title"> 
-                        The use phase 
-                    </div> 
-                    <div className="page-introduction-text">
-                        Use refers to the phase in which the mobile phone is used for information and 
-                        communication activities by a mobile phone user. It is estimated that there 
-                        are 4.43 billion mobile phone users worldwide, that is 60% of the total 
-                        population of our planet.
-                    </div>
-                    <div className="select-impact-category-text"> 
-                        Select the impact category you want to learn more about 
-                    </div>
-                    <div className="impact-selection"> 
-                        <div style={{backgroundColor: this.state.environmentalButtonColor, color: this.state.environmentalButtonTextColor}} className="select-environmental" onClick={this.handleEnvironmentalClicked}>
-                            Environmental
-                        </div>
-                        <div style={{backgroundColor: this.state.socialButtonColor, color: this.state.socialButtonTextColor}}  className="select-social" onClick={this.handleSocialClicked}>
-                            Social
-                        </div>
+                <div className="mobilePage">
+                    
+                    <div className="mobileContent">
+                        <MobileHeader pageHeader={pageHeader} />
                         {content}
                     </div>
                 </div>

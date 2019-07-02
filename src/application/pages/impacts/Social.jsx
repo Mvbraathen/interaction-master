@@ -14,76 +14,78 @@ import ViolentConflict from "./social/ViolentConflict";
 
 class Environmental extends React.Component {
 
-  render() {
-    let impacts;
+    render() {
 
-    /* Determines which elements to render based on the fromPage prop from parent component */
-    if (this.props.fromPage === "resourceExtraction") {
-      impacts = (
-        <div>
-          <ChildLabour />
-          <Discrimination />
-          <FoodInsecurity />
-          <GenderInequality />
-          <HumanToxicity />
-          <LackOfCleanEnergy />
-          <LivingInSlums />
-          <Marginalisation />
-          <PollutedDrinkingWater />
-          <PrecariousWork />
-          <ViolentConflict />
-        </div>
-      );
+        let impacts;
+
+        /* Determines which impact components to render based on the fromPage prop from parent component */
+        if (this.props.fromPage === "resourceExtraction") {
+            impacts = (
+                <div>
+                    <ChildLabour />
+                    <Discrimination />
+                    <FoodInsecurity />
+                    <GenderInequality />
+                    <HumanToxicity />
+                    <LackOfCleanEnergy />
+                    <LivingInSlums />
+                    <Marginalisation />
+                    <PollutedDrinkingWater />
+                    <PrecariousWork />
+                    <ViolentConflict />
+                </div>
+            );
+        }
+
+        if (this.props.fromPage === "manufacturing") {
+            impacts = (
+                <div>
+                    <ChildLabour />
+                    <Discrimination />
+                    <FoodInsecurity />
+                    <GenderInequality />
+                    <HumanToxicity />
+                    <LackOfCleanEnergy />
+                    <PollutedDrinkingWater />
+                    <PrecariousWork />
+                </div>
+            );
+        }
+
+        if (this.props.fromPage === "transport") {
+            impacts = (
+                <div>
+                    <HumanToxicity />
+                </div>
+            );
+        }
+
+        if (this.props.fromPage === "use") {
+            impacts = (
+                <div>
+                    <HumanToxicity />
+                </div>
+            );
+        }
+
+        if (this.props.fromPage === "endOfLife") {
+            impacts = (
+                <div>
+                    <ChildLabour />
+                    <FoodInsecurity />
+                    <HumanToxicity />
+                    <LackOfCleanEnergy />
+                    <LivingInSlums />
+                    <PollutedDrinkingWater />
+                    <PrecariousWork />
+                    <ViolentConflict />
+                </div>
+            );
+        }
+
+        return <div>{impacts}</div>;
+    
     }
-
-    if (this.props.fromPage === "manufacturing") {
-      impacts = (
-        <div>
-          <ChildLabour />
-          <Discrimination />
-          <FoodInsecurity />
-          <GenderInequality />
-          <HumanToxicity />
-          <LackOfCleanEnergy />
-          <PollutedDrinkingWater />
-          <PrecariousWork />
-        </div>
-      );
-    }
-
-    if (this.props.fromPage === "transport") {
-      impacts = (
-        <div>
-          <HumanToxicity />
-        </div>
-      );
-    }
-
-    if (this.props.fromPage === "use") {
-      impacts = (
-        <div>
-          <HumanToxicity />
-        </div>
-      );
-    }
-
-    if (this.props.fromPage === "endOfLife") {
-      impacts = (
-        <div>
-          <ChildLabour />
-          <FoodInsecurity />
-          <HumanToxicity />
-          <LackOfCleanEnergy />
-          <LivingInSlums />
-          <PollutedDrinkingWater />
-          <PrecariousWork />
-          <ViolentConflict />
-        </div>
-      );
-    }
-
-    return <div>{impacts}</div>;
-  }
 }
 
 export default Environmental;

@@ -22,10 +22,6 @@ class DesktopContent extends React.Component {
             defaultColor: 'white',
             environmentalColor: '#D3D3D3',
             socialColor: '#D3D3D3',
-            // Submenu element's font weight
-            defaultFontWeight: '700',
-            environmentalFontWeight: '400',
-            socialFontWeight: '400',
             image: 'manufacturing-purple'
         }
     }
@@ -39,10 +35,6 @@ class DesktopContent extends React.Component {
             defaultColor: 'white',
             environmentalColor: '#D3D3D3',
             socialColor: '#D3D3D3',
-            // Submenu element's font weight
-            defaultFontWeight: '700',
-            environmentalFontWeight: '400',
-            socialFontWeight: '400',
             image: 'manufacturing-purple'
         })
     }
@@ -56,10 +48,6 @@ class DesktopContent extends React.Component {
             defaultColor: '#D3D3D3',
             environmentalColor: 'white',
             socialColor: '#D3D3D3',
-            // Submenu element's font weight
-            defaultFontWeight: '400',
-            environmentalFontWeight: '700',
-            socialFontWeight: '400',
             image: 'manufacturing-black'
         })
     }
@@ -73,10 +61,6 @@ class DesktopContent extends React.Component {
             defaultColor: '#D3D3D3',
             environmentalColor: '#D3D3D3',
             socialColor: 'white',
-            // Submenu element's font weight
-            defaultFontWeight: '400',
-            environmentalFontWeight: '400',
-            socialFontWeight: '700',
             image: 'manufacturing-black'
         })
     }
@@ -116,7 +100,7 @@ class DesktopContent extends React.Component {
         if(this.state.default) {
             content = (
                 <div className="default-content">
-                    <h1 style={{color: '#BD2EC2'}}> The manufacturing phase </h1>
+                    <div className="selected-info page-title" style={{color: '#BD2EC2'}}> The manufacturing phase </div>
                     <div className="default-content-text">
                         Manufacturing is the phase in which the different components of the mobile 
                         phone are produced and put together to become the finished product. The 
@@ -134,7 +118,7 @@ class DesktopContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div className="selected-info"> 
+                    <div className="selected-info page-title" style={{color: '#BD2EC2'}}> 
                         Environmental impacts
                     </div>
                     <div className="environmental-content">
@@ -147,7 +131,7 @@ class DesktopContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <div className="selected-info"> 
+                    <div className="selected-info page-title" style={{color: '#BD2EC2'}}> 
                         Social impacts
                     </div>
                     <div className="social-content">
@@ -181,9 +165,12 @@ class DesktopContent extends React.Component {
                             onKeyDown={event => {
                                 this.handleDefaultEnterPressed(event);
                             }}>
-                            
                             <div>
-                                <img alt="resource extraction icon" style={{maxHeight: '80px', verticalAlign: 'middle'}} src={require('../../images/'+ image +'.svg')} />
+                                <img 
+                                    alt="resource extraction icon" 
+                                    style={{maxHeight: '50px', verticalAlign: 'middle'}} 
+                                    src={require('../../images/'+ image +'.svg')} 
+                                />
                             </div>
                         </div>
                         <div tabIndex="0" className="environmental-menu-element"

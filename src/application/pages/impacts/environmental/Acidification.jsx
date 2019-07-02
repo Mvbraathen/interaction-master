@@ -10,7 +10,11 @@ class AcidificationMobile extends React.Component {
                     <div>
                         <div className="image-container">
                             <img alt="ocean" width="100%" src={require('./images/Acidification.jpg')} />
-                            <div className="image-credit"> Photo by <a href="https://unsplash.com/@matthardy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Matt Hardy</a></div>
+                            <div className="image-credit">
+                                <a href="https://unsplash.com/@matthardy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
+                                    Matt Hardy
+                                </a>
+                            </div>
                         </div>
                         <div style={{textAlign: 'justify'}} className="info-positioning">
                             Decrease of the ocean’s pH-level as a result of uptake of CO2. 

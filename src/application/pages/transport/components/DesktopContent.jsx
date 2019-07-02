@@ -109,7 +109,7 @@ class DesktopContent extends React.Component {
         if(this.state.default) {
             content = (
                 <div className="default-content">
-                    <h1 style={{color: '#0066FF'}}> The transport phase </h1>
+                    <h1 className="selected-info page-title" style={{color: '#0066FF'}}> The transport phase </h1>
                     <div className="default-content-text">
                         Transport is short-hand for a variety of activities that take place during the whole lifecycle of the mobile phone, 
                         such transportation of materials, components, and finished products; 
@@ -122,6 +122,9 @@ class DesktopContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
+                    <div className="selected-info page-title" style={{color: '#0066FF'}}> 
+                        Environmental impacts
+                    </div>
                     <div className="environmental-content">
                         <Environmental fromPage={fromPage} />
                     </div>
@@ -132,6 +135,9 @@ class DesktopContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
+                    <div className="selected-info page-title" style={{color: '#0066FF'}}> 
+                        Social impacts
+                    </div>
                     <div className="social-content">
                         <Social fromPage={fromPage} />
                     </div>

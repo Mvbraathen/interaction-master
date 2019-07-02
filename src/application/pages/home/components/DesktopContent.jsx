@@ -9,14 +9,12 @@ import "../../css/SubMenu.css";
 class DesktopContent extends React.Component {
 
     render() {    
-        /* To get correct header text */
-        const pageHeader = "Home";
+        /* No header text on this page */
+        const pageHeader = "";
         
         return (
             <div>
-
                 <DesktopHeader pageHeader={pageHeader} />
-
                 {/* Left half */}
                 <div className="split left-half">
                     <div className="sub-menu-without-selection"></div>
@@ -26,17 +24,25 @@ class DesktopContent extends React.Component {
                 {/* Right half */}
                 <div className="split right-half">
                     <div className="sub-menu-without-selection"></div>
-                        <div className="content-manager">
-                            <div className="default-content">
-                                <h1> Lifecycle of mobile phones </h1>
-                                <div className="default-content-text">
-                                    <div style={{zIndex: '-1'}} className="image-container">
-                                        <img alt="iphone" width="100%" src={require('../../images/iphone.jpg')} />
-                                        <div className="image-credit"> 
-                                            Photo by <a href="https://unsplash.com/@williamtm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> William Hook</a>
-                                        </div>
-                                    <div>
-                                        Mobile phones have become one of the more unsustainable consumer goods. 
+                    <div className="content-manager">
+                        <div className="default-content">
+                            <h1 className="selected-info page-title" style={{color: '#E00070'}}> 
+                                Lifecycle of mobile phones
+                            </h1>
+                            <div style={{marginTop: '-15px'}} className="image-container">
+                                <img 
+                                    alt="iphone" 
+                                    width="100%" 
+                                    src={require('../../images/iphone.jpg')} 
+                                />
+                                <div className="image-credit"> 
+                                    <a href="https://unsplash.com/@williamtm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
+                                        William Hook
+                                    </a>
+                                </div>
+                            </div>
+                            <div style={{textAlign: 'justify'}}>
+                                Mobile phones have become one of the more unsustainable consumer goods. 
                                         In 2015, more than 1.5 billion new mobile phones were shipped worldwide, 
                                         often replacing fully functional phones. 
                                         <p></p> 
@@ -79,8 +85,6 @@ class DesktopContent extends React.Component {
                                         technology design to the mining of minerals in Africa and South America to make 
                                         its materials; from the manufacturing sites in Asia to mobile phone use in 
                                         Europe; and finally from repair, recycling and discarding.
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
