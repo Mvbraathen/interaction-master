@@ -102,7 +102,6 @@ class MobileContent extends React.Component {
                     <div className="mobile-impacts-width">
                         <Environmental fromPage={fromPage} />
                     </div>
-                    <MobileFooter />
                 </div>
             )
         }
@@ -126,7 +125,6 @@ class MobileContent extends React.Component {
                     <div className="mobile-impacts-width">
                         <Social fromPage={fromPage} />
                     </div>
-                    <MobileFooter />
                 </div>
             )
         }
@@ -141,6 +139,7 @@ class MobileContent extends React.Component {
                         {content}
                     </div>
                 </div>
+                <MobileFooter />
             </div>
         );
     }
