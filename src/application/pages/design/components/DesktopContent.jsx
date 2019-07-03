@@ -3,6 +3,7 @@ import React from "react";
 import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../components/DesktopHeader";
 import Breadcrumb from "../../components/Breadcrumb";
+import MobileFooter from "../../components/MobileFooter";
 // Styling
 import "../../css/Desktop.css";
 import "../../css/SubMenu.css";
@@ -36,7 +37,7 @@ class DesktopContent extends React.Component {
                             <h1 className="selected-info page-title" style={{color: '#E00070'}}> 
                                 Where all decisions are made 
                             </h1>
-                            <div style={{marginTop: '-15px'}} className="image-container">
+                            <div style={{marginTop: '-15px', zIndex: '-1'}} className="image-container">
                                 <img 
                                     alt="broken iphone" 
                                     width="100%" 
@@ -66,6 +67,7 @@ class DesktopContent extends React.Component {
                             </div>
                         </div>
                     </div>
+                    <MobileFooter />
                 </div>
             </div>
         );
