@@ -105,8 +105,12 @@ class DesktopContent extends React.Component {
 
         if(this.state.default) {
             content = (
-                <div className="default-content">
-                    <h1 className="selected-info page-title" style={{color: '#00AD00'}}> The resource extraction phase </h1>
+                <div>
+                    <h1 
+                        className="desktop-page-title" 
+                        style={{color: '#00AD00'}}> 
+                        The resource extraction phase 
+                    </h1>
                     <div className="default-content-text">
                         Resource extraction is the phase covering activities resulting in materials that will be used in the manufacturing phase, 
                         such as mineral extraction and the processing of minerals. 
@@ -129,12 +133,10 @@ class DesktopContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div className="selected-info page-title" style={{color: '#00AD00'}}> 
+                    <div className="desktop-page-title" style={{color: '#00AD00'}}> 
                         Environmental impacts
                     </div>
-                    <div className="environmental-content">
-                        <Environmental fromPage={fromPage} />
-                    </div>
+                    <Environmental fromPage={fromPage} />
                 </div>
             )
         }
@@ -142,12 +144,10 @@ class DesktopContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <div className="selected-info page-title" style={{color: '#00AD00'}}> 
+                    <div className="desktop-page-title" style={{color: '#00AD00'}}> 
                         Social impacts
                     </div>
-                    <div className="social-content">
-                        <Social fromPage={fromPage} />
-                    </div>
+                    <Social fromPage={fromPage} />
                 </div>
             )
         }
@@ -211,7 +211,7 @@ class DesktopContent extends React.Component {
                             Social
                         </div>
                     </div>
-                    <div className="content-manager">
+                    <div className="right-half-content">
                         {content}
                     </div>
                 </div>

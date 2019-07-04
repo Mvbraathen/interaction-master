@@ -1,5 +1,5 @@
 /* In this file: Styling for mobile devices */
-.mobilePage {
+.mobile-page {
     height: 100%;
     min-height: 100vh;
     margin: 0;
@@ -12,56 +12,66 @@
     -webkit-overflow-scrolling: touch;
 }
 
-.mobileContent {
+.mobile-content {
     font-family: Avenir Next;
     color: black;
     width: 100%;
     text-align: center;
 }
 
-/* Title showing active page */
-.page-title {
-    margin-top: 80px; 
+.mobile-page-title {
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-bottom: 5px;
     font-size: 2em; 
     font-weight: 500; 
-    margin-left: 2.5%; 
-    margin-right: 2.5%;
+    color: #404040;
 }
 
 /* The page introduction text under the title */
 .page-introduction-text {
+    text-align: left;
     margin-top: 10px; 
     margin-bottom: -40px; 
     font-family: Avenir Next; 
-    margin-left: 2.5%;
-    margin-right: 2.5%; 
-    text-align: justify; 
+    margin-left: 20px;
+    margin-right: 20px; 
     font-size: 1em;
 }
 
-/* Header that states selected impact category */
-.selected-info {
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: -10px;
-    margin-bottom: 40px;
+/* Styling on impact selection header */
+.impact-selection {
+    position: relative;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 1.5em;
     font-weight: 500;
     color: #404040;
 }
 
-/* Decides width on the impacts info boxes*/
+.selected-impact {
+    position: relative;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #404040;
+}
+
+/* Decides margin on right and left sides of info boxes*/
 .mobile-impacts-width {
-    width: 100%-20px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 /* All impacts + information in the Home and Design pages */
 .info-box {
-    text-align: justify;
+    text-align: left;
     border-radius: 10px;
-    margin-top: -10px;
     padding-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
@@ -71,7 +81,8 @@
 
 /* padding over info box header */
 .info-header {
-    text-align: center;
+    text-align: left;
+    margin-left: 20px;
     font-size: 1.5em;
     font-weight: 400;
     padding-top: 20px;
@@ -80,8 +91,8 @@
 /* Positions text inside info box */
 .info-positioning {
     margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* For all images in the different pages */

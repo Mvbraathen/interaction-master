@@ -25,3 +25,22 @@
     text-align: center;
     background-color: #FFFFFF;
 }
+
+.desktop-page-title {
+    text-align: left;
+    margin-bottom: 25px;
+    font-size: 1.5em; 
+    font-weight: 500; 
+    color: #404040;
+}
+
+.right-half-content {
+    max-width: 600px; 
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 180px; 
+    margin-bottom: 100px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    font-family: Avenir Next;
+}

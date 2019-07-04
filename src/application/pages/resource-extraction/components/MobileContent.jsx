@@ -58,7 +58,7 @@ class MobileContent extends React.Component {
         if(this.state.default) {
             content = (
                 <div>
-                    <div style={{color: this.state.resourceExtractionColor}} className="page-title"> 
+                    <div className="mobile-page-title" style={{color: this.state.resourceExtractionColor}}> 
                         The resource extraction phase 
                     </div> 
                     <div className="page-introduction-text">
@@ -74,15 +74,26 @@ class MobileContent extends React.Component {
                         tantalum, and tungsten, are considered conflict minerals. International 
                         regulation (USA, EU) restricts the use of conflict minerals.
                     </div>
-                    <p style={{height: '30px'}}></p>
-                    <div style={{marginTop: '-15px', marginBottom: '-6px'}} className="selected-info"> 
+                    <div className="impact-selection"> 
                         Select an impact category
                     </div>
-                    <div style={{fontFamilty: 'Avenir Next', textAlign: 'center'}}>
-                        <button className="commonButtonStyle environmentalButton" onClick={this.handleEnvironmentalClicked} style={{borderColor: this.state.resourceExtractionColor, color: this.state.resourceExtractionColor}}>
+                    <div>
+                        <button 
+                            className="commonButtonStyle environmentalButton" 
+                            onClick={this.handleEnvironmentalClicked} 
+                            style={{
+                                borderColor: this.state.resourceExtractionColor, 
+                                color: this.state.resourceExtractionColor
+                            }}>
                             Environmental
                         </button>
-                        <button className="commonButtonStyle socialButton" onClick={this.handleSocialClicked} style={{borderColor: this.state.resourceExtractionColor, color: this.state.resourceExtractionColor}}>
+                        <button
+                            className="commonButtonStyle socialButton" 
+                            onClick={this.handleSocialClicked} 
+                            style={{
+                                borderColor: this.state.resourceExtractionColor, 
+                                color: this.state.resourceExtractionColor
+                            }}>
                             Social
                         </button>
                     </div>
@@ -93,17 +104,29 @@ class MobileContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div style={{height: '60px'}}></div>
                     <button className="defaultButton" onClick={this.handleDefaultClicked}> 
                         <span>&crarr;</span>Back 
                     </button>
-                    <button  className="commonButtonStyle environmentalButton" onClick={this.handleEnvironmentalClicked} style={{backgroundColor: this.state.resourceExtractionColor, borderColor: this.state.resourceExtractionColor, color: 'white'}}>
+                    <button 
+                        className="commonButtonStyle environmentalButton" 
+                        onClick={this.handleEnvironmentalClicked} 
+                        style={{
+                            backgroundColor: this.state.resourceExtractionColor, 
+                            borderColor: this.state.resourceExtractionColor, 
+                            color: 'white'
+                        }}>
                         Environmental
                     </button>
-                    <button className="commonButtonStyle socialButton" onClick={this.handleSocialClicked} style={{borderColor: this.state.resourceExtractionColor, color: this.state.resourceExtractionColor}}>
+                    <button 
+                        className="commonButtonStyle socialButton" 
+                        onClick={this.handleSocialClicked} 
+                        style={{
+                            borderColor: this.state.resourceExtractionColor, 
+                            color: this.state.resourceExtractionColor
+                        }}>
                         Social
                     </button>
-                    <div style={{marginTop: '10px'}} className="selected-info"> 
+                    <div className="selected-impact"> 
                         Environmental impacts
                     </div>
                     <div className="mobile-impacts-width">
@@ -116,17 +139,29 @@ class MobileContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <div style={{height: '60px'}}></div>
                     <button className="defaultButton" onClick={this.handleDefaultClicked}> 
                         <span>&crarr;</span>Back 
                     </button>
-                    <button  className="commonButtonStyle environmentalButton" onClick={this.handleEnvironmentalClicked} style={{borderColor: this.state.resourceExtractionColor, color: this.state.resourceExtractionColor}}>
+                    <button 
+                        className="commonButtonStyle environmentalButton" 
+                        onClick={this.handleEnvironmentalClicked} 
+                        style={{
+                            borderColor: this.state.resourceExtractionColor, 
+                            color: this.state.resourceExtractionColor
+                        }}>
                         Environmental
                     </button>
-                    <button className="commonButtonStyle socialButton" onClick={this.handleSocialClicked} style={{backgroundColor: this.state.resourceExtractionColor, borderColor: this.state.resourceExtractionColor, color: 'white'}}>
+                    <button 
+                        className="commonButtonStyle socialButton" 
+                        onClick={this.handleSocialClicked} 
+                        style={{
+                            backgroundColor: this.state.resourceExtractionColor, 
+                            borderColor: this.state.resourceExtractionColor, 
+                            color: 'white'
+                        }}>
                         Social
                     </button>
-                    <div style={{marginTop: '10px'}} className="selected-info"> 
+                    <div className="selected-impact"> 
                         Social impacts
                     </div>
                     <div className="mobile-impacts-width">
@@ -139,9 +174,8 @@ class MobileContent extends React.Component {
         return (
             <div>
                 <Mobile />
-                <div className="mobilePage">
-                    
-                    <div className="mobileContent">
+                <div className="mobile-page">
+                    <div className="mobile-content">
                         <MobileHeader pageHeader={pageHeader} />
                         {content}
                     </div>

@@ -61,31 +61,4 @@
     cursor: pointer;
 }
 
-/* Styles the content */
-.content-manager {
-	margin-top: 180px; 
-	margin-bottom: 100px;
-	margin-left: 5%;
-	margin-right: 5%;
-}
 
-.default-content {
-    margin-top: 20px; 
-    font-family: Avenir Next;
-}
-
-.default-content-text {
-    margin : -20px auto 0 auto;
-    max-width: 600px; 
-    text-align: justify;
-}
-
-.environmental-content {
-    margin: 0 auto; 
-    max-width: 650px;
-}
-
-.social-content {
-    margin: 0 auto; 
-    max-width: 650px;
-}
