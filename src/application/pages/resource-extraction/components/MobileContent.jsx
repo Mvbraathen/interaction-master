@@ -2,11 +2,11 @@ import React from "react";
 /* Mobile menu */
 import Mobile from "../../../menus/mobile/Mobile";
 /* Header and footer for mobile devices */
-import MobileHeader from "../../components/MobileHeader";
-import MobileFooter from "../../components/MobileFooter";
+import MobileHeader from "../../../components/mobile-header/MobileHeader";
+import MobileFooter from "../../../components/mobile-footer/MobileFooter";
 /* Impacts */
-import Environmental from "../../impacts/Environmental";
-import Social from "../../impacts/Social";
+import Environmental from "../../../components/impacts/Environmental";
+import Social from "../../../components/impacts/Social";
 
 class MobileContent extends React.Component {
     constructor() {

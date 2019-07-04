@@ -1,12 +1,9 @@
 import React from "react";
 // Various components
 import Desktop from "../../../menus/desktop/Desktop";
-import DesktopHeader from "../../components/DesktopHeader";
-import Breadcrumb from "../../components/Breadcrumb";
-import MobileFooter from "../../components/MobileFooter";
-// Styling
-import "../../css/Desktop.css";
-import "../../css/SubMenu.css";
+import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
+import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
+import MobileFooter from "../../../components/mobile-footer/MobileFooter";
 
 class DesktopContent extends React.Component {
 
@@ -41,7 +38,7 @@ class DesktopContent extends React.Component {
                                 <img 
                                     alt="broken iphone" 
                                     width="100%" 
-                                    src={require('../../images/broken-iphone.jpg')} 
+                                    src={require('../../../images/broken-iphone.jpg')} 
                                 />
                                 <div className="image-credit">
                                     <a href="https://unsplash.com/@_actually_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 

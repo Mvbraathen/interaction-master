@@ -1,10 +1,7 @@
 import React from "react";
 // Various components
 import Desktop from "../../../menus/desktop/Desktop";
-import DesktopHeader from "../../components/DesktopHeader";
-// Styling
-import "../../css/Desktop.css";
-import "../../css/SubMenu.css";
+import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
 
 class DesktopContent extends React.Component {
 
@@ -33,7 +30,7 @@ class DesktopContent extends React.Component {
                                 <img 
                                     alt="iphone" 
                                     width="100%" 
-                                    src={require('../../images/iphone.jpg')} 
+                                    src={require('../../../images/iphone.jpg')} 
                                 />
                                 <div className="image-credit"> 
                                     <a href="https://unsplash.com/@williamtm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 

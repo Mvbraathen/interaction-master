@@ -2,8 +2,8 @@ import React from "react";
 /* Mobile menu */
 import Mobile from "../../../menus/mobile/Mobile";
 /* Header and footer for mobile devices */
-import MobileHeader from "../../components/MobileHeader";
-import MobileFooter from "../../components/MobileFooter";
+import MobileHeader from "../../../components/mobile-header/MobileHeader";
+import MobileFooter from "../../../components/mobile-footer/MobileFooter";
 /* Fade effect */
 import Fade from "react-reveal/Fade";
 
@@ -27,7 +27,7 @@ class MobileContent extends React.Component {
                                         Lifecycle of mobile phones 
                                     </h1>
                                     <div className="image-container">
-                                        <img alt="iphone" width="100%" src={require('../../images/iphone.jpg')} />
+                                        <img alt="iphone" width="100%" src={require('../../../images/iphone.jpg')} />
                                         <div className="image-credit"> 
                                             <a href="https://unsplash.com/@williamtm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
                                                 William Hook

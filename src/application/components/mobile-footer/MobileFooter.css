@@ -18,11 +18,16 @@
 
 .smart-footer-txt {
     color: white;
-    margin-top: -10px;
+    margin-top: -16px;
     margin-right: 40px;
     margin-left: 40px;
-    text-align: justify;
+    text-align: left;
     margin-bottom: 50px;
+}
+
+.share-text {
+    font-family: Avenir Next;
+    color: white;
 }
 
 .social-network {

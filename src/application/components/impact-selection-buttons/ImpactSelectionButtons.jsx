@@ -1,5 +1,4 @@
 import React from 'react';
-import './ReadMoreButton.css';
 
 class ImpactSelectionButtons extends React.Component {
 	constructor() {

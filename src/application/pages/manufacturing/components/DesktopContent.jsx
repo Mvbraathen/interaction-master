@@ -1,14 +1,11 @@
 import React from "react";
 // Various components
 import Desktop from "../../../menus/desktop/Desktop";
-import DesktopHeader from "../../components/DesktopHeader";
-import Breadcrumb from "../../components/Breadcrumb";
+import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
+import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 // Impacts
-import Environmental from "../../impacts/Environmental";
-import Social from "../../impacts/Social";
-// Styling
-import "../../css/Desktop.css";
-import "../../css/SubMenu.css";
+import Environmental from "../../../components/impacts/Environmental";
+import Social from "../../../components/impacts/Social";
 
 class DesktopContent extends React.Component {
     constructor() {
@@ -169,7 +166,7 @@ class DesktopContent extends React.Component {
                                 <img 
                                     alt="resource extraction icon" 
                                     style={{maxHeight: '50px', verticalAlign: 'middle'}} 
-                                    src={require('../../images/'+ image +'.svg')} 
+                                    src={require('../../../images/'+ image +'.svg')} 
                                 />
                             </div>
                         </div>
