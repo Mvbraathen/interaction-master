@@ -9,7 +9,7 @@
     box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 850px) {
     .footer {
         border-top-left-radius: 50px;
         padding-top: 20px;

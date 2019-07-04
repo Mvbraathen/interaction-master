@@ -32,7 +32,7 @@ class DesktopContent extends React.Component {
                 {/* Right half */}
                 <div className="split right-half">
                     <div className="sub-menu-without-selection"></div>
-                    <div className="content-manager">
+                    <div style={{minHeight: '100%'}} className="content-manager">
                         <div className="default-content">
                             <h1 className="selected-info page-title" style={{color: '#E00070'}}> 
                                 Where all decisions are made 

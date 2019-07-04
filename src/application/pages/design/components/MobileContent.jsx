@@ -4,8 +4,6 @@ import Mobile from "../../../menus/mobile/Mobile";
 /* Header and footer for mobile devices */
 import MobileHeader from "../../components/MobileHeader";
 import MobileFooter from "../../components/MobileFooter";
-/* Read more button */
-import ReadMoreButton from "../../components/ReadMoreButton";
 /* Fade effect */
 import Fade from "react-reveal/Fade";
 
@@ -51,9 +49,6 @@ class MobileContent extends React.Component {
                                         repairability is thicker and weighs a bit more. A thin phone often 
                                         uses glue to keep things together, making the replacement of a battery 
                                         by the user impossible.
-                                    </div>
-                                    <div style={{textAlign: 'center'}}>
-                                        <ReadMoreButton />
                                     </div>
                                 </div>
                             </Fade>
