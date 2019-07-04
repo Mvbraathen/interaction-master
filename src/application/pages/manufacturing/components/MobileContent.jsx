@@ -55,7 +55,7 @@ class MobileContent extends React.Component {
         let fromPage = "manufacturing";
         let content;
 
-if(this.state.default) {
+        if(this.state.default) {
             content = (
                 <div>
                     <div className="mobile-page-title" style={{color: this.state.manufacturingColor}}> 
