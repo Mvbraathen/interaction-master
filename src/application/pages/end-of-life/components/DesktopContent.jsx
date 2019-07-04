@@ -22,7 +22,8 @@ class DesktopContent extends React.Component {
             // Submenu element's font weight
             defaultFontWeight: '700',
             environmentalFontWeight: '400',
-            socialFontWeight: '400'
+            socialFontWeight: '400',
+            image: 'smart-logo'
         }
     }
 
@@ -102,11 +103,16 @@ class DesktopContent extends React.Component {
         
         /* The variable that holds the content */
         let content;
+        let image = this.state.image;
 
         if(this.state.default) {
             content = (
-                <div className="default-content">
-                    <h1 className="selected-info page-title" style={{color: '#C75000'}}> The end of life phase </h1>
+                <div>
+                    <h1 
+                        className="desktop-page-title" 
+                        style={{color: '#00AD00'}}> 
+                        The end of life phase 
+                    </h1>
                     <div className="default-content-text">
                         End of life is the phase in which the mobile phone is no longer in use as the result of planned, functional or perceived obsolescence of the phone. 
                         These mobile phones disappear in dusty drawers, get sold or are repaired or thrown away. 
@@ -120,12 +126,10 @@ class DesktopContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div className="selected-info page-title" style={{color: '#C75000'}}> 
+                    <div className="desktop-page-title" style={{color: '#00AD00'}}> 
                         Environmental impacts
                     </div>
-                    <div className="environmental-content">
-                        <Environmental fromPage={fromPage} />
-                    </div>
+                    <Environmental fromPage={fromPage} />
                 </div>
             )
         }
@@ -133,12 +137,10 @@ class DesktopContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <div className="selected-info page-title" style={{color: '#C75000'}}> 
+                    <div className="desktop-page-title" style={{color: '#00AD00'}}> 
                         Social impacts
                     </div>
-                    <div className="social-content">
-                        <Social fromPage={fromPage} />
-                    </div>
+                    <Social fromPage={fromPage} />
                 </div>
             )
         }
@@ -167,7 +169,13 @@ class DesktopContent extends React.Component {
                             onKeyDown={event => {
                                 this.handleDefaultEnterPressed(event);
                             }}>
-                            Default
+                            <div>
+                                <img 
+                                    alt="resource extraction icon" 
+                                    style={{maxHeight: '50px', verticalAlign: 'middle'}} 
+                                    src={require('../../../images/'+ image +'.png')} 
+                                />
+                            </div>
                         </div>
                         <div tabIndex="0" className="environmental-menu-element"
                             style={{
@@ -196,7 +204,7 @@ class DesktopContent extends React.Component {
                             Social
                         </div>
                     </div>
-                    <div className="content-manager">
+                    <div className="right-half-content">
                         {content}
                     </div>
                 </div>

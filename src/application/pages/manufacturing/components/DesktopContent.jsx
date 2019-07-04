@@ -79,9 +79,9 @@ class DesktopContent extends React.Component {
         if(event.key === 'Enter'){
             this.handleSocialClick();
         }
-    }
+    } 
 
-    render() {
+     render() {
         /* To select corresponding components */
         const fromPage = "manufacturing";
         
@@ -96,8 +96,12 @@ class DesktopContent extends React.Component {
 
         if(this.state.default) {
             content = (
-                <div className="default-content">
-                    <div className="selected-info page-title" style={{color: '#BD2EC2'}}> The manufacturing phase </div>
+                <div>
+                    <h1 
+                        className="desktop-page-title" 
+                        style={{color: '#00AD00'}}> 
+                        The manufacturing phase 
+                    </h1>
                     <div className="default-content-text">
                         Manufacturing is the phase in which the different components of the mobile 
                         phone are produced and put together to become the finished product. The 
@@ -115,12 +119,10 @@ class DesktopContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div className="selected-info page-title" style={{color: '#BD2EC2'}}> 
+                    <div className="desktop-page-title" style={{color: '#00AD00'}}> 
                         Environmental impacts
                     </div>
-                    <div className="environmental-content">
-                        <Environmental fromPage={fromPage} />
-                    </div>
+                    <Environmental fromPage={fromPage} />
                 </div>
             )
         }
@@ -128,12 +130,10 @@ class DesktopContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <div className="selected-info page-title" style={{color: '#BD2EC2'}}> 
+                    <div className="desktop-page-title" style={{color: '#00AD00'}}> 
                         Social impacts
                     </div>
-                    <div className="social-content">
-                        <Social fromPage={fromPage} />
-                    </div>
+                    <Social fromPage={fromPage} />
                 </div>
             )
         }
@@ -164,7 +164,7 @@ class DesktopContent extends React.Component {
                             }}>
                             <div>
                                 <img 
-                                    alt="resource extraction icon" 
+                                    alt="manufacturing icon" 
                                     style={{maxHeight: '50px', verticalAlign: 'middle'}} 
                                     src={require('../../../images/'+ image +'.svg')} 
                                 />
@@ -197,7 +197,7 @@ class DesktopContent extends React.Component {
                             Social
                         </div>
                     </div>
-                    <div className="content-manager">
+                    <div className="right-half-content">
                         {content}
                     </div>
                 </div>

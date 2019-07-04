@@ -22,7 +22,8 @@ class DesktopContent extends React.Component {
             // Submenu element's font weight
             defaultFontWeight: '700',
             environmentalFontWeight: '400',
-            socialFontWeight: '400'
+            socialFontWeight: '400',
+            image: 'smart-logo'
         }
     }
 
@@ -101,12 +102,17 @@ class DesktopContent extends React.Component {
         const pageHeader = "Use";
         
         /* The variable that holds the content */
-        let content;
+        let content; 
+        let image = this.state.image;
 
-        if(this.state.default) {
+         if(this.state.default) {
             content = (
-                <div className="default-content">
-                    <h1 className="selected-info page-title" style={{color: '#EB0000'}}> The use phase </h1>
+                <div>
+                    <h1 
+                        className="desktop-page-title" 
+                        style={{color: '#00AD00'}}> 
+                        The use phase 
+                    </h1>
                     <div className="default-content-text">
                         Use refers to the phase in which the mobile phone is used for information and communication activities by a mobile phone user. 
                         It is estimated that there are 4.43 billion mobile phone users worldwide, that is 60% of the total population of our planet.
@@ -118,12 +124,10 @@ class DesktopContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div className="selected-info page-title" style={{color: '#EB0000'}}> 
+                    <div className="desktop-page-title" style={{color: '#00AD00'}}> 
                         Environmental impacts
                     </div>
-                    <div className="environmental-content">
-                        <Environmental fromPage={fromPage} />
-                    </div>
+                    <Environmental fromPage={fromPage} />
                 </div>
             )
         }
@@ -131,12 +135,10 @@ class DesktopContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <div className="selected-info page-title" style={{color: '#EB0000'}}> 
+                    <div className="desktop-page-title" style={{color: '#00AD00'}}> 
                         Social impacts
                     </div>
-                    <div className="environmental-content">
-                        <Social fromPage={fromPage} />
-                    </div>
+                    <Social fromPage={fromPage} />
                 </div>
             )
         }
@@ -154,7 +156,7 @@ class DesktopContent extends React.Component {
                 {/* Right half */}
                 <div className="split right-half">
                     <div className="sub-menu">
-                        <div className = "default-menu-element"
+                        <div tabIndex="0" className = "default-menu-element"
                             style={{
                                 backgroundColor: this.state.defaultColor, 
                                 fontWeight: this.state.defaultFontWeight
@@ -165,9 +167,15 @@ class DesktopContent extends React.Component {
                             onKeyDown={event => {
                                 this.handleDefaultEnterPressed(event);
                             }}>
-                            Default
+                            <div>
+                                <img 
+                                    alt="resource extraction icon" 
+                                    style={{maxHeight: '50px', verticalAlign: 'middle'}} 
+                                    src={require('../../../images/'+ image +'.png')} 
+                                />
+                            </div>
                         </div>
-                        <div className="environmental-menu-element"
+                        <div tabIndex="0" className="environmental-menu-element"
                             style={{
                                 backgroundColor: this.state.environmentalColor,
                                 fontWeight: this.state.environmentalFontWeight
@@ -180,7 +188,7 @@ class DesktopContent extends React.Component {
                             }}>
                             Environmental
                         </div>
-                        <div className="social-menu-element"
+                        <div tabIndex="0" className="social-menu-element"
                             style={{
                                 backgroundColor: this.state.socialColor,
                                 fontWeight: this.state.socialFontWeight
@@ -194,7 +202,7 @@ class DesktopContent extends React.Component {
                             Social
                         </div>
                     </div>
-                    <div className="content-manager">
+                    <div className="right-half-content">
                         {content}
                     </div>
                 </div>

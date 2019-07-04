@@ -19,7 +19,7 @@ class DesktopContent extends React.Component {
             defaultColor: 'white',
             environmentalColor: '#D3D3D3',
             socialColor: '#D3D3D3',
-            image: 'manufacturing-purple'
+            image: 'resource-extraction-icon'
         }
     }
 
@@ -180,7 +180,7 @@ class DesktopContent extends React.Component {
                                 <img 
                                     alt="resource extraction icon" 
                                     style={{maxHeight: '50px', verticalAlign: 'middle'}} 
-                                    src={require('../../../images/'+ image +'.svg')} 
+                                    src={require('../../../images/'+ image +'.png')} 
                                 />
                             </div>
                         </div>

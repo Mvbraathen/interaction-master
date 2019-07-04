@@ -22,7 +22,9 @@ class DesktopContent extends React.Component {
             // Submenu element's font weight
             defaultFontWeight: '700',
             environmentalFontWeight: '400',
-            socialFontWeight: '400'
+            socialFontWeight: '400',
+            // Image 
+            image: 'transport-icon'
         }
     }
 
@@ -103,10 +105,17 @@ class DesktopContent extends React.Component {
         /* The variable that holds the content */
         let content;
 
+        /* Decides which icon to render */
+        let image = this.state.image;
+
         if(this.state.default) {
             content = (
-                <div className="default-content">
-                    <h1 className="selected-info page-title" style={{color: '#0066FF'}}> The transport phase </h1>
+                <div>
+                    <h1 
+                        className="desktop-page-title" 
+                        style={{color: '#00AD00'}}> 
+                        The transport phase 
+                    </h1>
                     <div className="default-content-text">
                         Transport is short-hand for a variety of activities that take place during the whole lifecycle of the mobile phone, 
                         such transportation of materials, components, and finished products; 
@@ -119,12 +128,10 @@ class DesktopContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div className="selected-info page-title" style={{color: '#0066FF'}}> 
+                    <div className="desktop-page-title" style={{color: '#00AD00'}}> 
                         Environmental impacts
                     </div>
-                    <div className="environmental-content">
-                        <Environmental fromPage={fromPage} />
-                    </div>
+                    <Environmental fromPage={fromPage} />
                 </div>
             )
         }
@@ -132,12 +139,10 @@ class DesktopContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <div className="selected-info page-title" style={{color: '#0066FF'}}> 
+                    <div className="desktop-page-title" style={{color: '#00AD00'}}> 
                         Social impacts
                     </div>
-                    <div className="social-content">
-                        <Social fromPage={fromPage} />
-                    </div>
+                    <Social fromPage={fromPage} />
                 </div>
             )
         }
@@ -166,7 +171,14 @@ class DesktopContent extends React.Component {
                             onKeyDown={event => {
                                 this.handleDefaultEnterPressed(event);
                             }}>
-                            Default
+                            
+                            <div>
+                                <img 
+                                    alt="transport icon" 
+                                    style={{maxHeight: '50px', verticalAlign: 'middle'}} 
+                                    src={require('../../../images/'+ image +'.png')} 
+                                />
+                            </div>
                         </div>
                         <div tabIndex="0" className="environmental-menu-element"
                             style={{
@@ -195,7 +207,7 @@ class DesktopContent extends React.Component {
                             Social
                         </div>
                     </div>
-                    <div className="content-manager">
+                    <div className="right-half-content">
                         {content}
                     </div>
                 </div>

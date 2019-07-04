@@ -24,7 +24,7 @@ class DesktopContent extends React.Component {
                     <div className="right-half-content">
                         <h1 
                             className="desktop-page-title" 
-                            style={{color: '#E00070'}}> 
+                            style={{color: '#33333'}}> 
                             Lifecycle of mobile phones
                         </h1>
                         <div className="image-container" style={{zIndex: '-99'}}>
