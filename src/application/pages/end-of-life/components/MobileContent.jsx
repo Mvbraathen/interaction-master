@@ -58,11 +58,11 @@ class MobileContent extends React.Component {
         if(this.state.default) {
             content = (
                 <div>
-                    <div style={{color: this.state.endOfLifeColor}} className="page-title"> 
+                    <div className="mobile-page-title" style={{color: this.state.endOfLifeColor}}> 
                         The end of life phase 
                     </div> 
                     <div className="page-introduction-text">
-                        End of life is the phase in which the mobile phone is no longer in use as 
+                       End of life is the phase in which the mobile phone is no longer in endOfLife as 
                         the result of planned, functional or perceived obsolescence of the phone. 
                         These mobile phones disappear in dusty drawers, get sold or are repaired 
                         or thrown away. In countries with a functional electronic waste collection 
@@ -70,15 +70,26 @@ class MobileContent extends React.Component {
                         Sometimes only the motherboard (PCB) is take out for recycling and the rest 
                         is burned, resulting in the release of hazardous materials in water and air.
                     </div>
-                    <p style={{height: '30px'}}></p>
-                    <div style={{marginTop: '-15px', marginBottom: '-6px'}} className="selected-info"> 
+                    <div className="impact-selection"> 
                         Select an impact category
                     </div>
-                    <div style={{fontFamilty: 'Avenir Next', textAlign: 'center'}}>
-                        <button className="commonButtonStyle environmentalButton" onClick={this.handleEnvironmentalClicked} style={{borderColor: this.state.endOfLifeColor, color: this.state.endOfLifeColor}}>
+                    <div>
+                        <button 
+                            className="commonButtonStyle environmentalButton" 
+                            onClick={this.handleEnvironmentalClicked} 
+                            style={{
+                                borderColor: this.state.endOfLifeColor, 
+                                color: this.state.endOfLifeColor
+                            }}>
                             Environmental
                         </button>
-                        <button className="commonButtonStyle socialButton" onClick={this.handleSocialClicked} style={{borderColor: this.state.endOfLifeColor, color: this.state.endOfLifeColor}}>
+                        <button
+                            className="commonButtonStyle socialButton" 
+                            onClick={this.handleSocialClicked} 
+                            style={{
+                                borderColor: this.state.endOfLifeColor, 
+                                color: this.state.endOfLifeColor
+                            }}>
                             Social
                         </button>
                     </div>
@@ -89,17 +100,29 @@ class MobileContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div style={{height: '60px'}}></div>
                     <button className="defaultButton" onClick={this.handleDefaultClicked}> 
                         <span>&crarr;</span>Back 
                     </button>
-                    <button  className="commonButtonStyle environmentalButton" onClick={this.handleEnvironmentalClicked} style={{backgroundColor: this.state.endOfLifeColor, borderColor: this.state.endOfLifeColor, color: 'white'}}>
+                    <button 
+                        className="commonButtonStyle environmentalButton" 
+                        onClick={this.handleEnvironmentalClicked} 
+                        style={{
+                            backgroundColor: this.state.endOfLifeColor, 
+                            borderColor: this.state.endOfLifeColor, 
+                            color: 'white'
+                        }}>
                         Environmental
                     </button>
-                    <button className="commonButtonStyle socialButton" onClick={this.handleSocialClicked} style={{borderColor: this.state.endOfLifeColor, color: this.state.endOfLifeColor}}>
+                    <button 
+                        className="commonButtonStyle socialButton" 
+                        onClick={this.handleSocialClicked} 
+                        style={{
+                            borderColor: this.state.endOfLifeColor, 
+                            color: this.state.endOfLifeColor
+                        }}>
                         Social
                     </button>
-                    <div style={{marginTop: '10px'}} className="selected-info"> 
+                    <div className="selected-impact"> 
                         Environmental impacts
                     </div>
                     <div className="mobile-impacts-width">
@@ -112,17 +135,29 @@ class MobileContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <div style={{height: '60px'}}></div>
                     <button className="defaultButton" onClick={this.handleDefaultClicked}> 
                         <span>&crarr;</span>Back 
                     </button>
-                    <button  className="commonButtonStyle environmentalButton" onClick={this.handleEnvironmentalClicked} style={{borderColor: this.state.endOfLifeColor, color: this.state.endOfLifeColor}}>
+                    <button 
+                        className="commonButtonStyle environmentalButton" 
+                        onClick={this.handleEnvironmentalClicked} 
+                        style={{
+                            borderColor: this.state.endOfLifeColor, 
+                            color: this.state.endOfLifeColor
+                        }}>
                         Environmental
                     </button>
-                    <button className="commonButtonStyle socialButton" onClick={this.handleSocialClicked} style={{backgroundColor: this.state.endOfLifeColor, borderColor: this.state.endOfLifeColor, color: 'white'}}>
+                    <button 
+                        className="commonButtonStyle socialButton" 
+                        onClick={this.handleSocialClicked} 
+                        style={{
+                            backgroundColor: this.state.endOfLifeColor, 
+                            borderColor: this.state.endOfLifeColor, 
+                            color: 'white'
+                        }}>
                         Social
                     </button>
-                    <div style={{marginTop: '10px'}} className="selected-info"> 
+                    <div className="selected-impact"> 
                         Social impacts
                     </div>
                     <div className="mobile-impacts-width">
@@ -135,13 +170,12 @@ class MobileContent extends React.Component {
         return (
             <div>
                 <Mobile />
-                <div className="mobilePage">
-                    
-                    <div className="mobileContent">
+                <div className="mobile-page">
+                    <div className="mobile-content">
                         <MobileHeader pageHeader={pageHeader} />
                         {content}
                     </div>
-                </div>      
+                </div>
                 <MobileFooter />
             </div>
         );

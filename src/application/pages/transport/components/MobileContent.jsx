@@ -53,29 +53,40 @@ class MobileContent extends React.Component {
         const pageHeader = "Transport";
         /* To get impacts that corresponds with design phase */
         let fromPage = "transport";
-        let content;
+        let content; 
 
         if(this.state.default) {
             content = (
                 <div>
-                    <div style={{color: this.state.transportColor}} className="page-title"> 
+                    <div className="mobile-page-title" style={{color: this.state.transportColor}}> 
                         The transport phase 
                     </div> 
                     <div className="page-introduction-text">
-                        Transport is short-hand for a variety of activities that take place during 
+                       Transport is short-hand for a variety of activities that take place during 
                         the whole lifecycle of the mobile phone, such transportation of materials, 
                         components, and finished products; the packaging of the products being 
                         transported; and the logistics or organisation and implementation of it all.
                     </div>
-                    <p style={{height: '30px'}}></p>
-                    <div style={{marginTop: '-15px', marginBottom: '-6px'}} className="selected-info"> 
+                    <div className="impact-selection"> 
                         Select an impact category
                     </div>
-                    <div style={{fontFamilty: 'Avenir Next', textAlign: 'center'}}>
-                        <button className="commonButtonStyle environmentalButton" onClick={this.handleEnvironmentalClicked} style={{borderColor: this.state.transportColor, color: this.state.transportColor}}>
+                    <div>
+                        <button 
+                            className="commonButtonStyle environmentalButton" 
+                            onClick={this.handleEnvironmentalClicked} 
+                            style={{
+                                borderColor: this.state.transportColor, 
+                                color: this.state.transportColor
+                            }}>
                             Environmental
                         </button>
-                        <button className="commonButtonStyle socialButton" onClick={this.handleSocialClicked} style={{borderColor: this.state.transportColor, color: this.state.transportColor}}>
+                        <button
+                            className="commonButtonStyle socialButton" 
+                            onClick={this.handleSocialClicked} 
+                            style={{
+                                borderColor: this.state.transportColor, 
+                                color: this.state.transportColor
+                            }}>
                             Social
                         </button>
                     </div>
@@ -86,17 +97,29 @@ class MobileContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div style={{height: '60px'}}></div>
                     <button className="defaultButton" onClick={this.handleDefaultClicked}> 
                         <span>&crarr;</span>Back 
                     </button>
-                    <button  className="commonButtonStyle environmentalButton" onClick={this.handleEnvironmentalClicked} style={{backgroundColor: this.state.transportColor, borderColor: this.state.transportColor, color: 'white'}}>
+                    <button 
+                        className="commonButtonStyle environmentalButton" 
+                        onClick={this.handleEnvironmentalClicked} 
+                        style={{
+                            backgroundColor: this.state.transportColor, 
+                            borderColor: this.state.transportColor, 
+                            color: 'white'
+                        }}>
                         Environmental
                     </button>
-                    <button className="commonButtonStyle socialButton" onClick={this.handleSocialClicked} style={{borderColor: this.state.transportColor, color: this.state.transportColor}}>
+                    <button 
+                        className="commonButtonStyle socialButton" 
+                        onClick={this.handleSocialClicked} 
+                        style={{
+                            borderColor: this.state.transportColor, 
+                            color: this.state.transportColor
+                        }}>
                         Social
                     </button>
-                    <div style={{marginTop: '10px'}} className="selected-info"> 
+                    <div className="selected-impact"> 
                         Environmental impacts
                     </div>
                     <div className="mobile-impacts-width">
@@ -109,17 +132,29 @@ class MobileContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <div style={{height: '60px'}}></div>
                     <button className="defaultButton" onClick={this.handleDefaultClicked}> 
                         <span>&crarr;</span>Back 
                     </button>
-                    <button  className="commonButtonStyle environmentalButton" onClick={this.handleEnvironmentalClicked} style={{borderColor: this.state.transportColor, color: this.state.transportColor}}>
+                    <button 
+                        className="commonButtonStyle environmentalButton" 
+                        onClick={this.handleEnvironmentalClicked} 
+                        style={{
+                            borderColor: this.state.transportColor, 
+                            color: this.state.transportColor
+                        }}>
                         Environmental
                     </button>
-                    <button className="commonButtonStyle socialButton" onClick={this.handleSocialClicked} style={{backgroundColor: this.state.transportColor, borderColor: this.state.transportColor, color: 'white'}}>
+                    <button 
+                        className="commonButtonStyle socialButton" 
+                        onClick={this.handleSocialClicked} 
+                        style={{
+                            backgroundColor: this.state.transportColor, 
+                            borderColor: this.state.transportColor, 
+                            color: 'white'
+                        }}>
                         Social
                     </button>
-                    <div style={{marginTop: '10px'}} className="selected-info"> 
+                    <div className="selected-impact"> 
                         Social impacts
                     </div>
                     <div className="mobile-impacts-width">
@@ -132,9 +167,8 @@ class MobileContent extends React.Component {
         return (
             <div>
                 <Mobile />
-                <div className="mobilePage">
-                    
-                    <div className="mobileContent">
+                <div className="mobile-page">
+                    <div className="mobile-content">
                         <MobileHeader pageHeader={pageHeader} />
                         {content}
                     </div>
