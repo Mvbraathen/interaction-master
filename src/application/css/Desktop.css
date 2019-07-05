@@ -1,3 +1,7 @@
+html {
+    background-color: #FAF4ED;
+}
+
 /* In this file: Styling for vertically splitting desktop view in two */
 .split {
     width: 100vw;
@@ -6,9 +10,10 @@
 
 .left-half {
     position: absolute;
+    max-width: 650px;
     z-index: -1;
     top: 0;
-    left: 0;
+    right: 50%;
     width: 50%;
     height: 100vh;
     overflow: auto;
@@ -18,7 +23,8 @@
 .right-half {
     z-index: -1;
     position: absolute;
-    right: 0;
+    max-width: 650px;
+    left: 50%;
     top: 0;
     overflow: auto;
     width: 50%;
@@ -38,7 +44,7 @@
     max-width: 600px; 
     margin: 0 auto;
     text-align: left;
-    margin-top: 180px; 
+    margin-top: 150px; 
     margin-bottom: 100px;
     margin-left: 2.5%;
     margin-right: 2.5%;

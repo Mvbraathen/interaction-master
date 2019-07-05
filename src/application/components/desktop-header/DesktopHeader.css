@@ -21,9 +21,9 @@
 }
 
 .desktop-bookmark {
-    position: fixed;
+    position: relative;
     top: 0; 
-    right: 0;
+    float: right;
     margin-top: 10px; 
     margin-right: 130px; 
     z-index: 99; 
@@ -38,16 +38,12 @@
     transition: 1s;
 }
 
-
-.desktop-bookmark:hover > .desktop-heaeder-link {
-    filter: blur(2px);
-}
-
 .desktop-active-page {
     position: absolute;
+    max-width: 1300px;
     width: 100%;
-    color: white;
     text-align: center;
+    color: white;
     line-height: 60px;
     font-family: Avenir Next;
     font-size: 1.2em;

@@ -19,7 +19,10 @@ class DesktopContent extends React.Component {
             defaultColor: 'white',
             environmentalColor: '#D3D3D3',
             socialColor: '#D3D3D3',
-            image: 'manufacturing-purple'
+            image: 'manufacturing-purple',
+            borderDefault: '1px solid grey',
+            borderEnvironmental: 'none',
+            borderSocial: 'none'
         }
     }
 
@@ -32,7 +35,10 @@ class DesktopContent extends React.Component {
             defaultColor: 'white',
             environmentalColor: '#D3D3D3',
             socialColor: '#D3D3D3',
-            image: 'manufacturing-purple'
+            image: 'manufacturing-purple',
+            borderDefault: '1px solid grey',
+            borderEnvironmental: 'none',
+            borderSocial: 'none'
         })
     }
 
@@ -45,7 +51,10 @@ class DesktopContent extends React.Component {
             defaultColor: '#D3D3D3',
             environmentalColor: 'white',
             socialColor: '#D3D3D3',
-            image: 'manufacturing-black'
+            image: 'manufacturing-black',
+            borderDefault: 'none',
+            borderEnvironmental: '1px solid grey',
+            borderSocial: 'none'
         })
     }
 
@@ -58,7 +67,10 @@ class DesktopContent extends React.Component {
             defaultColor: '#D3D3D3',
             environmentalColor: '#D3D3D3',
             socialColor: 'white',
-            image: 'manufacturing-black'
+            image: 'manufacturing-black',
+            borderDefault: 'none',
+            borderEnvironmental: 'none',
+            borderSocial: '1px solid grey'
         })
     }
 
@@ -119,7 +131,7 @@ class DesktopContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div className="desktop-page-title" style={{color: '#00AD00'}}> 
+                    <div className="desktop-page-title" style={{color: '#BD2EC2'}}> 
                         Environmental impacts
                     </div>
                     <Environmental fromPage={fromPage} />
@@ -130,7 +142,7 @@ class DesktopContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <div className="desktop-page-title" style={{color: '#00AD00'}}> 
+                    <div className="desktop-page-title" style={{color: '#BD2EC2'}}> 
                         Social impacts
                     </div>
                     <Social fromPage={fromPage} />
@@ -141,62 +153,38 @@ class DesktopContent extends React.Component {
         return (
             <div id="manufacturing-page">
                 <DesktopHeader pageHeader={pageHeader} />
+                
+                <div className="new-sub-menu">
+                <div style={{position: 'relative', marginTop: '-60px'}}>
+                    <Breadcrumb fromPage={fromPage} />
+                </div>
+                    <div  onClick={e => {
+                                this.handleSocialClick(e);
+                            }} className="new-sub-menu-element"> <div style={{boxSizing: 'borderBox', border: this.state.borderSocial}} className="new-sub-menu-element-text" tabIndex="0"> Social </div> </div>
+                    <div onClick={e => {
+                                this.handleEnvironmentalClick(e);
+                            }} className="new-sub-menu-element"> <div style={{border: this.state.borderEnvironmental}} className="new-sub-menu-element-text" tabIndex="0"> Environmental </div> </div>
+                    <div onClick={e => {
+                                this.handleDefaultClick(e);
+                            }} className="new-sub-menu-element"> <div style={{border: this.state.borderDefault}} className="new-sub-menu-element-text" tabIndex="0"> <div>
+                                <img 
+                                    alt="manufacturing icon" 
+                                    style={{maxHeight: '35px', verticalAlign: 'middle'}} 
+                                    src={require('../../../images/manufacturing-black.svg')} 
+                                />
+                            </div> </div> </div>
+                </div>
+                
+
+                        <hr style={{marginTop: '60px', height: '1px', backgroundColor: 'lightgrey', width: '95%', border: 'none'}} />
                 {/* Left half */}
                 <div className="split left-half">
-                    <Breadcrumb fromPage={fromPage} />
-                    <div className="sub-menu-left-half"></div>
+                    
                     <Desktop />
                 </div>
 
                 {/* Right half */}
                 <div className="split right-half">
-                    <div className="sub-menu">
-                        <div tabIndex="0" className = "default-menu-element"
-                            style={{
-                                backgroundColor: this.state.defaultColor, 
-                                fontWeight: this.state.defaultFontWeight
-                            }} 
-                            onClick={e => {
-                                this.handleDefaultClick(e);
-                            }}
-                            onKeyDown={event => {
-                                this.handleDefaultEnterPressed(event);
-                            }}>
-                            <div>
-                                <img 
-                                    alt="manufacturing icon" 
-                                    style={{maxHeight: '50px', verticalAlign: 'middle'}} 
-                                    src={require('../../../images/'+ image +'.svg')} 
-                                />
-                            </div>
-                        </div>
-                        <div tabIndex="0" className="environmental-menu-element"
-                            style={{
-                                backgroundColor: this.state.environmentalColor,
-                                fontWeight: this.state.environmentalFontWeight
-                            }} 
-                            onClick={e => {
-                                this.handleEnvironmentalClick(e);
-                            }}
-                            onKeyDown={event => {
-                                this.handleEnvironmentalEnterPressed(event);
-                            }}>
-                            Environmental
-                        </div>
-                        <div tabIndex="0" className="social-menu-element"
-                            style={{
-                                backgroundColor: this.state.socialColor,
-                                fontWeight: this.state.socialFontWeight
-                            }} 
-                            onClick={e => {
-                                this.handleSocialClick(e);
-                            }}
-                            onKeyDown={event => {
-                                this.handleSocialEnterPressed(event);
-                            }}>
-                            Social
-                        </div>
-                    </div>
                     <div className="right-half-content">
                         {content}
                     </div>

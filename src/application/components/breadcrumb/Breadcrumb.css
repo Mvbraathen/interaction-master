@@ -1,11 +1,11 @@
 /* Style breadcrumbs*/
 .breadcrumb {
-    position: fixed;
+    position: absolute;
     z-index: 99;
     font-family: Avenir Next;
     font-size: 1.2em;
     margin-left: 20px;
-    margin-top: 70px;
+    margin-top: 77px;
 }
 
 .breadcrumbSpacing {
@@ -28,7 +28,7 @@
 .prevPage {
     text-decoration: underline;
     display: inline-block;
-    color: blue;
+    color: #696969;
     font-family: Avenir Next;
     font-weight: 500;
 }
@@ -36,12 +36,12 @@
 /* Position of active page */
 .activePage {
     display: inline-block;
-    color: black;
+    color: #696969;
     font-family: Avenir Next;
     font-weight: 500;
 }
 
 .activePage:hover,
 .prevPage:hover {
-    opacity: 0.6;
+    color: black;
 }

@@ -61,4 +61,39 @@
     cursor: pointer;
 }
 
+.new-sub-menu {
+    position: absolute;
+    z-index: 99;
+    margin-top: 0px;
+    max-width: 1300px;
+    height: 60px;
+    width: 100%; 
+    background-color: white;  
+    /*border-bottom: 1px solid lightgrey;*/
+}
+
+.new-sub-menu-element {
+    width: 20%;
+    background-color: none;
+    text-align: center;
+    height: 60px;
+    float: right;
+    background-color: none;
+    cursor: pointer;
+}
+
+.new-sub-menu-element-text {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin: 0 auto;
+    max-width: 140px;
+    line-height: 40px;
+    margin-top: 10px;
+    background-color: none;
+}
+
+.new-sub-menu-element-text:hover {
+    background-color: #BD2EC2;
+    color: white;
+}
 

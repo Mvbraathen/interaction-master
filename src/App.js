@@ -22,7 +22,7 @@ import './application/components/impact-selection-buttons/ImpactSelectionButtons
 function App() {
     return (
         <Router>
-	    <div>
+	    <div style={{margin: '0 auto', maxWidth: '1300px'}}>
 	    	<Switch>
 	    		<Route path="/home" component={Home}/>
 	    		<Route path="/design" component={Design}/>
