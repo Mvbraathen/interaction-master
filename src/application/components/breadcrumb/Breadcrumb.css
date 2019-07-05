@@ -5,7 +5,7 @@
     font-family: Avenir Next;
     font-size: 1.2em;
     margin-left: 20px;
-    margin-top: 77px;
+    line-height: 60px;
 }
 
 .breadcrumbSpacing {
@@ -31,6 +31,7 @@
     color: #696969;
     font-family: Avenir Next;
     font-weight: 500;
+    line-height: 30px;
 }
 
 /* Position of active page */
@@ -39,6 +40,7 @@
     color: #696969;
     font-family: Avenir Next;
     font-weight: 500;
+    line-height: 30px;
 }
 
 .activePage:hover,

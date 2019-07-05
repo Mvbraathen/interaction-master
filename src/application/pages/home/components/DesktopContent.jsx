@@ -2,6 +2,10 @@ import React from "react";
 // Various components
 import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
+import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
+import MobileFooter from "../../../components/mobile-footer/MobileFooter";
+import Youtube from "../../../components/youtube/Youtube";
+
 
 class DesktopContent extends React.Component {
 
@@ -12,12 +16,15 @@ class DesktopContent extends React.Component {
         return (
             <div>
                 <DesktopHeader pageHeader={pageHeader} />
+                <div className="new-sub-menu">
+                    <Breadcrumb fromPage="Home" />
+                </div>
                 {/* Left half */}
                 <div className="split left-half">
                     <div className="sub-menu-without-selection"></div>
                     <Desktop />
                 </div>
-
+                <hr className="vertical-line" />
                 {/* Right half */}
                 <div className="split right-half">
                     <div className="sub-menu-without-selection"></div>
@@ -27,7 +34,8 @@ class DesktopContent extends React.Component {
                             style={{color: '#33333'}}> 
                             Lifecycle of mobile phones
                         </h1>
-                        <div className="image-container" style={{zIndex: '-99'}}>
+                        <Youtube />
+                        {/*<div className="image-container" style={{zIndex: '-99'}}>
                             <img 
                                 alt="iphone" 
                                 width="100%" 
@@ -38,7 +46,7 @@ class DesktopContent extends React.Component {
                                     William Hook
                                 </a>
                             </div>
-                        </div>
+                        </div>*/}
                         <div className="default-content-text">
                             Mobile phones have become one of the more unsustainable consumer goods. 
                             In 2015, more than 1.5 billion new mobile phones were shipped worldwide, 
@@ -85,6 +93,7 @@ class DesktopContent extends React.Component {
                             Europe; and finally from repair, recycling and discarding.
                         </div>
                     </div>
+                    <MobileFooter />
                 </div>
             </div>
 

@@ -12,6 +12,7 @@
     -webkit-overflow-scrolling: touch;
 }
 
+/* Container for all content */
 .mobile-content {
     font-family: Avenir Next;
     color: black;
@@ -19,6 +20,7 @@
     text-align: center;
 }
 
+/* The main title in every page */
 .mobile-page-title {
     text-align: left;
     margin-top: 80px;
@@ -52,6 +54,7 @@
     color: #404040;
 }
 
+/* Styling on text for selected impact category */
 .selected-impact {
     position: relative;
     text-align: left;
@@ -66,44 +69,4 @@
 .mobile-impacts-width {
     margin-left: 10px;
     margin-right: 10px;
-}
-
-/* All impacts + information in the Home and Design pages */
-.info-box {
-    text-align: left;
-    border-radius: 10px;
-    padding-bottom: 20px;
-    background-color: white;
-    -webkit-box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
-    -moz-box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
-    box-shadow: 0px 0px 33px -8px rgba(166, 166, 166, 1);
-}
-
-/* padding over info box header */
-.info-header {
-    text-align: left;
-    margin-left: 20px;
-    font-size: 1.5em;
-    font-weight: 400;
-    padding-top: 20px;
-}
-
-/* Positions text inside info box */
-.info-positioning {
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-/* For all images in the different pages */
-.image-container {
-    position: relative;
-}
-/* Credit tag on all Unsplash images */
-.image-credit {
-    position: absolute;
-    bottom: 15px;
-    right: 10px; 
-    padding: 3px 8px;
-    background-color: white;
 }

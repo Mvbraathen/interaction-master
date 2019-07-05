@@ -4,6 +4,7 @@ import Mobile from "../../../menus/mobile/Mobile";
 /* Header and footer for mobile devices */
 import MobileHeader from "../../../components/mobile-header/MobileHeader";
 import MobileFooter from "../../../components/mobile-footer/MobileFooter";
+import Youtube from "../../../components/youtube/Youtube";
 /* Fade effect */
 import Fade from "react-reveal/Fade";
 
@@ -27,14 +28,15 @@ class MobileContent extends React.Component {
                                         Lifecycle of mobile phones
                                     </h1>
                                     <div>
-                                        <div className="image-container">
+                                        <Youtube />
+                                        {/*<div className="image-container">
                                             <img alt="iphone" width="100%" src={require('../../../images/iphone.jpg')} />
                                             <div className="image-credit"> 
                                                 <a href="https://unsplash.com/@williamtm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
                                                     William Hook
                                                 </a>
                                             </div>
-                                        </div>
+                                        </div>*/}
                                         <div className="info-positioning">
                                             Mobile phones have become one of the more unsustainable consumer goods. 
                                             In 2015, more than 1.5 billion new mobile phones were shipped worldwide, 

@@ -3,6 +3,7 @@ import React from "react";
 import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
+import MobileFooter from "../../../components/mobile-footer/MobileFooter";
 
 class DesktopContent extends React.Component {
 
@@ -16,12 +17,16 @@ class DesktopContent extends React.Component {
         return (
             <div id="design-page">
                 <DesktopHeader pageHeader={pageHeader} />
+                <div className="new-sub-menu">
+                    <Breadcrumb fromPage={fromPage} />
+                </div>
                 {/* Left half */}
                 <div className="split left-half">
                     <div className="sub-menu-without-selection"></div>
                     <Breadcrumb fromPage={fromPage} />
                     <Desktop />
                 </div>
+                <hr className="vertical-line" />
 
                 {/* Right half */}
                 <div className="split right-half">
@@ -61,6 +66,7 @@ class DesktopContent extends React.Component {
                             by the user impossible.
                         </div>
                     </div>
+                    <MobileFooter />
                 </div>
             </div>
         );

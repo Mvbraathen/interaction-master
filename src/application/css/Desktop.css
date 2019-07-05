@@ -1,10 +1,10 @@
+/* Background color behind content, visable from > 1300px */
 html {
     background-color: #FAF4ED;
 }
 
 /* In this file: Styling for vertically splitting desktop view in two */
 .split {
-    width: 100vw;
     height: 100vh;
 }
 
@@ -13,7 +13,6 @@ html {
     max-width: 650px;
     z-index: -1;
     top: 0;
-    right: 50%;
     width: 50%;
     height: 100vh;
     overflow: auto;
@@ -41,7 +40,7 @@ html {
 }
 
 .right-half-content {
-    max-width: 600px; 
+    max-width: 620px; 
     margin: 0 auto;
     text-align: left;
     margin-top: 150px; 
@@ -49,4 +48,13 @@ html {
     margin-left: 2.5%;
     margin-right: 2.5%;
     font-family: Avenir Next;
+    min-height: 100%;
+}
+
+.vertical-line {
+    margin-top: 61px;
+    height: 1px;
+    background-color: lightgrey;
+    width: 95%;
+    border: none;
 }

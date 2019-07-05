@@ -1,0 +1,12 @@
+/* For all images in the different pages */
+.image-container {
+    position: relative;
+}
+/* Credit tag on all Unsplash images */
+.image-credit {
+    position: absolute;
+    bottom: 15px;
+    right: 10px; 
+    padding: 3px 8px;
+    background-color: white;
+}

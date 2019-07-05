@@ -17,6 +17,8 @@ import NotFound from './application/pages/not-found/NotFound';
 import './application/css/Desktop.css';
 import './application/css/Mobile.css';
 import './application/css/SubMenu.css';
+import './application/css/InfoBox.css';
+import './application/css/ImageWithCredit.css';
 import './application/components/impact-selection-buttons/ImpactSelectionButtons.css';
 
 function App() {

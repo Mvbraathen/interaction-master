@@ -3,6 +3,8 @@ import React from "react";
 import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
+import MobileFooter from "../../../components/mobile-footer/MobileFooter";
+import IconSelector from "../../../components/icon-selector/IconSelector";
 // Impacts
 import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
@@ -15,11 +17,6 @@ class DesktopContent extends React.Component {
             default: true,
             environmental: false,
             social: false,
-            // Submenu element's background color
-            defaultColor: 'white',
-            environmentalColor: '#D3D3D3',
-            socialColor: '#D3D3D3',
-            image: 'manufacturing-purple',
             borderDefault: '1px solid grey',
             borderEnvironmental: 'none',
             borderSocial: 'none'
@@ -31,11 +28,6 @@ class DesktopContent extends React.Component {
             default: true,
             social: false,
             environmental: false,
-            // Submenu element's background color
-            defaultColor: 'white',
-            environmentalColor: '#D3D3D3',
-            socialColor: '#D3D3D3',
-            image: 'manufacturing-purple',
             borderDefault: '1px solid grey',
             borderEnvironmental: 'none',
             borderSocial: 'none'
@@ -47,11 +39,6 @@ class DesktopContent extends React.Component {
             default: false,
             social: false,
             environmental: true,
-            // Submenu element's background color
-            defaultColor: '#D3D3D3',
-            environmentalColor: 'white',
-            socialColor: '#D3D3D3',
-            image: 'manufacturing-black',
             borderDefault: 'none',
             borderEnvironmental: '1px solid grey',
             borderSocial: 'none'
@@ -63,35 +50,11 @@ class DesktopContent extends React.Component {
             default: false,
             environmental: false,
             social: true,
-            // Submenu element's background color
-            defaultColor: '#D3D3D3',
-            environmentalColor: '#D3D3D3',
-            socialColor: 'white',
-            image: 'manufacturing-black',
             borderDefault: 'none',
             borderEnvironmental: 'none',
             borderSocial: '1px solid grey'
         })
     }
-
-    /* When enter is pressed on sub menu elements, click functions is called */
-    handleDefaultEnterPressed(event) {
-        if(event.key === 'Enter'){
-            this.handleDefaultClick();
-        }
-    }
-
-    handleEnvironmentalEnterPressed(event) {
-        if(event.key === 'Enter'){
-            this.handleEnvironmentalClick();
-        }
-    }
-
-    handleSocialEnterPressed(event) {
-        if(event.key === 'Enter'){
-            this.handleSocialClick();
-        }
-    } 
 
      render() {
         /* To select corresponding components */
@@ -102,9 +65,6 @@ class DesktopContent extends React.Component {
         
         /* The variable that holds the content */
         let content;
-
-        /* Decides which icon to render */
-        let image = this.state.image;
 
         if(this.state.default) {
             content = (
@@ -153,33 +113,58 @@ class DesktopContent extends React.Component {
         return (
             <div id="manufacturing-page">
                 <DesktopHeader pageHeader={pageHeader} />
-                
                 <div className="new-sub-menu">
-                <div style={{position: 'relative', marginTop: '-60px'}}>
                     <Breadcrumb fromPage={fromPage} />
-                </div>
-                    <div  onClick={e => {
-                                this.handleSocialClick(e);
-                            }} className="new-sub-menu-element"> <div style={{boxSizing: 'borderBox', border: this.state.borderSocial}} className="new-sub-menu-element-text" tabIndex="0"> Social </div> </div>
-                    <div onClick={e => {
-                                this.handleEnvironmentalClick(e);
-                            }} className="new-sub-menu-element"> <div style={{border: this.state.borderEnvironmental}} className="new-sub-menu-element-text" tabIndex="0"> Environmental </div> </div>
-                    <div onClick={e => {
+                    {/* Two empty elements to align the three buttons right, without ruining tabindex */}
+                    <div className="new-sub-menu-element"> </div>
+                    <div className="new-sub-menu-element"> </div>
+                    
+                    {/* The three actual buttons */}
+                    <div 
+                        className="new-sub-menu-element"> 
+                        <button
+                            onClick={e => {
                                 this.handleDefaultClick(e);
-                            }} className="new-sub-menu-element"> <div style={{border: this.state.borderDefault}} className="new-sub-menu-element-text" tabIndex="0"> <div>
-                                <img 
-                                    alt="manufacturing icon" 
-                                    style={{maxHeight: '35px', verticalAlign: 'middle'}} 
-                                    src={require('../../../images/manufacturing-black.svg')} 
-                                />
-                            </div> </div> </div>
-                </div>
-                
+                            }}
+                            style={{border: this.state.borderDefault}} 
+                            className="new-sub-menu-element-text" 
+                            tabIndex="0"> 
+                            <IconSelector fromPage={fromPage} /> 
+                        </button> 
+                    </div>
 
-                        <hr style={{marginTop: '60px', height: '1px', backgroundColor: 'lightgrey', width: '95%', border: 'none'}} />
+                    <div 
+                        className="new-sub-menu-element"> 
+                        <button
+                            onClick={e => {
+                                this.handleEnvironmentalClick(e);
+                            }} 
+                            style={{border: this.state.borderEnvironmental}} 
+                            className="new-sub-menu-element-text" 
+                            tabIndex="0"> 
+                            Environmental
+                        </button> 
+                    </div>
+
+                    <div 
+                        className="new-sub-menu-element"> 
+                        <button
+                            onClick={e => {
+                                this.handleSocialClick(e);
+                            }} 
+                            style={{boxSizing: 'borderBox', border: this.state.borderSocial}} 
+                            className="new-sub-menu-element-text" 
+                            tabIndex="0"> 
+                            Social 
+                        </button> 
+                    </div>
+                    
+                </div>
+                {/* Line to visually seperate sub menu from page content */}
+                <hr className="vertical-line" />
+                
                 {/* Left half */}
                 <div className="split left-half">
-                    
                     <Desktop />
                 </div>
 
@@ -188,6 +173,7 @@ class DesktopContent extends React.Component {
                     <div className="right-half-content">
                         {content}
                     </div>
+                    <MobileFooter />
                 </div>
             </div>
         );

@@ -1,66 +1,3 @@
-/* For pages without impacts (Design and Home) */
-.sub-menu-without-selection {
-    position: fixed;
-    margin-top: 60px;
-    height: 80px;
-    width: 100%;
-    background-color: #D3D3D3;
-}
-
-/* For all pages with impacts (all other) */
-.sub-menu {
-	position: fixed; 
-    margin-top: 60px;
-	width: 50%;
-    height: 80px;
-	z-index: 99; 
-	font-family: Avenir Next; 
-	font-size: 1em;
-}
-
-.sub-menu-left-half {
-	position: absolute; 
-    margin-top: 60px;
-    width: 100%; 
-    height: 80px; 
-    background-color: #D3D3D3; 
-    line-height: 80px; 
-    display: inline-block;
-}
-
-/* Sub menu button elements */
-.default-menu-element {
-    width: 20%; 
-    height: 100%;
-    color: black;
-    box-sizing: border-box; 
-    line-height: 80px; 
-    display: inline-block;
-    cursor: pointer;
-}
-
-.environmental-menu-element {
-    width: 40%;
-    font-size: 1.2em;
-    height: 80px; 
-    color: black;
-    box-sizing: border-box;    
-    line-height: 80px; 
-    display: inline-block; 
-    cursor: pointer;
-}
-
-.social-menu-element {
-	width: 40%; 
-    font-size: 1.2em;
-    height: 80px;
-  	color: black;
-    box-sizing: border-box;   
-    line-height: 80px; 
-    display: inline-block; 
-    cursor: pointer;
-}
-
 .new-sub-menu {
     position: absolute;
     z-index: 99;
@@ -77,23 +14,24 @@
     background-color: none;
     text-align: center;
     height: 60px;
-    float: right;
-    background-color: none;
-    cursor: pointer;
+    float: left;
+    line-height: 60px;
+    background-color: white;
 }
 
 .new-sub-menu-element-text {
+    font-size: 1em;
+    min-width: 140px;
     margin-left: 40px;
     margin-right: 40px;
     margin: 0 auto;
     max-width: 140px;
     line-height: 40px;
-    margin-top: 10px;
     background-color: none;
+    cursor: pointer;
 }
 
 .new-sub-menu-element-text:hover {
-    background-color: #BD2EC2;
-    color: white;
+    background-color: lightblue;
 }
 

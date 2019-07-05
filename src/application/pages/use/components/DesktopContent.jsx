@@ -3,6 +3,8 @@ import React from "react";
 import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
+import MobileFooter from "../../../components/mobile-footer/MobileFooter";
+import IconSelector from "../../../components/icon-selector/IconSelector";
 // Impacts
 import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
@@ -15,15 +17,9 @@ class DesktopContent extends React.Component {
             default: true,
             environmental: false,
             social: false,
-            // Submenu element's background color
-            defaultColor: 'white',
-            environmentalColor: '#D3D3D3',
-            socialColor: '#D3D3D3',
-            // Submenu element's font weight
-            defaultFontWeight: '700',
-            environmentalFontWeight: '400',
-            socialFontWeight: '400',
-            image: 'smart-logo'
+            borderDefault: '1px solid grey',
+            borderEnvironmental: 'none',
+            borderSocial: 'none'
         }
     }
 
@@ -32,14 +28,9 @@ class DesktopContent extends React.Component {
             default: true,
             social: false,
             environmental: false,
-            // Submenu element's background color
-            defaultColor: 'white',
-            environmentalColor: '#D3D3D3',
-            socialColor: '#D3D3D3',
-            // Submenu element's font weight
-            defaultFontWeight: '700',
-            environmentalFontWeight: '400',
-            socialFontWeight: '400'
+            borderDefault: '1px solid grey',
+            borderEnvironmental: 'none',
+            borderSocial: 'none'
         })
     }
 
@@ -48,14 +39,9 @@ class DesktopContent extends React.Component {
             default: false,
             social: false,
             environmental: true,
-            // Submenu element's background color
-            defaultColor: '#D3D3D3',
-            environmentalColor: 'white',
-            socialColor: '#D3D3D3',
-            // Submenu element's font weight
-            defaultFontWeight: '400',
-            environmentalFontWeight: '700',
-            socialFontWeight: '400'
+            borderDefault: 'none',
+            borderEnvironmental: '1px solid grey',
+            borderSocial: 'none'
         })
     }
 
@@ -64,34 +50,10 @@ class DesktopContent extends React.Component {
             default: false,
             environmental: false,
             social: true,
-            // Submenu element's background color
-            defaultColor: '#D3D3D3',
-            environmentalColor: '#D3D3D3',
-            socialColor: 'white',
-            // Submenu element's font weight
-            defaultFontWeight: '400',
-            environmentalFontWeight: '400',
-            socialFontWeight: '700'
+            borderDefault: 'none',
+            borderEnvironmental: 'none',
+            borderSocial: '1px solid grey'
         })
-    }
-
-    /* When enter is pressed on sub menu elements, click functions is called */
-    handleDefaultEnterPressed(event) {
-        if(event.key === 'Enter'){
-            this.handleDefaultClick();
-        }
-    }
-
-    handleEnvironmentalEnterPressed(event) {
-        if(event.key === 'Enter'){
-            this.handleEnvironmentalClick();
-        }
-    }
-
-    handleSocialEnterPressed(event) {
-        if(event.key === 'Enter'){
-            this.handleSocialClick();
-        }
     }
 
     render() {
@@ -103,7 +65,6 @@ class DesktopContent extends React.Component {
         
         /* The variable that holds the content */
         let content; 
-        let image = this.state.image;
 
          if(this.state.default) {
             content = (
@@ -124,7 +85,7 @@ class DesktopContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div className="desktop-page-title" style={{color: '#00AD00'}}> 
+                    <div className="desktop-page-title" style={{color: '#EB0100'}}> 
                         Environmental impacts
                     </div>
                     <Environmental fromPage={fromPage} />
@@ -135,7 +96,7 @@ class DesktopContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <div className="desktop-page-title" style={{color: '#00AD00'}}> 
+                    <div className="desktop-page-title" style={{color: '#EB0100'}}> 
                         Social impacts
                     </div>
                     <Social fromPage={fromPage} />
@@ -146,65 +107,67 @@ class DesktopContent extends React.Component {
         return (
             <div id="use-page">
                 <DesktopHeader pageHeader={pageHeader} />
+                <div className="new-sub-menu">
+                    <Breadcrumb fromPage={fromPage} />
+                    {/* Two empty elements to align the three buttons right, without ruining tabindex */}
+                    <div className="new-sub-menu-element"> </div>
+                    <div className="new-sub-menu-element"> </div>
+                    
+                    {/* The three actual buttons */}
+                    <div 
+                        className="new-sub-menu-element"> 
+                        <button
+                            onClick={e => {
+                                this.handleDefaultClick(e);
+                            }}
+                            style={{border: this.state.borderDefault}} 
+                            className="new-sub-menu-element-text" 
+                            tabIndex="0"> 
+                            <IconSelector fromPage={fromPage} /> 
+                        </button> 
+                    </div>
+
+                    <div 
+                        className="new-sub-menu-element"> 
+                        <button
+                            onClick={e => {
+                                this.handleEnvironmentalClick(e);
+                            }} 
+                            style={{border: this.state.borderEnvironmental}} 
+                            className="new-sub-menu-element-text" 
+                            tabIndex="0"> 
+                            Environmental
+                        </button> 
+                    </div>
+
+                    <div 
+                        className="new-sub-menu-element"> 
+                        <button
+                            onClick={e => {
+                                this.handleSocialClick(e);
+                            }} 
+                            style={{boxSizing: 'borderBox', border: this.state.borderSocial}} 
+                            className="new-sub-menu-element-text" 
+                            tabIndex="0"> 
+                            Social 
+                        </button> 
+                    </div>
+                    
+                </div>
+                {/* Line to visually seperate sub menu from page content */}
+                <hr className="vertical-line" />
+                
                 {/* Left half */}
                 <div className="split left-half">
-                    <Breadcrumb fromPage={fromPage} />
-                    <div className="sub-menu-left-half"></div>
                     <Desktop />
                 </div>
 
                 {/* Right half */}
                 <div className="split right-half">
-                    <div className="sub-menu">
-                        <div tabIndex="0" className = "default-menu-element"
-                            style={{
-                                backgroundColor: this.state.defaultColor, 
-                                fontWeight: this.state.defaultFontWeight
-                            }} 
-                            onClick={e => {
-                                this.handleDefaultClick(e);
-                            }}
-                            onKeyDown={event => {
-                                this.handleDefaultEnterPressed(event);
-                            }}>
-                            <div>
-                                <img 
-                                    alt="resource extraction icon" 
-                                    style={{maxHeight: '50px', verticalAlign: 'middle'}} 
-                                    src={require('../../../images/'+ image +'.png')} 
-                                />
-                            </div>
-                        </div>
-                        <div tabIndex="0" className="environmental-menu-element"
-                            style={{
-                                backgroundColor: this.state.environmentalColor,
-                                fontWeight: this.state.environmentalFontWeight
-                            }} 
-                            onClick={e => {
-                                this.handleEnvironmentalClick(e);
-                            }}
-                            onKeyDown={event => {
-                                this.handleEnvironmentalEnterPressed(event);
-                            }}>
-                            Environmental
-                        </div>
-                        <div tabIndex="0" className="social-menu-element"
-                            style={{
-                                backgroundColor: this.state.socialColor,
-                                fontWeight: this.state.socialFontWeight
-                            }} 
-                            onClick={e => {
-                                this.handleSocialClick(e);
-                            }}
-                            onKeyDown={event => {
-                                this.handleSocialEnterPressed(event);
-                            }}>
-                            Social
-                        </div>
-                    </div>
                     <div className="right-half-content">
                         {content}
                     </div>
+                    <MobileFooter />
                 </div>
             </div>
         );
