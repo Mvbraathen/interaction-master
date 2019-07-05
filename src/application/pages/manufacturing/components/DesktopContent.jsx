@@ -99,7 +99,7 @@ class DesktopContent extends React.Component {
                 <div>
                     <h1 
                         className="desktop-page-title" 
-                        style={{color: '#00AD00'}}> 
+                        style={{color: '#BD2EC2'}}> 
                         The manufacturing phase 
                     </h1>
                     <div className="default-content-text">

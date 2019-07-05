@@ -110,7 +110,7 @@ class DesktopContent extends React.Component {
                 <div>
                     <h1 
                         className="desktop-page-title" 
-                        style={{color: '#00AD00'}}> 
+                        style={{color: '#C65000'}}> 
                         The end of life phase 
                     </h1>
                     <div className="default-content-text">
@@ -126,7 +126,7 @@ class DesktopContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div className="desktop-page-title" style={{color: '#00AD00'}}> 
+                    <div className="desktop-page-title" style={{color: '#C65000'}}> 
                         Environmental impacts
                     </div>
                     <Environmental fromPage={fromPage} />
@@ -137,7 +137,7 @@ class DesktopContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <div className="desktop-page-title" style={{color: '#00AD00'}}> 
+                    <div className="desktop-page-title" style={{color: '#C65000'}}> 
                         Social impacts
                     </div>
                     <Social fromPage={fromPage} />
