@@ -12,6 +12,7 @@ class DesktopContent extends React.Component {
     render() {    
         /* No header text on this page */
         const pageHeader = "";
+        const height = "390";
         
         return (
             <div>
@@ -34,7 +35,7 @@ class DesktopContent extends React.Component {
                             style={{color: '#33333'}}> 
                             Lifecycle of mobile phones
                         </h1>
-                        <Youtube />
+                        <Youtube height={height}/>
                         {/*<div className="image-container" style={{zIndex: '-99'}}>
                             <img 
                                 alt="iphone" 

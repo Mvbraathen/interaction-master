@@ -9,16 +9,16 @@ import Youtube from "../../../components/youtube/Youtube";
 import Fade from "react-reveal/Fade";
 
 class MobileContent extends React.Component {
-
     render() {
 
         /* To get correct page header text */
         const pageHeader = "The mobile lifecycle";
+        let height = window.innerWidth/1.77;
 
         return (
             <div>
                 <Mobile />
-                <div className="mobile-page">        
+                <div className="mobile-page" onResize={this.resize}>        
                     <div style={{marginTop: '70px'}} className="mobile-content">
                         <MobileHeader pageHeader={pageHeader} />
                         <div className="mobile-impacts-width">
@@ -28,7 +28,7 @@ class MobileContent extends React.Component {
                                         Lifecycle of mobile phones
                                     </h1>
                                     <div>
-                                        <Youtube />
+                                        <Youtube height={height}/>
                                         {/*<div className="image-container">
                                             <img alt="iphone" width="100%" src={require('../../../images/iphone.jpg')} />
                                             <div className="image-credit"> 
