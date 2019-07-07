@@ -8,8 +8,8 @@ class MobileHeader extends React.Component {
                 <div className="mobile-header"> 
                     {this.props.pageHeader} 
                 </div>
-                <a href="http://smart.uio.no">
-                    <div className="mobile-bookmark"> 
+                <a tabIndex="-1" href="http://smart.uio.no">
+                    <div role="button" tabIndex="0" className="mobile-bookmark"> 
                         S 
                     </div>
                 </a>

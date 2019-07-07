@@ -11,7 +11,7 @@ class ImageSelector extends React.Component {
                     <img 
                         alt="resource extraction icon" 
                         style={{maxHeight: '35px', verticalAlign: 'middle'}} 
-                        src={require('../../images/manufacturing-purple.svg')} 
+                        src={require('../../images/resource-extraction-icon.svg')} 
                     />
                 </div> 
             )
@@ -35,7 +35,7 @@ class ImageSelector extends React.Component {
                     <img 
                         alt="transport icon" 
                         style={{maxHeight: '35px', verticalAlign: 'middle'}} 
-                        src={require('../../images/manufacturing-purple.svg')} 
+                        src={require('../../images/transport-icon.svg')} 
                     />
                 </div> 
             )
@@ -47,7 +47,7 @@ class ImageSelector extends React.Component {
                     <img 
                         alt="use icon" 
                         style={{maxHeight: '35px', verticalAlign: 'middle'}} 
-                        src={require('../../images/manufacturing-purple.svg')} 
+                        src={require('../../images/use-icon.svg')} 
                     />
                 </div> 
             )
@@ -59,7 +59,7 @@ class ImageSelector extends React.Component {
                     <img 
                         alt="end of life icon" 
                         style={{maxHeight: '35px', verticalAlign: 'middle'}} 
-                        src={require('../../images/manufacturing-purple.svg')} 
+                        src={require('../../images/end-of-life-icon.svg')} 
                     />
                 </div> 
             )

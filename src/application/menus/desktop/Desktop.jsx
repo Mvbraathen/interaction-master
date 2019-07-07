@@ -14,12 +14,19 @@ import { NavLink } from "react-router-dom";
 
 class Menu extends Component {
   render() {
+    let explainMenu;
+    if(this.props.fromPage === 'home') {
+      explainMenu = (
+        <text x="245" y="-194" fontSize="18" fill="red" transform="rotate(40)">Interact with me!</text>
+      )
+    }
     return (
       <div className="scaling-svg-container">
         <MediaQuery minHeight="540px">
           <svg viewBox="0 0 425 425" className="scaling-svg">
             <g>
               <Design />
+              {explainMenu}
               <ResourceExtraction />
               <Manufacturing />
               <Transport />

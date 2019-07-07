@@ -13,6 +13,7 @@ class DesktopContent extends React.Component {
         /* No header text on this page */
         const pageHeader = "";
         const height = "390";
+        const fromPage = "home";
         
         return (
             <div>
@@ -22,8 +23,9 @@ class DesktopContent extends React.Component {
                 </div>
                 {/* Left half */}
                 <div className="split left-half">
+                    <div style={{position: 'absolute', marginTop: '151px', marginLeft: '5%', marginRight: '5%', color: 'red', fontFamily: 'Avenir Next', fontSize: '1.5em'}}> To navigate, please interact with the circular menu below </div>
                     <div className="sub-menu-without-selection"></div>
-                    <Desktop />
+                    <Desktop fromPage={fromPage} />
                 </div>
                 <hr className="vertical-line" />
                 {/* Right half */}

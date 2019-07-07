@@ -4,7 +4,9 @@ import Mobile from "../../../menus/mobile/Mobile";
 /* Header and footer for mobile devices */
 import MobileHeader from "../../../components/mobile-header/MobileHeader";
 import MobileFooter from "../../../components/mobile-footer/MobileFooter";
-/* Impacts */
+/* Scrolls page back to top */
+/*import ScrollBackUp from "../../../components/scroll-back-up/ScrollBackUp";
+Impacts */
 import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
 
@@ -178,6 +180,8 @@ class MobileContent extends React.Component {
                     </div>
                 </div>
                 <MobileFooter />
+                {/*<ScrollBackUp />
+                <script src="scrollingelement.js"></script>*/}
             </div>
         );
     }

@@ -3,7 +3,6 @@ import { Twitter } from 'react-social-sharing';
 import { Facebook } from 'react-social-sharing';
 import { Mail } from 'react-social-sharing';
 import { Linkedin } from 'react-social-sharing';
-
 import './MobileFooter.css';
 
 class MobileFooter extends React.Component {
