@@ -7,6 +7,8 @@ import MobileFooter from "../../../components/mobile-footer/MobileFooter";
 /* Impacts */
 import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
+/* Scroll up */
+import ScrollUp from "../../../components/scroll-up/ScrollUp";
 
 class MobileContent extends React.Component {
     constructor() {
@@ -177,6 +179,7 @@ class MobileContent extends React.Component {
                     </div>
                 </div>
                 <MobileFooter />
+                <ScrollUp />
             </div>
         );
     }
