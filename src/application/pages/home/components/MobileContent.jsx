@@ -7,6 +7,8 @@ import MobileFooter from "../../../components/mobile-footer/MobileFooter";
 import Youtube from "../../../components/youtube/Youtube";
 /* Fade effect */
 import Fade from "react-reveal/Fade";
+/* Scroll up */
+import ScrollUp from "../../../components/scroll-up/ScrollUp";
 
 class MobileContent extends React.Component {
     render() {
@@ -89,6 +91,7 @@ class MobileContent extends React.Component {
                     </div>
                 </div>
                 <MobileFooter />
+                <ScrollUp />
             </div>
         );
     }

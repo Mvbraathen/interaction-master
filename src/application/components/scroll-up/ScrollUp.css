@@ -1,0 +1,16 @@
+.scroll-up-button {
+	position: fixed;
+    bottom: 0;
+    text-align: center;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(1, 1, 1, 0.3);
+    color: rgba(255, 255, 255, 1);
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    vertical-align: middle;
+    font-size: 1.8em;
+    line-height: 40px;
+}

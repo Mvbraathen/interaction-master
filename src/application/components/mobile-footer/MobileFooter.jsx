@@ -6,6 +6,7 @@ import { Linkedin } from 'react-social-sharing';
 import './MobileFooter.css';
 
 class MobileFooter extends React.Component {
+
 	render() {
         return (
             <div>

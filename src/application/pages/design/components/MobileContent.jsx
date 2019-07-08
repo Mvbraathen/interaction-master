@@ -6,6 +6,8 @@ import MobileHeader from "../../../components/mobile-header/MobileHeader";
 import MobileFooter from "../../../components/mobile-footer/MobileFooter";
 /* Fade effect */
 import Fade from "react-reveal/Fade";
+/* Scroll up */
+import ScrollUp from "../../../components/scroll-up/ScrollUp";
 
 class MobileContent extends React.Component {
 
@@ -58,6 +60,7 @@ class MobileContent extends React.Component {
                     </div>
                 </div>
                 <MobileFooter />
+                <ScrollUp />
             </div>
         );
     }
