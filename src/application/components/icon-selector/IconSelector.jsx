@@ -5,6 +5,18 @@ class ImageSelector extends React.Component {
 
         let image;
 
+        if(this.props.fromPage === "design") {
+            image = (
+                <div>
+                    <img 
+                        alt="design icon" 
+                        style={{maxHeight: '35px', verticalAlign: 'middle'}} 
+                        src={require('../../images/design-icon.svg')} 
+                    />
+                </div> 
+            )
+        }
+
         if(this.props.fromPage === "resourceExtraction") {
             image = (
                 <div>

@@ -17,7 +17,10 @@ class Menu extends Component {
     let explainMenu;
     if(this.props.fromPage === 'home') {
       explainMenu = (
-        <text x="245" y="-194" fontSize="18" fill="red" transform="rotate(40)">Interact with me!</text>
+        <g>
+          <text text-anchor="middle" x="212.5" y="-40" fontSize="18" fill="black">To learn more, interact</text>
+          <text text-anchor="middle" x="212.5" y="-20" fontSize="18" fill="black">with the circular menu below!</text>
+        </g>
       )
     }
     return (
