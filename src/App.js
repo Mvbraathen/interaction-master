@@ -26,14 +26,13 @@ function App() {
         <Router>
 	    <div style={{margin: '0 auto', maxWidth: '1300px'}}>
 	    	<Switch>
-	    		<Route path="/home" component={Home}/>
+	    		<Route exact path="/" component={Home}/>
 	    		<Route path="/design" component={Design}/>
 	    		<Route path="/resource-extraction" component={ResourceExtraction}/>
 	    		<Route path="/manufacturing" component={Manufacturing}/>
 	    		<Route path="/transport" component={Transport}/>
 	    		<Route path="/use" component={Use}/>
 	    		<Route path="/end-of-life" component={EndOfLife}/>
-	    		<Redirect exact from="/" to="/home" />
 	    		<Route path="/" component={NotFound} />
 	    	</Switch>
 	    </div>
