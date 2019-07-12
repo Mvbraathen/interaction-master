@@ -27,7 +27,7 @@ class Menu extends Component {
                         </div>
                     }>
                     <ul className = "bm-item-list">
-                        <li title="Home"><NavLink className="bm-item menu-element" to ="/home"> Home </NavLink></li>
+                        <li title="Home"><NavLink className="bm-item menu-element" to ="/"> Home </NavLink></li>
                         <li title="Design"><NavLink className="bm-item menu-element" to ="/design"> Design </NavLink></li>
                         <li title="Resource Extraction"><NavLink className="bm-item menu-element" to ="/resource-extraction"> Resource Extraction </NavLink></li>
                         <li title="Manufacturing"><NavLink className="bm-item menu-element" to ="/manufacturing"> Manufacturing </NavLink></li>

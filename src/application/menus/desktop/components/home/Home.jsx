@@ -6,7 +6,7 @@ class CenterObjects extends Component {
   render() {
     return (
       <g>
-        <NavLink className="home" to="/home">
+        <NavLink className="home" to="/">
           <title>Home</title>
           <path
             className="arrows"

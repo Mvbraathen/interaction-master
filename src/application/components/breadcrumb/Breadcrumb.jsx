@@ -59,7 +59,7 @@ class Breadcrumb extends React.Component {
         return (
             <div>
                 <div className="breadcrumb">
-                    <NavLink to="/home">
+                    <NavLink to="/">
                         <div className="prevPage">Home</div>
                     </NavLink>
                     <div className="breadcrumbSpacing">
