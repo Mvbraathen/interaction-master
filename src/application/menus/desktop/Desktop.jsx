@@ -18,8 +18,7 @@ class Menu extends Component {
     if(this.props.fromPage === 'home') {
       explainMenu = (
         <g>
-          <text textAnchor="middle" x="212.5" y="-40" fontSize="18" fill="black">To learn more, interact</text>
-          <text textAnchor="middle" x="212.5" y="-20" fontSize="18" fill="black">with the circular menu below!</text>
+          <text textAnchor="middle" x="212.5" y="-20" fontSize="18" fill="black"> Banana 🍌</text>
         </g>
       )
     }
