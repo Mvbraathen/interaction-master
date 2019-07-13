@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Redirect } from 'react-router';
+import { Switch } from 'react-router';
 import {
     BrowserRouter as Router,
     Route
