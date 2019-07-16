@@ -23,7 +23,7 @@
 /* The main title in every page */
 .mobile-page-title {
     text-align: left;
-    margin-top: 80px;
+    margin-top: 10px;
     margin-left: 20px;
     margin-bottom: 5px;
     font-size: 2em; 
@@ -58,6 +58,7 @@
 .selected-impact {
     position: relative;
     text-align: left;
+    margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
     font-size: 1.5em;
