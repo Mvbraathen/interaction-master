@@ -10,7 +10,7 @@ class MobilePhaseMenu extends React.Component {
                     <div 
                         className="phase-button" 
                         style={{marginLeft: '2%', backgroundColor: '#E00070'}}> 
-                        <img 
+                        <img
                             alt="design icon" 
                             style={{maxHeight: '60px', verticalAlign: 'middle'}} 
                             src={require('../../images/design-icon.svg')} 

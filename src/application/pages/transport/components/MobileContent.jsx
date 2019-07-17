@@ -9,6 +9,8 @@ import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
 /* Scroll up */
 import ScrollUp from "../../../components/scroll-up/ScrollUp";
+/* Scroll to main content */
+import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
 
 class MobileContent extends React.Component {
     constructor() {
@@ -23,6 +25,11 @@ class MobileContent extends React.Component {
         this.handleDefaultClicked = this.handleDefaultClicked.bind(this);
         this.handleEnvironmentalClicked = this.handleEnvironmentalClicked.bind(this);
         this.handleSocialClicked = this.handleSocialClicked.bind(this);
+    }
+
+    /* Scrolls to top when page loads */
+    componentDidMount() {
+        window.scrollTo(0, 0);
     }
 
     handleDefaultClicked() {
@@ -60,7 +67,44 @@ class MobileContent extends React.Component {
         if(this.state.default) {
             content = (
                 <div>
-                    <div className="mobile-page-title" style={{color: this.state.transportColor}}> 
+                    <div className="impact-selection-container">
+                        <button 
+                            className="environmental-selection" 
+                            onClick={this.handleEnvironmentalClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white',
+                                boxSizing: 'border-box'
+                            }}> 
+                            Environmental 
+                        </button>
+
+                        <button 
+                            className="default-selection"
+                            onClick={this.handleDefaultClicked} 
+                            style={{
+                                backgroundColor: this.state.transportColor, 
+                                boxSizing: 'border-box'
+                            }}> 
+                            <img 
+                                alt="resource extraction icon" 
+                                style={{maxHeight: '35px', marginTop: '3px'}} 
+                                src={require('../../../images/transport-icon-white.svg')} 
+                            /> 
+                        </button>
+            
+                        <button 
+                            className="social-selection"
+                            onClick={this.handleSocialClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white',
+                                boxSizing: 'border-box'}}> 
+                            Social 
+                        </button>
+                    </div>
+
+                    <div id="main-content" className="mobile-page-title" style={{color: this.state.transportColor}}> 
                         The transport phase 
                     </div> 
                     <div className="page-introduction-text">
@@ -69,29 +113,6 @@ class MobileContent extends React.Component {
                         components, and finished products; the packaging of the products being 
                         transported; and the logistics or organisation and implementation of it all.
                     </div>
-                    <div className="impact-selection"> 
-                        Select an impact category
-                    </div>
-                    <div>
-                        <button 
-                            className="commonButtonStyle environmentalButton" 
-                            onClick={this.handleEnvironmentalClicked} 
-                            style={{
-                                borderColor: this.state.transportColor, 
-                                color: this.state.transportColor
-                            }}>
-                            Environmental
-                        </button>
-                        <button
-                            className="commonButtonStyle socialButton" 
-                            onClick={this.handleSocialClicked} 
-                            style={{
-                                borderColor: this.state.transportColor, 
-                                color: this.state.transportColor
-                            }}>
-                            Social
-                        </button>
-                    </div>
                 </div>
             )
         } 
@@ -99,31 +120,46 @@ class MobileContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <button className="defaultButton" onClick={this.handleDefaultClicked}> 
-                        <span>&crarr;</span>Back 
-                    </button>
-                    <button 
-                        className="commonButtonStyle environmentalButton" 
-                        onClick={this.handleEnvironmentalClicked} 
-                        style={{
-                            backgroundColor: this.state.transportColor, 
-                            borderColor: this.state.transportColor, 
-                            color: 'white'
-                        }}>
-                        Environmental
-                    </button>
-                    <button 
-                        className="commonButtonStyle socialButton" 
-                        onClick={this.handleSocialClicked} 
-                        style={{
-                            borderColor: this.state.transportColor, 
-                            color: this.state.transportColor
-                        }}>
-                        Social
-                    </button>
-                    <div className="selected-impact"> 
-                        Environmental impacts
+                    <div className="impact-selection-container">
+                        <button 
+                            className="environmental-selection" 
+                            onClick={this.handleEnvironmentalClicked} 
+                            style={{
+                                backgroundColor: this.state.transportColor, 
+                                color: 'white',
+                                boxSizing: 'border-box'
+                            }}> 
+                            Environmental 
+                        </button>
+
+                        <button 
+                            className="default-selection"
+                            onClick={this.handleDefaultClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white', 
+                                boxSizing: 'border-box'
+                            }}> 
+                            <img 
+                                alt="resource extraction icon" 
+                                style={{maxHeight: '35px', marginTop: '3px'}} 
+                                src={require('../../../images/transport-icon-white.svg')} 
+                            /> 
+                        </button>
+            
+                        <button 
+                            className="social-selection"
+                            onClick={this.handleSocialClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white',
+                                boxSizing: 'border-box'}}> 
+                            Social 
+                        </button>
                     </div>
+                    <h1 style={{color: this.state.transportColor}} className="selected-impact"> 
+                        Environmental impacts
+                    </h1>
                     <div className="mobile-impacts-width">
                         <Environmental fromPage={fromPage} />
                     </div>
@@ -134,31 +170,47 @@ class MobileContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <button className="defaultButton" onClick={this.handleDefaultClicked}> 
-                        <span>&crarr;</span>Back 
-                    </button>
-                    <button 
-                        className="commonButtonStyle environmentalButton" 
-                        onClick={this.handleEnvironmentalClicked} 
-                        style={{
-                            borderColor: this.state.transportColor, 
-                            color: this.state.transportColor
-                        }}>
-                        Environmental
-                    </button>
-                    <button 
-                        className="commonButtonStyle socialButton" 
-                        onClick={this.handleSocialClicked} 
-                        style={{
-                            backgroundColor: this.state.transportColor, 
-                            borderColor: this.state.transportColor, 
-                            color: 'white'
-                        }}>
-                        Social
-                    </button>
-                    <div className="selected-impact"> 
-                        Social impacts
+                    <div className="impact-selection-container">
+                        <button 
+                            className="environmental-selection" 
+                            onClick={this.handleEnvironmentalClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white',
+                                boxSizing: 'border-box'
+                            }}> 
+                            Environmental 
+                        </button>
+
+                        <button 
+                            className="default-selection"
+                            onClick={this.handleDefaultClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white', 
+                                boxSizing: 'border-box'
+                            }}> 
+                            <img 
+                                alt="resource extraction icon" 
+                                style={{maxHeight: '35px', marginTop: '3px'}} 
+                                src={require('../../../images/transport-icon-white.svg')} 
+                            /> 
+                        </button>
+            
+                        <button 
+                            className="social-selection"
+                            onClick={this.handleSocialClicked} 
+                            style={{
+                                backgroundColor: this.state.transportColor, 
+                                color: 'white',
+                                boxSizing: 'border-box'}}> 
+                            Social 
+                        </button>
                     </div>
+
+                    <h1 style={{color: this.state.transportColor}} className="selected-impact"> 
+                        Social impacts
+                    </h1>
                     <div className="mobile-impacts-width">
                         <Social fromPage={fromPage} />
                     </div>
@@ -167,7 +219,8 @@ class MobileContent extends React.Component {
         }
         
         return (
-            <div onScroll={this.loook}>
+            <div>
+                <ScrollToMain />
                 <Mobile />
                 <div className="mobile-page">
                     <div className="mobile-content">

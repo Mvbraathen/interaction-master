@@ -24,7 +24,17 @@
     height: 40px; 
     font-size: 1.5em;
     font-family: Avenir Next; 
-    line-height: 40px; 
+    line-height: 42px; 
     text-align: center; 
     color: white;
+}
+
+.mobile-bookmark:hover {
+    border-color: #6D99FE;
+    outline: 2px solid #6D99FE; 
+}
+
+.mobile-bookmark:focus {
+    border-color: #6D99FE;
+    outline: 2px solid #6D99FE; 
 }

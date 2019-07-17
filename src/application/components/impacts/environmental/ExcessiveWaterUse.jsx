@@ -10,13 +10,13 @@ class ExcessiveWaterUseMobile extends React.Component {
                     <div>
                         <div className="image-container">
                             <img alt="dry land" width="100%" src={require('./images/ExcessiveWaterUse.jpg')} />
-                            <div className="image-credit">
-                                <a href="https://unsplash.com/@mparente?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
-                                    Micaela Parente
-                                </a>
-                            </div>
+                            <a
+                                className="image-credit" 
+                                href="https://unsplash.com/@mparente?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
+                                Micaela Parente
+                            </a>
                         </div>
-                        <div style={{textAlign: 'justify'}} className="info-positioning">
+                        <div className="info-positioning">
                             Industrial water use resulting in environmental degradation and decreasing water availability for humans and wildlife. Excessive water use is found in mining and in the manufacturing of mobile phones.
                         </div>
                     </div>

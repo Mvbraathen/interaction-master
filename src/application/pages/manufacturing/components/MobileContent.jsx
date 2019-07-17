@@ -4,13 +4,13 @@ import Mobile from "../../../menus/mobile/Mobile";
 /* Header and footer for mobile devices */
 import MobileHeader from "../../../components/mobile-header/MobileHeader";
 import MobileFooter from "../../../components/mobile-footer/MobileFooter";
-/* Scrolls page back to top */
-/*import ScrollBackUp from "../../../components/scroll-back-up/ScrollBackUp";
-Impacts */
+/* Impacts */
 import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
 /* Scroll up */
 import ScrollUp from "../../../components/scroll-up/ScrollUp";
+/* Scroll to main content */
+import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
 
 class MobileContent extends React.Component {
     constructor() {
@@ -25,6 +25,11 @@ class MobileContent extends React.Component {
         this.handleDefaultClicked = this.handleDefaultClicked.bind(this);
         this.handleEnvironmentalClicked = this.handleEnvironmentalClicked.bind(this);
         this.handleSocialClicked = this.handleSocialClicked.bind(this);
+    }
+
+    /* Scrolls to top when page loads */
+    componentDidMount() {
+        window.scrollTo(0, 0);
     }
 
     handleDefaultClicked() {
@@ -62,42 +67,55 @@ class MobileContent extends React.Component {
         if(this.state.default) {
             content = (
                 <div>
-                    <div className="mobile-page-title" style={{color: this.state.manufacturingColor}}> 
+                    <div className="impact-selection-container">
+                        <button 
+                            className="environmental-selection" 
+                            onClick={this.handleEnvironmentalClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white',
+                                boxSizing: 'border-box'
+                            }}> 
+                            Environmental 
+                        </button>
+
+                        <button 
+                            className="default-selection"
+                            onClick={this.handleDefaultClicked} 
+                            style={{
+                                backgroundColor: this.state.manufacturingColor, 
+                                boxSizing: 'border-box'
+                            }}> 
+                            <img 
+                                alt="resource extraction icon" 
+                                style={{maxHeight: '35px', marginTop: '3px'}} 
+                                src={require('../../../images/manufacturing-icon-white.svg')} 
+                            /> 
+                        </button>
+            
+                        <button 
+                            className="social-selection"
+                            onClick={this.handleSocialClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white',
+                                boxSizing: 'border-box'}}> 
+                            Social 
+                        </button>
+                    </div>
+                    <h1 id="main-content" className="mobile-page-title" style={{color: this.state.manufacturingColor}}> 
                         The manufacturing phase 
-                    </div> 
-                    <div className="page-introduction-text">
+                    </h1> 
+                    <p className="page-introduction-text">
                         Manufacturing is the phase in which the different components of the mobile 
                         phone are produced and put together to become the finished product. The 
                         main components of a mobile phone are the circuit board (PCB), battery, 
                         LCD screen, antenna, microphone, speaker, camera(s), and shell. Each of 
                         these large components consists of several smaller components.
-                        <p></p>
+                        <br/><br/>
                         Manufacturing takes place in factories, with the largest factory, in Shenzen, 
                         China, housing up to 450.000 workers.
-                    </div>
-                    <div className="impact-selection"> 
-                        Select an impact category
-                    </div>
-                    <div>
-                        <button 
-                            className="commonButtonStyle environmentalButton" 
-                            onClick={this.handleEnvironmentalClicked} 
-                            style={{
-                                borderColor: this.state.manufacturingColor, 
-                                color: this.state.manufacturingColor
-                            }}>
-                            Environmental
-                        </button>
-                        <button
-                            className="commonButtonStyle socialButton" 
-                            onClick={this.handleSocialClicked} 
-                            style={{
-                                borderColor: this.state.manufacturingColor, 
-                                color: this.state.manufacturingColor
-                            }}>
-                            Social
-                        </button>
-                    </div>
+                    </p>
                 </div>
             )
         } 
@@ -105,31 +123,46 @@ class MobileContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <button className="defaultButton" onClick={this.handleDefaultClicked}> 
-                        <span>&crarr;</span>Back 
-                    </button>
-                    <button 
-                        className="commonButtonStyle environmentalButton" 
-                        onClick={this.handleEnvironmentalClicked} 
-                        style={{
-                            backgroundColor: this.state.manufacturingColor, 
-                            borderColor: this.state.manufacturingColor, 
-                            color: 'white'
-                        }}>
-                        Environmental
-                    </button>
-                    <button 
-                        className="commonButtonStyle socialButton" 
-                        onClick={this.handleSocialClicked} 
-                        style={{
-                            borderColor: this.state.manufacturingColor, 
-                            color: this.state.manufacturingColor
-                        }}>
-                        Social
-                    </button>
-                    <div className="selected-impact"> 
-                        Environmental impacts
+                    <div className="impact-selection-container">
+                        <button 
+                            className="environmental-selection" 
+                            onClick={this.handleEnvironmentalClicked} 
+                            style={{
+                                backgroundColor: this.state.manufacturingColor, 
+                                color: 'white',
+                                boxSizing: 'border-box'
+                            }}> 
+                            Environmental 
+                        </button>
+
+                        <button 
+                            className="default-selection"
+                            onClick={this.handleDefaultClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white', 
+                                boxSizing: 'border-box'
+                            }}> 
+                            <img 
+                                alt="resource extraction icon" 
+                                style={{maxHeight: '35px', marginTop: '3px'}} 
+                                src={require('../../../images/manufacturing-icon-white.svg')} 
+                            /> 
+                        </button>
+            
+                        <button 
+                            className="social-selection"
+                            onClick={this.handleSocialClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white',
+                                boxSizing: 'border-box'}}> 
+                            Social 
+                        </button>
                     </div>
+                    <h1 style={{color: this.state.manufacturingColor}} className="selected-impact"> 
+                        Environmental impacts
+                    </h1>
                     <div className="mobile-impacts-width">
                         <Environmental fromPage={fromPage} />
                     </div>
@@ -140,31 +173,47 @@ class MobileContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <button className="defaultButton" onClick={this.handleDefaultClicked}> 
-                        <span>&crarr;</span>Back 
-                    </button>
-                    <button 
-                        className="commonButtonStyle environmentalButton" 
-                        onClick={this.handleEnvironmentalClicked} 
-                        style={{
-                            borderColor: this.state.manufacturingColor, 
-                            color: this.state.manufacturingColor
-                        }}>
-                        Environmental
-                    </button>
-                    <button 
-                        className="commonButtonStyle socialButton" 
-                        onClick={this.handleSocialClicked} 
-                        style={{
-                            backgroundColor: this.state.manufacturingColor, 
-                            borderColor: this.state.manufacturingColor, 
-                            color: 'white'
-                        }}>
-                        Social
-                    </button>
-                    <div className="selected-impact"> 
-                        Social impacts
+                    <div className="impact-selection-container">
+                        <button 
+                            className="environmental-selection" 
+                            onClick={this.handleEnvironmentalClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white',
+                                boxSizing: 'border-box'
+                            }}> 
+                            Environmental 
+                        </button>
+
+                        <button 
+                            className="default-selection"
+                            onClick={this.handleDefaultClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white', 
+                                boxSizing: 'border-box'
+                            }}> 
+                            <img 
+                                alt="resource extraction icon" 
+                                style={{maxHeight: '35px', marginTop: '3px'}} 
+                                src={require('../../../images/manufacturing-icon-white.svg')} 
+                            /> 
+                        </button>
+            
+                        <button 
+                            className="social-selection"
+                            onClick={this.handleSocialClicked} 
+                            style={{
+                                backgroundColor: this.state.manufacturingColor, 
+                                color: 'white',
+                                boxSizing: 'border-box'}}> 
+                            Social 
+                        </button>
                     </div>
+
+                    <h1 style={{color: this.state.manufacturingColor}} className="selected-impact"> 
+                        Social impacts
+                    </h1>
                     <div className="mobile-impacts-width">
                         <Social fromPage={fromPage} />
                     </div>
@@ -174,6 +223,7 @@ class MobileContent extends React.Component {
         
         return (
             <div>
+                <ScrollToMain />
                 <Mobile />
                 <div className="mobile-page">
                     <div className="mobile-content">
@@ -183,8 +233,6 @@ class MobileContent extends React.Component {
                 </div>
                 <MobileFooter />
                 <ScrollUp />
-                {/*<ScrollBackUp />
-                <script src="scrollingelement.js"></script>*/}
             </div>
         );
     }

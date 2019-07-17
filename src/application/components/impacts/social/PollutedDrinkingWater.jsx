@@ -10,11 +10,11 @@ class PollutedDrinkingWaterMobile extends React.Component {
                     <div>
                         <div className="image-container">
                             <img alt="drinking water" width="100%" src={require('./images/PollutedDrinkingWater.jpg')} />
-                            <div className="image-credit">
-                                <a href="https://unsplash.com/@belart84?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
-                                    Artem Beliaikin
-                                </a>
-                            </div>
+                            <a
+                                className="image-credit" 
+                                href="https://unsplash.com/@belart84?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
+                                Artem Beliaikin
+                            </a>
                         </div>
                         <div className="info-positioning">
                             Access to clean drinking water is a human right. Pollution of drinking 

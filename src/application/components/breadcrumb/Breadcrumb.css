@@ -28,7 +28,7 @@
 .prevPage {
     text-decoration: underline;
     display: inline-block;
-    color: #696969;
+    color: #333333;
     font-family: Avenir Next;
     font-weight: 500;
     line-height: 30px;
@@ -37,13 +37,16 @@
 /* Position of active page */
 .activePage {
     display: inline-block;
-    color: #696969;
+    color: #333333;
     font-family: Avenir Next;
     font-weight: 500;
     line-height: 30px;
 }
 
 .activePage:hover,
-.prevPage:hover {
-    color: black;
+.prevPage:hover, 
+.activePage:focus,
+.prevPage:focus {
+    background-color: grey;
+    color: white;
 }

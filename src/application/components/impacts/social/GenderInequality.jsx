@@ -10,11 +10,11 @@ class GenderInequalityMobile extends React.Component {
                     <div>
                         <div className="image-container">
                             <img alt="painted wall" width="100%" src={require('./images/GenderInequality.jpg')} />
-                            <div className="image-credit">
-                                <a href="https://unsplash.com/@matteopaga?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
-                                    Matteo Paganelli
-                                </a>
-                            </div>
+                            <a
+                                className="image-credit"
+                                href="https://unsplash.com/@matteopaga?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
+                                Matteo Paganelli
+                            </a>
                         </div>
                         <div className="info-positioning">
                             Equality of opportunity means “women and men, and girls and boys, 

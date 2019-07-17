@@ -11,7 +11,7 @@
    className="scaling-svg"
    version="1.1"
    id="svg6"
-   sodipodi:docname="resource-extraction-icon-kopi.svg"
+   sodipodi:docname="resource-extraction-icon-white.svg"
    width="70"
    height="65"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06">
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -31,33 +31,27 @@
      id="defs10" />
   <sodipodi:namedview
      pagecolor="#ffffff"
-     bordercolor="#ffffff"
+     bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
      gridtolerance="10"
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="928"
-     inkscape:window-height="781"
+     inkscape:window-width="762"
+     inkscape:window-height="582"
      id="namedview8"
      showgrid="false"
-     inkscape:zoom="2.8284272"
-     inkscape:cx="78.301404"
-     inkscape:cy="62.051406"
-     inkscape:window-x="568"
-     inkscape:window-y="108"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="49.242381"
+     inkscape:cy="33.60013"
+     inkscape:window-x="844"
+     inkscape:window-y="99"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg6"
-     inkscape:measure-start="32.9794,60.4968"
-     inkscape:measure-end="0,0"
-     inkscape:snap-grids="true"
-     inkscape:pagecheckerboard="true"
-     units="px"
-     width="6.5in" />
+     inkscape:current-layer="svg6" />
   <g
      id="g4"
-     transform="matrix(1.7264861,0,0,1.6728525,-337.52692,-80.742594)"
+     transform="matrix(1.0644043,0,0,1.0783202,-205.35006,-46.404313)"
      style="fill:#ffffff"><path
    d="m 229.6,70 c -0.4,-1.5 -1.4,-3.3 -2.5,-4.8 -0.2,-0.3 -0.5,-0.6 -0.8,-1 0.3,-0.4 0.5,-0.9 0.4,-1.5 v 0 0 c 0,-0.2 -0.1,-0.3 -0.3,-0.6 l 0.2,-0.3 c 0.6,-0.6 0.8,-1.2 0.8,-2.1 0,-0.9 -0.4,-1.4 -1.1,-2.2 -0.5,-0.5 -1,-0.9 -1.5,-1.1 v 0 0 c -0.3,-0.1 -0.7,-0.1 -0.8,-0.1 v 0 c -0.8,0 -1.5,0.3 -2,0.8 l -0.2,0.2 C 221.5,57 221.4,57 221.2,57 c -0.2,0 -0.3,-0.1 -0.4,-0.1 -0.5,0 -0.8,0.2 -1.1,0.4 v 0 c -2.4,-2.1 -5.1,-3.3 -7.6,-3.6 -0.3,0 -0.6,-0.1 -0.9,-0.1 -0.5,0 -0.8,0.1 -1.1,0.2 -0.7,0.4 -1.1,1.3 -0.9,2.1 0.1,0.4 0.2,0.5 3.5,3.8 L 215,62 c -0.3,0.4 -0.5,0.9 -0.3,1.5 0,0.2 0.1,0.3 0.4,0.7 -0.4,0.3 -0.9,0.9 -1.9,1.9 -1.2,1.2 -2.9,2.9 -4.7,4.7 l -6.6,6.6 -0.4,0.4 v 0.5 0.3 c 0,1 0.4,2 1.2,2.7 0.7,0.7 1.7,1.2 2.7,1.2 h 0.3 0.5 l 0.4,-0.4 6.6,-6.6 6.6,-6.6 c 0.2,0.2 0.3,0.2 0.4,0.3 0.2,0.1 0.4,0.1 0.7,0.1 0.4,0 0.8,-0.2 1.1,-0.4 l 2.3,2.3 c 3.4,3.4 3.5,3.4 3.9,3.5 0.1,0 0.2,0 0.4,0 0.7,0 1.3,-0.4 1.6,-1 0.1,-0.8 -0.4,-3 -0.6,-3.7 z m -6.9,-11.9 c 0.3,-0.3 0.7,-0.5 1.2,-0.5 v 0 c 0.2,0 0.4,0 0.4,0 0.3,0.1 0.6,0.3 1,0.8 0.6,0.6 0.7,0.8 0.8,1.4 0,0.5 -0.1,0.8 -0.4,1.2 l -0.2,0.2 c -0.4,-0.4 -0.8,-0.9 -1.5,-1.5 -0.6,-0.6 -1.1,-1.1 -1.5,-1.5 z m -10.7,16.5 -6.6,6.6 h -0.3 c -0.7,0 -1.4,-0.3 -1.9,-0.8 -0.5,-0.5 -0.8,-1.2 -0.8,-1.9 v -0.3 l 6.6,-6.6 c 3.3,-3.3 6.1,-6.1 6.6,-6.6 0.4,0.4 0.8,0.8 1.4,1.4 0.7,0.7 1.2,1.2 1.5,1.5 z m 16.7,-1.3 c -0.1,0.2 -0.3,0.3 -0.5,0.3 h -0.1 c -0.1,0 -1.3,-1.2 -3.3,-3.2 l -3.2,-3.2 -0.4,0.4 c -0.3,0.3 -0.5,0.5 -0.7,0.5 -0.1,0 -0.1,0 -0.2,0 l 0.1,-0.1 -0.9,-0.9 -1.5,-1.5 c -1.2,-1.2 -1.6,-1.6 -1.9,-1.7 -0.3,-0.3 -0.5,-0.6 -0.5,-0.6 -0.1,-0.2 0,-0.4 0.4,-0.8 l 0.4,-0.4 -3.1,-3.1 c -2.1,-2.1 -3.2,-3.2 -3.2,-3.3 -0.1,-0.2 0,-0.5 0.3,-0.6 0.1,0 0.3,-0.1 0.5,-0.1 0.2,0 0.4,0 0.7,0 2.3,0.3 4.8,1.5 7,3.3 0.3,0.2 0.5,0.5 0.6,0.6 0.1,0.1 0.2,0.2 0.2,0.2 0,0 0.2,-0.2 0.4,-0.4 0.3,-0.3 0.5,-0.4 0.7,-0.4 h 0.1 v 0 0 l 0.9,0.9 1.5,1.5 1.5,1.5 0.9,0.9 v 0 0 c 0.1,0.2 0,0.4 -0.4,0.8 -0.2,0.2 -0.4,0.4 -0.4,0.4 0,0 0.1,0.1 0.2,0.2 0.2,0.2 0.8,0.9 1.2,1.5 1,1.3 1.9,3 2.3,4.4 0.4,1.2 0.6,2.6 0.4,2.9 z"
    id="path5"
@@ -65,21 +59,15 @@
    style="fill:#ffffff" />
 
 
-
-
 &quot;
        id=&quot;path2&quot;
        inkscape:connector-curvature=&quot;0&quot;
-       style=&quot;fill:#ffffff&quot; /
+       style=&quot;fill:#333333&quot; /&gt;
   </g>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     x="1.767767"
-     y="69.242615"
-     id="text14"><tspan
-       sodipodi:role="line"
-       id="tspan12"
-       x="1.767767"
-       y="104.63324" /></text>
+  <polygon
+     className="mountainIcon"
+     points="212.6,97.8 252.3,97.8 237.1,61.3 228.5,84.4 223.9,76.4 "
+     id="polygon7"
+     transform="translate(-190.35301,-42.253795)"
+     style="fill:#ffffff" />
 </svg>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch } from 'react-router';
+import { Switch, Redirect } from 'react-router';
 import {
     BrowserRouter as Router,
     Route
@@ -16,7 +16,8 @@ import NotFound from './application/pages/not-found/NotFound';
 // Styling
 import './application/css/Desktop.css';
 import './application/css/Mobile.css';
-import './application/css/SubMenu.css';
+import './application/css/DesktopImpactMenu.css';
+import './application/css/MobileImpactMenu.css';
 import './application/css/InfoBox.css';
 import './application/css/ImageWithCredit.css';
 import './application/components/impact-selection-buttons/ImpactSelectionButtons.css';
@@ -26,13 +27,14 @@ function App() {
         <Router>
 	    <div style={{margin: '0 auto', maxWidth: '1300px'}}>
 	    	<Switch>
-	    		<Route exact path="/" component={Home}/>
+	    		<Route path="/home" component={Home}/>
 	    		<Route path="/design" component={Design}/>
 	    		<Route path="/resource-extraction" component={ResourceExtraction}/>
 	    		<Route path="/manufacturing" component={Manufacturing}/>
 	    		<Route path="/transport" component={Transport}/>
 	    		<Route path="/use" component={Use}/>
 	    		<Route path="/end-of-life" component={EndOfLife}/>
+	    		<Redirect exact from="/" to="/home" />
 	    		<Route path="/" component={NotFound} />
 	    	</Switch>
 	    </div>

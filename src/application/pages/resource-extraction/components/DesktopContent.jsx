@@ -8,6 +8,8 @@ import IconSelector from "../../../components/icon-selector/IconSelector";
 // Impacts
 import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
+/* Scroll to top */
+import ScrollUp from "../../../components/scroll-up/ScrollUp";
 
 class DesktopContent extends React.Component {
     constructor() {
@@ -175,10 +177,12 @@ class DesktopContent extends React.Component {
 
                 {/* Right half */}
                 <div className="split right-half">
+                    <div id="top" />
                     <div className="right-half-content">
                         {content}
                     </div>
                     <MobileFooter />
+                    <a tabIndex="-1" href="#top"> <ScrollUp /> </a>
                 </div>
             </div>
         );

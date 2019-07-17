@@ -10,11 +10,11 @@ class FoodInsecurityMobile extends React.Component {
                     <div>
                         <div className="image-container">
                             <img alt="dry crop" width="100%" src={require('./images/FoodInsecurity.jpg')} />
-                            <div className="image-credit">
-                                <a href="https://unsplash.com/@henmankk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
-                                    Keagan Henman
-                                </a>
-                            </div>
+                            <a
+                                className="image-credit" 
+                                href="https://unsplash.com/@henmankk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
+                                Keagan Henman
+                            </a>
                         </div>
                         <div className="info-positioning">
                             Food, as a social dimension, refers to the percentage of the population 

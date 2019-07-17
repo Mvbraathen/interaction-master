@@ -10,11 +10,11 @@ class PrecariousWorkMobile extends React.Component {
                     <div>
                         <div className="image-container">
                             <img alt="dangerous work environment" width="100%" src={require('./images/PrecariousWork.jpg')} />
-                            <div className="image-credit">
-                                <a href="https://unsplash.com/@matthardy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
-                                    Matt Hardy
-                                </a>
-                            </div>
+                            <a 
+                                className="image-credit"
+                                href="https://unsplash.com/@matthardy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
+                                Matt Hardy
+                            </a>
                         </div>
                         <div className="info-positioning">
                             <div>Work is deemed precarious when it subjects workers to unstable or 

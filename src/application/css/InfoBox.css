@@ -24,3 +24,18 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.inline-link-style {
+    color: darkred;
+}
+
+.inline-link-style:hover {
+    background-color: #333333;
+    color: white;
+}
+
+.inline-link-style:focus {
+    background-color: #333333;
+    color: white;
+}
+

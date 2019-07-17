@@ -9,4 +9,15 @@
     right: 10px; 
     padding: 3px 8px;
     background-color: white;
+    color: #333333;
+}
+
+.image-credit:hover {
+    background-color: #333333;
+    color: white;
+}
+
+.image-credit:focus {
+    background-color: #333333;
+    color: white;
 }

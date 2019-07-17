@@ -1,0 +1,9 @@
+.jump-to-main-content {
+    position: absolute;
+    z-index: -10;
+    color: white;
+}
+
+.jump-to-main-content:focus {
+    z-index: 99;
+}

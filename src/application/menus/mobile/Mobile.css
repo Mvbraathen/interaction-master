@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 .burgerLabel {
     z-index: 99;
     position: fixed;
     left: 30px;
     top: 38px;
-    font-family: Open Sans;
+    font-family: Avenir Next;
     color: #f2f2f2;
     user-select: none;
     -webkit-user-select: none;
@@ -44,9 +42,9 @@
 }
 
 .burger-container {
+    margin-top: 3px;
     padding-left: 2px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 1px;
 }
 
 .bar1,
@@ -70,6 +68,7 @@
 
 .bm-item.active {
     color: white;
+    text-decoration: underline;
 }
 
 /*
@@ -91,34 +90,40 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-    margin-top: -15px;
+    margin-top: 15px;
     list-style: none;
     color: #b8b7ad;
     padding: 0.8em;
-
 }
 
 /* Individual item */
 .bm-item {
     text-decoration: none;
     display: inline-block;
-    font-family: Open Sans;
+    font-family: Avenir Next;
     color: rgba(255, 255, 255, 0.6);
     font-size: 1.2em;
-    margin-bottom: 3px;
-    padding-bottom: 12px;
+    padding: 10px 10px 10px 0px;
 }
 
 .menu-element {
     background-color: none;
     border-width: 2px;
-    padding-top: 5px;
-    padding-left: 80px;
-    padding-right: 52px;
-    margin-left: -80px;
-    width: 100%;
+    padding-left: 8px;
+    margin-top: 3px;
+    /*
+    decides width on menu elements
+    width: 100%;*/
 }
 
-.bm-item:hover {
+.menu-element:hover {
     color: white;
+    border-color: #6D99FE;
+    outline: 3px solid #6D99FE; 
+}
+
+.menu-element:focus {
+    color: white;
+    border-color: #6D99FE;
+    outline: 3px solid #6D99FE; 
 }

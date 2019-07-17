@@ -7,8 +7,10 @@ import MobileFooter from "../../../components/mobile-footer/MobileFooter";
 /* Impacts */
 import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
-/* Scroll up */
+/* Scroll to top */
 import ScrollUp from "../../../components/scroll-up/ScrollUp";
+/* Scroll to main content */
+import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
 
 class MobileContent extends React.Component {
     constructor() {
@@ -23,6 +25,11 @@ class MobileContent extends React.Component {
         this.handleDefaultClicked = this.handleDefaultClicked.bind(this);
         this.handleEnvironmentalClicked = this.handleEnvironmentalClicked.bind(this);
         this.handleSocialClicked = this.handleSocialClicked.bind(this);
+    }
+
+    /* Scrolls to top when page loads */
+    componentDidMount() {
+        window.scrollTo(0, 0);
     }
 
     handleDefaultClicked() {
@@ -60,38 +67,59 @@ class MobileContent extends React.Component {
         if(this.state.default) {
             content = (
                 <div>
+                    <div className="impact-selection-container">
+                        <button 
+                            className="environmental-selection" 
+                            onClick={this.handleEnvironmentalClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white',
+                                boxSizing: 'border-box'
+                            }}> 
+                            Environmental 
+                        </button>
 
-                    <div style={{position: 'relative',width: '100%', height: '60px', backgroundColor: '#333333', marginTop: '60px'}}>
-                        
-                        <button onClick={this.handleEnvironmentalClicked} style={{left: '0', height: '50px', width: '37.5%', marginLeft: '2.5%', backgroundColor: '#333333', zIndex: '99', position: 'absolute', border: '2px solid white', color: 'white', boxSizing: 'border-box', fontSize: '4vw', cursor: 'pointer'}}> Environmental </button>
-                        
-                        <button onClick={this.handleDefaultClicked} style={{ left: '0', height: '50px', width: '20%', backgroundColor: 'white', zIndex: '99', marginLeft: '40%',  position: 'absolute', color: '#333333', borderTop: '2px solid white', borderBottom: '2px solid white', boxSizing: 'border-box', cursor: 'pointer'}}> <img 
+                        <button 
+                            className="default-selection"
+                            onClick={this.handleDefaultClicked} 
+                            style={{
+                                backgroundColor: this.state.resourceExtractionColor, 
+                                boxSizing: 'border-box'
+                            }}> 
+                            <img 
                                 alt="resource extraction icon" 
-                                style={{maxHeight: '40px', marginTop: '3px'}} 
-                                src={require('../../../images/resource-extraction-icon.svg')} 
+                                style={{maxHeight: '35px', marginTop: '3px'}} 
+                                src={require('../../../images/resource-extraction-icon-white.svg')} 
                             /> 
                         </button>
-                        
-                        <button onClick={this.handleSocialClicked} style={{left: '0', height: '50px', width: '37.5%', backgroundColor: '#333333', zIndex: '99', marginLeft: '60%', position: 'absolute', border: '2px solid white', color: 'white', boxSizing: 'border-box', fontSize: '4vw', cursor: 'pointer'}}> Social </button>
-                    
+            
+                        <button 
+                            className="social-selection"
+                            onClick={this.handleSocialClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white',
+                                boxSizing: 'border-box'}}> 
+                            Social 
+                        </button>
                     </div>
 
-                    <div className="mobile-page-title" style={{color: this.state.resourceExtractionColor}}> 
+                    <h1 className="mobile-page-title" style={{color: this.state.resourceExtractionColor}}> 
                         The resource extraction phase 
-                    </div> 
-                    <div className="page-introduction-text">
+                    </h1> 
+                    <p className="page-introduction-text">
                         Resource extraction is the phase covering activities resulting in 
                         materials that will be used in the manufacturing phase, such as 
                         mineral extraction and the processing of minerals. For example, 
                         the extraction and processing of oil to make plastics, the mining 
                         and processing of cobalt and lithium to make batteries, and the 
                         mining and processing of tungsten to make your mobile phone vibrate.
-                        <p></p>
+                        <br/><br/>
                         Artisanal mining takes place in many African countries. Some of the 
                         minerals mined for mobile phones and other electronics, gold, tin, 
                         tantalum, and tungsten, are considered conflict minerals. International 
                         regulation (USA, EU) restricts the use of conflict minerals.
-                    </div>
+                    </p>
                     
                 </div>
             )
@@ -100,23 +128,46 @@ class MobileContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div style={{position: 'relative',width: '100%', height: '60px', backgroundColor: '#333333', marginTop: '60px'}}>
-                        
-                        <button onClick={this.handleEnvironmentalClicked} style={{left: '0', height: '50px', width: '37.5%', marginLeft: '2.5%', backgroundColor: 'white', zIndex: '99', position: 'absolute', border: '2px solid white', color: '#333333', boxSizing: 'border-box', fontSize: '4vw', cursor: 'pointer'}}> Environmental </button>
-                        
-                        <button onClick={this.handleDefaultClicked} style={{ left: '0', height: '50px', width: '20%', backgroundColor: '#333333', zIndex: '99', marginLeft: '40%',  position: 'absolute', color: 'white', borderTop: '2px solid white', borderBottom: '2px solid white', boxSizing: 'border-box', cursor: 'pointer'}}> <img 
+                    <div className="impact-selection-container">
+                        <button 
+                            className="environmental-selection" 
+                            onClick={this.handleEnvironmentalClicked} 
+                            style={{
+                                backgroundColor: this.state.resourceExtractionColor, 
+                                color: 'white',
+                                boxSizing: 'border-box'
+                            }}> 
+                            Environmental 
+                        </button>
+
+                        <button 
+                            className="default-selection"
+                            onClick={this.handleDefaultClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white', 
+                                boxSizing: 'border-box'
+                            }}> 
+                            <img 
                                 alt="resource extraction icon" 
-                                style={{maxHeight: '40px', marginTop: '3px'}} 
+                                style={{maxHeight: '35px', marginTop: '3px'}} 
                                 src={require('../../../images/resource-extraction-icon-white.svg')} 
                             /> 
                         </button>
-                        
-                        <button onClick={this.handleSocialClicked} style={{left: '0', height: '50px', width: '37.5%', backgroundColor: '#333333', zIndex: '99', marginLeft: '60%', position: 'absolute', border: '2px solid white', color: 'white', boxSizing: 'border-box', fontSize: '4vw', cursor: 'pointer'}}> Social </button>
-                    
+            
+                        <button 
+                            className="social-selection"
+                            onClick={this.handleSocialClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white',
+                                boxSizing: 'border-box'}}> 
+                            Social 
+                        </button>
                     </div>
-                    <div className="selected-impact"> 
+                    <h1 style={{color: this.state.resourceExtractionColor}} className="selected-impact"> 
                         Environmental impacts
-                    </div>
+                    </h1>
                     <div className="mobile-impacts-width">
                         <Environmental fromPage={fromPage} />
                     </div>
@@ -127,23 +178,47 @@ class MobileContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <div style={{position: 'relative',width: '100%', height: '60px', backgroundColor: '#333333', marginTop: '60px'}}>
-                        
-                        <button onClick={this.handleEnvironmentalClicked} style={{left: '0', height: '50px', width: '37%', marginLeft: '2.5%', backgroundColor: '#333333', zIndex: '99', position: 'absolute', border: '2px solid white', color: 'white', boxSizing: 'border-box', fontSize: '4vw', cursor: 'pointer'}}> Environmental </button>
-                        
-                        <button onClick={this.handleDefaultClicked} style={{ left: '0', height: '50px', width: '20%', backgroundColor: '#333333', zIndex: '99', marginLeft: '40%',  position: 'absolute', color: '#333333', border: '2px solid white', boxSizing: 'border-box', cursor: 'pointer'}}> <img 
+                    <div className="impact-selection-container">
+                        <button 
+                            className="environmental-selection" 
+                            onClick={this.handleEnvironmentalClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white',
+                                boxSizing: 'border-box'
+                            }}> 
+                            Environmental 
+                        </button>
+
+                        <button 
+                            className="default-selection"
+                            onClick={this.handleDefaultClicked} 
+                            style={{
+                                backgroundColor: '#333333', 
+                                color: 'white', 
+                                boxSizing: 'border-box'
+                            }}> 
+                            <img 
                                 alt="resource extraction icon" 
-                                style={{maxHeight: '40px', marginTop: '3px'}} 
+                                style={{maxHeight: '35px', marginTop: '3px'}} 
                                 src={require('../../../images/resource-extraction-icon-white.svg')} 
                             /> 
                         </button>
-                        
-                        <button onClick={this.handleSocialClicked} style={{left: '0', height: '50px', width: '37%', backgroundColor: 'white', zIndex: '99', marginLeft: '60.5%', position: 'absolute', border: '2px solid white', color: '#333333', boxSizing: 'border-box', fontSize: '4vw', cursor: 'pointer'}}> Social </button>
-                    
+            
+                        <button 
+                            className="social-selection"
+                            onClick={this.handleSocialClicked} 
+                            style={{
+                                backgroundColor: this.state.resourceExtractionColor, 
+                                color: 'white',
+                                boxSizing: 'border-box'}}> 
+                            Social 
+                        </button>
                     </div>
-                    <div className="selected-impact"> 
+
+                    <h1 style={{color: this.state.resourceExtractionColor}} className="selected-impact"> 
                         Social impacts
-                    </div>
+                    </h1>
                     <div className="mobile-impacts-width">
                         <Social fromPage={fromPage} />
                     </div>
@@ -153,6 +228,7 @@ class MobileContent extends React.Component {
         
         return (
             <div>
+                <ScrollToMain />
                 <Mobile />
                 <div className="mobile-page">
                     <div className="mobile-content">

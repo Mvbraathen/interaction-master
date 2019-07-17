@@ -57,3 +57,23 @@
 .twitter:hover {
     opacity: 0.5;
 }
+
+.smart-link {
+    color: white;
+}
+
+.smart-link:hover {
+    background-color: rgba(1, 1, 1, 1);
+    padding: 3px;
+    margin-left: -3px;
+}
+
+.smart-link:focus {
+    background-color: rgba(1, 1, 1, 1);
+    padding: 3px;
+    margin-left: -3px;
+}
+
+.social:hover {
+    background-color: #333333;
+}

@@ -4,20 +4,25 @@ import DesktopContent from "./components/DesktopContent";
 import MediaQuery from "react-responsive";
 
 class Design extends Component {
-  render() {
-    return (
-      <div>
-        {/* Normal sized screen */}
-        <MediaQuery minWidth="850px">
-          <DesktopContent />
-        </MediaQuery>
-        {/* Mobile sized screen */}
-        <MediaQuery maxWidth="849px">
-          <MobileContent />
-        </MediaQuery>
-      </div>
-    );
-  }
+
+    componentDidMount(){
+        document.title = "Design | Lifecycle";
+    }
+
+    render() {
+        return (
+            <div>
+                {/* Normal sized screen */}
+                <MediaQuery minWidth="850px">
+                    <DesktopContent />
+                </MediaQuery>
+                {/* Mobile sized screen */}
+                <MediaQuery maxWidth="849px">
+                    <MobileContent />
+                </MediaQuery>
+            </div>
+        );
+    }
 }
 
 export default Design;
