@@ -4,7 +4,6 @@ import Mobile from "../../../menus/mobile/Mobile";
 /* Header and footer for mobile devices */
 import MobileHeader from "../../../components/mobile-header/MobileHeader";
 import MobileFooter from "../../../components/mobile-footer/MobileFooter";
-import Youtube from "../../../components/youtube/Youtube";
 import MobilePhaseMenu from "../../../components/mobile-phase-menu/MobilePhaseMenu";
 /* Fade effect */
 import Fade from "react-reveal/Fade";
@@ -16,12 +15,11 @@ class MobileContent extends React.Component {
 
         /* To get correct page header text */
         const pageHeader = "The mobile lifecycle";
-        let height = window.innerWidth/1.77;
 
         return (
             <div>
                 <Mobile />
-                <div className="mobile-page" onResize={this.resize}>        
+                <div className="mobile-page">        
                     <div style={{marginTop: '70px'}} className="mobile-content">
                         <MobileHeader pageHeader={pageHeader} />
                         <div className="mobile-impacts-width">
@@ -58,9 +56,6 @@ class MobileContent extends React.Component {
                                             growth over the next five years as the average selling price of 
                                             smartphones continues to decline. This is estimated to add a further 2.9 
                                             billion smartphone connections by 2020.
-                                            <p></p>
-                                            <Youtube height={height}/>
-                                            <p></p>
                                         </div>
                                     </div>
                                 </div>

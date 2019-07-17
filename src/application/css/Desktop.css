@@ -58,3 +58,35 @@ html {
     width: 95%;
     border: none;
 }
+
+
+
+.home-interact {
+    display: inline-block;
+    color: white; 
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 2px 5px 2px 5px;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.home-interact:hover {
+    color: white; 
+    background-color: #00AD00;
+}
+
+.home-smart {
+    background-color: #1A6667;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 4px 5px 2px 5px;
+    margin-right: 3px;
+}
+
+.home-smart:hover {
+    background-color: #333333;
+
+}
+

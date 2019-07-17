@@ -4,16 +4,41 @@ import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 import MobileFooter from "../../../components/mobile-footer/MobileFooter";
-import Youtube from "../../../components/youtube/Youtube";
-
 
 class DesktopContent extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { word: 'design', bGColor: '#E00070' };
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        if(this.state.word === 'design') {
+            this.setState({ word: 'resource extraction', bGColor: '#00AD00' });
+        }
+        if(this.state.word === 'resource extraction') {
+            this.setState({ word: 'manufacturing', bGColor: '#BD2EC2' });
+        }
+        if(this.state.word === 'manufacturing') {
+            this.setState({ word: 'transport', bGColor: '#0066FF' });
+        }
+        if(this.state.word === 'transport') {
+            this.setState({ word: 'use', bGColor: '#EB0000' });
+        }
+        if(this.state.word === 'use') {
+            this.setState({ word: 'end of life', bGColor: '#C75000' });
+        }
+        if(this.state.word === 'end of life') {
+            this.setState({ word: 'design', bGColor: '#E00070' });
+        }
+    }
 
     render() {    
         /* No header text on this page */
         const pageHeader = "";
-        const height = "390";
         const fromPage = "home";
+
+        let word = this.state.word;
         
         return (
             <div>
@@ -35,7 +60,11 @@ class DesktopContent extends React.Component {
                         <h1 
                             className="desktop-page-title" 
                             style={{color: '#33333'}}> 
-                            Lifecycle of mobile phones
+                            <a href="http://smart.uio.no" 
+                                    className="home-smart">
+                                    SMART
+                            </a>
+                            research
                         </h1>
                         
                         {/*<div className="image-container" style={{zIndex: '-99'}}>
@@ -50,24 +79,26 @@ class DesktopContent extends React.Component {
                                 </a>
                             </div>
                         </div>*/}
-                        <div className="default-content-text">
-                            This is a webpage made in collaboration with the SMART project, and presents 
-                            SMARTs research on the mobile lifecycle. To learn more about the different 
-                            phases in mobile lifecycle, interact with the circular menu on the left side.
-                            <p></p>
-                            <Youtube height={height}/>
-                            <p></p>
-                            Mobile phones have become one of the more unsustainable consumer goods. 
-                            In 2015, more than 1.5 billion new mobile phones were shipped worldwide, 
-                            often replacing fully functional phones. 
-                            <p id="content"></p> 
-                            In the next five years, an additional one billion people are estimated 
-                            to become mobile phone subscribers. The smartphone adoption rate is 
-                            already at 60 per cent in the developed world and will lead smartphone 
-                            growth over the next five years as the average selling price of 
-                            smartphones continues to decline. This is estimated to add a further 2.9 
-                            billion smartphone connections by 2020.
+                        <div style={{fontSize: '1.5em'}} className="default-content-text">
+                            <h2 style={{fontSize: '3em', fontWeight: '800', marginTop: '-20px', lineHeight: '80px'}}> 
+                                The mobile <div style={{display: 'inline-block'}}>{word}</div> lifecycle 
+                            </h2>
+
+                            <div style={{marginTop: '-40px', backgroundColor: 'pink', padding: '20px'}}>
+                                Hey, there <span aria-label="waving hand" role="img">👋 </span> 
+                                To learn more about the 
+
+                                <div style={{backgroundColor: this.state.bGColor}} id="loading" className="home-interact" onClick={this.handleClick}>
+                                    {word}
+                                </div> 
+
+                                phase in mobile lifecycle, interact 
+                                with the circular menu on the left side <span aria-label="waving hand" role="img">👈</span>
+                            </div>
                         </div>
+
+                        <div>
+                      </div>
                     </div>
                     <MobileFooter />
                     <a href="#top">
