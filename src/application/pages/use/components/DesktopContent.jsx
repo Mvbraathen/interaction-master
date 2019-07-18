@@ -5,6 +5,7 @@ import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 import Footer from "../../../components/footer/Footer";
 import IconSelector from "../../../components/icon-selector/IconSelector";
+import UsePhase from "../../../components/text/UsePhase";
 // Impacts
 import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
@@ -77,8 +78,7 @@ class DesktopContent extends React.Component {
                         The use phase 
                     </h1>
                     <div className="default-content-text">
-                        Use refers to the phase in which the mobile phone is used for information and communication activities by a mobile phone user. 
-                        It is estimated that there are 4.43 billion mobile phone users worldwide, that is 60% of the total population of our planet.
+                        <UsePhase />
                     </div>
                 </div>
             )

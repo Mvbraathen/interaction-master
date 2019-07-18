@@ -5,6 +5,7 @@ import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 import Footer from "../../../components/footer/Footer";
 import IconSelector from "../../../components/icon-selector/IconSelector";
+import ManufacturingPhase from "../../../components/text/ManufacturingPhase";
 // Impacts
 import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
@@ -77,14 +78,7 @@ class DesktopContent extends React.Component {
                         The manufacturing phase 
                     </h1>
                     <div className="default-content-text">
-                        Manufacturing is the phase in which the different components of the mobile 
-                        phone are produced and put together to become the finished product. The 
-                        main components of a mobile phone are the circuit board (PCB), battery, 
-                        LCD screen, antenna, microphone, speaker, camera(s), and shell. Each of 
-                        these large components consists of several smaller components.
-                        <p></p>
-                        Manufacturing takes place in factories, with the largest factory, in Shenzen, 
-                        China, housing up to 450.000 workers.
+                        <ManufacturingPhase />
                     </div>
                 </div>
             )

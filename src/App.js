@@ -3,7 +3,7 @@ import { Switch, Redirect } from 'react-router';
 import {
     BrowserRouter as Router,
     Route
-} from 'react-router-dom'
+} from 'react-router-dom';
 // All pages
 import Home from './application/pages/home/Home';
 import ResourceExtraction from './application/pages/resource-extraction/ResourceExtraction';
@@ -25,20 +25,20 @@ import './application/components/impact-selection-buttons/ImpactSelectionButtons
 function App() {
     return (
         <Router>
-	    <div style={{margin: '0 auto', maxWidth: '1300px'}}>
-	    	<Switch>
-	    		<Route path="/home" component={Home}/>
-	    		<Route path="/design" component={Design}/>
-	    		<Route path="/resource-extraction" component={ResourceExtraction}/>
-	    		<Route path="/manufacturing" component={Manufacturing}/>
-	    		<Route path="/transport" component={Transport}/>
-	    		<Route path="/use" component={Use}/>
-	    		<Route path="/end-of-life" component={EndOfLife}/>
-	    		<Redirect exact from="/" to="/home" />
-	    		<Route path="/" component={NotFound} />
-	    	</Switch>
-	    </div>
-	</Router>
+		    <div style={{margin: '0 auto', maxWidth: '1300px'}}>
+		    	<Switch>
+		    		<Route path="/home" component={Home}/>
+		    		<Route path="/design" component={Design}/>
+		    		<Route path="/resource-extraction" component={ResourceExtraction}/>
+		    		<Route path="/manufacturing" component={Manufacturing}/>
+		    		<Route path="/transport" component={Transport}/>
+		    		<Route path="/use" component={Use}/>
+		    		<Route path="/end-of-life" component={EndOfLife}/>
+		    		<Redirect exact from="/" to="/home" />
+		    		<Route path="/" component={NotFound} />
+		    	</Switch>
+		    </div>
+		</Router>
     );
 }
 

@@ -16,12 +16,7 @@
     fill-opacity: 1;
 }
 
-
-
 /******************* Styling when on End of Life page *******************/
-
-
-
 
 /* Prevents active element from fading on hover */
 #end-of-life-page .endOfLife:hover {

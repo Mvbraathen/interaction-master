@@ -5,6 +5,7 @@ import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 import Footer from "../../../components/footer/Footer";
 import IconSelector from "../../../components/icon-selector/IconSelector";
+import TransportPhase from "../../../components/text/TransportPhase";
 // Impacts
 import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
@@ -78,9 +79,7 @@ class DesktopContent extends React.Component {
                         The transport phase 
                     </h1>
                     <div className="default-content-text">
-                        Transport is short-hand for a variety of activities that take place during the whole lifecycle of the mobile phone, 
-                        such transportation of materials, components, and finished products; 
-                        the packaging of the products being transported; and the logistics or organisation and implementation of it all.
+                        <TransportPhase />
                     </div>
                 </div>
             )

@@ -17,7 +17,17 @@ class DeforestationMobile extends React.Component {
                             </a>
                         </div>
                         <div className="info-positioning">
-                            Removal of a forest or stand of trees, converting land-use to non-forest. This is especially the case in forested areas with mineral deposits (see also Land use change).
+                            Deforestation refers to the removal of a forest or stand of trees, converting land-
+                            use to non-forest. This is especially the case in forested areas with mineral
+                            deposits (see also Land use change) (read more about 
+                            
+                            {' '}
+                            <a 
+                                className="inline-link-style" 
+                                title="link to cobalt blues publication"  
+                                href="https://www.somo.nl/cobalt-blues/">
+                                environmental pollution
+                            </a>).   
                         </div>
                     </div>
                 </div>

@@ -7,7 +7,6 @@ import Deforestation from "./environmental/Deforestation";
 import Eutrophication from "./environmental/Eutrophication";
 import ExcessiveWaterUse from "./environmental/ExcessiveWaterUse";
 import Ecotoxicity from "./environmental/Ecotoxicity";
-import OzoneDepletion from "./environmental/OzoneDepletion";
 import ParticulateMatter from "./environmental/ParticulateMatter";
 
 class Environmental extends React.Component {
@@ -27,7 +26,6 @@ class Environmental extends React.Component {
                     <Eutrophication />
                     <ExcessiveWaterUse />
                     <Ecotoxicity />
-                    <OzoneDepletion />
                     <ParticulateMatter />
                 </div>
             );
@@ -42,7 +40,6 @@ class Environmental extends React.Component {
                     <Eutrophication />
                     <ExcessiveWaterUse />
                     <Ecotoxicity />
-                    <OzoneDepletion />
                     <ParticulateMatter />
                 </div>
             );

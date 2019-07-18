@@ -19,7 +19,17 @@ class Co2Mobile extends React.Component {
                             </a>
                         </div>
                         <div className="info-positioning">
-                            The emission of carbon dioxide as a result of human activity, such as the burning of fossil fuels and deforestation. CO2 emissions can be found throughout the whole mobile phone lifecycle.
+                            The emission of carbon dioxide (CO 2) as a result of the burning of fossil fuels and
+                            deforestation during mining operations. The smelting and processing of mined
+                            minerals are another important source of CO 2 emissions (read more about 
+
+                            {' '}
+                            <a 
+                                className="inline-link-style" 
+                                title="link to the guardian website"  
+                                href="https://www.theguardian.com/environment/2019/mar/12/resource-extraction-carbon-emissions-biodiversity-loss">
+                                carbon emissions
+                            </a>).
                         </div>
                     </div>
                 </div>

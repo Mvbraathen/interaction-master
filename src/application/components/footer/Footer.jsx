@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import { Twitter } from 'react-social-sharing';
 import { Facebook } from 'react-social-sharing';
 import { Mail } from 'react-social-sharing';
@@ -24,7 +25,7 @@ class Footer extends React.Component {
                                 title="link to smart report" 
                                 href="https://www.smart.uio.no/publications/reports/sustainability-hotspots-analysis-of-the-mobile-phone-lifecycle.pdf"> 
                                 SMART report
-                            </a>
+                            </a>.
                         </p>
 
                         <div className="social-network">
@@ -76,8 +77,38 @@ class Footer extends React.Component {
                                 title="link to SMART's website" 
                                 href="http://smart.uio.no"> 
                                 http://smart.uio.no 
-                            </a>
+                            </a>.
                         </p>
+                    </div>
+                    <hr style={{border: '1px solid white', width: '90%'}}/>
+                    <div style={{padding: '30px 20px 20px 20px', textAlign: 'center'}}>
+                    <NavLink className="smart-link" title="link to home page" to="/home">
+                        Home
+                    </NavLink>
+                    {' | '}
+                    <NavLink className="smart-link" title="link to design page" to="/design">
+                        Design
+                    </NavLink>
+                    {' | '}
+                    <NavLink className="smart-link" title="link to resource extraction page" to="/resource-extraction">
+                        Resource extraction
+                    </NavLink>
+                    {' | '}
+                    <NavLink className="smart-link" title="link to manufacturing page" to="/manufacturing">
+                        Manufacturing
+                    </NavLink>
+                    {' | '}
+                    <NavLink className="smart-link" title="link to transport page" to="/transport">
+                        Transport
+                    </NavLink>
+                    {' | '}
+                    <NavLink className="smart-link" title="link to use page" to="/use">
+                        Use
+                    </NavLink>
+                    {' | '}
+                    <NavLink className="smart-link"   title="link to end of life page" to="/end-of-life">
+                        End of life
+                    </NavLink>
                     </div>
                 </div>
             </div>

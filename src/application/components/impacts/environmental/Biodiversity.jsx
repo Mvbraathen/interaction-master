@@ -17,7 +17,30 @@ class BiodiversityMobile extends React.Component {
                             </a>
                         </div>
                         <div className="info-positioning">
-                            Biodiversity loss, the drastic reduction or even extinction of certain species in a habitat.  Both artisanal and industrial mining have contributed to the destruction of local habitats (see also Deforestation), resulting in a decline and even extinction of species in particular countries. 
+                            <p>Biodiversity loss, the drastic reduction or even 
+
+                            {' '}
+                            <a 
+                                className="inline-link-style" 
+                                title="link to national geographic website"  
+                                href="https://www.nationalgeographic.com/animals/reference/extinct-species/">
+                                extinction
+                            </a>
+                            {' '} 
+
+                            of certain species in a habitat.  Both artisanal 
+                            and industrial mining have contributed to the 
+                            destruction of local habitats (see also 
+                                Deforestation), resulting in a decline and 
+                            even extinction of species in particular countries (read more about 
+
+                            {' '}
+                            <a 
+                                className="inline-link-style" 
+                                title="link to united nations environment website"  
+                                href="https://www.unenvironment.org/news-and-stories/story/moving-global-mining-industry-towards-biodiversity-awareness">
+                                biodiversity awareness
+                            </a>).</p> 
                         </div>
                     </div>
                 </div>

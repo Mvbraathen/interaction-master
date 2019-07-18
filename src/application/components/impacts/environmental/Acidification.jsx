@@ -17,7 +17,7 @@ class AcidificationMobile extends React.Component {
                             </a>
                         </div>
                         <div className="info-positioning">
-                            Acidification refers to the decrease of the ocean’s pH-level as a result of uptake of
+                            <p>Acidification refers to the decrease of the ocean’s pH-level as a result of uptake of
                             CO 2 . Acidification of water bodies is the result of mining and processing of, for
                             example, gold, fossil fuels, and aluminium. Acidification threatens 
                             {' '}
@@ -28,7 +28,7 @@ class AcidificationMobile extends React.Component {
                                 aquatic life
                             </a>
                             {' '}
-                            (see <a href="#jumpToEcotoxicity">Ecotoxicity</a>) 
+                            (see <i>Ecotoxicity</i>) 
                             and 
 
                             {' '}
@@ -40,7 +40,7 @@ class AcidificationMobile extends React.Component {
                             </a>
                             {' '}
 
-                            (see <i>Drinking water pollution</i> in social impacts).
+                            (see <i>Drinking water pollution</i> in social impacts).</p>
                         </div>
                     </div>
                 </div>

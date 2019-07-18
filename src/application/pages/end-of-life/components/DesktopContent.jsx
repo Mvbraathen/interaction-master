@@ -5,6 +5,7 @@ import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 import Footer from "../../../components/footer/Footer";
 import IconSelector from "../../../components/icon-selector/IconSelector";
+import EndOfLifePhase from "../../../components/text/EndOfLifePhase";
 // Impacts
 import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
@@ -77,10 +78,7 @@ class DesktopContent extends React.Component {
                         The end of life phase 
                     </h1>
                     <div className="default-content-text">
-                        End of life is the phase in which the mobile phone is no longer in use as the result of planned, functional or perceived obsolescence of the phone. 
-                        These mobile phones disappear in dusty drawers, get sold or are repaired or thrown away. 
-                        In countries with a functional electronic waste collection system, mobile phones are recycled so that valuable minerals can be re-used. 
-                        Sometimes only the motherboard (PCB) is take out for recycling and the rest is burned, resulting in the release of hazardous materials in water and air.
+                        <EndOfLifePhase />
                     </div>
                 </div>
             )

@@ -1,9 +1,11 @@
 import React from "react";
+
 // Various components
 import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 import Footer from "../../../components/footer/Footer";
+import DesignPhase from "../../../components/text/DesignPhase";
 /* Scroll to top */
 import ScrollUpDesktop from "../../../components/scroll-up/ScrollUpDesktop";
 
@@ -25,7 +27,6 @@ class DesktopContent extends React.Component {
                 {/* Left half */}
                 <div className="split left-half">
                     <div className="sub-menu-without-selection"></div>
-                    <Breadcrumb fromPage={fromPage} />
                     <Desktop />
                 </div>
                 <hr className="vertical-line" />
@@ -45,27 +46,14 @@ class DesktopContent extends React.Component {
                                 width="100%" 
                                 src={require('../../../images/broken-iphone.jpg')} 
                             />
-                            <div className="image-credit">
-                                <a href="https://unsplash.com/@_actually_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
+                            <a
+                                className="image-credit" 
+                                href="https://unsplash.com/@_actually_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
                                 Ali Abdul Rahman
-                                </a>
-                            </div>
+                            </a>
                         </div>
                         <div className="default-content-text">
-                            Design is the lifecycle phase in which important decisions are made 
-                            concerning the sustainability of a mobile phone. Choices are made in 
-                            terms of materials, size, weight, but also about ease of repair, 
-                            recycling or replacement of components, such as the battery. These 
-                            choices will affect the health and safety of the people mining and 
-                            processing the materials and the workers manufacturing the components 
-                            of the mobile phone; these choices will affect the longevity of the 
-                            mobile phone as well as the possibility to repair the mobile phone 
-                            to extend its life.
-                            <p></p> 
-                            Materials, size, and weight are connected. A phone designed for 
-                            repairability is thicker and weighs a bit more. A thin phone often 
-                            uses glue to keep things together, making the replacement of a battery 
-                            by the user impossible.
+                            <DesignPhase />
                         </div>
                     </div>
                     <Footer />

@@ -8,10 +8,17 @@ class Breadcrumb extends React.Component {
         super();
         this.state = {
           linkPath: '',
-          linkText: ''
+          linkText: '',
+          tabIndexFix: '0'
         }
     }
     componentDidMount() {
+        if(this.props.fromPage === 'Home') {
+            this.setState({
+                tabIndexFix: '-1'
+            });   
+        }
+
         if(this.props.fromPage === 'design') {
             this.setState({
                 linkPath: '/design',
@@ -66,7 +73,7 @@ class Breadcrumb extends React.Component {
                         {" "}
                         <span className="breadcrumbArrow">&#8594;</span>
                     </div>
-                    <NavLink to={this.state.linkPath}>
+                    <NavLink tabIndex={this.state.tabIndexFix}  to={this.state.linkPath}>
                         <div className="activePage">{this.state.linkText}</div>
                     </NavLink>
                 </div>

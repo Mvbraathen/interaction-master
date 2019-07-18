@@ -3,10 +3,10 @@ import React from 'react';
 class ImageSelector extends React.Component {
 	render() {
 
-        let image;
+        let icon;
 
         if(this.props.fromPage === "design") {
-            image = (
+            icon = (
                 <div>
                     <img 
                         alt="design icon" 
@@ -18,7 +18,7 @@ class ImageSelector extends React.Component {
         }
 
         if(this.props.fromPage === "resourceExtraction") {
-            image = (
+            icon = (
                 <div>
                     <img 
                         alt="resource extraction icon" 
@@ -30,7 +30,7 @@ class ImageSelector extends React.Component {
         }
 
         if(this.props.fromPage === "manufacturing") {
-            image = (
+            icon = (
                 <div>
                     <img 
                         alt="manufacturing icon" 
@@ -42,7 +42,7 @@ class ImageSelector extends React.Component {
         }
 
         if(this.props.fromPage === "transport") {
-            image = (
+            icon = (
                 <div>
                     <img 
                         alt="transport icon" 
@@ -54,7 +54,7 @@ class ImageSelector extends React.Component {
         }
 
         if(this.props.fromPage === "use") {
-            image = (
+            icon = (
                 <div>
                     <img 
                         alt="use icon" 
@@ -66,7 +66,7 @@ class ImageSelector extends React.Component {
         }
 
         if(this.props.fromPage === "endOfLife") {
-            image = (
+            icon = (
                 <div>
                     <img 
                         alt="end of life icon" 
@@ -78,7 +78,7 @@ class ImageSelector extends React.Component {
         }
 
         return (
-            <div>{image}</div>
+            <div>{icon}</div>
         );
 	}
 }

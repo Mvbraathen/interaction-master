@@ -2,7 +2,7 @@
 .push {
     bottom: 0;
     padding-top: 1px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     /* To look ok on mobile phones */
     background-color: #1A6667;
     font-family: Avenir Next;
@@ -10,19 +10,10 @@
     text-align: left;
 }
 
-@media only screen and (min-width: 850px) {
-    .footer {
-        margin-left: 2.5%;
-        border-top-left-radius: 50px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-}
-
 .footer-text-first-section {
     margin-left: 20px;
     margin-right: 20px;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .share-text {

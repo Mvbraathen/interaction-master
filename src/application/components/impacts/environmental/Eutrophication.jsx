@@ -17,7 +17,23 @@ class EutrophicationMobile extends React.Component {
                             </a>
                         </div>
                         <div className="info-positioning">
-                            Increase of nutrients in a body of water, causing structural changes to an ecosystem. Eutrophication can be the result of mining activities (god, copper, cobalt, etc.) and run-offs from mining activities, such as acid mine drainage. Eutrophication is also found in bodies of water near sites of electronics manufacturing as a result of emissions of waste water containing toxic materials, as well as in bodies of water near sites where electronics are disassembled.
+                            <p> 
+                                Eutrophication refers to the increase of nutrients in a body of water, causing
+                                structural changes to an ecosystem. Eutrophication can be the result of mining
+                                activities (gold, copper, cobalt, etc.) and run-offs from mining activities, such as
+                                
+                                {' '}
+                                <a 
+                                    className="inline-link-style" 
+                                    title="link to wikipedia"  
+                                    href="https://en.wikipedia.org/wiki/Acid_mine_drainage">
+                                    acid mine drainage
+                                </a>. 
+                                Eutrophication is also found in bodies of water near sites of
+                                electronics manufacturing as a result of emissions of wastewater containing
+                                toxic materials, as well as in bodies of water near sites where electronics are
+                                disassembled.
+                            </p>
                         </div>
                     </div>
                 </div>
