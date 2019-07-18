@@ -4,41 +4,13 @@ import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 import MobileFooter from "../../../components/mobile-footer/MobileFooter";
+import ScrollUp from "../../../components/scroll-up/ScrollUp";
 
 class DesktopContent extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { word: 'design', bGColor: '#E00070' };
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    handleClick() {
-        if(this.state.word === 'design') {
-            this.setState({ word: 'resource extraction', bGColor: '#00AD00' });
-        }
-        if(this.state.word === 'resource extraction') {
-            this.setState({ word: 'manufacturing', bGColor: '#BD2EC2' });
-        }
-        if(this.state.word === 'manufacturing') {
-            this.setState({ word: 'transport', bGColor: '#0066FF' });
-        }
-        if(this.state.word === 'transport') {
-            this.setState({ word: 'use', bGColor: '#EB0000' });
-        }
-        if(this.state.word === 'use') {
-            this.setState({ word: 'end of life', bGColor: '#C75000' });
-        }
-        if(this.state.word === 'end of life') {
-            this.setState({ word: 'design', bGColor: '#E00070' });
-        }
-    }
-
     render() {    
         /* No header text on this page */
         const pageHeader = "";
         const fromPage = "home";
-
-        let word = this.state.word;
         
         return (
             <div>
@@ -60,40 +32,42 @@ class DesktopContent extends React.Component {
                         <h1 
                             className="desktop-page-title" 
                             style={{color: '#33333'}}> 
-                            <a href="http://smart.uio.no" 
-                                    className="home-smart">
-                                    SMART
+                            <a 
+                                href="http://smart.uio.no" 
+                                className="home-smart">
+                                SMART
                             </a>
                             research
                         </h1>
-                        
-                        {/*<div className="image-container" style={{zIndex: '-99'}}>
-                            <img 
-                                alt="iphone" 
-                                width="100%" 
-                                src={require('../../../images/iphone.jpg')} 
-                            />
-                            <div className="image-credit"> 
-                                <a href="https://unsplash.com/@williamtm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
-                                    William Hook
-                                </a>
-                            </div>
-                        </div>*/}
-                        <div style={{fontSize: '1.5em'}} className="default-content-text">
-                            <h2 style={{fontSize: '3em', fontWeight: '800', marginTop: '-20px', lineHeight: '80px'}}> 
-                                The mobile <div style={{display: 'inline-block'}}>{word}</div> lifecycle 
+                        <div 
+                            style={{fontSize: '1.7em', marginTop: '-55px'}} 
+                            className="default-content-text">
+                            <h2 className="home-special-header"> 
+                                The mobile phone lifecycle
                             </h2>
 
-                            <div style={{marginTop: '-40px', backgroundColor: 'pink', padding: '20px'}}>
-                                Hey, there <span aria-label="waving hand" role="img">👋 </span> 
-                                To learn more about the 
+                            <div style={{marginTop: '-40px', backgroundColor: 'rgba(255,0,255,0.1)', padding: '5px 20px 5px 20px', fontSize: '1em'}}>
+                                <h3> Social and Environmental Impacts in the Mobile Phone Lifecycle </h3>
+                                <p>This website enables you to explore the impacts of the mobile phone lifecycle on
+                                social and environmental sustainability.</p> 
 
-                                <div style={{backgroundColor: this.state.bGColor}} id="loading" className="home-interact" onClick={this.handleClick}>
-                                    {word}
-                                </div> 
+                                <p><strong>Social sustainability</strong> is about the
+                                minimum standards of living conditions and human rights below which people
+                                can be said to be living in deprivation. The twelve dimensions of the social
+                                foundation are derived from internationally agreed minimum social standards,
+                                as identified by the world’s governments in the Sustainable Development Goals
+                                in 2015. The twelve social dimensions are food, health, education, income &amp;
+                                work, water &amp; sanitation, energy, gender equality, social equity, housing, political
+                                voice, peace &amp; justice, and networks.</p>
+                                <p><strong>Environmental sustainability</strong> refers here to the non-negotiable planetary
+                                preconditions that humanity needs to respect in order to avoid the risk of
+                                deleterious or even catastrophic environmental change. The nine boundaries are
+                                climate change, novel entities, ozone depletion, aerosol loading, ocean
+                                acidification, biochemical flows, freshwater use, land-system change, and
+                                biosphere integrity.</p>
 
-                                phase in mobile lifecycle, interact 
-                                with the circular menu on the left side <span aria-label="waving hand" role="img">👈</span>
+                                <p>In order to learn more about these impacts in the different lifecycle phases,
+                                interact with the circular menu on the left.</p>
                             </div>
                         </div>
 
@@ -101,27 +75,7 @@ class DesktopContent extends React.Component {
                       </div>
                     </div>
                     <MobileFooter />
-                    <a href="#top">
-                        <button 
-                            style={{
-                                position: 'fixed',
-                                bottom: '0',
-                                right: '0',
-                                marginRight: '20px',
-                                marginBottom: '20px',
-                                backgroundColor: 'rgba(1, 1, 1, 0.3)',
-                                color: 'rgba(255, 255, 255, 1)',
-                                height: '60px',
-                                width: '60px',
-                                borderRadius: '30px',
-                                verticalAlign: 'middle',
-                                fontSize: '1.8em',
-                                lineHeight: '60px',
-                                cursor: 'pointer'
-                            }}> 
-                            <span role="img" aria-label="Finger pointing upwards"> ☝️ </span> 
-                        </button>
-                    </a>
+                    <ScrollUp />
                 </div>
             </div>
 

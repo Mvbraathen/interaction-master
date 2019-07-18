@@ -1,9 +1,12 @@
 .footer,
 .push {
     bottom: 0;
-    height: 350px;
+    height: 670px;
     /* To look ok on mobile phones */
     background-color: #1A6667;
+    font-family: Avenir Next;
+    color: white;
+    text-align: left;
 }
 
 @media only screen and (min-width: 850px) {
@@ -13,25 +16,23 @@
     }
 }
 
-.smart-footer-txt {
-    color: white;
-    margin-top: -16px;
-    margin-right: 40px;
-    margin-left: 40px;
-    text-align: left;
-    margin-bottom: 50px;
+.footer-text-first-section {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 50px;
 }
 
 .share-text {
     font-family: Avenir Next;
+    font-weight: 600;
     color: white;
 }
 
 .social-network {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 0px;
     text-align: left;
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 .facebook {
@@ -58,6 +59,15 @@
     opacity: 0.5;
 }
 
+.social:hover {
+    background-color: #333333;
+}
+
+.footer-text-second-section {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 .smart-link {
     color: white;
 }
@@ -74,6 +84,4 @@
     margin-left: -3px;
 }
 
-.social:hover {
-    background-color: #333333;
-}
+

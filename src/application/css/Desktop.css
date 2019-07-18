@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Londrina+Shadow&display=swap');
+
 /* Background color behind content, visable from > 1300px */
 html {
     background-color: #FAF4ED;
@@ -88,5 +90,13 @@ html {
 .home-smart:hover {
     background-color: #333333;
 
+}
+
+.home-special-header {
+    color: #333333;
+    font-size: 3.2em;
+    font-weight: 900;
+    line-height: 95px;
+    font-family: 'Avenir Next';
 }
 
