@@ -9,8 +9,6 @@ import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
 /* Scroll to top */
 import ScrollUpMobile from "../../../components/scroll-up/ScrollUpMobile";
-/* Fade effect */
-import Fade from "react-reveal/Fade";
 /* Scroll to main content */
 import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
 

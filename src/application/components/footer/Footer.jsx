@@ -10,7 +10,6 @@ class Footer extends React.Component {
 	render() {
         return (
             <div>
-                <div style={{height: '10px'}}> </div>
                 <div className="footer">
         			<div className="footer-info">
                         <p className="footer-text-first-section">
@@ -33,7 +32,7 @@ class Footer extends React.Component {
                             <div style={{marginLeft: '-7px'}}>
                                 <Facebook 
                                     className="social" 
-                                    style={{border: 'solid 1px orange'}} 
+                                    style={{border: 'solid 1px white', }} 
                                     solid small 
                                     message="Learn more about the mobile lifecycle!" 
                                     link="https://smart.uio.no" 
@@ -41,7 +40,7 @@ class Footer extends React.Component {
 
                                 <Twitter 
                                     className="social" 
-                                    style={{border: 'solid 1px orange'}} 
+                                    style={{border: 'solid 1px white'}} 
                                     solid small 
                                     message="Learn more about the mobile lifecycle!" 
                                     link="https://smart.uio.no" 
@@ -49,7 +48,7 @@ class Footer extends React.Component {
 
                                 <Mail 
                                     className="social" 
-                                    style={{border: 'solid 1px orange'}} 
+                                    style={{border: 'solid 1px white'}} 
                                     solid small 
                                     message="Learn more about the mobile lifecycle!" 
                                     link="https://smart.uio.no" 
@@ -57,7 +56,7 @@ class Footer extends React.Component {
 
                                 <Linkedin 
                                     className="social" 
-                                    style={{border: 'solid 1px orange'}} 
+                                    style={{border: 'solid 1px white'}} 
                                     solid small 
                                     message="Learn more about the mobile lifecycle!" 
                                     link="https://smart.uio.no" 

@@ -17,11 +17,30 @@ class AcidificationMobile extends React.Component {
                             </a>
                         </div>
                         <div className="info-positioning">
-                            Decrease of the ocean’s pH-level as a result of uptake of CO2. 
-                            Acidification of water bodies is the result of mining and 
-                            processing of, for example, gold, fossil fuels, and aluminium. 
-                            Acidification threatens aquatic life (Ecotoxicity) and drinking 
-                            water (Drinking water pollution).
+                            Acidification refers to the decrease of the ocean’s pH-level as a result of uptake of
+                            CO 2 . Acidification of water bodies is the result of mining and processing of, for
+                            example, gold, fossil fuels, and aluminium. Acidification threatens 
+                            {' '}
+                            <a 
+                                className="inline-link-style" 
+                                title="link to future of life institute website"  
+                                href="https://futureoflife.org/2018/02/22/as-acidification-increases-ocean-biodiversity-may-decline/?cn-reloaded=1">
+                                aquatic life
+                            </a>
+                            {' '}
+                            (see <a href="#jumpToEcotoxicity">Ecotoxicity</a>) 
+                            and 
+
+                            {' '}
+                            <a 
+                                className="inline-link-style" 
+                                title="link to scientific american website"  
+                                href="https://www.scientificamerican.com/article/like-oceans-freshwater-is-also-acidifying/">
+                                drinking water
+                            </a>
+                            {' '}
+
+                            (see <i>Drinking water pollution</i> in social impacts).
                         </div>
                     </div>
                 </div>

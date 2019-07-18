@@ -47,6 +47,11 @@
     padding-top: 1px;
 }
 
+.bm-burger-button:hover {
+    border-color: #6D99FE;
+    outline: 2px solid #6D99FE; 
+}
+
 .bar1,
 .bar2,
 .bar3 {
