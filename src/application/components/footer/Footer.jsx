@@ -22,7 +22,7 @@ class Footer extends React.Component {
                             PDF format here:{' '} 
                             <a  
                                 className="smart-link" 
-                                title="link to " 
+                                title="link to smart report" 
                                 href="https://www.smart.uio.no/publications/reports/sustainability-hotspots-analysis-of-the-mobile-phone-lifecycle.pdf"> 
                                 SMART report
                             </a>

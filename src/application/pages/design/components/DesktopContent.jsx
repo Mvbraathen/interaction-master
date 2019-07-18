@@ -4,6 +4,8 @@ import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 import Footer from "../../../components/footer/Footer";
+/* Scroll to top */
+import ScrollUpDesktop from "../../../components/scroll-up/ScrollUpDesktop";
 
 class DesktopContent extends React.Component {
 
@@ -30,7 +32,7 @@ class DesktopContent extends React.Component {
 
                 {/* Right half */}
                 <div className="split right-half">
-                    <div className="sub-menu-without-selection"></div>
+                    <div id="top"  className="sub-menu-without-selection"></div>
                     <div className="right-half-content">
                         <h1 
                             className="desktop-page-title" 
@@ -67,6 +69,7 @@ class DesktopContent extends React.Component {
                         </div>
                     </div>
                     <Footer />
+                    <ScrollUpDesktop />
                 </div>
             </div>
         );

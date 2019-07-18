@@ -7,7 +7,7 @@ import Footer from "../../../components/footer/Footer";
 /* Fade effect */
 import Fade from "react-reveal/Fade";
 /* Scroll up */
-import ScrollUp from "../../../components/scroll-up/ScrollUp";
+import ScrollUpMobile from "../../../components/scroll-up/ScrollUpMobile";
 
 class MobileContent extends React.Component {
 
@@ -60,7 +60,7 @@ class MobileContent extends React.Component {
                     </div>
                 </div>
                 <Footer />
-                <ScrollUp />
+                <ScrollUpMobile />
             </div>
         );
     }

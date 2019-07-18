@@ -4,7 +4,8 @@ import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 import Footer from "../../../components/footer/Footer";
-import ScrollUp from "../../../components/scroll-up/ScrollUp";
+/* Scroll to top */
+import ScrollUpDesktop from "../../../components/scroll-up/ScrollUpDesktop";
 
 class DesktopContent extends React.Component {
     render() {    
@@ -75,7 +76,7 @@ class DesktopContent extends React.Component {
                       </div>
                     </div>
                     <Footer />
-                    <ScrollUp />
+                    <ScrollUpDesktop />
                 </div>
             </div>
 

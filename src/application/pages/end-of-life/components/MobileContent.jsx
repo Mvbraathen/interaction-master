@@ -8,7 +8,7 @@ import Footer from "../../../components/footer/Footer";
 import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
 /* Scroll up */
-import ScrollUp from "../../../components/scroll-up/ScrollUp";
+import ScrollUpMobile from "../../../components/scroll-up/ScrollUpMobile";
 /* Scroll to main content */
 import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
 
@@ -231,7 +231,7 @@ class MobileContent extends React.Component {
                     </div>
                 </div>
                 <Footer />
-                <ScrollUp />
+                <ScrollUpMobile />
             </div>
         );
     }

@@ -8,7 +8,7 @@ import Footer from "../../../components/footer/Footer";
 /* Fade effect */
 import Fade from "react-reveal/Fade";
 /* Scroll up */
-import ScrollUp from "../../../components/scroll-up/ScrollUp";
+import ScrollUpMobile from "../../../components/scroll-up/ScrollUpMobile";
 
 class MobileContent extends React.Component {
     render() {
@@ -67,27 +67,27 @@ class MobileContent extends React.Component {
                             </div>
                             <div style={{padding: '5px 10px 5px 10px'}}>
                                 <h4 style={{marginBottom: '5px'}}>Lifecycle phases;</h4>
-                                <NavLink title="link to design page" to="/design">
+                                <NavLink className="inline-link-style" title="link to design page" to="/design">
                                     Design
                                 </NavLink>
                                 {' | '}
-                                <NavLink title="link to resource extraction page" to="/resource-extraction">
+                                <NavLink className="inline-link-style" title="link to resource extraction page" to="/resource-extraction">
                                     Resource extraction
                                 </NavLink>
                                 {' | '}
-                                <NavLink title="link to manufacturing page" to="/manufacturing">
+                                <NavLink className="inline-link-style" title="link to manufacturing page" to="/manufacturing">
                                     Manufacturing
                                 </NavLink>
                                 {' | '}
-                                <NavLink title="link to transport page" to="/transport">
+                                <NavLink className="inline-link-style" title="link to transport page" to="/transport">
                                     Transport
                                 </NavLink>
                                 {' | '}
-                                <NavLink title="link to use page" to="/use">
+                                <NavLink className="inline-link-style" title="link to use page" to="/use">
                                     Use
                                 </NavLink>
                                 {' | '}
-                                <NavLink title="link to end of life page" to="/end-of-life">
+                                <NavLink className="inline-link-style"   title="link to end of life page" to="/end-of-life">
                                     End of life
                                 </NavLink>
                             </div>
@@ -102,7 +102,7 @@ class MobileContent extends React.Component {
                     </div>
                 </div>
                 <Footer />
-                <ScrollUp />
+                <ScrollUpMobile />
             </div>
         );
     }
