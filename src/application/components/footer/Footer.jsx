@@ -3,9 +3,9 @@ import { Twitter } from 'react-social-sharing';
 import { Facebook } from 'react-social-sharing';
 import { Mail } from 'react-social-sharing';
 import { Linkedin } from 'react-social-sharing';
-import './MobileFooter.css';
+import './Footer.css';
 
-class MobileFooter extends React.Component {
+class Footer extends React.Component {
 
 	render() {
         return (
@@ -16,15 +16,15 @@ class MobileFooter extends React.Component {
                         <p className="footer-text-first-section">
                             This website is designed and developed by Marius Bråthen and Vebjørn
                             Grønnhaug, master students at the Dept. of Informatics, University of Oslo. The
-                            circular lifecyle is designed by master student Olga Skachkova. The text is based
-                            on the SMART report Sustainability Hotspots Analysis of the Mobile Phone
-                            Lifecycle, written by Maja van der Velden and Mark Taylor and is available in 
+                            circular lifecyle is designed by master student Olga Skachkova. The textual content is based
+                            on the SMART report <i>Sustainability Hotspots Analysis of the Mobile Phone
+                            Lifecycle</i>, written by Maja van der Velden and Mark Taylor and is available in 
                             PDF format here:{' '} 
                             <a  
                                 className="smart-link" 
                                 title="link to " 
                                 href="https://www.smart.uio.no/publications/reports/sustainability-hotspots-analysis-of-the-mobile-phone-lifecycle.pdf"> 
-                                Hotspots Analysis
+                                SMART report
                             </a>
                         </p>
 
@@ -85,4 +85,4 @@ class MobileFooter extends React.Component {
         )
     }
 }
-export default MobileFooter;
+export default Footer;

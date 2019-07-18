@@ -3,7 +3,7 @@ import React from "react";
 import Mobile from "../../../menus/mobile/Mobile";
 /* Header and footer for mobile devices */
 import MobileHeader from "../../../components/mobile-header/MobileHeader";
-import MobileFooter from "../../../components/mobile-footer/MobileFooter";
+import Footer from "../../../components/footer/Footer";
 /* Fade effect */
 import Fade from "react-reveal/Fade";
 /* Scroll up */
@@ -59,7 +59,7 @@ class MobileContent extends React.Component {
                         </div>
                     </div>
                 </div>
-                <MobileFooter />
+                <Footer />
                 <ScrollUp />
             </div>
         );

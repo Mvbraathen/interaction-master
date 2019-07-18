@@ -61,23 +61,6 @@ html {
     border: none;
 }
 
-
-
-.home-interact {
-    display: inline-block;
-    color: white; 
-    margin-left: 3px;
-    margin-right: 3px;
-    padding: 2px 5px 2px 5px;
-    transition: 2s;
-    cursor: pointer;
-}
-
-.home-interact:hover {
-    color: white; 
-    background-color: #00AD00;
-}
-
 .home-smart {
     background-color: #1A6667;
     text-decoration: none;
@@ -89,12 +72,11 @@ html {
 
 .home-smart:hover {
     background-color: #333333;
-
 }
 
 .home-special-header {
     color: #333333;
-    font-size: 3.2em;
+    font-size: 4.8em;
     font-weight: 900;
     line-height: 95px;
     font-family: 'Avenir Next';

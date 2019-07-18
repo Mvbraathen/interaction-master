@@ -3,7 +3,7 @@ import React from "react";
 import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
-import MobileFooter from "../../../components/mobile-footer/MobileFooter";
+import Footer from "../../../components/footer/Footer";
 import IconSelector from "../../../components/icon-selector/IconSelector";
 // Impacts
 import Environmental from "../../../components/impacts/Environmental";
@@ -169,7 +169,7 @@ class DesktopContent extends React.Component {
                     <div className="right-half-content">
                         {content}
                     </div>
-                    <MobileFooter />
+                    <Footer />
                 </div>
             </div>
         );

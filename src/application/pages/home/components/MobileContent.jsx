@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import Mobile from "../../../menus/mobile/Mobile";
 /* Header and footer for mobile devices */
 import MobileHeader from "../../../components/mobile-header/MobileHeader";
-import MobileFooter from "../../../components/mobile-footer/MobileFooter";
+import Footer from "../../../components/footer/Footer";
 /* Fade effect */
 import Fade from "react-reveal/Fade";
 /* Scroll up */
@@ -88,7 +88,7 @@ class MobileContent extends React.Component {
                                 </NavLink>
                                 {' | '}
                                 <NavLink title="link to end of life page" to="/end-of-life">
-                                    Resource extraction
+                                    End of life
                                 </NavLink>
                             </div>
                         </div>
@@ -101,7 +101,7 @@ class MobileContent extends React.Component {
                         </div>
                     </div>
                 </div>
-                <MobileFooter />
+                <Footer />
                 <ScrollUp />
             </div>
         );

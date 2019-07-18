@@ -9,7 +9,7 @@ class ScrollUp extends React.Component {
         window.scrollTo(0, 0);
     }
 
-    /* Making scroll up accessible to keyboard users */
+    /* Making scroll function accessible to keyboard users */
     handleKeyPress = (event) => {
         if(event.key === 'Enter'){
             this.handleScrollTop()

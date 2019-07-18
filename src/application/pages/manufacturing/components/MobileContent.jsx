@@ -3,7 +3,7 @@ import React from "react";
 import Mobile from "../../../menus/mobile/Mobile";
 /* Header and footer for mobile devices */
 import MobileHeader from "../../../components/mobile-header/MobileHeader";
-import MobileFooter from "../../../components/mobile-footer/MobileFooter";
+import Footer from "../../../components/footer/Footer";
 /* Impacts */
 import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
@@ -231,7 +231,7 @@ class MobileContent extends React.Component {
                         {content}
                     </div>
                 </div>
-                <MobileFooter />
+                <Footer />
                 <ScrollUp />
             </div>
         );

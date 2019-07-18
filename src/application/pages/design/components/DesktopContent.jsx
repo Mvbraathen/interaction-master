@@ -3,7 +3,7 @@ import React from "react";
 import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
-import MobileFooter from "../../../components/mobile-footer/MobileFooter";
+import Footer from "../../../components/footer/Footer";
 
 class DesktopContent extends React.Component {
 
@@ -66,7 +66,7 @@ class DesktopContent extends React.Component {
                             by the user impossible.
                         </div>
                     </div>
-                    <MobileFooter />
+                    <Footer />
                 </div>
             </div>
         );

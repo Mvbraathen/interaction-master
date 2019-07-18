@@ -3,7 +3,7 @@ import React from "react";
 import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
-import MobileFooter from "../../../components/mobile-footer/MobileFooter";
+import Footer from "../../../components/footer/Footer";
 import ScrollUp from "../../../components/scroll-up/ScrollUp";
 
 class DesktopContent extends React.Component {
@@ -40,7 +40,7 @@ class DesktopContent extends React.Component {
                             research
                         </h1>
                         <div 
-                            style={{fontSize: '1.7em', marginTop: '-55px'}} 
+                            style={{marginTop: '-55px'}} 
                             className="default-content-text">
                             <h2 className="home-special-header"> 
                                 The mobile phone lifecycle
@@ -74,7 +74,7 @@ class DesktopContent extends React.Component {
                         <div>
                       </div>
                     </div>
-                    <MobileFooter />
+                    <Footer />
                     <ScrollUp />
                 </div>
             </div>
