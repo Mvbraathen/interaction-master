@@ -1,7 +1,7 @@
 .footer,
 .push {
     bottom: 0;
-    height: 670px;
+    padding-bottom: 50px;
     /* To look ok on mobile phones */
     background-color: #1A6667;
     font-family: Avenir Next;
@@ -17,8 +17,8 @@
 }
 
 .footer-text-first-section {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding-top: 50px;
 }
 
@@ -32,7 +32,8 @@
     padding-top: 5px;
     padding-bottom: 0px;
     text-align: left;
-    margin-left: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .facebook {
@@ -64,8 +65,8 @@
 }
 
 .footer-text-second-section {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .smart-link {
