@@ -20,10 +20,14 @@ class DesktopContent extends React.Component {
             default: true,
             environmental: false,
             social: false,
+
             iconColor: 'white',
-            borderDefault: '1px solid grey',
-            borderEnvironmental: 'none',
-            borderSocial: 'none'
+            environmentalColor: 'black',
+            socialColor: 'black',
+
+            defaultBgc: '#BD2EC2',
+            environmentalBgc: 'lightgrey',
+            socialBgc: 'lightgrey'
         }
     }
 
@@ -32,10 +36,14 @@ class DesktopContent extends React.Component {
             default: true,
             social: false,
             environmental: false,
+
             iconColor: 'white',
-            borderDefault: '1px solid grey',
-            borderEnvironmental: 'none',
-            borderSocial: 'none'
+            environmentalColor: 'black',
+            socialColor: 'black',
+
+            defaultBgc: '#BD2EC2',
+            environmentalBgc: 'lightgrey',
+            socialBgc: 'lightgrey'
         })
     }
 
@@ -44,10 +52,14 @@ class DesktopContent extends React.Component {
             default: false,
             social: false,
             environmental: true,
+
             iconColor: 'black',
-            borderDefault: 'none',
-            borderEnvironmental: '1px solid grey',
-            borderSocial: 'none'
+            environmentalColor: 'white',
+            socialColor: 'black',
+
+            defaultBgc: 'lightgrey',
+            environmentalBgc: '#BD2EC2',
+            socialBgc: 'lightgrey'
         })
     }
 
@@ -56,10 +68,14 @@ class DesktopContent extends React.Component {
             default: false,
             environmental: false,
             social: true,
+
             iconColor: 'black',
-            borderDefault: 'none',
-            borderEnvironmental: 'none',
-            borderSocial: '1px solid grey'
+            environmentalColor: 'black',
+            socialColor: 'white',
+
+            defaultBgc: 'lightgrey',
+            environmentalBgc: 'lightgrey',
+            socialBgc: '#BD2EC2'
         })
     }
 
@@ -127,7 +143,7 @@ class DesktopContent extends React.Component {
                             onClick={e => {
                                 this.handleDefaultClick(e);
                             }}
-                            style={{border: this.state.borderDefault}} 
+                            style={{backgroundColor: this.state.defaultBgc}} 
                             className="new-sub-menu-element-text" 
                             tabIndex="0"> 
                             <IconSelector fromPage={fromPage} iconColor={iconColor} /> 
@@ -140,7 +156,7 @@ class DesktopContent extends React.Component {
                             onClick={e => {
                                 this.handleEnvironmentalClick(e);
                             }} 
-                            style={{border: this.state.borderEnvironmental}} 
+                            style={{backgroundColor: this.state.environmentalBgc, color: this.state.environmentalColor}} 
                             className="new-sub-menu-element-text" 
                             tabIndex="0"> 
                             Environmental
@@ -153,7 +169,7 @@ class DesktopContent extends React.Component {
                             onClick={e => {
                                 this.handleSocialClick(e);
                             }} 
-                            style={{boxSizing: 'borderBox', border: this.state.borderSocial}} 
+                            style={{backgroundColor: this.state.socialBgc, color: this.state.socialColor}} 
                             className="new-sub-menu-element-text" 
                             tabIndex="0"> 
                             Social 

@@ -5,7 +5,7 @@ class ImageSelector extends React.Component {
 
         let icon;
 
-        if(this.props.fromPage === "design") {
+       if(this.props.fromPage === "design") {
             icon = (
                 <div>
                     <img 
@@ -16,9 +16,6 @@ class ImageSelector extends React.Component {
                 </div> 
             )
         }
-
-
-
 
         if(this.props.fromPage === "resourceExtraction" && this.props.iconColor === "white") {
             icon = (
@@ -44,8 +41,17 @@ class ImageSelector extends React.Component {
             )
         }
 
-
-
+        if(this.props.fromPage === "manufacturing" && this.props.iconColor === "white") {
+            icon = (
+                <div>
+                    <img 
+                        alt="manufacturing icon" 
+                        style={{maxHeight: '35px', verticalAlign: 'middle'}} 
+                        src={require('../../images/manufacturing-icon-white.svg')} 
+                    />
+                </div> 
+            )
+        }
 
         if(this.props.fromPage === "manufacturing" && this.props.iconColor === "black") {
             icon = (
@@ -59,19 +65,19 @@ class ImageSelector extends React.Component {
             )
         }
 
-        if(this.props.fromPage === "manufacturing" && this.props.iconColor === "white") {
+        if(this.props.fromPage === "transport" && this.props.iconColor === "white") {
             icon = (
                 <div>
                     <img 
-                        alt="manufacturing icon" 
+                        alt="transport icon" 
                         style={{maxHeight: '35px', verticalAlign: 'middle'}} 
-                        src={require('../../images/manufacturing-icon-white.svg')} 
+                        src={require('../../images/transport-icon-white.svg')} 
                     />
                 </div> 
             )
         }
 
-        if(this.props.fromPage === "transport") {
+        if(this.props.fromPage === "transport" && this.props.iconColor === "black") {
             icon = (
                 <div>
                     <img 
@@ -83,7 +89,19 @@ class ImageSelector extends React.Component {
             )
         }
 
-        if(this.props.fromPage === "use") {
+        if(this.props.fromPage === "use" && this.props.iconColor === "white") {
+            icon = (
+                <div>
+                    <img 
+                        alt="use icon" 
+                        style={{maxHeight: '35px', verticalAlign: 'middle'}} 
+                        src={require('../../images/use-icon-white.svg')} 
+                    />
+                </div> 
+            )
+        }
+
+        if(this.props.fromPage === "use" && this.props.iconColor === "black") {
             icon = (
                 <div>
                     <img 
@@ -95,7 +113,19 @@ class ImageSelector extends React.Component {
             )
         }
 
-        if(this.props.fromPage === "endOfLife") {
+        if(this.props.fromPage === "endOfLife" && this.props.iconColor === "white") {
+            icon = (
+                <div>
+                    <img 
+                        alt="end of life icon" 
+                        style={{maxHeight: '35px', verticalAlign: 'middle'}} 
+                        src={require('../../images/end-of-life-icon-white.svg')} 
+                    />
+                </div> 
+            )
+        }
+
+        if(this.props.fromPage === "endOfLife" && this.props.iconColor === "black") {
             icon = (
                 <div>
                     <img 

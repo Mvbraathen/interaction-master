@@ -21,9 +21,14 @@ class DesktopContent extends React.Component {
             default: true,
             environmental: false,
             social: false,
-            borderDefault: '1px solid grey',
-            borderEnvironmental: 'none',
-            borderSocial: 'none'
+
+            iconColor: 'white',
+            environmentalColor: 'black',
+            socialColor: 'black',
+
+            defaultBgc: '#0066FF',
+            environmentalBgc: 'lightgrey',
+            socialBgc: 'lightgrey'
         }
     }
 
@@ -32,9 +37,14 @@ class DesktopContent extends React.Component {
             default: true,
             social: false,
             environmental: false,
-            borderDefault: '1px solid grey',
-            borderEnvironmental: 'none',
-            borderSocial: 'none'
+
+            iconColor: 'white',
+            environmentalColor: 'black',
+            socialColor: 'black',
+
+            defaultBgc: '#0066FF',
+            environmentalBgc: 'lightgrey',
+            socialBgc: 'lightgrey'
         })
     }
 
@@ -43,9 +53,14 @@ class DesktopContent extends React.Component {
             default: false,
             social: false,
             environmental: true,
-            borderDefault: 'none',
-            borderEnvironmental: '1px solid grey',
-            borderSocial: 'none'
+
+            iconColor: 'black',
+            environmentalColor: 'white',
+            socialColor: 'black',
+
+            defaultBgc: 'lightgrey',
+            environmentalBgc: '#0066FF',
+            socialBgc: 'lightgrey'
         })
     }
 
@@ -54,16 +69,21 @@ class DesktopContent extends React.Component {
             default: false,
             environmental: false,
             social: true,
-            borderDefault: 'none',
-            borderEnvironmental: 'none',
-            borderSocial: '1px solid grey'
+
+            iconColor: 'black',
+            environmentalColor: 'black',
+            socialColor: 'white',
+
+            defaultBgc: 'lightgrey',
+            environmentalBgc: 'lightgrey',
+            socialBgc: '#0066FF'
         })
     }
 
     render() {
         /* To select corresponding components */
         const fromPage = "transport";
-        
+        let iconColor = this.state.iconColor;
         /* To get correct header text */
         const pageHeader = "Transport";
         
@@ -123,10 +143,10 @@ class DesktopContent extends React.Component {
                             onClick={e => {
                                 this.handleDefaultClick(e);
                             }}
-                            style={{border: this.state.borderDefault}} 
+                            style={{backgroundColor: this.state.defaultBgc}} 
                             className="new-sub-menu-element-text" 
                             tabIndex="0"> 
-                            <IconSelector fromPage={fromPage} />
+                            <IconSelector fromPage={fromPage} iconColor={iconColor} />
                         </button> 
                     </div>
 
@@ -136,7 +156,7 @@ class DesktopContent extends React.Component {
                             onClick={e => {
                                 this.handleEnvironmentalClick(e);
                             }} 
-                            style={{border: this.state.borderEnvironmental}} 
+                            style={{backgroundColor: this.state.environmentalBgc, color: this.state.environmentalColor}} 
                             className="new-sub-menu-element-text" 
                             tabIndex="0"> 
                             Environmental
@@ -149,7 +169,7 @@ class DesktopContent extends React.Component {
                             onClick={e => {
                                 this.handleSocialClick(e);
                             }} 
-                            style={{boxSizing: 'borderBox', border: this.state.borderSocial}} 
+                            style={{backgroundColor: this.state.socialBgc, color: this.state.socialColor}} 
                             className="new-sub-menu-element-text" 
                             tabIndex="0"> 
                             Social 

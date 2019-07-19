@@ -90,8 +90,6 @@ class DesktopContent extends React.Component {
         /* The variable that holds the content */
         let content;
 
-        let icon = this.state.icon;
-
         if(this.state.default) {
             content = (
                 <div>

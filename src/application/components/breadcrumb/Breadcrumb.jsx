@@ -1,68 +1,68 @@
-import React from 'react';
+import React from "react";
 import { NavLink } from "react-router-dom";
 
-import './Breadcrumb.css';
+import "./Breadcrumb.css";
 
 class Breadcrumb extends React.Component {
     constructor() {
         super();
         this.state = {
-          linkPath: '',
-          linkText: '',
-          tabIndexFix: '0'
-        }
+            linkPath: "",
+            linkText: "",
+            tabIndexFix: "0"
+        };
     }
     componentDidMount() {
-        if(this.props.fromPage === 'Home') {
+        if (this.props.fromPage === "Home") {
             this.setState({
-                tabIndexFix: '-1'
-            });   
+                tabIndexFix: "-1"
+            });
         }
 
-        if(this.props.fromPage === 'design') {
+        if (this.props.fromPage === "design") {
             this.setState({
-                linkPath: '/design',
-                linkText: 'Design'
-            });   
+                linkPath: "/design",
+                linkText: "Design"
+            });
         }
 
-        if(this.props.fromPage === 'resourceExtraction') {
+        if (this.props.fromPage === "resourceExtraction") {
             this.setState({
-                linkPath: '/resource-extraction',
-                linkText: 'Resource extraction'
-            });   
+                linkPath: "/resource-extraction",
+                linkText: "Resource extraction"
+            });
         }
 
-        if(this.props.fromPage === 'manufacturing') {
+        if (this.props.fromPage === "manufacturing") {
             this.setState({
-                linkPath: '/manufacturing',
-                linkText: 'Manufacturing'
-            });   
+                linkPath: "/manufacturing",
+                linkText: "Manufacturing"
+            });
         }
 
-        if(this.props.fromPage === 'transport') {
+        if (this.props.fromPage === "transport") {
             this.setState({
-                linkPath: '/transport',
-                linkText: 'Transport'
-            });   
+                linkPath: "/transport",
+                linkText: "Transport"
+            });
         }
 
-        if(this.props.fromPage === 'use') {
+        if (this.props.fromPage === "use") {
             this.setState({
-                linkPath: '/use',
-                linkText: 'Use'
-            });   
+                linkPath: "/use",
+                linkText: "Use"
+            });
         }
 
-        if(this.props.fromPage === 'endOfLife') {
+        if (this.props.fromPage === "endOfLife") {
             this.setState({
-                linkPath: '/end-of-life',
-                linkText: 'End of life'
-            });   
+                linkPath: "/end-of-life",
+                linkText: "End of life"
+            });
         }
     }
 
-	render() {
+    render() {
         return (
             <div>
                 <div className="breadcrumb">
@@ -73,12 +73,15 @@ class Breadcrumb extends React.Component {
                         {" "}
                         <span className="breadcrumbArrow">&#8594;</span>
                     </div>
-                    <NavLink tabIndex={this.state.tabIndexFix}  to={this.state.linkPath}>
+                    <NavLink
+                        tabIndex={this.state.tabIndexFix}
+                        to={this.state.linkPath}
+                    >
                         <div className="activePage">{this.state.linkText}</div>
                     </NavLink>
                 </div>
             </div>
         );
-	}
+    }
 }
 export default Breadcrumb;
