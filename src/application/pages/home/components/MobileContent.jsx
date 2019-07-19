@@ -16,7 +16,7 @@ class MobileContent extends React.Component {
     render() {
 
         /* To get correct page header text */
-        const pageHeader = "The mobile lifecycle";
+        const pageHeader = "The mobile phone lifecycle";
 
         return (
             <div>

@@ -7,7 +7,7 @@ class Co2Mobile extends React.Component {
             <Fade duration={1000}>
                 <div className="info-box">
                     <h1 className="info-header"> 
-                        Co2 
+                        CO<sub>2</sub> 
                     </h1>
                     <div>
                         <div className="image-container">
@@ -19,9 +19,9 @@ class Co2Mobile extends React.Component {
                             </a>
                         </div>
                         <div className="info-positioning">
-                            The emission of carbon dioxide (CO 2) as a result of the burning of fossil fuels and
+                            The emission of carbon dioxide (CO<sub>2</sub>) as a result of the burning of fossil fuels and
                             deforestation during mining operations. The smelting and processing of mined
-                            minerals are another important source of CO 2 emissions (read more about 
+                            minerals are another important source of CO<sub>2</sub> emissions (read more about 
 
                             {' '}
                             <a 
