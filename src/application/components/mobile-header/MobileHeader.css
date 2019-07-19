@@ -9,7 +9,24 @@
     color: white;
     height: 60px;
     line-height: 60px;
-    font-size: 1.5em;
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 360px) {
+    .mobile-header {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .mobile-header {
+        font-size: 0.8em;
+    }
+}
+@media only screen and (max-width: 280px) {
+    .mobile-header {
+        font-size: 0.6em;
+    }
 }
 
 .mobile-bookmark {

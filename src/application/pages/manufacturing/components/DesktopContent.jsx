@@ -20,6 +20,7 @@ class DesktopContent extends React.Component {
             default: true,
             environmental: false,
             social: false,
+            iconColor: 'white',
             borderDefault: '1px solid grey',
             borderEnvironmental: 'none',
             borderSocial: 'none'
@@ -31,6 +32,7 @@ class DesktopContent extends React.Component {
             default: true,
             social: false,
             environmental: false,
+            iconColor: 'white',
             borderDefault: '1px solid grey',
             borderEnvironmental: 'none',
             borderSocial: 'none'
@@ -42,6 +44,7 @@ class DesktopContent extends React.Component {
             default: false,
             social: false,
             environmental: true,
+            iconColor: 'black',
             borderDefault: 'none',
             borderEnvironmental: '1px solid grey',
             borderSocial: 'none'
@@ -53,6 +56,7 @@ class DesktopContent extends React.Component {
             default: false,
             environmental: false,
             social: true,
+            iconColor: 'black',
             borderDefault: 'none',
             borderEnvironmental: 'none',
             borderSocial: '1px solid grey'
@@ -62,6 +66,7 @@ class DesktopContent extends React.Component {
      render() {
         /* To select corresponding components */
         const fromPage = "manufacturing";
+        let iconColor = this.state.iconColor;
         
         /* To get correct header text */
         const pageHeader = "Manufacturing";
@@ -125,7 +130,7 @@ class DesktopContent extends React.Component {
                             style={{border: this.state.borderDefault}} 
                             className="new-sub-menu-element-text" 
                             tabIndex="0"> 
-                            <IconSelector fromPage={fromPage} /> 
+                            <IconSelector fromPage={fromPage} iconColor={iconColor} /> 
                         </button> 
                     </div>
 

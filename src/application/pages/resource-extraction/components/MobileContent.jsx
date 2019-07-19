@@ -22,10 +22,10 @@ class MobileContent extends React.Component {
             default: true,
             environmental: false,
             social: false,
-            defaultBgc: '#00AD00',
+            defaultBgc: '#008A00',
             environmentalBgc: '#333333',
             socialBgc: '#333333',
-            resourceExtractionColor: '#00AD00'
+            resourceExtractionColor: '#008A00'
         }
         this.handleDefaultClicked = this.handleDefaultClicked.bind(this);
         this.handleEnvironmentalClicked = this.handleEnvironmentalClicked.bind(this);
@@ -42,7 +42,7 @@ class MobileContent extends React.Component {
             default: true,
             environmental: false,
             social: false,
-            defaultBgc: '#00AD00',
+            defaultBgc: '#008A00',
             environmentalBgc: '#333333',
             socialBgc: '#333333'
         });
@@ -54,7 +54,7 @@ class MobileContent extends React.Component {
             environmental: true,
             social: false,
             defaultBgc: '#333333',
-            environmentalBgc: '#00AD00',
+            environmentalBgc: '#008A00',
             socialBgc: '#333333'
         });
     }
@@ -66,7 +66,7 @@ class MobileContent extends React.Component {
             social: true,
             defaultBgc: '#333333',
             environmentalBgc: '#333333',
-            socialBgc: '#00AD00'
+            socialBgc: '#008A00'
         });
     }
 

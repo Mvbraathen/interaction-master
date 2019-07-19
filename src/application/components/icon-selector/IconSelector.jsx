@@ -17,7 +17,22 @@ class ImageSelector extends React.Component {
             )
         }
 
-        if(this.props.fromPage === "resourceExtraction") {
+
+
+
+        if(this.props.fromPage === "resourceExtraction" && this.props.iconColor === "white") {
+            icon = (
+                <div>
+                    <img 
+                        alt="resource extraction icon" 
+                        style={{maxHeight: '35px', verticalAlign: 'middle'}} 
+                        src={require('../../images/resource-extraction-icon-white.svg')} 
+                    />
+                </div> 
+            )
+        }
+
+        if(this.props.fromPage === "resourceExtraction" && this.props.iconColor === "black") {
             icon = (
                 <div>
                     <img 
@@ -29,13 +44,28 @@ class ImageSelector extends React.Component {
             )
         }
 
-        if(this.props.fromPage === "manufacturing") {
+
+
+
+        if(this.props.fromPage === "manufacturing" && this.props.iconColor === "black") {
             icon = (
                 <div>
                     <img 
                         alt="manufacturing icon" 
                         style={{maxHeight: '35px', verticalAlign: 'middle'}} 
                         src={require('../../images/manufacturing-icon.svg')} 
+                    />
+                </div> 
+            )
+        }
+
+        if(this.props.fromPage === "manufacturing" && this.props.iconColor === "white") {
+            icon = (
+                <div>
+                    <img 
+                        alt="manufacturing icon" 
+                        style={{maxHeight: '35px', verticalAlign: 'middle'}} 
+                        src={require('../../images/manufacturing-icon-white.svg')} 
                     />
                 </div> 
             )

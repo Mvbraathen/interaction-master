@@ -32,6 +32,6 @@
 }
 
 .new-sub-menu-element-text:hover {
-    background-color: lightblue;
+    outline: #86A8DF solid 2px;
 }
 

@@ -14,8 +14,23 @@ class Footer extends React.Component {
                 <div className="footer">
         			<div className="footer-info">
                         <p className="footer-text-first-section">
-                            This website is designed and developed by Marius Bråthen and Vebjørn
-                            Grønhaug, master students at the Dept. of Informatics, University of Oslo. The
+                            This website is designed and developed by 
+                            {' '}
+                            <a 
+                                className="smart-link" 
+                                title="link to Marius Bråthen's LinkedIn profile" 
+                                href="https://www.linkedin.com/in/mariusbrathen/">
+                                Marius Bråthen
+                            </a> and 
+                            {' '}
+                            <a 
+                                className="smart-link" 
+                                title="link to Vebjørn Grønhaug's LinkedIn profile" 
+                                href="https://www.linkedin.com/in/vebjorngronhaug/">
+                                Vebjørn Grønhaug
+                            </a>, 
+
+                            master students at the Dept. of Informatics, University of Oslo. The
                             circular lifecyle is designed by former master student Olga Skachkova. The textual content is based
                             on the SMART report <i>Sustainability Hotspots Analysis of the Mobile Phone
                             Lifecycle</i>, written by Maja van der Velden and Mark Taylor and is available in 
