@@ -11,8 +11,16 @@ import HomeText from "../../../components/text/HomeText";
 import Fade from "react-reveal/Fade";
 /* Scroll up */
 import ScrollUpMobile from "../../../components/scroll-up/ScrollUpMobile";
+/* Jump to main content */ 
+import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
 
 class MobileContent extends React.Component {
+
+    /* Scrolls to top when page loads */
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+    
     render() {
 
         /* To get correct page header text */
@@ -20,6 +28,7 @@ class MobileContent extends React.Component {
 
         return (
             <div>
+                <ScrollToMain />
                 <Mobile />
                 <div className="mobile-page">        
                     <div style={{marginTop: '70px'}} className="mobile-content">
@@ -37,9 +46,8 @@ class MobileContent extends React.Component {
                                         </a>
                                         research
                                     </h1>
-                                    <div  
-                                        className="default-content-text">
-                                        <h2 style={{fontSize: '2.5em', paddingLeft: '10px', paddingRight: '10px'}}> 
+                                    <div className="default-content-text">
+                                        <h2 id="main-content" style={{fontSize: '2.5em', paddingLeft: '10px', paddingRight: '10px'}}> 
                                             The mobile phone lifecycle
                                         </h2>
 

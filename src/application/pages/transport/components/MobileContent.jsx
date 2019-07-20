@@ -81,7 +81,7 @@ class MobileContent extends React.Component {
         if(this.state.default) {
             content = (
                 <div>
-                    <div id="main-content" className="mobile-page-title" style={{color: this.state.transportColor}}> 
+                    <div className="mobile-page-title" style={{color: this.state.transportColor}}> 
                         The transport phase 
                     </div> 
                     <div className="page-introduction-text">
@@ -160,6 +160,8 @@ class MobileContent extends React.Component {
                                 Social 
                             </button>
                         </div>
+                        {/* For the ScrollToMain component */}
+                        <div id="main-content" />
                         {content}
                     </div>
                 </div>

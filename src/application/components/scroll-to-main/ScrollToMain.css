@@ -1,9 +1,11 @@
-.jump-to-main-content {
+.jump-to-main {
     position: absolute;
+    margin-top: 3px;
+    margin-left: 3px;
     z-index: -10;
     color: white;
 }
 
-.jump-to-main-content:focus {
+.jump-to-main:focus {
     z-index: 99;
 }

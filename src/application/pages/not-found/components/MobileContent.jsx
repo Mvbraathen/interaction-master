@@ -5,16 +5,20 @@ import Mobile from "../../../menus/mobile/Mobile";
 /* Header and footer for mobile devices */
 import MobileHeader from "../../../components/mobile-header/MobileHeader";
 import Footer from "../../../components/footer/Footer";
+/* Jump to main content */ 
+import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
+
 
 class MobileContent extends React.Component {
     render() {
         return (
             <div>
+                <ScrollToMain />
             	<Mobile />
             	<div className="mobile-page">
                      <MobileHeader />
                      <div className="mobile-content">
-                     	<h1 style={{marginTop: '100px', backgroundColor: 'lightpink', padding: '40px'}}> Page not found </h1>
+                     	<h1 id="main-content" style={{marginTop: '100px', backgroundColor: 'lightpink', padding: '40px'}}> Page not found </h1>
                      	<p style={{padding: '20px 20px 10px 20px', maxWidth: '500px'}}>
                      		We can't seem to find the page you're looking for. 
 							It might have been removed, had its name changed, 

@@ -3,15 +3,17 @@ import { NavLink } from "react-router-dom";
 /* Header and footer for mobile devices */
 import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
 import Footer from "../../../components/footer/Footer";
+import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
 
 class DesktopContent extends React.Component {
     render() {
         return (
             <div>
             	<div className="mobile-page">
-                     <DesktopHeader />
-                     <div className="mobile-content">
-                     	<h1 style={{marginTop: '100px', backgroundColor: 'lightblue', padding: '40px'}}> Page not found </h1>
+                    <ScrollToMain />
+                    <DesktopHeader />
+                    <div className="mobile-content">
+                     	<h1 id="main-content" style={{marginTop: '100px', backgroundColor: 'lightblue', padding: '40px'}}> Page not found </h1>
                      	<p style={{padding: '20px 20px 10px 100px', maxWidth: '500px'}}>
                      		We can't seem to find the page you're looking for. 
 							It might have been removed, had its name changed, 
@@ -27,7 +29,7 @@ class DesktopContent extends React.Component {
                      		</li>
                      		<li>If you are looking for the SMART project's website, please visit <a title="link to SMARTs website" className="inline-link-style" href="http://smart.uio.no">https://smart.uio.no</a>.</li>
                      	</ol>
-                     </div>
+                    </div>
                 </div>
                 <Footer />
 			</div>

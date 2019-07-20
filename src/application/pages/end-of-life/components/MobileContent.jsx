@@ -160,6 +160,8 @@ class MobileContent extends React.Component {
                                 Social 
                             </button>
                         </div>
+                        {/* For the ScrollToMain component */}
+                        <div id="main-content" />
                         {content}
                     </div>
                 </div>

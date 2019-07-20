@@ -15,6 +15,7 @@ class Menu extends Component {
 
     render() {
 
+        /* Function to prevent keyboard users to tab through inactive / hidden menu */
         var isMenuOpen = function(state) {
             if(state.isOpen){
                 this.setState({

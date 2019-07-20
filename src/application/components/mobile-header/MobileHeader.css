@@ -32,6 +32,7 @@
 .mobile-bookmark {
     border: none;
     position: absolute; 
+    text-decoration: none;
     top: 0; 
     right: 0; 
     margin-top: 10px; 

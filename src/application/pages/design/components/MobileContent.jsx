@@ -10,8 +10,15 @@ import DesignPhase from "../../../components/text/DesignPhase";
 import Fade from "react-reveal/Fade";
 /* Scroll up */
 import ScrollUpMobile from "../../../components/scroll-up/ScrollUpMobile";
+/* Jump to main content */ 
+import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
 
 class MobileContent extends React.Component {
+
+    /* Scrolls to top when page loads */
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
 
     render() {
 
@@ -20,9 +27,12 @@ class MobileContent extends React.Component {
 
         return (
             <div>
+                <ScrollToMain />
                 <Mobile />
                 <div className="mobile-page">        
                     <div style={{marginTop: '70px'}} className="mobile-content">
+                        {/* For the ScrollToMain component */}
+                        <div id="main-content" />
                         <MobileHeader pageHeader={pageHeader} />
                         <div className="mobile-impacts-width">
                             <Fade duration={1000}>
