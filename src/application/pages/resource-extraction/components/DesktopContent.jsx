@@ -132,35 +132,37 @@ class DesktopContent extends React.Component {
                 <DesktopHeader pageHeader={pageHeader} />
                 <div className="fix-content-scroll-under-sub"/>
                 <Breadcrumb fromPage={fromPage} />
-                <div className="impact-sub-menu">
-                    <button
-                        className="lifecycle-icon"
-                        onClick={e => {
-                            this.handleDefaultClick(e);
-                        }}
-                        style={{backgroundColor: this.state.defaultBgc}} 
-                        tabIndex="0"> 
-                        <IconSelector fromPage={fromPage} iconColor={iconColor} />
-                    </button> 
-                    <button
-                        className="environmental-element"
-                        onClick={e => {
-                            this.handleEnvironmentalClick(e);
-                        }} 
-                        style={{backgroundColor: this.state.environmentalBgc, color: this.state.environmentalColor}} 
-                        tabIndex="0"> 
-                        Environmental impacts
-                    </button> 
-                    <button
-                        className="social-element"
-                        onClick={e => {
-                            this.handleSocialClick(e);
-                        }} 
-                        style={{backgroundColor: this.state.socialBgc, color: this.state.socialColor}} 
-                        tabIndex="0">
-                        Social impacts
-                    </button>                     
-                </div>
+                <a tabIndex="-1" style={{textDecoration: 'none'}} href="#top">
+                    <div className="impact-sub-menu">
+                        <button
+                            className="lifecycle-icon"
+                            onClick={e => {
+                                this.handleDefaultClick(e);
+                            }}
+                            style={{backgroundColor: this.state.defaultBgc}} 
+                            tabIndex="0"> 
+                            <IconSelector fromPage={fromPage} iconColor={iconColor} />
+                        </button> 
+                        <button
+                            className="environmental-element"
+                            onClick={e => {
+                                this.handleEnvironmentalClick(e);
+                            }} 
+                            style={{backgroundColor: this.state.environmentalBgc, color: this.state.environmentalColor}} 
+                            tabIndex="0"> 
+                            Environmental impacts
+                        </button> 
+                        <button
+                            className="social-element"
+                            onClick={e => {
+                                this.handleSocialClick(e);
+                            }} 
+                            style={{backgroundColor: this.state.socialBgc, color: this.state.socialColor}} 
+                            tabIndex="0">
+                            Social impacts
+                        </button>                     
+                    </div>
+                </a>
                 
                 {/* Line to visually seperate sub menu from page content */}
                 <hr className="vertical-line" />

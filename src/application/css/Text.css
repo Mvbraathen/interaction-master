@@ -29,4 +29,17 @@
     font-weight: 900;
     line-height: 95px;
     font-family: 'Avenir Next';
+    margin-top: -20px;
+}
+
+.smart-research-link {   
+    background-color: #1A6667;  
+    text-decoration: none;  
+    color: white;   
+    padding: 4px 5px 2px 5px; 
+    margin-right: 3px;  
+}   
+
+ .smart-research-link:hover {    
+    background-color: #333333;  
 }

@@ -15,28 +15,31 @@
 }
 
 .lifecycle-icon {
-    flex-grow: 1;
+    /* flex-grow: 1; remove width and add this, to flexible width */
+    width: 33%;
     height: 50px;
     margin-top: 5px;
     z-index: 99;
 }
 
 .environmental-element {
-    flex-grow: 1;
+    /* flex-grow: 1; remove width and add this, to flexible width */
+    width: 33%;
     height: 50px;
     margin-top: 5px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
     font-family: Avenir Next;
     font-size: 1em;
     z-index: 99;
 }
 
 .social-element {
-    flex-grow: 1;
+    /* flex-grow: 1; remove width and add this, to flexible width */
+    width: 33%;
     height: 50px;
     margin-top: 5px;
-    margin-right: 5%;
+    margin-right: 3%;
     font-family: Avenir Next;
     font-size: 1em;
     z-index: 99;
@@ -47,4 +50,3 @@
 .social-element:hover {
     outline: #86A8DF solid 2px;
 }
-

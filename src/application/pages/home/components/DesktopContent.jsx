@@ -30,11 +30,22 @@ class DesktopContent extends React.Component {
                 <div  className="split right-half">
                     <div id="top"  className="sub-menu-without-selection"></div>
                     <div className="right-half-content">
-                        <div
-                            className="default-content-text">
-                            <h1 style={{marginLeft: '17px'}} className="home-big-header"> 
-                                The mobile phone lifecycle
-                            </h1>
+                        <div className="default-content-text">
+                            <div style={{marginLeft: '17px'}}>
+                                <h1
+                                    className="desktop-page-title"  
+                                    style={{color: '#33333'}}>  
+                                    <a  
+                                        href="http://smart.uio.no"  
+                                        className="smart-research-link"> 
+                                        SMART   
+                                    </a>    
+                                    research    
+                                </h1>
+                                <h1 className="home-big-header"> 
+                                    The mobile phone lifecycle
+                                </h1>
+                            </div>
                             <div style={{marginTop: '-60px', padding: '0px 20px 5px 20px', fontSize: '1em'}}>
                                 <HomeText />
                             </div>
