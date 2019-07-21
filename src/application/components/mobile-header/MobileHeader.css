@@ -50,10 +50,12 @@
 
 .mobile-bookmark:hover {
     border-color: #6D99FE;
-    outline: 2px solid #6D99FE; 
+    outline: 2px solid #6D99FE;
+    color: white; 
 }
 
 .mobile-bookmark:focus {
     border-color: #6D99FE;
     outline: 2px solid #6D99FE; 
+    color: white;
 }

@@ -8,4 +8,5 @@
 
 .jump-to-main:focus {
     z-index: 99;
+    color: white;
 }
