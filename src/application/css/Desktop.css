@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Londrina+Shadow&display=swap');
-
-/* Background color behind content, visable from > 1300px */
 html {
     background-color: #FAF4ED;
 }
 
-/* In this file: Styling for vertically splitting desktop view in two */
 .split {
     height: 100vh;
 }
@@ -54,7 +50,7 @@ html {
 }
 
 .vertical-line {
-    margin-top: 61px;
+    margin-top: 0px;
     height: 1px;
     background-color: lightgrey;
     width: 95%;

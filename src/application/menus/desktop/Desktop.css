@@ -4,8 +4,6 @@
     margin-top: 121px;
     /* ensure that no scrollbars appear */
     padding: 0;
-    background-color: none;
-
     /* center SVG horizontally and vertically */
     display: flex;
     align-items: center;
@@ -21,80 +19,24 @@
     max-height: 1200px;
 }
 
-.mini-menu-flex-container {
-    z-index: -1;
+.mini-menu {
     display: flex;
     flex-wrap: wrap;
-    background-color: none;
-    justify-content: center;
-    margin-top: 0px;
 }
 
-.mini-menu-flex-container .mini-menu-flex-element {
-    position: relative;
-    width: 150px;
+.mini-menu-element {
+    background-color: #f1f1f1;
+    padding: 20px 20px;
+    min-width: 150px;
     margin: 10px;
-    border: none;
-    display: block;
     color: white;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-family: Avenir Next;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 14px 14px;
-    cursor: pointer;
-    -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.55);
-    -moz-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.55);
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.55);
-    transition: 0.8s;
+    text-align: center;
+    font-size: 1em;
 }
 
-.design-color {
-    background-color: #E00070;
-}
-
-.design-color:hover {
-    opacity: 0.5;
-}
-
-.resource-extraction-color {
-    background-color: #00AD00;
-}
-
-.resource-extraction-color:hover {
-    opacity: 0.5;
-}
-
-.manufacturing-color {
-    background-color: #BD2EC2;
-}
-
-.manufacturing-color:hover {
-    opacity: 0.5;
-}
-
-.transport-color {
-    background-color: #0066FF;
-}
-
-.transport-color:hover {
-    opacity: 0.5;
-}
-
-.use-color {
-    background-color: #EB0000;
-}
-
-.use-color:hover {
-    opacity: 0.5;
-}
-
-.end-of-life-color {
-    background-color: #C75000;
-}
-
-.end-of-life-color:hover {
-    opacity: 0.5;
+.mini-menu-element:hover, :focus {
+    outline: #86A8DF solid 3px;
+    color: black;
+    font-weight: 600;
 }

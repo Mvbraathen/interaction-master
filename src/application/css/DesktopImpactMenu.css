@@ -1,36 +1,50 @@
-.new-sub-menu {
+.impact-sub-menu {
+    display: flex;
+    margin-left: 50%;
+    height: 60px;
+}
+
+/* to hide elements under menu */
+.fix-content-scroll-under-sub {
     position: absolute;
+    z-index: 10;
+    height: 60px; 
+    width: 100%;
+    background-color: white;
+    max-width: 1300px; 
+}
+
+.lifecycle-icon {
+    flex-grow: 1;
+    height: 50px;
+    margin-top: 5px;
     z-index: 99;
-    margin-top: 0px;
-    max-width: 1300px;
-    height: 60px;
-    width: 100%; 
-    background-color: white;
 }
 
-.new-sub-menu-element {
-    width: 20%;
-    background-color: none;
-    text-align: center;
-    height: 60px;
-    float: left;
-    line-height: 60px;
-    background-color: white;
-}
-
-.new-sub-menu-element-text {
+.environmental-element {
+    flex-grow: 1;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: Avenir Next;
     font-size: 1em;
-    min-width: 140px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin: 0 auto;
-    max-width: 140px;
-    line-height: 40px;
-    background-color: none;
-    cursor: pointer;
+    z-index: 99;
 }
 
-.new-sub-menu-element-text:hover {
+.social-element {
+    flex-grow: 1;
+    height: 50px;
+    margin-top: 5px;
+    margin-right: 5%;
+    font-family: Avenir Next;
+    font-size: 1em;
+    z-index: 99;
+}
+
+.lifecycle-icon:hover, 
+.environmental-element:hover,
+.social-element:hover {
     outline: #86A8DF solid 2px;
 }
 

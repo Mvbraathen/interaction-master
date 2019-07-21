@@ -130,53 +130,38 @@ class DesktopContent extends React.Component {
         return (
             <div id="resource-extraction-page">
                 <DesktopHeader pageHeader={pageHeader} />
-                <div className="new-sub-menu">
-                    <Breadcrumb fromPage={fromPage} />
-                    {/* Two empty elements to align the three buttons right, without ruining tabindex */}
-                    <div className="new-sub-menu-element"> </div>
-                    <div className="new-sub-menu-element"> </div>
-                    
-                    {/* The three actual buttons */}
-                    <div 
-                        className="new-sub-menu-element"> 
-                        <button
-                            onClick={e => {
-                                this.handleDefaultClick(e);
-                            }}
-                            style={{backgroundColor: this.state.defaultBgc}} 
-                            className="new-sub-menu-element-text" 
-                            tabIndex="0"> 
-                            <IconSelector fromPage={fromPage} iconColor={iconColor} />
-                        </button> 
-                    </div>
-
-                    <div 
-                        className="new-sub-menu-element"> 
-                        <button
-                            onClick={e => {
-                                this.handleEnvironmentalClick(e);
-                            }} 
-                            style={{backgroundColor: this.state.environmentalBgc, color: this.state.environmentalColor}} 
-                            className="new-sub-menu-element-text" 
-                            tabIndex="0"> 
-                            Environmental
-                        </button> 
-                    </div>
-
-                    <div 
-                        className="new-sub-menu-element"> 
-                        <button
-                            onClick={e => {
-                                this.handleSocialClick(e);
-                            }} 
-                            style={{backgroundColor: this.state.socialBgc, color: this.state.socialColor}} 
-                            className="new-sub-menu-element-text" 
-                            tabIndex="0"> 
-                            Social 
-                        </button> 
-                    </div>
-                    
+                <div className="fix-content-scroll-under-sub"/>
+                <Breadcrumb fromPage={fromPage} />
+                <div className="impact-sub-menu">
+                    <button
+                        className="lifecycle-icon"
+                        onClick={e => {
+                            this.handleDefaultClick(e);
+                        }}
+                        style={{backgroundColor: this.state.defaultBgc}} 
+                        tabIndex="0"> 
+                        <IconSelector fromPage={fromPage} iconColor={iconColor} />
+                    </button> 
+                    <button
+                        className="environmental-element"
+                        onClick={e => {
+                            this.handleEnvironmentalClick(e);
+                        }} 
+                        style={{backgroundColor: this.state.environmentalBgc, color: this.state.environmentalColor}} 
+                        tabIndex="0"> 
+                        Environmental impacts
+                    </button> 
+                    <button
+                        className="social-element"
+                        onClick={e => {
+                            this.handleSocialClick(e);
+                        }} 
+                        style={{backgroundColor: this.state.socialBgc, color: this.state.socialColor}} 
+                        tabIndex="0">
+                        Social impacts
+                    </button>                     
                 </div>
+                
                 {/* Line to visually seperate sub menu from page content */}
                 <hr className="vertical-line" />
                 

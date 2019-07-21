@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import './Mobile.css';
 
-class Menu extends Component {
+class Mobile extends Component {
     constructor() {
         super();
         this.state = {
@@ -61,4 +61,4 @@ class Menu extends Component {
     }
 }
 
-export default Menu;
+export default Mobile;

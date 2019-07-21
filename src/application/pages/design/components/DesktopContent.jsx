@@ -21,15 +21,14 @@ class DesktopContent extends React.Component {
         return (
             <div id="design-page">
                 <DesktopHeader pageHeader={pageHeader} />
-                <div className="new-sub-menu">
-                    <Breadcrumb fromPage={fromPage} />
-                </div>
+                <div className="fix-content-scroll-under-sub"/>
+                <Breadcrumb fromPage={fromPage} />
                 {/* Left half */}
                 <div className="split left-half">
                     <div className="sub-menu-without-selection"></div>
                     <Desktop />
                 </div>
-                <hr className="vertical-line" />
+                <hr style={{marginTop: '60px'}} className="vertical-line" />
 
                 {/* Right half */}
                 <div className="split right-half">

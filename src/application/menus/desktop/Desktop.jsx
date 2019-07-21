@@ -12,65 +12,72 @@ import "./Desktop.css";
 import MediaQuery from "react-responsive";
 import { NavLink } from "react-router-dom";
 
-class Menu extends Component {
-  render() {
-    let explainMenu;
-    if(this.props.fromPage === 'home') {
-      explainMenu = (
-        <g>
-          <text textAnchor="middle" x="212.5" y="-20" fontSize="20" fill="black"> </text>
-        </g>
-      )
+class Desktop extends Component {
+    render() {
+        return (
+            <div className="scaling-svg-container">
+                {/* Circular menu for screen with height >= 440px */}
+                <MediaQuery minHeight="440px">
+                    <svg viewBox="0 0 425 425" className="scaling-svg">
+                        <Design />
+                        <ResourceExtraction />
+                        <Manufacturing />
+                        <Transport />
+                        <Use />
+                        <EndOfLife />
+                        <Home />
+                    </svg>
+                </MediaQuery>
+                {/* Backup menu for screens with height <= 439px */}
+                <MediaQuery maxHeight="439px">
+                    <div className="mini-menu">
+                        <NavLink 
+                            style={{backgroundColor: '#E00070'}} 
+                            className="mini-menu-element" 
+                            title="link to design page" 
+                            to="/design">
+                            Design
+                        </NavLink>
+                        <NavLink 
+                            style={{backgroundColor: '#00AD00'}} 
+                            className="mini-menu-element" 
+                            title="link to resource extraction page" 
+                            to="/resource-extraction">
+                            Resource extraction
+                        </NavLink>
+                        <NavLink 
+                            style={{backgroundColor: '#BD2EC2'}} 
+                            className="mini-menu-element" 
+                            title="link to manufacturing page" 
+                            to="/manufacturing">
+                            Manufacturing
+                        </NavLink>
+                        <NavLink 
+                            style={{backgroundColor: '#0066FF'}} 
+                            className="mini-menu-element" 
+                            title="link to transport page" 
+                            to="/transport">
+                            Transport
+                        </NavLink>
+                        <NavLink 
+                            style={{backgroundColor: '#EB0000'}} 
+                            className="mini-menu-element" 
+                            title="link to use page" 
+                            to="/use">
+                            Use
+                        </NavLink>
+                        <NavLink 
+                            style={{backgroundColor: '#C75000'}} 
+                            className="mini-menu-element" 
+                            title="link to end of life page" 
+                            to="/end-of-life">
+                            End of life
+                        </NavLink>
+                    </div>
+                </MediaQuery>
+            </div>
+        );
     }
-    return (
-      <div className="scaling-svg-container">
-        <MediaQuery minHeight="540px">
-          <svg viewBox="0 0 425 425" className="scaling-svg">
-            <g>
-              <Design />
-              {explainMenu}
-              <ResourceExtraction />
-              <Manufacturing />
-              <Transport />
-              <Use />
-              <EndOfLife />
-              <Home />
-            </g>
-          </svg>
-        </MediaQuery>
-        <MediaQuery maxHeight="539px">
-          <div className="mini-menu-flex-container">
-            <NavLink to="/design">
-              <div className="mini-menu-flex-element design-color">Design</div>
-            </NavLink>
-            <NavLink to="/resource-extraction">
-              <div className="mini-menu-flex-element resource-extraction-color">
-                Resource Extraction
-              </div>
-            </NavLink>
-            <NavLink to="/manufacturing">
-              <div className="mini-menu-flex-element manufacturing-color">
-                Manufacturing
-              </div>
-            </NavLink>
-            <NavLink to="/transport">
-              <div className="mini-menu-flex-element transport-color">
-                Transport
-              </div>
-            </NavLink>
-            <NavLink to="/use">
-              <div className="mini-menu-flex-element use-color">Use</div>
-            </NavLink>
-            <NavLink to="/end-of-life">
-              <div className="mini-menu-flex-element end-of-life-color">
-                End of Life
-              </div>
-            </NavLink>
-          </div>
-        </MediaQuery>
-      </div>
-    );
-  }
 }
 
-export default Menu;
+export default Desktop;
