@@ -15,20 +15,22 @@ import { NavLink } from "react-router-dom";
 class Desktop extends Component {
     render() {
         return (
-            <div className="scaling-svg-container">
-                {/* Circular menu for screen with height >= 440px */}
-                <MediaQuery minHeight="440px">
-                    <svg viewBox="0 0 425 425" className="scaling-svg">
-                        <Design />
-                        <ResourceExtraction />
-                        <Manufacturing />
-                        <Transport />
-                        <Use />
-                        <EndOfLife />
-                        <Home />
-                    </svg>
-                </MediaQuery>
-                {/* Backup menu for screens with height <= 439px */}
+            <div>
+                {/* Circular menu */}
+                <div className="scaling-svg-container">
+                    <MediaQuery minHeight="440px">
+                        <svg viewBox="0 0 425 425" className="scaling-svg">
+                            <Design />
+                            <ResourceExtraction />
+                            <Manufacturing />
+                            <Transport />
+                            <Use />
+                            <EndOfLife />
+                            <Home />
+                        </svg>
+                    </MediaQuery>
+                </div>
+                {/* Backup menu for small, but wide screens */}
                 <MediaQuery maxHeight="439px">
                     <div className="mini-menu">
                         <NavLink 
