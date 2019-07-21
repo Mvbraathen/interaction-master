@@ -42,14 +42,14 @@ class DesktopContent extends React.Component {
                         </h1>
                         <div className="image-container" style={{zIndex: '-99'}}>
                             <img 
-                                alt="broken iphone" 
+                                alt="iphone" 
                                 width="100%" 
-                                src={require('../../../images/broken-iphone.jpg')} 
+                                src={require('../../../images/iphone.jpg')} 
                             />
                             <a
                                 className="image-credit" 
-                                href="https://unsplash.com/@_actually_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
-                                Ali Abdul Rahman
+                                href="https://unsplash.com/@williamtm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
+                                William Hook
                             </a>
                         </div>
                         <div className="default-content-text">

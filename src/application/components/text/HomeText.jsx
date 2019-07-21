@@ -2,9 +2,24 @@ import React from 'react';
 
 class HomeText extends React.Component {
 	render() {
+
+        let instructions;
+
+        if(this.props.fromDevice === 'mobile') {
+            instructions = (
+                <p> In order to learn more about these impacts in the different lifecycle phases,
+                interact with the menu in the top left corner, or select a lifecycle phase from the list below. </p>
+            )
+        } else {
+            instructions = (
+                <p> In order to learn more about these impacts in the different lifecycle phases,
+                interact with the circular menu on the left. </p>
+            )
+        }
+
         return (
-            <div>
-                <h3> Social and Environmental Impacts in the Mobile Phone Lifecycle </h3>
+            <div style={{paddingBottom: '10px'}}>
+                <h2 className="h2-default-style"> Social and Environmental Impacts in the Mobile Phone Lifecycle </h2>
                 <p>This website enables you to explore the impacts of the mobile phone lifecycle on
                 social and environmental sustainability.</p> 
 
@@ -23,8 +38,7 @@ class HomeText extends React.Component {
                 acidification, biochemical flows, freshwater use, land-system change, and
                 biosphere integrity.</p>
 
-                <p>In order to learn more about these impacts in the different lifecycle phases,
-                interact with the circular menu on the left.</p>
+                {instructions}
             </div>
         );
 	}

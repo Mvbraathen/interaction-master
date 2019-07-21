@@ -6,7 +6,10 @@ class LackOfCleanEnergyMobile extends React.Component {
         return (
             <Fade duration={1000}>
                 <div className="info-box">
-                    <h1 className="info-header">  Lack of clean energy </h1>
+                    <h1 
+                        className="impact-box-header">
+                        Lack of clean energy
+                    </h1>
                     <div>
                         <div className="image-container">
                             <img alt="burning coal" width="100%" src={require('./images/LackOfCleanEnergy.jpg')} />
@@ -17,9 +20,11 @@ class LackOfCleanEnergyMobile extends React.Component {
                             </a>
                         </div>
                         <div className="info-positioning">
-                            Access to electricity is a critical issue in all aspects of sustainable development. 
-                            Data is scarce but the World Bank has launched efforts to map access. The cleanliness 
-                            of energy is covered by the climate gas emissions categories above.
+                            <p>
+                                Access to electricity is a critical issue in all aspects of sustainable development. 
+                                Data is scarce but the World Bank has launched efforts to map access. The cleanliness 
+                                of energy is covered by the climate gas emissions categories above.
+                            </p>
                         </div>
                     </div>
                 </div>

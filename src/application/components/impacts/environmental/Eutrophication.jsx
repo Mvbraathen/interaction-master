@@ -6,7 +6,7 @@ class EutrophicationMobile extends React.Component {
         return (
             <Fade duration={1000}>
                 <div className="info-box">
-                    <h1 className="info-header"> Eutrophication </h1>
+                    <h1 className="impact-box-header"> Eutrophication </h1>
                     <div>
                         <div className="image-container">
                             <img alt="under water" width="100%" src={require('./images/Eutrophication.jpg')} />

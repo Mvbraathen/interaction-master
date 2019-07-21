@@ -6,7 +6,7 @@ import MediaQuery from "react-responsive";
 class Home extends Component {
 
     componentDidMount(){
-        document.title = "The mobile lifecycle";
+        document.title = "The mobile phone lifecycle";
     }
 
     render() {

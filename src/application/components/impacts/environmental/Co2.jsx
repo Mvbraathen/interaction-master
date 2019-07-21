@@ -6,7 +6,7 @@ class Co2Mobile extends React.Component {
         return (
             <Fade duration={1000}>
                 <div className="info-box">
-                    <h1 className="info-header"> 
+                    <h1 className="impact-box-header"> 
                         CO<sub>2</sub> 
                     </h1>
                     <div>
@@ -19,17 +19,19 @@ class Co2Mobile extends React.Component {
                             </a>
                         </div>
                         <div className="info-positioning">
-                            The emission of carbon dioxide (CO<sub>2</sub>) as a result of the burning of fossil fuels and
-                            deforestation during mining operations. The smelting and processing of mined
-                            minerals are another important source of CO<sub>2</sub> emissions (read more about 
+                            <p>
+                                The emission of carbon dioxide (CO<sub>2</sub>) as a result of the burning of fossil fuels and
+                                deforestation during mining operations. The smelting and processing of mined
+                                minerals are another important source of CO<sub>2</sub> emissions (read more about 
 
-                            {' '}
-                            <a 
-                                className="inline-link-style" 
-                                title="link to the guardian website"  
-                                href="https://www.theguardian.com/environment/2019/mar/12/resource-extraction-carbon-emissions-biodiversity-loss">
-                                carbon emissions
-                            </a>).
+                                {' '}
+                                <a 
+                                    className="inline-link-style" 
+                                    title="link to the guardian website"  
+                                    href="https://www.theguardian.com/environment/2019/mar/12/resource-extraction-carbon-emissions-biodiversity-loss">
+                                    carbon emissions
+                                </a>).
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -91,12 +91,12 @@ class Footer extends React.Component {
                                 className="smart-link" 
                                 title="link to SMART's website" 
                                 href="http://smart.uio.no"> 
-                                http://smart.uio.no 
+                                SMART website 
                             </a>.
                         </p>
                     </div>
                     <hr style={{border: '1px solid white', width: '90%'}}/>
-                    <div style={{padding: '30px 20px 20px 20px', textAlign: 'center'}}>
+                    <div style={{padding: '30px 10px 20px 10px', textAlign: 'center'}}>
                     <NavLink className="smart-link" title="link to home page" to="/home">
                         Home
                     </NavLink>

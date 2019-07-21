@@ -1,0 +1,32 @@
+.h1-default-style {
+	font-family: Avenir Next;
+    font-size: 1.5em;
+    padding: 25px 10px 25px 10px;
+    margin-top: 0px;
+    margin-bottom: -20px;
+    font-weight: 600;
+}
+
+.h2-default-style {
+	font-family: Avenir Next;
+    font-size: 1.1em;
+    padding: 25px 10px 5px 0px;
+    margin-bottom: -20px;
+    font-weight: 600;
+}
+
+.impact-box-header {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.home-big-header {
+    color: #333333;
+    font-size: 4.8em;
+    font-weight: 900;
+    line-height: 95px;
+    font-family: 'Avenir Next';
+}

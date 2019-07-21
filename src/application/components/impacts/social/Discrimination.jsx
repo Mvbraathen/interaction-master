@@ -6,7 +6,10 @@ class DiscriminationMobile extends React.Component {
         return (
             <Fade duration={1000}>
                 <div className="info-box">
-                    <h1 className="info-header"> Discrimination </h1>
+                    <h1 
+                        className="impact-box-header">
+                        Discrimination 
+                    </h1>
                     <div>
                         <div className="image-container">
                             <img alt="people demonstrating" width="100%" src={require('./images/Discrimination.jpg')} />
@@ -17,7 +20,11 @@ class DiscriminationMobile extends React.Component {
                             </a>
                         </div>
                         <div className="info-positioning">
-                            Social equity is a general concept, which applies notions of justice and fairness in social policy. Migrant workers and their families are often discriminated against.
+                            <p>
+                                Social equity is a general concept, which applies notions of justice 
+                                and fairness in social policy. Migrant workers and their families are 
+                                often discriminated against.
+                            </p>
                         </div>
                     </div>
                 </div>

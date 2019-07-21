@@ -81,16 +81,16 @@ class MobileContent extends React.Component {
         if(this.state.default) {
             content = (
                 <div>
-                    <h1 className="mobile-page-title" style={{color: this.state.resourceExtractionColor}}> 
-                            The resource extraction phase 
-                        </h1> 
-                    <div className="mobile-impacts-width">
-                        <div>
-                            <div className="info-positioning">
-                                <ResourcePhase />
-                            </div>
-                        </div>
-                    </div>                    
+                    <h1 
+                        className="h1-default-style" 
+                        style={{
+                            color: this.state.resourceExtractionColor
+                        }}> 
+                        The resource extraction phase 
+                    </h1> 
+                    <div className="mobile-content-margin">
+                        <ResourcePhase />
+                    </div>         
                 </div>
             )
         } 
@@ -98,10 +98,14 @@ class MobileContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <h1 style={{color: this.state.resourceExtractionColor}} className="selected-impact"> 
-                        Environmental impacts
-                    </h1>
-                    <div className="mobile-impacts-width">
+                    <h1 
+                        className="h1-default-style" 
+                        style={{
+                            color: this.state.resourceExtractionColor
+                        }}> 
+                        Environmental impacts 
+                    </h1> 
+                    <div className="mobile-content-margin">
                         <Environmental fromPage={fromPage} />
                     </div>
                 </div>
@@ -111,10 +115,14 @@ class MobileContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <h1 style={{color: this.state.resourceExtractionColor}} className="selected-impact"> 
-                        Social impacts
-                    </h1>
-                    <div className="mobile-impacts-width">
+                    <h1 
+                        className="h1-default-style" 
+                        style={{
+                            color: this.state.resourceExtractionColor
+                        }}> 
+                        Social impacts 
+                    </h1> 
+                    <div className="mobile-content-margin">
                         <Social fromPage={fromPage} />
                     </div>
                 </div>

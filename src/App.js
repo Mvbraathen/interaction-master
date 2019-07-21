@@ -20,7 +20,8 @@ import './application/css/DesktopImpactMenu.css';
 import './application/css/MobileImpactMenu.css';
 import './application/css/InfoBox.css';
 import './application/css/ImageWithCredit.css';
-import './application/components/impact-selection-buttons/ImpactSelectionButtons.css';
+import './application/css/Text.css';
+
 
 function App() {
     return (

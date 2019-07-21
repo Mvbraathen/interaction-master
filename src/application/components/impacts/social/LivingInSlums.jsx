@@ -6,7 +6,10 @@ class LivingInSlumsMobile extends React.Component {
         return (
             <Fade duration={1000}>
                 <div className="info-box">
-                    <h1 className="info-header">  Living in slums </h1>
+                    <h1 
+                        className="impact-box-header">
+                        Living in slums 
+                    </h1>
                     <div>
                         <div className="image-container">
                             <img alt="child in street" width="100%" src={require('./images/LivingInSlums.jpg')} />
@@ -17,7 +20,11 @@ class LivingInSlumsMobile extends React.Component {
                             </a>
                         </div>
                         <div className="info-positioning">
-                            Housing is about urban population living in slum housing in developing countries. Large slums have been found around informal electronic waste sites, which often lack proper sanitation, access to drinking water.
+                            <p>
+                                Housing is about urban population living in slum housing in developing 
+                                countries. Large slums have been found around informal electronic waste 
+                                sites, which often lack proper sanitation, access to drinking water.
+                            </p>
                         </div>
                     </div>
                 </div>

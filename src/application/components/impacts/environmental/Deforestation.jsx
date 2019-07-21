@@ -6,7 +6,7 @@ class DeforestationMobile extends React.Component {
         return (
             <Fade duration={1000}>
                 <div className="info-box">
-                    <h1 className="info-header"> Deforestation </h1>
+                    <h1 className="impact-box-header"> Deforestation </h1>
                     <div>
                         <div className="image-container">
                             <img alt="lumber" width="100%" src={require('./images/Deforestation.jpg')} />
@@ -17,17 +17,19 @@ class DeforestationMobile extends React.Component {
                             </a>
                         </div>
                         <div className="info-positioning">
-                            Deforestation refers to the removal of a forest or stand of trees, converting land-
-                            use to non-forest. This is especially the case in forested areas with mineral
-                            deposits (see also Land use change) (read more about 
-                            
-                            {' '}
-                            <a 
-                                className="inline-link-style" 
-                                title="link to cobalt blues publication"  
-                                href="https://www.somo.nl/cobalt-blues/">
-                                environmental pollution
-                            </a>).   
+                            <p>
+                                Deforestation refers to the removal of a forest or stand of trees, converting land-
+                                use to non-forest. This is especially the case in forested areas with mineral
+                                deposits (see also Land use change) (read more about 
+                                
+                                {' '}
+                                <a 
+                                    className="inline-link-style" 
+                                    title="link to cobalt blues publication"  
+                                    href="https://www.somo.nl/cobalt-blues/">
+                                    environmental pollution
+                                </a>).
+                            </p>   
                         </div>
                     </div>
                 </div>
