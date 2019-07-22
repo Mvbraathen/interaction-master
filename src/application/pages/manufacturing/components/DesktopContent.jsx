@@ -11,6 +11,8 @@ import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
 /* Scroll to top */
 import ScrollUpDesktop from "../../../components/scroll-up/desktop-scroll-up/ScrollUpDesktop";
+/* Jump to main content */ 
+import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
 
 class DesktopContent extends React.Component {
     constructor() {
@@ -129,6 +131,7 @@ class DesktopContent extends React.Component {
 
         return (
             <div id="manufacturing-page">
+                <ScrollToMain />
                 <DesktopHeader pageHeader={pageHeader} />
                 <div className="fix-content-scroll-under-sub"/>
                 <Breadcrumb fromPage={fromPage} />
@@ -176,6 +179,8 @@ class DesktopContent extends React.Component {
                 <div className="split right-half">
                     <div id="top" />
                     <div className="right-half-content">
+                        {/* Focus skips to main content */}
+                        <div id="main-content" className="fix-top"/> 
                         {content}
                     </div>
                     <Footer />

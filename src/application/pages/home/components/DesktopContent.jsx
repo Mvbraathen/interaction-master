@@ -7,6 +7,8 @@ import Footer from "../../../components/footer/Footer";
 import HomeText from "../../../components/text/HomeText";
 /* Scroll to top */
 import ScrollUpDesktop from "../../../components/scroll-up/desktop-scroll-up/ScrollUpDesktop";
+/* Jump to main content */ 
+import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
 
 class DesktopContent extends React.Component {
     render() {    
@@ -16,6 +18,7 @@ class DesktopContent extends React.Component {
         
         return (
             <div>
+                <ScrollToMain />
                 <DesktopHeader pageHeader={pageHeader} />
                 <div className="fix-content-scroll-under-sub" />
                 <Breadcrumb fromPage="Home" />
@@ -30,6 +33,8 @@ class DesktopContent extends React.Component {
                 <div  className="split right-half">
                     <div id="top"  className="sub-menu-without-selection"></div>
                     <div className="right-half-content">
+                        {/* Focus skips to main content */}
+                        <div id="main-content" className="fix-top"/>
                         <div className="default-content-text">
                             <div style={{marginLeft: '17px'}}>
                                 <h1
