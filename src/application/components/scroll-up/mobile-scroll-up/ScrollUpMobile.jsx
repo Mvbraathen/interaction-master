@@ -1,5 +1,5 @@
 import React from 'react';
-import './ScrollUp.css';
+import './ScrollUpMobile.css';
 
 class ScrollUpMobile extends React.Component {
 

@@ -2,7 +2,7 @@ import React from "react";
 /* Mobile menu */
 import Mobile from "../../../menus/mobile/Mobile";
 /* Header and footer for mobile devices */
-import MobileHeader from "../../../components/mobile-header/MobileHeader";
+import MobileHeader from "../../../components/header/mobile-header/MobileHeader";
 import Footer from "../../../components/footer/Footer";
 /* Text */
 import ResourcePhase from "../../../components/text/ResourcePhase";
@@ -10,7 +10,7 @@ import ResourcePhase from "../../../components/text/ResourcePhase";
 import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
 /* Scroll to top */
-import ScrollUpMobile from "../../../components/scroll-up/ScrollUpMobile";
+import ScrollUpMobile from "../../../components/scroll-up/mobile-scroll-up/ScrollUpMobile";
 /* Scroll to main content */
 import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
 
@@ -158,7 +158,7 @@ class MobileContent extends React.Component {
                                 <img 
                                     alt="resource extraction icon" 
                                     style={{maxHeight: '35px', marginTop: '3px'}} 
-                                    src={require('../../../images/resource-extraction-icon-white.svg')} 
+                                    src={require('../../../components/icon-selector/icons/resource-extraction-icon-white.svg')} 
                                 /> 
                             </button>
                 

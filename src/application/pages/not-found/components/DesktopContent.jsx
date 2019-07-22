@@ -1,9 +1,11 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 /* Header and footer for mobile devices */
-import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
+import DesktopHeader from "../../../components/header/desktop-header/DesktopHeader";
 import Footer from "../../../components/footer/Footer";
 import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
+/* Scroll up */
+import ScrollUpDesktop from "../../../components/scroll-up/desktop-scroll-up/ScrollUpDesktop";
 
 class DesktopContent extends React.Component {
     render() {
@@ -27,11 +29,12 @@ class DesktopContent extends React.Component {
 	                                Home page
 	                            </NavLink>.
                      		</li>
-                     		<li>If you are looking for the SMART project's website, please visit <a title="link to SMARTs website" className="inline-link-style" href="http://smart.uio.no">https://smart.uio.no</a>.</li>
+                     		<li>If you are looking for the SMART project's website, please visit <a title="link to SMARTs website" className="inline-link-style" href="http://smart.uio.no">SMART website</a>.</li>
                      	</ol>
                     </div>
                 </div>
                 <Footer />
+                <ScrollUpDesktop />
 			</div>
         )
     }

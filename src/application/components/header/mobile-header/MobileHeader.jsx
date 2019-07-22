@@ -8,15 +8,13 @@ class MobileHeader extends React.Component {
                 <div className="mobile-header"> 
                     {this.props.pageHeader} 
                 </div>
-                <p>
-                    <a 
-                        tabIndex="0"
-                        className="mobile-bookmark" 
-                        title="link to SMART's website" 
-                        href="http://smart.uio.no"> 
-                        S 
-                    </a>
-                </p>
+                <a 
+                    tabIndex="0"
+                    className="mobile-bookmark" 
+                    title="link to SMART's website" 
+                    href="http://smart.uio.no"> 
+                    S 
+                </a>
             </div>
         );
 	}

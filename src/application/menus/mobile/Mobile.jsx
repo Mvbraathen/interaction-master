@@ -46,14 +46,63 @@ class Mobile extends Component {
                             <div className="bar3"></div>
                         </div>
                     }>
-                    <ul style={{outlineWidth: '0px' }} className = "bm-item-list">
-                        <li title="Home"><NavLink tabIndex={this.state.tabIndex} className="bm-item menu-element" to ="/home"> Home </NavLink></li>
-                        <li title="Design"><NavLink tabIndex={this.state.tabIndex}  className="bm-item menu-element" to ="/design"> Design </NavLink></li>
-                        <li title="Resource Extraction"><NavLink tabIndex={this.state.tabIndex}  className="bm-item menu-element" to ="/resource-extraction"> Resource Extraction </NavLink></li>
-                        <li title="Manufacturing"><NavLink tabIndex={this.state.tabIndex}  className="bm-item menu-element" to ="/manufacturing"> Manufacturing </NavLink></li>
-                        <li title="Transport"><NavLink tabIndex={this.state.tabIndex}  className="bm-item menu-element" to ="/transport"> Transport </NavLink></li>
-                        <li title="Use"><NavLink tabIndex={this.state.tabIndex}  className="bm-item menu-element" to ="/use"> Use </NavLink></li>
-                        <li title="End of Life"><NavLink tabIndex={this.state.tabIndex}  className="bm-item menu-element" to ="/end-of-life"> End of Life </NavLink></li>
+                    <ul className = "bm-item-list">
+                        <li title="Home">
+                            <NavLink 
+                                tabIndex={this.state.tabIndex} 
+                                className="bm-item menu-element" 
+                                to ="/home"> 
+                                Home 
+                            </NavLink>
+                        </li>
+                        <li title="Design">
+                            <NavLink 
+                                tabIndex={this.state.tabIndex}
+                                className="bm-item menu-element" 
+                                to ="/design"> 
+                                Design 
+                            </NavLink>
+                        </li>
+                        <li title="Resource Extraction">
+                            <NavLink 
+                                tabIndex={this.state.tabIndex}
+                                className="bm-item menu-element" 
+                                to ="/resource-extraction"> 
+                                Resource Extraction 
+                            </NavLink>
+                        </li>
+                        <li title="Manufacturing">
+                            <NavLink 
+                                tabIndex={this.state.tabIndex}
+                                className="bm-item menu-element" 
+                                to ="/manufacturing"> 
+                                Manufacturing 
+                            </NavLink>
+                        </li>
+                        <li title="Transport">
+                            <NavLink 
+                                tabIndex={this.state.tabIndex}
+                                className="bm-item menu-element" 
+                                to ="/transport"> 
+                                Transport 
+                            </NavLink>
+                        </li>
+                        <li title="Use">
+                            <NavLink 
+                                tabIndex={this.state.tabIndex}
+                                className="bm-item menu-element" 
+                                to ="/use"> 
+                                Use 
+                            </NavLink>
+                        </li>
+                        <li title="End of Life">
+                            <NavLink 
+                                tabIndex={this.state.tabIndex}  
+                                className="bm-item menu-element" 
+                                to ="/end-of-life"> 
+                                End of Life 
+                            </NavLink>
+                        </li>
                     </ul>
                 </BurgerMenu>
             </div>

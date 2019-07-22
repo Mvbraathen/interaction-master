@@ -64,22 +64,25 @@ class Breadcrumb extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className="breadcrumb">
-                    <NavLink to="/">
-                        <div className="prevPage">Home</div>
-                    </NavLink>
-                    <div className="breadcrumbSpacing">
-                        {" "}
-                        <span className="breadcrumbArrow">&#8594;</span>
-                    </div>
-                    <NavLink
-                        tabIndex={this.state.tabIndexFix}
-                        to={this.state.linkPath}
-                    >
-                        <div className="activePage">{this.state.linkText}</div>
-                    </NavLink>
+            <div className="breadcrumb">
+                <NavLink to="/">
+                    <div className="prevPage">Home</div>
+                </NavLink>
+                <div className="breadcrumbSpacing">
+                    {" "}
+                    <span 
+                        className="breadcrumbArrow">
+                        &#8594;
+                    </span>
                 </div>
+                <NavLink
+                    tabIndex={this.state.tabIndexFix}
+                    to={this.state.linkPath}>
+                    <div 
+                        className="activePage">
+                        {this.state.linkText}
+                    </div>
+                </NavLink>
             </div>
         );
     }

@@ -56,3 +56,11 @@ html {
     width: 95%;
     border: none;
 }
+
+/* Fixes scroll to main content on desktop devices */
+.fix-top {
+    position:absolute;
+    z-index:-1;
+    left:0;
+    margin-top:-120px;/* height of nav*/
+}

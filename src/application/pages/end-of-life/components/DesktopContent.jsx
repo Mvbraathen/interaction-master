@@ -1,7 +1,7 @@
 import React from "react";
 // Various components
 import Desktop from "../../../menus/desktop/Desktop";
-import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
+import DesktopHeader from "../../../components/header/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 import Footer from "../../../components/footer/Footer";
 import IconSelector from "../../../components/icon-selector/IconSelector";
@@ -10,7 +10,7 @@ import EndOfLifePhase from "../../../components/text/EndOfLifePhase";
 import Environmental from "../../../components/impacts/Environmental";
 import Social from "../../../components/impacts/Social";
 /* Scroll to top */
-import ScrollUpDesktop from "../../../components/scroll-up/ScrollUpDesktop";
+import ScrollUpDesktop from "../../../components/scroll-up/desktop-scroll-up/ScrollUpDesktop";
 
 class DesktopContent extends React.Component {
     constructor() {

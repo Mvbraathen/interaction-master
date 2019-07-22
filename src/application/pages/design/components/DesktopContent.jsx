@@ -1,13 +1,14 @@
 import React from "react";
-
 // Various components
 import Desktop from "../../../menus/desktop/Desktop";
-import DesktopHeader from "../../../components/desktop-header/DesktopHeader";
+import DesktopHeader from "../../../components/header/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 import Footer from "../../../components/footer/Footer";
 import DesignPhase from "../../../components/text/DesignPhase";
 /* Scroll to top */
-import ScrollUpDesktop from "../../../components/scroll-up/ScrollUpDesktop";
+import ScrollUpDesktop from "../../../components/scroll-up/desktop-scroll-up/ScrollUpDesktop";
+/* Jump to main content */ 
+import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
 
 class DesktopContent extends React.Component {
 
@@ -20,6 +21,7 @@ class DesktopContent extends React.Component {
         
         return (
             <div id="design-page">
+                <ScrollToMain />
                 <DesktopHeader pageHeader={pageHeader} />
                 <div className="fix-content-scroll-under-sub"/>
                 <Breadcrumb fromPage={fromPage} />
@@ -34,6 +36,7 @@ class DesktopContent extends React.Component {
                 <div className="split right-half">
                     <div id="top"  className="sub-menu-without-selection"></div>
                     <div className="right-half-content">
+                        <div id="main-content" className="fix-top"/> 
                         <h1 
                             className="desktop-page-title" 
                             style={{color: '#E00070'}}> 
@@ -43,7 +46,7 @@ class DesktopContent extends React.Component {
                             <img 
                                 alt="iphone" 
                                 width="100%" 
-                                src={require('../../../images/iphone.jpg')} 
+                                src={require('./images/iphone.jpg')} 
                             />
                             <a
                                 className="image-credit" 

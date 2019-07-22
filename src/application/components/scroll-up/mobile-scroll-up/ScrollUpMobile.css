@@ -1,0 +1,25 @@
+.return-to-top-button {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(1, 1, 1, 0.3);
+    color: rgba(255, 255, 255, 1);
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    vertical-align: middle;
+    font-size: 2em;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.return-to-top-button:hover {
+    background-color: rgba(1, 1, 1, 0.75);
+}
+
+.return-to-top-button:focus {
+    background-color: rgba(1, 1, 1, 0.75);
+}

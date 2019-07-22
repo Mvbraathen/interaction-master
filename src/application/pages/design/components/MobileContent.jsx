@@ -3,12 +3,12 @@ import React from "react";
 /* Mobile menu */
 import Mobile from "../../../menus/mobile/Mobile";
 /* Header and footer */
-import MobileHeader from "../../../components/mobile-header/MobileHeader";
+import MobileHeader from "../../../components/header/mobile-header/MobileHeader";
 import Footer from "../../../components/footer/Footer";
 /* Text */
 import DesignPhase from "../../../components/text/DesignPhase";
 /* Scroll up */
-import ScrollUpMobile from "../../../components/scroll-up/ScrollUpMobile";
+import ScrollUpMobile from "../../../components/scroll-up/mobile-scroll-up/ScrollUpMobile";
 /* Jump to main content */ 
 import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
 
@@ -45,7 +45,7 @@ class MobileContent extends React.Component {
                                 <img 
                                     alt="iphone" 
                                     width="100%" 
-                                    src={require('../../../images/iphone.jpg')} 
+                                    src={require('./images/iphone.jpg')} 
                                 />
                                 <a
                                     className="image-credit" 

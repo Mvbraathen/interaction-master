@@ -3,11 +3,12 @@ import { NavLink } from "react-router-dom";
 /* Mobile menu */
 import Mobile from "../../../menus/mobile/Mobile";
 /* Header and footer for mobile devices */
-import MobileHeader from "../../../components/mobile-header/MobileHeader";
+import MobileHeader from "../../../components/header/mobile-header/MobileHeader";
 import Footer from "../../../components/footer/Footer";
 /* Jump to main content */ 
 import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
-
+/* Scroll up */
+import ScrollUpMobile from "../../../components/scroll-up/mobile-scroll-up/ScrollUpMobile";
 
 class MobileContent extends React.Component {
     render() {
@@ -32,11 +33,12 @@ class MobileContent extends React.Component {
 	                                Home page
 	                            </NavLink>.
                      		</li>
-                     		<li>If you are looking for the SMART project's website, please visit <a title="link to SMARTs website" className="inline-link-style" href="http://smart.uio.no">https://smart.uio.no</a>.</li>
+                     		<li>If you are looking for the SMART project's website, please visit <a title="link to SMARTs website" className="inline-link-style" href="http://smart.uio.no">SMART website</a>.</li>
                      	</ol>
                      </div>
                 </div>
                 <Footer />
+                <ScrollUpMobile />
 			</div>
         )
     }

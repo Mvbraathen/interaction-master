@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 /* Mobile menu */
 import Mobile from "../../../menus/mobile/Mobile";
 /* Header and footer for mobile devices */
-import MobileHeader from "../../../components/mobile-header/MobileHeader";
+import MobileHeader from "../../../components/header/mobile-header/MobileHeader";
 import Footer from "../../../components/footer/Footer";
 /* Text */
 import HomeText from "../../../components/text/HomeText";
 /* Scroll up */
-import ScrollUpMobile from "../../../components/scroll-up/ScrollUpMobile";
+import ScrollUpMobile from "../../../components/scroll-up/mobile-scroll-up/ScrollUpMobile";
 /* Jump to main content */ 
 import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
 
