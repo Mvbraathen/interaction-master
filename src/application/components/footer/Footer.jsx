@@ -84,7 +84,7 @@ class Footer extends React.Component {
                                     style={{border: 'solid 1px white'}} 
                                     solid small 
                                     message="Learn more about the mobile lifecycle!" 
-                                    link="https://smart.uio.no" 
+                                    link={this.state.shareLink}
                                 />
 
                                 <Mail 
@@ -92,7 +92,7 @@ class Footer extends React.Component {
                                     style={{border: 'solid 1px white'}} 
                                     solid small 
                                     message="Learn more about the mobile lifecycle!" 
-                                    link="https://smart.uio.no" 
+                                    link={this.state.shareLink}
                                 />
 
                                 <Linkedin 
@@ -100,7 +100,7 @@ class Footer extends React.Component {
                                     style={{border: 'solid 1px white'}} 
                                     solid small 
                                     message="Learn more about the mobile lifecycle!" 
-                                    link="https://smart.uio.no" 
+                                    link={this.state.shareLink}
                                 />
                             </div>
                         </div>
