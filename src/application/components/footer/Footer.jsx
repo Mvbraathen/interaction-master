@@ -7,8 +7,30 @@ import { Linkedin } from 'react-social-sharing';
 import './Footer.css';
 
 class Footer extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            shareLink: window.location.href
+        };
+    } 
+
+    componentDidMount() {
+        if(this.state.shareLink.includes('#top')) {
+            this.setState({
+                shareLink: this.state.shareLink.replace('#top', '')
+            })
+        }
+        if(this.state.shareLink.includes('#main-content')) {
+            this.setState({
+                shareLink: this.state.shareLink.replace('#main-content', '')
+            })
+        }
+    }
 
 	render() {
+
+        console.log(this.state.shareLink);
+
         return (
             <div>
                 <div className="footer">
@@ -51,7 +73,7 @@ class Footer extends React.Component {
                                     style={{border: 'solid 1px white', }} 
                                     solid small 
                                     message="Learn more about the mobile lifecycle!" 
-                                    link="https://smart.uio.no" 
+                                    link={this.state.shareLink} 
                                 />
 
                                 <Twitter 

@@ -4,8 +4,7 @@
 
 .default-element {
     /* flex-grow: 1; remove width and add this, to flexible width */
-    width: 100%;
-    height: 120px;
+    width: 50%;
     font-family: Avenir Next;
     background-color: rgba(1, 1, 1, 0.07);
 }
