@@ -4,7 +4,6 @@ import Desktop from "../../../menus/desktop/Desktop";
 import DesktopHeader from "../../../components/header/desktop-header/DesktopHeader";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 import Footer from "../../../components/footer/Footer";
-import IconSelector from "../../../components/icon-selector/IconSelector";
 import ManufacturingPhase from "../../../components/text/ManufacturingPhase";
 // Impacts
 import Environmental from "../../../components/impacts/Environmental";
@@ -23,7 +22,6 @@ class DesktopContent extends React.Component {
             environmental: false,
             social: false,
 
-            iconColor: 'white',
             environmentalColor: 'black',
             socialColor: 'black',
 
@@ -39,7 +37,6 @@ class DesktopContent extends React.Component {
             social: false,
             environmental: false,
 
-            iconColor: 'white',
             environmentalColor: 'black',
             socialColor: 'black',
 
@@ -55,7 +52,6 @@ class DesktopContent extends React.Component {
             social: false,
             environmental: true,
 
-            iconColor: 'black',
             environmentalColor: 'white',
             socialColor: 'black',
 
@@ -71,7 +67,6 @@ class DesktopContent extends React.Component {
             environmental: false,
             social: true,
 
-            iconColor: 'black',
             environmentalColor: 'black',
             socialColor: 'white',
 
@@ -84,8 +79,7 @@ class DesktopContent extends React.Component {
      render() {
         /* To select corresponding components */
         const fromPage = "manufacturing";
-        let iconColor = this.state.iconColor;
-        
+
         /* To get correct header text */
         const pageHeader = "Manufacturing";
         
@@ -149,13 +143,13 @@ class DesktopContent extends React.Component {
                         <div id="main-content" className="fix-top"/> 
                     <div className="right-half-content">
                         {content}
-                        <button tabIndec="0        " role="button" onClick={e => {
+                        <button tabIndec="0" onClick={e => {
                                 this.handleEnvironmentalClick(e);
-                            }}  style={{height: '100px', width: '45%', backgroundColor: 'lightgrey', textAlign: 'center', color: 'black', display: 'inline-block',marginLeft: '2.5%'}}> <h2>Environmental impacts</h2><p>In the manufacturing phase, environmental impacts blablablabla..</p></button>
+                            }}  style={{height: '100px', width: '49%', backgroundColor: 'rgba(189, 46, 194, 0.1)', textAlign: 'center', fontFamily: 'Avenir Next', color: 'black', display: 'inline-block'}}> <h2>Environmental impacts <span>&rarr;</span></h2><p>In the manufacturing phase, social impacts blablablabla. blablablabla.</p></button>
                         
-                        <button tabIndec="0        " role="button" onClick={e => {
+                        <button tabIndec="0" onClick={e => {
                                 this.handleSocialClick(e);
-                            }}  style={{height: '100px', width: '45%', backgroundColor: 'lightgrey', textAlign: 'center', color: 'black', display: 'inline-block',marginLeft: '2.5%'}}> <h2>Social impacts</h2><p>In the manufacturing phase, social impacts blablablabla..</p></button>
+                            }}  style={{height: '100px', width: '49%', backgroundColor: 'rgba(189, 46, 194, 0.1)', textAlign: 'center', fontFamily: 'Avenir Next', color: 'black', display: 'inline-block',marginLeft: '2%'}}> <h2>Social impacts <span>&rarr;</span></h2><p>In the manufacturing phase, social impacts blablablabla. blablablabla.</p></button>
                     </div>
                     <Footer />
                     <ScrollUpDesktop />
