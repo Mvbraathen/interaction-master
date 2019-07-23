@@ -97,7 +97,7 @@ class DesktopContent extends React.Component {
                 <div>
                     <h1 
                         className="desktop-page-title" 
-                        style={{color: '#BD2EC2'}}> 
+                        style={{color: '#BD2EC2', fontSize: '3em', marginTop: '-70px'}}> 
                         The manufacturing phase 
                     </h1>
                     <div className="default-content-text">
@@ -133,42 +133,9 @@ class DesktopContent extends React.Component {
             <div id="manufacturing-page">
                 <ScrollToMain />
                 <DesktopHeader pageHeader={pageHeader} />
-                <div className="fix-content-scroll-under-sub"/>
                 <Breadcrumb fromPage={fromPage} />
-                <a tabIndex="-1" style={{textDecoration: 'none'}} href="#top">
-                    <div className="impact-sub-menu">
-                        <button
-                            className="lifecycle-icon"
-                            onClick={e => {
-                                this.handleDefaultClick(e);
-                            }}
-                            style={{backgroundColor: this.state.defaultBgc}} 
-                            tabIndex="0"> 
-                            <IconSelector fromPage={fromPage} iconColor={iconColor} />
-                        </button> 
-                        <button
-                            className="environmental-element"
-                            onClick={e => {
-                                this.handleEnvironmentalClick(e);
-                            }} 
-                            style={{backgroundColor: this.state.environmentalBgc, color: this.state.environmentalColor}} 
-                            tabIndex="0"> 
-                            Environmental impacts
-                        </button> 
-                        <button
-                            className="social-element"
-                            onClick={e => {
-                                this.handleSocialClick(e);
-                            }} 
-                            style={{backgroundColor: this.state.socialBgc, color: this.state.socialColor}} 
-                            tabIndex="0">
-                            Social impacts
-                        </button>                     
-                    </div>
-                </a>
 
-                {/* Line to visually seperate sub menu from page content */}
-                <hr className="vertical-line" />
+
                 
                 {/* Left half */}
                 <div className="split left-half">
@@ -178,10 +145,17 @@ class DesktopContent extends React.Component {
                 {/* Right half */}
                 <div className="split right-half">
                     <div id="top" />
-                    <div className="right-half-content">
-                        {/* Focus skips to main content */}
+                    
                         <div id="main-content" className="fix-top"/> 
+                    <div className="right-half-content">
                         {content}
+                        <button tabIndec="0        " role="button" onClick={e => {
+                                this.handleEnvironmentalClick(e);
+                            }}  style={{height: '100px', width: '45%', backgroundColor: 'lightgrey', textAlign: 'center', color: 'black', display: 'inline-block',marginLeft: '2.5%'}}> <h2>Environmental impacts</h2><p>In the manufacturing phase, environmental impacts blablablabla..</p></button>
+                        
+                        <button tabIndec="0        " role="button" onClick={e => {
+                                this.handleSocialClick(e);
+                            }}  style={{height: '100px', width: '45%', backgroundColor: 'lightgrey', textAlign: 'center', color: 'black', display: 'inline-block',marginLeft: '2.5%'}}> <h2>Social impacts</h2><p>In the manufacturing phase, social impacts blablablabla..</p></button>
                     </div>
                     <Footer />
                     <ScrollUpDesktop />
