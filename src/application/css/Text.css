@@ -1,10 +1,17 @@
 .h1-default-style {
 	font-family: Avenir Next;
-    font-size: 1.5em;
-    padding: 25px 10px 25px 10px;
+    font-size: 3.2em;
     margin-top: 0px;
-    margin-bottom: -20px;
-    font-weight: 600;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.h1-impact-style {
+    font-family: Avenir Next;
+    font-size: 2.2em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .h2-default-style {

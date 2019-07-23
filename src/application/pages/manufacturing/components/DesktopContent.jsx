@@ -12,6 +12,9 @@ import Social from "../../../components/impacts/Social";
 import ScrollUpDesktop from "../../../components/scroll-up/desktop-scroll-up/ScrollUpDesktop";
 /* Jump to main content */ 
 import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
+/* Menu for impact selection */
+import ImpactSelection from "../../../components/impact-selection/ImpactSelection";
+
 
 class DesktopContent extends React.Component {
     constructor() {
@@ -20,29 +23,18 @@ class DesktopContent extends React.Component {
             // Decides content
             default: true,
             environmental: false,
-            social: false,
-
-            environmentalColor: 'black',
-            socialColor: 'black',
-
-            defaultBgc: '#BD2EC2',
-            environmentalBgc: 'lightgrey',
-            socialBgc: 'lightgrey'
-        }
+            social: false
+        }; 
+        this.handleDefaultClick = this.handleDefaultClick.bind(this);
+        this.handleEnvironmentalClick = this.handleEnvironmentalClick.bind(this);
+        this.handleSocialClick = this.handleSocialClick.bind(this);
     }
 
     handleDefaultClick() {
         this.setState({
             default: true,
             social: false,
-            environmental: false,
-
-            environmentalColor: 'black',
-            socialColor: 'black',
-
-            defaultBgc: '#BD2EC2',
-            environmentalBgc: 'lightgrey',
-            socialBgc: 'lightgrey'
+            environmental: false
         })
     }
 
@@ -50,14 +42,7 @@ class DesktopContent extends React.Component {
         this.setState({
             default: false,
             social: false,
-            environmental: true,
-
-            environmentalColor: 'white',
-            socialColor: 'black',
-
-            defaultBgc: 'lightgrey',
-            environmentalBgc: '#BD2EC2',
-            socialBgc: 'lightgrey'
+            environmental: true
         })
     }
 
@@ -65,14 +50,7 @@ class DesktopContent extends React.Component {
         this.setState({
             default: false,
             environmental: false,
-            social: true,
-
-            environmentalColor: 'black',
-            socialColor: 'white',
-
-            defaultBgc: 'lightgrey',
-            environmentalBgc: 'lightgrey',
-            socialBgc: '#BD2EC2'
+            social: true
         })
     }
 
@@ -90,10 +68,15 @@ class DesktopContent extends React.Component {
             content = (
                 <div>
                     <h1 
-                        className="desktop-page-title" 
-                        style={{color: '#BD2EC2', fontSize: '3em', marginTop: '-70px'}}> 
+                        className="h1-impact-style" 
+                        style={{color: '#BD2EC2'}}> 
                         The manufacturing phase 
                     </h1>
+                    <ImpactSelection
+                        pageState="default"
+                        environmental = {this.handleEnvironmentalClick} 
+                        social = {this.handleSocialClick} 
+                    />
                     <div className="default-content-text">
                         <ManufacturingPhase />
                     </div>
@@ -104,9 +87,14 @@ class DesktopContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div className="desktop-page-title" style={{color: '#BD2EC2'}}> 
+                    <div className="h1-impact-style" style={{color: '#BD2EC2'}}> 
                         Environmental impacts
                     </div>
+                    <ImpactSelection
+                        pageState="environmental"
+                        default = {this.handleDefaultClick} 
+                        social = {this.handleSocialClick} 
+                    />
                     <Environmental fromPage={fromPage} />
                 </div>
             )
@@ -115,9 +103,14 @@ class DesktopContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <div className="desktop-page-title" style={{color: '#BD2EC2'}}> 
+                    <div className="h1-impact-style" style={{color: '#BD2EC2'}}> 
                         Social impacts
                     </div>
+                    <ImpactSelection
+                        pageState="social"
+                        default = {this.handleDefaultClick} 
+                        environmental = {this.handleEnvironmentalClick} 
+                    />
                     <Social fromPage={fromPage} />
                 </div>
             )
@@ -128,28 +121,16 @@ class DesktopContent extends React.Component {
                 <ScrollToMain />
                 <DesktopHeader pageHeader={pageHeader} />
                 <Breadcrumb fromPage={fromPage} />
-
-
-                
                 {/* Left half */}
                 <div className="split left-half">
                     <Desktop />
                 </div>
-
                 {/* Right half */}
                 <div className="split right-half">
                     <div id="top" />
-                    
-                        <div id="main-content" className="fix-top"/> 
+                    <div id="main-content" className="fix-top"/> 
                     <div className="right-half-content">
                         {content}
-                        <button tabIndec="0" onClick={e => {
-                                this.handleEnvironmentalClick(e);
-                            }}  style={{height: '100px', width: '49%', backgroundColor: 'rgba(189, 46, 194, 0.1)', textAlign: 'center', fontFamily: 'Avenir Next', color: 'black', display: 'inline-block'}}> <h2>Environmental impacts <span>&rarr;</span></h2><p>In the manufacturing phase, social impacts blablablabla. blablablabla.</p></button>
-                        
-                        <button tabIndec="0" onClick={e => {
-                                this.handleSocialClick(e);
-                            }}  style={{height: '100px', width: '49%', backgroundColor: 'rgba(189, 46, 194, 0.1)', textAlign: 'center', fontFamily: 'Avenir Next', color: 'black', display: 'inline-block',marginLeft: '2%'}}> <h2>Social impacts <span>&rarr;</span></h2><p>In the manufacturing phase, social impacts blablablabla. blablablabla.</p></button>
                     </div>
                     <Footer />
                     <ScrollUpDesktop />

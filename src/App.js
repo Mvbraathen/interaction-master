@@ -16,7 +16,6 @@ import NotFound from './application/pages/not-found/NotFound';
 // Styling
 import './application/css/Desktop.css';
 import './application/css/Mobile.css';
-import './application/css/DesktopImpactMenu.css';
 import './application/css/MobileImpactMenu.css';
 import './application/css/InfoBox.css';
 import './application/css/ImageWithCredit.css';

@@ -1,0 +1,38 @@
+.impact-sub-menu {
+    display: flex;
+}
+
+.default-element {
+    /* flex-grow: 1; remove width and add this, to flexible width */
+    width: 100%;
+    height: 120px;
+    font-family: Avenir Next;
+    background-color: rgba(1, 1, 1, 0.07);
+}
+
+.environmental-element {
+    /* flex-grow: 1; remove width and add this, to flexible width */
+    width: 50%;
+    margin-right: 10px;
+    font-family: Avenir Next;
+    background-color: rgba(189, 46, 194, 0.1);
+
+}
+
+.social-element {
+    /* flex-grow: 1; remove width and add this, to flexible width */
+    width: 50%;
+    font-family: Avenir Next;
+    background-color: rgba(189, 46, 194, 0.1);
+}
+
+.button-p {
+    margin-top: -10px;
+    font-size: 1.3em;
+}
+
+.default-element:hover,
+.environmental-element:hover,
+.social-element:hover {
+    outline: #86A8DF solid 2px;
+}

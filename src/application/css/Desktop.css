@@ -29,19 +29,11 @@ html {
     background-color: #FFFFFF;
 }
 
-.desktop-page-title {
-    text-align: left;
-    margin-bottom: 25px;
-    font-size: 1.5em; 
-    font-weight: 500; 
-    color: #404040;
-}
-
 .right-half-content {
     max-width: 620px; 
     margin: 0 auto;
     text-align: left;
-    margin-top: 150px; 
+    margin-top: 80px; 
     margin-bottom: 100px;
     margin-left: 2.5%;
     margin-right: 2.5%;
