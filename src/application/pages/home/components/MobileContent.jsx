@@ -35,13 +35,15 @@ class MobileContent extends React.Component {
                         <div className="mobile-impacts-width">
     
                                     <div className="default-content-text">
-                                        <h1
-                                            className="h1-default-style"
-                                            style={{
-                                                color: 'black'
-                                            }}> 
-                                            The mobile phone lifecycle
-                                        </h1>
+                                        <div className="mobile-content-margin">
+                                            <h1
+                                                className="h1-default-style"
+                                                style={{
+                                                    color: 'black'
+                                                }}> 
+                                                The mobile phone lifecycle
+                                            </h1>
+                                        </div>
 
                                         <div style={{paddingLeft: '10px', paddingRight: '10px', backgroundColor: 'rgb(248,248,248)'}}>
                                             <HomeText fromDevice={fromDevice} />

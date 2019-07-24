@@ -73,6 +73,7 @@ class DesktopContent extends React.Component {
                         The manufacturing phase 
                     </h1>
                     <ImpactSelection
+                        fromPage={fromPage}
                         pageState="default"
                         environmental = {this.handleEnvironmentalClick} 
                         social = {this.handleSocialClick} 

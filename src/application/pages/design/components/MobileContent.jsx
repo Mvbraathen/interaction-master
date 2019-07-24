@@ -33,14 +33,16 @@ class MobileContent extends React.Component {
                         {/* For the ScrollToMain component */}
                         <div id="main-content" />
                         <MobileHeader pageHeader={pageHeader} />
-                        <h1 
-                            className="h1-default-style"
-                            style={{
-                                position: 'relative',
-                                color: 'rgb(224, 0, 112)'
-                            }}> 
-                            Where all decisions are made
-                        </h1>
+                        <div className="mobile-content-margin">
+                            <h1 
+                                className="h1-default-style"
+                                style={{
+                                    position: 'relative',
+                                    color: 'rgb(224, 0, 112)'
+                                }}> 
+                                Where all decisions are made
+                            </h1>
+                        </div>
                         <div className="image-container" style={{marginTop: '20px', marginBottom: '-6px'}}>
                                 <img 
                                     alt="iphone" 

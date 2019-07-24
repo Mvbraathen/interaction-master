@@ -69,6 +69,7 @@
 
 /* Decides margin on right and left sides of info boxes*/
 .mobile-content-margin {
+    margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
 }

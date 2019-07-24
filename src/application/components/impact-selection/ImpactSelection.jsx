@@ -2,6 +2,59 @@ import React from "react";
 import './ImpactSelection.css';
 
 class ImpactSelection extends React.Component {
+	constructor() {
+        super();
+        this.state = {
+        	/* Sets some default values if
+        	   something goes wrong */
+            page: 'current',
+            numberOfEnvironmentalImpacts: 'some',
+            numberOfSocialImpacts: 'some',
+            plural: 's'
+        }; 
+    }
+
+    componentDidMount() {
+    	if(this.props.fromPage === "resourceExtraction") {
+    		this.setState({
+    			page: 'resource extraction',
+    			numberOfEnvironmentalImpacts: 'eight',
+            	numberOfSocialImpacts: 'eleven'
+    		})
+    	}
+    	if(this.props.fromPage === "manufacturing") {
+    		this.setState({
+    			page: 'manufacturing',
+    			numberOfEnvironmentalImpacts: 'seven',
+            	numberOfSocialImpacts: 'eight'
+    		})
+    	}
+    	if(this.props.fromPage === "transport") {
+    		this.setState({
+    			page: 'transport',
+    			numberOfEnvironmentalImpacts: 'five',
+            	numberOfSocialImpacts: 'one',
+            	plural: ''
+    		})
+    	}
+    	if(this.props.fromPage === "use") {
+    		this.setState({
+    			page: 'use',
+    			numberOfEnvironmentalImpacts: 'five',
+            	numberOfSocialImpacts: 'one',
+            	plural: ''
+    		})
+    	}
+    	if(this.props.fromPage === "endOfLife") {
+    		this.setState({
+    			page: 'end of life',
+    			numberOfEnvironmentalImpacts: 'four',
+            	numberOfSocialImpacts: 'eight'
+    		})
+    	}
+    }
+
+
 	render() {
 
 		let menu;
@@ -19,8 +72,8 @@ class ImpactSelection extends React.Component {
 	                    </h2>
 	                    <p 
 	                        className="button-p">
-	                        There are seven environmental impacts 
-	                        in the manufacturing phase
+	                        There are {this.state.numberOfEnvironmentalImpacts} {' '} 
+	                        environmental impacts in the {this.state.page} phase
 	                    </p>
 	                </button>
 	                <button 
@@ -33,8 +86,8 @@ class ImpactSelection extends React.Component {
 	                    </h2>
 	                    <p 
 	                        className="button-p">
-	                        There are eight social impacts 
-	                        in the manufacturing phase
+	                        There are {this.state.numberOfSocialImpacts} {' '} 
+	                        social impact{this.state.plural} in the {this.state.page} phase
 	                    </p>
 	                </button>
 	            </div>
@@ -55,7 +108,7 @@ class ImpactSelection extends React.Component {
 	                    <p 
 	                        className="button-p">
 	                        Return to the main page of 
-	                        the manufacturing phase
+	                        the {this.state.page} phase
 	                    </p>
 	                </button>
 	            </div>

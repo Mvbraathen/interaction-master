@@ -23,22 +23,21 @@ class DesktopContent extends React.Component {
             <div id="design-page">
                 <ScrollToMain />
                 <DesktopHeader pageHeader={pageHeader} />
-                <div className="fix-content-scroll-under-sub"/>
+                <div className="fix-content-scroll-under-sub" />
                 <Breadcrumb fromPage={fromPage} />
                 {/* Left half */}
                 <div className="split left-half">
-                    <div className="sub-menu-without-selection"></div>
                     <Desktop />
                 </div>
-                <hr style={{marginTop: '60px'}} className="vertical-line" />
-
                 {/* Right half */}
                 <div className="split right-half">
-                    <div id="top"  className="sub-menu-without-selection"></div>
+                    <div id="top" />
+                    <div id="main-content" className="fix-top"/> 
                     <div className="right-half-content">
-                        <div id="main-content" className="fix-top"/> 
+                        {/* Focus skips to main content */}
+                        <div id="main-content" className="fix-top"/>
                         <h1 
-                            className="desktop-page-title" 
+                            className="h1-impact-style" 
                             style={{color: '#E00070'}}> 
                             Where all decisions are made 
                         </h1>

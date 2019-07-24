@@ -17,21 +17,19 @@ class DesktopContent extends React.Component {
         const fromPage = "home";
         
         return (
-            <div>
+            <div id="home">
                 <ScrollToMain />
                 <DesktopHeader pageHeader={pageHeader} />
                 <div className="fix-content-scroll-under-sub" />
-                <Breadcrumb fromPage="Home" />
+                <Breadcrumb fromPage={fromPage} />
                 {/* Left half */}
                 <div className="split left-half">
-                    {/*<div style={{position: 'absolute', marginTop: '151px', marginLeft: '5%', marginRight: '5%', color: 'red', fontFamily: 'Avenir Next', fontSize: '1.5em'}}> To navigate, please interact with the circular menu below </div>*/}
-                    <div className="sub-menu-without-selection"></div>
-                    <Desktop fromPage={fromPage} />
+                    <Desktop />
                 </div>
-                <hr style={{marginTop: '60px'}} className="vertical-line" />
                 {/* Right half */}
-                <div  className="split right-half">
-                    <div id="top"  className="sub-menu-without-selection"></div>
+                <div className="split right-half">
+                    <div id="top" />
+                    <div id="main-content" className="fix-top"/> 
                     <div className="right-half-content">
                         {/* Focus skips to main content */}
                         <div id="main-content" className="fix-top"/>
@@ -55,15 +53,11 @@ class DesktopContent extends React.Component {
                                 <HomeText />
                             </div>
                         </div>
-
-                        <div>
-                      </div>
                     </div>
                     <Footer />
                     <ScrollUpDesktop />
                 </div>
             </div>
-
         );
     }
 }

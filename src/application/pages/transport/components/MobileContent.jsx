@@ -80,51 +80,45 @@ class MobileContent extends React.Component {
 
         if(this.state.default) {
             content = (
-                <div>
+                <div className="mobile-content-margin">
                     <h1
-                        className="h1-default-style"
+                        className="h1-impact-style"
                         style={{
                             color: this.state.transportColor,
                         }}> 
                         The transport phase
                     </h1>
-                    <div className="mobile-content-margin">
-                        <TransportPhase />
-                    </div>
+                    <TransportPhase />
                 </div>
             )
         } 
 
         if(this.state.environmental) {
             content = (
-                <div>
+                <div className="mobile-content-margin">
                     <h1
-                        className="h1-default-style"
+                        className="h1-impact-style"
                         style={{
                             color: this.state.transportColor,
                         }}> 
                         Environmental impacts
                     </h1>
-                    <div className="mobile-content-margin">
-                        <Environmental fromPage={fromPage} />
-                    </div>
+                    <Environmental fromPage={fromPage} />
                 </div>
             )
         }
 
         if(this.state.social) {
             content = (
-                <div>
+                <div className="mobile-content-margin">
                     <h1
-                        className="h1-default-style"
+                        className="h1-impact-style"
                         style={{
                             color: this.state.transportColor,
                         }}> 
                         Social impacts
                     </h1>
-                    <div className="mobile-content-margin">
-                        <Social fromPage={fromPage} />
-                    </div>
+                    <Social fromPage={fromPage} />
                 </div>
             )
         }

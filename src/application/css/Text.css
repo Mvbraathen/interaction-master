@@ -1,15 +1,20 @@
+/* Used in home and design page
+   on mobile devices  */
 .h1-default-style {
 	font-family: Avenir Next;
-    font-size: 3.2em;
-    margin-top: 0px;
+    font-size: 2.2em;
+    margin-top: 80px;
     margin-bottom: 10px;
     font-weight: 500;
 }
 
+/* Used in combination with impact 
+   selection in both desktop and 
+   mobile components */
 .h1-impact-style {
     font-family: Avenir Next;
     font-size: 2.2em;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 20px;
     font-weight: 500;
 }
@@ -41,7 +46,8 @@
 
 .smart-research-link {   
     background-color: #1A6667;  
-    text-decoration: none;  
+    text-decoration: none; 
+    font-weight: 300; 
     color: white;   
     padding: 4px 5px 2px 5px; 
     margin-right: 3px;  
