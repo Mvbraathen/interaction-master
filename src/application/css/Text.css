@@ -1,7 +1,6 @@
 /* Used in home and design page
    on mobile devices  */
 .h1-default-style {
-	font-family: Avenir Next;
     font-size: 2.2em;
     margin-top: 80px;
     margin-bottom: 10px;
@@ -12,7 +11,6 @@
    selection in both desktop and 
    mobile components */
 .h1-impact-style {
-    font-family: Avenir Next;
     font-size: 2.2em;
     margin-bottom: 20px;
     font-weight: 500;
@@ -26,7 +24,6 @@
 
 
 .h2-default-style {
-	font-family: Avenir Next;
     font-size: 1.1em;
     padding: 25px 10px 5px 0px;
     margin-bottom: -20px;
@@ -46,7 +43,6 @@
     font-size: 4.7em;
     font-weight: 900;
     line-height: 95px;
-    font-family: 'Avenir Next';
     margin-top: -20px;
 }
 

@@ -14,7 +14,6 @@
 
 /* Container for all content */
 .mobile-content {
-    font-family: Avenir Next;
     color: black;
     width: 100%;
     text-align: left;
@@ -37,7 +36,6 @@
     text-align: left;
     margin-top: 10px; 
     margin-bottom: -40px; 
-    font-family: Avenir Next; 
     margin-left: 20px;
     margin-right: 20px; 
     font-size: 1em;

@@ -14,6 +14,7 @@ import Manufacturing from './application/pages/manufacturing/Manufacturing';
 import EndOfLife from './application/pages/end-of-life/EndOfLife';
 import NotFound from './application/pages/not-found/NotFound';
 // Styling
+import './App.css';
 import './application/css/Desktop.css';
 import './application/css/Mobile.css';
 import './application/css/MobileImpactMenu.css';

@@ -31,7 +31,6 @@
     width: 80px; 
     height: 40px; 
     font-size: 1.3em;
-    font-family: Avenir Next;
     line-height: 40px; 
     text-align: center;
     color: white;
@@ -45,7 +44,6 @@
     text-align: center;
     color: white;
     line-height: 60px;
-    font-family: Avenir Next;
     font-size: 1.2em;
     font-weight: 600;
 }
