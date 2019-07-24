@@ -116,9 +116,7 @@ class ImpactSelection extends React.Component {
 		} 
 
 		return (
-			<>{console.log.pageState}
-			<div>{menu}</div></>
-			
+			<div>{menu}</div>	
 		);
 	}
 }

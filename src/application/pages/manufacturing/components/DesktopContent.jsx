@@ -72,14 +72,14 @@ class DesktopContent extends React.Component {
                         style={{color: '#BD2EC2'}}> 
                         The manufacturing phase 
                     </h1>
-                    <ImpactSelection
-                        fromPage={fromPage}
-                        pageState="default"
-                        environmental = {this.handleEnvironmentalClick} 
-                        social = {this.handleSocialClick} 
-                    />
                     <div className="default-content-text">
                         <ManufacturingPhase />
+                        <ImpactSelection
+                            fromPage={fromPage}
+                            pageState="default"
+                            environmental = {this.handleEnvironmentalClick} 
+                            social = {this.handleSocialClick} 
+                        />
                     </div>
                 </div>
             )
@@ -92,9 +92,9 @@ class DesktopContent extends React.Component {
                         Environmental impacts
                     </div>
                     <ImpactSelection
+                        fromPage={fromPage}
                         pageState="environmental"
                         default = {this.handleDefaultClick} 
-                        social = {this.handleSocialClick} 
                     />
                     <Environmental fromPage={fromPage} />
                 </div>
@@ -104,14 +104,14 @@ class DesktopContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
+                    <ImpactSelection
+                        fromPage={fromPage}
+                        pageState="social"
+                        default = {this.handleDefaultClick} 
+                    />
                     <div className="h1-impact-style" style={{color: '#BD2EC2'}}> 
                         Social impacts
                     </div>
-                    <ImpactSelection
-                        pageState="social"
-                        default = {this.handleDefaultClick} 
-                        environmental = {this.handleEnvironmentalClick} 
-                    />
                     <Social fromPage={fromPage} />
                 </div>
             )
