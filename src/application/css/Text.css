@@ -11,12 +11,14 @@
    selection in both desktop and 
    mobile components */
 .h1-impact-style {
-    font-size: 2.2em;
+    font-size: 2.5em;
+    padding-top: 10px;
+    padding-bottom: 15px;
     margin-bottom: 20px;
     font-weight: 500;
 }
 
-@media only screen and (max-width: 1020px) and (min-width: 850px)  {
+@media only screen and (max-width: 1140px) and (min-width: 850px)  {
     .environmental-responsive {
         max-width: 150px;
     }

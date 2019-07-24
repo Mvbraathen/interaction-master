@@ -5,7 +5,6 @@
     padding-bottom: 30px;
     /* To look ok on mobile phones */
     background-color: #1A6667;
-    font-family: Avenir Next;
     color: white;
     text-align: left;
 }
@@ -17,7 +16,6 @@
 }
 
 .share-text {
-    font-family: Avenir Next;
     font-weight: 600;
     color: white;
 }

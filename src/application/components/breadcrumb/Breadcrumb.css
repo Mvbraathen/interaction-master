@@ -2,7 +2,6 @@
 .breadcrumb {
     position: absolute;
     z-index: 99;
-    font-family: Avenir Next;
     font-size: 1.2em;
     margin-left: 20px;
     line-height: 60px;
@@ -29,7 +28,6 @@
     text-decoration: underline;
     display: inline-block;
     color: #333333;
-    font-family: Avenir Next;
     font-weight: 500;
     line-height: 30px;
     padding: 5px 5px 5px 5px;
@@ -39,7 +37,6 @@
 .activePage {
     display: inline-block;
     color: #333333;
-    font-family: Avenir Next;
     font-weight: 500;
     line-height: 30px;
     padding: 5px 5px 5px 5px;

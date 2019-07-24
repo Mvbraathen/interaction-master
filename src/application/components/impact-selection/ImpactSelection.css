@@ -7,7 +7,7 @@
     position: absolute;
     right: 0;
     margin-right: 20px;
-    margin-top: -5px;
+    margin-top: 12px;
     background-color: rgba(189, 46, 194, 0.1);
 }
 
@@ -15,7 +15,6 @@
     /* flex-grow: 1; remove width and add this, to flexible width */
     width: 50%;
     margin-right: 10px;
-    background-color: rgba(189, 46, 194, 0.1);
 
 }
 

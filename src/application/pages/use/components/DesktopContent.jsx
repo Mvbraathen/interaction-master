@@ -70,15 +70,15 @@ class DesktopContent extends React.Component {
                         className="h1-impact-style" 
                         style={{color: '#EB0100'}}> 
                         The use phase 
-                    </h1>
-                    <ImpactSelection
-                        fromPage={fromPage}
-                        pageState="default"
-                        environmental = {this.handleEnvironmentalClick} 
-                        social = {this.handleSocialClick} 
-                    />
+                    </h1> 
                     <div className="default-content-text">
                         <UsePhase />
+                        <ImpactSelection
+                            fromPage={fromPage}
+                            pageState="default"
+                            environmental = {this.handleEnvironmentalClick} 
+                            social = {this.handleSocialClick} 
+                        />
                     </div>
                 </div>
             )
@@ -87,14 +87,14 @@ class DesktopContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div className="h1-impact-style" style={{color: '#EB0100'}}> 
-                        Environmental impacts
-                    </div>
                     <ImpactSelection
                         pageState="environmental"
                         default = {this.handleDefaultClick} 
                         social = {this.handleSocialClick} 
                     />
+                    <div className="h1-impact-style" style={{color: '#EB0100'}}> 
+                        Environmental impacts
+                    </div>
                     <Environmental fromPage={fromPage} />
                 </div>
             )
@@ -103,14 +103,14 @@ class DesktopContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div>
-                    <div className="h1-impact-style" style={{color: '#EB0100'}}> 
-                        Social impacts
-                    </div>
                     <ImpactSelection
                         pageState="social"
                         default = {this.handleDefaultClick} 
                         environmental = {this.handleEnvironmentalClick} 
                     />
+                    <div className="h1-impact-style" style={{color: '#EB0100'}}> 
+                        Social impacts
+                    </div>
                     <Social fromPage={fromPage} />
                 </div>
             )

@@ -10,7 +10,8 @@ class ImpactSelection extends React.Component {
             page: 'current',
             numberOfEnvironmentalImpacts: 'some',
             numberOfSocialImpacts: 'some',
-            plural: 's'
+            plural: 's',
+            bgColor: 'rgba(1, 1, 1, 0.1)'
         }; 
     }
 
@@ -19,14 +20,16 @@ class ImpactSelection extends React.Component {
     		this.setState({
     			page: 'resource extraction',
     			numberOfEnvironmentalImpacts: 'eight',
-            	numberOfSocialImpacts: 'eleven'
+            	numberOfSocialImpacts: 'eleven',
+            	bgColor: 'rgba(0, 138, 0, 0.1)'
     		})
     	}
     	if(this.props.fromPage === "manufacturing") {
     		this.setState({
     			page: 'manufacturing',
     			numberOfEnvironmentalImpacts: 'seven',
-            	numberOfSocialImpacts: 'eight'
+            	numberOfSocialImpacts: 'eight',
+            	bgColor: 'rgba(189, 46, 194, 0.1)'
     		})
     	}
     	if(this.props.fromPage === "transport") {
@@ -34,6 +37,7 @@ class ImpactSelection extends React.Component {
     			page: 'transport',
     			numberOfEnvironmentalImpacts: 'five',
             	numberOfSocialImpacts: 'one',
+            	bgColor: 'rgba(0, 102, 255, 0.1)',
             	plural: ''
     		})
     	}
@@ -42,6 +46,7 @@ class ImpactSelection extends React.Component {
     			page: 'use',
     			numberOfEnvironmentalImpacts: 'five',
             	numberOfSocialImpacts: 'one',
+            	bgColor: 'rgba(235, 1, 0, 0.1)',
             	plural: ''
     		})
     	}
@@ -49,7 +54,8 @@ class ImpactSelection extends React.Component {
     		this.setState({
     			page: 'end of life',
     			numberOfEnvironmentalImpacts: 'four',
-            	numberOfSocialImpacts: 'eight'
+            	numberOfSocialImpacts: 'eight',
+            	bgColor: 'rgba(198, 80, 0, 0.1)'
     		})
     	}
     }
@@ -64,7 +70,8 @@ class ImpactSelection extends React.Component {
 				<div className="impact-sub-menu">
 	                <button 
 	                    className="environmental-element" 
-	                    tabIndex="0" 
+	                    tabIndex="0"
+	                    style={{backgroundColor: this.state.bgColor}} 
 	                    onClick={this.props.environmental}>
 	                    <h2>
 	                        Environmental impacts 
@@ -79,6 +86,7 @@ class ImpactSelection extends React.Component {
 	                <button 
 	                    className="social-element" 
 	                    tabIndex="0" 
+	                    style={{backgroundColor: this.state.bgColor}}
 	                    onClick={this.props.social}> 
 	                    <h2>
 	                        Social impacts 
@@ -99,7 +107,8 @@ class ImpactSelection extends React.Component {
 				<div className="impact-sub-menu">
 	                <button 
 	                    className="default-element" 
-	                    tabIndex="0" 
+	                    tabIndex="0"
+	                    style={{backgroundColor: this.state.bgColor}} 
 	                    onClick={this.props.default}>
 	                    <h2>
 	                    	<span> &larr; </span>
