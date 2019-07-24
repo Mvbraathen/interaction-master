@@ -14,10 +14,16 @@
 .h1-impact-style {
     font-family: Avenir Next;
     font-size: 2.2em;
-    margin-top: 20px;
     margin-bottom: 20px;
     font-weight: 500;
 }
+
+@media only screen and (max-width: 1020px) and (min-width: 850px)  {
+    .environmental-responsive {
+        max-width: 150px;
+    }
+}
+
 
 .h2-default-style {
 	font-family: Avenir Next;

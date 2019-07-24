@@ -105,11 +105,6 @@ class ImpactSelection extends React.Component {
 	                    	<span> &larr; </span>
 	                        Go back
 	                    </h2>
-	                    <p 
-	                        className="button-p">
-	                        Return to the main page of 
-	                        the {this.state.page} phase
-	                    </p>
 	                </button>
 	            </div>
 			)

@@ -8,17 +8,10 @@ class Breadcrumb extends React.Component {
         super();
         this.state = {
             linkPath: "",
-            linkText: "",
-            tabIndexFix: "0"
+            linkText: ""
         };
     }
     componentDidMount() {
-        if (this.props.fromPage === "Home") {
-            this.setState({
-                tabIndexFix: "-1"
-            });
-        }
-
         if (this.props.fromPage === "design") {
             this.setState({
                 linkPath: "/design",
@@ -63,6 +56,36 @@ class Breadcrumb extends React.Component {
     }
 
     render() {
+
+        let activePage;
+
+        if(this.props.fromPage === "home") {
+            activePage = (<div>{/* Nothing to render */}</div>)
+        }
+        
+        if( this.props.fromPage === "design"
+            ||
+            this.props.fromPage === "resourceExtraction"
+            ||
+            this.props.fromPage === "manufacturing"
+            ||
+            this.props.fromPage === "transport"
+            ||
+            this.props.fromPage === "use"
+            ||
+            this.props.fromPage === "endOfLife"
+        ) {
+            activePage = (
+                <NavLink
+                    to={this.state.linkPath}>
+                    <div 
+                        className="activePage">
+                        {this.state.linkText}
+                    </div>
+                </NavLink>
+            )
+        }
+
         return (
             <div className="breadcrumb">
                 <NavLink to="/">
@@ -75,14 +98,7 @@ class Breadcrumb extends React.Component {
                         &#8594;
                     </span>
                 </div>
-                <NavLink
-                    tabIndex={this.state.tabIndexFix}
-                    to={this.state.linkPath}>
-                    <div 
-                        className="activePage">
-                        {this.state.linkText}
-                    </div>
-                </NavLink>
+                {activePage}
             </div>
         );
     }

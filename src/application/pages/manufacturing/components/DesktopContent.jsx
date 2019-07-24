@@ -88,14 +88,14 @@ class DesktopContent extends React.Component {
         if(this.state.environmental) {
             content = (
                 <div>
-                    <div className="h1-impact-style" style={{color: '#BD2EC2'}}> 
-                        Environmental impacts
-                    </div>
                     <ImpactSelection
                         fromPage={fromPage}
                         pageState="environmental"
                         default = {this.handleDefaultClick} 
                     />
+                    <div className="h1-impact-style environmental-responsive" style={{color: '#BD2EC2'}}> 
+                        Environmental impacts
+                    </div>
                     <Environmental fromPage={fromPage} />
                 </div>
             )
