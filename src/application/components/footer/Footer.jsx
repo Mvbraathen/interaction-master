@@ -113,7 +113,8 @@ class Footer extends React.Component {
                             <br/> <br/>
                             For more information about the SMART project, please visit:{' '} 
                             <a  
-                                className="smart-link" 
+                                className="smart-link"
+                                role="button" 
                                 title="link to SMART's website" 
                                 href="http://smart.uio.no"> 
                                 SMART website 
