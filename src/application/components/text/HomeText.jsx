@@ -19,8 +19,7 @@ class HomeText extends React.Component {
 
         return (
             <div>
-                <h2 
-                    id="main-content" 
+                <h2
                     className="h2-default-style"> 
                     Social and Environmental Impacts in the Mobile Phone Lifecycle 
                 </h2>
