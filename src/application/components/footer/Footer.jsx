@@ -150,6 +150,10 @@ class Footer extends React.Component {
                     <NavLink className="smart-link"   title="link to end of life page" to="/end-of-life">
                         End of life
                     </NavLink>
+                    
+                    <NavLink style={{display: 'block', marginTop: '20px'}} className="smart-link"   title="link to sitemap" to="/sitemap">
+                        Sitemap
+                    </NavLink>
                     </div>
                 </div>
             </div>

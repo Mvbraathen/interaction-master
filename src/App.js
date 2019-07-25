@@ -13,6 +13,7 @@ import Transport from './application/pages/transport/Transport';
 import Manufacturing from './application/pages/manufacturing/Manufacturing';
 import EndOfLife from './application/pages/end-of-life/EndOfLife';
 import NotFound from './application/pages/not-found/NotFound';
+import Sitemap from './application/pages/sitemap/Sitemap';
 // Styling
 import './App.css';
 import './application/css/Desktop.css';
@@ -35,6 +36,7 @@ function App() {
 		    		<Route path="/transport" component={Transport}/>
 		    		<Route path="/use" component={Use}/>
 		    		<Route path="/end-of-life" component={EndOfLife}/>
+		    		<Route path="/sitemap" component={Sitemap}/>
 		    		<Redirect exact from="/" to="/home" />
 		    		<Route path="/" component={NotFound} />
 		    	</Switch>

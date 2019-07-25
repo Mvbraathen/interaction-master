@@ -28,11 +28,10 @@ class DesktopContent extends React.Component {
                 </div>
                 {/* Right half */}
                 <div className="split right-half">
-                    <div id="top" />6
-                    <div id="main-content" className="fix-top"/> 
+                    <div id="top" />
                     <div className="right-half-content">
                         {/* Focus skips to main content */}
-                        <div id="main-content" className="fix-top"/>
+                        <div className="fix-top"/>
                         <div className="default-content-text">
                             <div style={{marginLeft: '17px'}}>
                                 <h1
