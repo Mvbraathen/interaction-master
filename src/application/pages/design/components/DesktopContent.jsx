@@ -32,7 +32,7 @@ class DesktopContent extends React.Component {
                 {/* Right half */}
                 <div className="split right-half">
                     <div id="top" />
-                    <div id="main-content" className="fix-top"/> 
+                    <div className="fix-top"/> 
                     <div className="right-half-content">
                         {/* Focus skips to main content */}
                         <div id="main-content" className="fix-top"/>
