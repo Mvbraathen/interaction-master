@@ -39,7 +39,7 @@ class DesktopContent extends React.Component {
                         <h1 
                             className="h1-impact-style" 
                             style={{color: '#E00070'}}> 
-                            Where all decisions are made 
+                            The design phase 
                         </h1>
                         <div className="image-container">
                             <img 

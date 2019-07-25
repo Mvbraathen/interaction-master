@@ -40,7 +40,7 @@ class MobileContent extends React.Component {
                                     position: 'relative',
                                     color: 'rgb(224, 0, 112)'
                                 }}> 
-                                Where all decisions are made
+                                The design phase
                             </h1>
                         </div>
                         <div className="image-container" style={{marginTop: '20px', marginBottom: '-6px'}}>

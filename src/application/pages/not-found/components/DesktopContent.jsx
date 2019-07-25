@@ -8,6 +8,12 @@ import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
 import ScrollUpDesktop from "../../../components/scroll-up/desktop-scroll-up/ScrollUpDesktop";
 
 class DesktopContent extends React.Component {
+
+    /* Scrolls to top when page loads */
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+    
     render() {
         return (
             <div>

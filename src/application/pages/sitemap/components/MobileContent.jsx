@@ -11,6 +11,12 @@ import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
 import ScrollUpMobile from "../../../components/scroll-up/mobile-scroll-up/ScrollUpMobile";
 
 class MobileContent extends React.Component {
+
+    /* Scrolls to top when page loads */
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+    
     render() {
         return (
             <div>

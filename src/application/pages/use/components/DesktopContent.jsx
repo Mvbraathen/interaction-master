@@ -104,9 +104,9 @@ class DesktopContent extends React.Component {
             content = (
                 <div>
                     <ImpactSelection
+                        fromPage={fromPage}
                         pageState="social"
-                        default = {this.handleDefaultClick} 
-                        environmental = {this.handleEnvironmentalClick} 
+                        default = {this.handleDefaultClick}
                     />
                     <div className="h1-impact-style" style={{color: '#EB0100'}}> 
                         Social impacts
