@@ -41,7 +41,7 @@ class DesktopContent extends React.Component {
                             style={{color: '#E00070'}}> 
                             Where all decisions are made 
                         </h1>
-                        <div className="image-container" style={{zIndex: '-99'}}>
+                        <div className="image-container">
                             <img 
                                 alt="iphone" 
                                 width="100%" 

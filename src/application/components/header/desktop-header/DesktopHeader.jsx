@@ -7,7 +7,7 @@ class DesktopHeader extends React.Component {
         return (
             <div className="desktop-header">
                 <NavLink className="desktop-header-link" to="/home">
-                    The mobile phone lifecycle
+                    The Mobile Phone Lifecycle
                 </NavLink>
                 <div className="desktop-active-page"> 
                     {this.props.pageHeader}
