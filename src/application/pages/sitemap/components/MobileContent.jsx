@@ -19,11 +19,11 @@ class MobileContent extends React.Component {
             	<div className="mobile-page">
                      <MobileHeader />
                      <div className="mobile-content">
-                     	<h1 id="main-content" style={{marginTop: '100px', backgroundColor: 'lightpink', padding: '40px'}}> Sitemap </h1>
+                     	<h1 id="main-content" style={{marginTop: '100px', backgroundColor: 'lightpink', padding: '40px'}}> Site map </h1>
                      	<p style={{padding: '20px 20px 10px 20px', maxWidth: '500px'}}>
                      		In the list below you will find links to every page on this website.
                      	</p>
-                        <h2 style={{padding: '10px 20px 10px 20px'}}> Sitemap </h2>
+                        <h2 style={{padding: '10px 20px 10px 20px'}}> Content </h2>
                      	<ul style={{padding: '10px 20px 10px 40px', maxWidth: '500px'}}>
                      		<li>
                                 <NavLink title="link to home page" to="/home">

@@ -27,7 +27,13 @@ class DesktopContent extends React.Component {
 	                     		phases, please start on the {' '}
 	                     		<NavLink className="inline-link-style" title="link to home page" to="/home">
 	                                Home page
-	                            </NavLink>.
+	                            </NavLink>,
+                                {' '} 
+                                or
+                                {' '} 
+                                <NavLink className="inline-link-style" title="link to site map" to="/sitemap">
+                                    Site map.
+                                </NavLink>
                      		</li>
                      		<li>If you are looking for the SMART project's website, please visit <a title="link to SMARTs website" className="inline-link-style" href="http://smart.uio.no">SMART website</a>.</li>
                      	</ol>

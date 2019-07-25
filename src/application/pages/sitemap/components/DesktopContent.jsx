@@ -15,7 +15,7 @@ class DesktopContent extends React.Component {
                     <ScrollToMain />
                     <DesktopHeader />
                     <div className="mobile-content">
-                     	<h1 id="main-content" style={{marginTop: '100px', backgroundColor: 'lightblue', padding: '40px'}}> Sitemap </h1>
+                     	<h1 id="main-content" style={{marginTop: '100px', backgroundColor: 'lightblue', padding: '40px'}}> Site map </h1>
                         <p style={{padding: '20px 20px 10px 100px', maxWidth: '500px'}}>
                             In the list below you will find links to every page on this website.
                         </p>

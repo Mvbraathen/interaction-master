@@ -35,6 +35,10 @@
     text-align: center;
     color: white;
     transition: 1s;
+
+    -webkit-box-shadow: 0px 0px 3px -2px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 0px 0px 3px -2px rgba(166, 166, 166, 1);
+    box-shadow: 0px 0px 2px 1px white;
 }
 
 .desktop-active-page {
