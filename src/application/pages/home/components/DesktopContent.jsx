@@ -28,7 +28,7 @@ class DesktopContent extends React.Component {
                 </div>
                 {/* Right half */}
                 <div className="split right-half">
-                    <div id="top" />
+                    <div id="top" />6
                     <div id="main-content" className="fix-top"/> 
                     <div className="right-half-content">
                         {/* Focus skips to main content */}
@@ -36,20 +36,12 @@ class DesktopContent extends React.Component {
                         <div className="default-content-text">
                             <div style={{marginLeft: '17px'}}>
                                 <h1
-                                    className="desktop-page-title"  
-                                    style={{color: '#33333'}}>  
-                                    <a  
-                                        href="http://smart.uio.no"  
-                                        className="smart-research-link"> 
-                                        SMART   
-                                    </a>    
-                                    research    
-                                </h1>
-                                <h1 className="home-big-header"> 
-                                    The mobile phone lifecycle
+                                    style={{fontSize: '3em', color: '#1A6667'}}
+                                    className="h1-default-style">
+                                    The mobile phone lifecycle 
                                 </h1>
                             </div>
-                            <div style={{marginTop: '-60px', padding: '0px 20px 5px 20px', fontSize: '1em'}}>
+                            <div style={{marginTop: '-20px', padding: '0px 20px 5px 20px', fontSize: '1em'}}>
                                 <HomeText />
                             </div>
                         </div>
