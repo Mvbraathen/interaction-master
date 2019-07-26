@@ -18,7 +18,6 @@ import Sitemap from './application/pages/sitemap/Sitemap';
 import './App.css';
 import './application/css/Desktop.css';
 import './application/css/Mobile.css';
-import './application/css/MobileImpactMenu.css';
 import './application/css/InfoBox.css';
 import './application/css/ImageWithCredit.css';
 import './application/css/Text.css';
