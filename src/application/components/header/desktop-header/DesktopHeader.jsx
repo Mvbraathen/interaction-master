@@ -13,7 +13,8 @@ class DesktopHeader extends React.Component {
                     {this.props.pageHeader}
                 </div>
                 <a 
-                    href="http://smart.uio.no" 
+                    href="http://smart.uio.no"
+                    title="link to smart website" 
                     className="desktop-bookmark">
                    SMART 
                 </a>
