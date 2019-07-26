@@ -33,7 +33,7 @@ class HomeText extends React.Component {
                     Social sustainability
                 </h3> 
                 <p>
-                    is about the minimum standards of living conditions and human rights below which people
+                    Social sustainability is about the minimum standards of living conditions and human rights below which people
                     can be said to be living in deprivation. The twelve dimensions of the social
                     foundation are derived from internationally agreed minimum social standards,
                     as identified by the world’s governments in the Sustainable Development Goals
@@ -46,7 +46,7 @@ class HomeText extends React.Component {
                     Environmental sustainability
                 </h3> 
                 <p>
-                    refers here to the non-negotiable planetary
+                    Environmental sustainability refers here to the non-negotiable planetary
                     preconditions that humanity needs to respect in order to avoid the risk of
                     deleterious or even catastrophic environmental change. The nine boundaries are
                     climate change, novel entities, ozone depletion, aerosol loading, ocean
