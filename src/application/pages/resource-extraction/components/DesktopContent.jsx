@@ -21,8 +21,8 @@ class DesktopContent extends React.Component {
         this.state = {
             // Decides content
             default: false,
-            environmental: true,
-            social: false
+            environmental: false,
+            social: true
         }; 
         this.handleDefaultClick = this.handleDefaultClick.bind(this);
         this.handleEnvironmentalClick = this.handleEnvironmentalClick.bind(this);
