@@ -15,17 +15,32 @@
     /* flex-grow: 1; remove width and add this, to flexible width */
     width: 50%;
     margin-right: 10px;
+    font-family: Avenir Next;
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    font-size: 12px;
 }
 
 .social-element {
     /* flex-grow: 1; remove width and add this, to flexible width */
     width: 50%;
     background-color: rgba(189, 46, 194, 0.1);
+    font-size: 12px;
+    font-family: Avenir Next;
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.social-element:hover, .environmental-element:hover {
+    font-weight: 500;
+    color: #000000;
 }
 
 .button-p {
-    margin-top: -10px;
-    font-size: 1.3em;
+    margin-top: -12px;
+    font-size: 1.2em;
 }
 
 @media only screen and (max-width: 1080px) and (min-width: 851px) {

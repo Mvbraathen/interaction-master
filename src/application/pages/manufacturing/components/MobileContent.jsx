@@ -13,7 +13,6 @@ import Social from "../../../components/impacts/Social";
 import ScrollUpMobile from "../../../components/scroll-up/mobile-scroll-up/ScrollUpMobile";
 /* Scroll to main content */
 import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
-
 /* Menu for impact selection */
 import ImpactSelection from "../../../components/impact-selection/ImpactSelection";
 

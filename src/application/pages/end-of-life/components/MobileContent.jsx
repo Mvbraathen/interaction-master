@@ -13,61 +13,50 @@ import Social from "../../../components/impacts/Social";
 import ScrollUpMobile from "../../../components/scroll-up/mobile-scroll-up/ScrollUpMobile";
 /* Scroll to main content */
 import ScrollToMain from "../../../components/scroll-to-main/ScrollToMain";
+/* Menu for impact selection */
+import ImpactSelection from "../../../components/impact-selection/ImpactSelection";
 
 class MobileContent extends React.Component {
     constructor() {
         super();
         this.state = {
-            /* decides which impact category to be shown */
+            // Decides content
             default: true,
             environmental: false,
+            social: false
+        }; 
+        this.handleDefaultClick = this.handleDefaultClick.bind(this);
+        this.handleEnvironmentalClick = this.handleEnvironmentalClick.bind(this);
+        this.handleSocialClick = this.handleSocialClick.bind(this);
+    }
+
+    handleDefaultClick() {
+        this.setState({
+            default: true,
             social: false,
-            defaultBgc: '#C75000',
-            environmentalBgc: '#333333',
-            socialBgc: '#333333',
-            endOfLifeColor: '#C75000'
-        }
-        this.handleDefaultClicked = this.handleDefaultClicked.bind(this);
-        this.handleEnvironmentalClicked = this.handleEnvironmentalClicked.bind(this);
-        this.handleSocialClicked = this.handleSocialClicked.bind(this);
+            environmental: false
+        })
+    }
+
+    handleEnvironmentalClick() {
+        this.setState({
+            default: false,
+            social: false,
+            environmental: true
+        })
+    }
+
+    handleSocialClick() {
+        this.setState({
+            default: false,
+            environmental: false,
+            social: true
+        })
     }
 
     /* Scrolls to top when page loads */
     componentDidMount() {
         window.scrollTo(0, 0);
-    }
-
-    handleDefaultClicked() {
-        this.setState({
-            default: true,
-            environmental: false,
-            social: false,
-            defaultBgc: '#C75000',
-            environmentalBgc: '#333333',
-            socialBgc: '#333333',
-        });
-    }
-
-    handleEnvironmentalClicked() {
-        this.setState({
-            default: false,
-            environmental: true,
-            social: false,
-            defaultBgc: '#333333',
-            environmentalBgc: '#C75000',
-            socialBgc: '#333333',
-        });
-    }
-
-    handleSocialClicked() {
-        this.setState({
-            default: false,
-            environmental: false,
-            social: true,
-            defaultBgc: '#333333',
-            environmentalBgc: '#333333',
-            socialBgc: '#C75000',
-        });
     }
 
     render() {
@@ -81,28 +70,35 @@ class MobileContent extends React.Component {
         if(this.state.default) {
             content = (
                 <div className="mobile-content-margin">
-                    <h1
-                        className="h1-impact-style"
-                        style={{
-                            color: this.state.endOfLifeColor,
-                        }}> 
-                        The end of life phase
+                    <h1 
+                        className="h1-impact-style" 
+                        style={{color: '#C75000', paddingTop: '0px', paddingBottom: '0px'}}> 
+                        The end of life phase 
                     </h1>
-                    <EndOfLifePhase />
+                    <div className="default-content-text">
+                        <EndOfLifePhase />
+                        <ImpactSelection
+                            fromPage={fromPage}
+                            pageState="default"
+                            environmental = {this.handleEnvironmentalClick} 
+                            social = {this.handleSocialClick} 
+                        />
+                    </div>
                 </div>
             )
-        } 
+        }
 
         if(this.state.environmental) {
             content = (
                 <div className="mobile-content-margin">
-                    <h1
-                        className="h1-impact-style"
-                        style={{
-                            color: this.state.endOfLifeColor,
-                        }}> 
+                    <ImpactSelection
+                        fromPage={fromPage}
+                        pageState="environmental"
+                        default = {this.handleDefaultClick}
+                    />
+                    <div className="h1-impact-style environmental-responsive" style={{color: '#C75000'}}> 
                         Environmental impacts
-                    </h1>
+                    </div>
                     <Environmental fromPage={fromPage} />
                 </div>
             )
@@ -111,18 +107,19 @@ class MobileContent extends React.Component {
         if(this.state.social) {
             content = (
                 <div className="mobile-content-margin">
-                    <h1
-                        className="h1-impact-style"
-                        style={{
-                            color: this.state.endOfLifeColor,
-                        }}> 
+                    <ImpactSelection
+                        fromPage={fromPage}
+                        pageState="social"
+                        default = {this.handleDefaultClick} 
+                    />
+                    <div className="h1-impact-style" style={{color: '#C75000'}}> 
                         Social impacts
-                    </h1>
+                    </div>
                     <Social fromPage={fromPage} />
                 </div>
             )
         }
-        
+
         return (
             <div>
                 <ScrollToMain />
@@ -130,44 +127,9 @@ class MobileContent extends React.Component {
                 <div className="mobile-page">
                     <div className="mobile-content">
                         <MobileHeader pageHeader={pageHeader} />
-                        <div className="impact-selection-container">
-                            <button 
-                                className="environmental-selection" 
-                                onClick={this.handleEnvironmentalClicked} 
-                                style={{
-                                    backgroundColor: this.state.environmentalBgc, 
-                                    color: 'white',
-                                    boxSizing: 'border-box'
-                                }}> 
-                                Environmental 
-                            </button>
-
-                            <button 
-                                className="default-selection"
-                                onClick={this.handleDefaultClicked} 
-                                style={{
-                                    backgroundColor: this.state.defaultBgc, 
-                                    boxSizing: 'border-box'
-                                }}> 
-                                <img 
-                                    alt="resource extraction icon" 
-                                    style={{maxHeight: '35px', marginTop: '3px'}} 
-                                    src={require('../../../components/icon-selector/icons/resource-extraction-icon-white.svg')} 
-                                /> 
-                            </button>
-                
-                            <button 
-                                className="social-selection"
-                                onClick={this.handleSocialClicked} 
-                                style={{
-                                    backgroundColor: this.state.socialBgc, 
-                                    color: 'white',
-                                    boxSizing: 'border-box'}}> 
-                                Social 
-                            </button>
-                        </div>
+                        
                         {/* For the ScrollToMain component */}
-                        <div id="main-content" />
+                        <div style={{marginTop: '80px'}} id="main-content" />
                         {content}
                     </div>
                 </div>
