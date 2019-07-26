@@ -73,7 +73,7 @@ class Footer extends React.Component {
                             <div style={{marginLeft: '-7px'}}>
                                 <Facebook 
                                     className="social" 
-                                    style={{border: 'solid 1px white', }} 
+                                    style={{border: 'solid 1px white', maxWidth: '100px'}} 
                                     solid small 
                                     message="Learn more about the mobile lifecycle!" 
                                     link={this.state.shareLink} 
@@ -81,7 +81,7 @@ class Footer extends React.Component {
 
                                 <Twitter 
                                     className="social" 
-                                    style={{border: 'solid 1px white'}} 
+                                    style={{border: 'solid 1px white', maxWidth: '100px'}} 
                                     solid small 
                                     message="Learn more about the mobile lifecycle!" 
                                     link={this.state.shareLink}
@@ -89,7 +89,7 @@ class Footer extends React.Component {
 
                                 <Mail 
                                     className="social" 
-                                    style={{border: 'solid 1px white'}} 
+                                    style={{border: 'solid 1px white', maxWidth: '100px'}} 
                                     solid small 
                                     message="Learn more about the mobile lifecycle!" 
                                     link={this.state.shareLink}
@@ -97,7 +97,7 @@ class Footer extends React.Component {
 
                                 <Linkedin 
                                     className="social" 
-                                    style={{border: 'solid 1px white'}} 
+                                    style={{border: 'solid 1px white', maxWidth: '100px'}} 
                                     solid small 
                                     message="Learn more about the mobile lifecycle!" 
                                     link={this.state.shareLink}
