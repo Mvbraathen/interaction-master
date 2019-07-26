@@ -6,10 +6,10 @@ class AcidificationMobile extends React.Component {
         return (
             <Fade duration={1000}>
                 <div className="info-box">
-                    <h1 
+                    <h2 
                         className="impact-box-header"> 
                         Acidification
-                    </h1>
+                    </h2>
                     <div className="image-container">
                         <img alt="ocean" width="100%" src={require('./images/Acidification.jpg')} />
                         <a

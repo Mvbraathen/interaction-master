@@ -6,10 +6,10 @@ class LivingInSlumsMobile extends React.Component {
         return (
             <Fade duration={1000}>
                 <div className="info-box">
-                    <h1 
+                    <h2 
                         className="impact-box-header">
                         Living in slums 
-                    </h1>
+                    </h2>
                     <div>
                         <div className="image-container">
                             <img alt="child in street" width="100%" src={require('./images/LivingInSlums.jpg')} />

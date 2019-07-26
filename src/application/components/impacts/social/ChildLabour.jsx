@@ -6,10 +6,10 @@ class ChildLabourMobile extends React.Component {
         return (
             <Fade duration={1000}>
                 <div className="info-box">
-                    <h1 
+                    <h2 
                         className="impact-box-header">
                         Child labour
-                    </h1>
+                    </h2>
                     <div>
                         <div className="image-container">
                             <img alt="children" width="100%" src={require('./images/ChildLabour.jpg')} />

@@ -6,10 +6,10 @@ class FoodInsecurityMobile extends React.Component {
         return (
             <Fade duration={1000}>
                 <div className="info-box">
-                    <h1 
+                    <h2 
                         className="impact-box-header">
                         Food insecurity 
-                    </h1>
+                    </h2>
                     <div>
                         <div className="image-container">
                             <img alt="dry crop" width="100%" src={require('./images/FoodInsecurity.jpg')} />

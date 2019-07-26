@@ -6,10 +6,10 @@ class ViolentConflictMobile extends React.Component {
         return (
             <Fade duration={1000}>
                 <div className="info-box">
-                    <h1 
+                    <h2 
                         className="impact-box-header">
                         Violent conflict
-                    </h1>
+                    </h2>
                     <div>
                         <div className="image-container">
                             <img alt="armed man" width="100%" src={require('./images/ViolentConflict.jpg')} />

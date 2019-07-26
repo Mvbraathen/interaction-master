@@ -6,9 +6,9 @@ class Co2Mobile extends React.Component {
         return (
             <Fade duration={1000}>
                 <div className="info-box">
-                    <h1 className="impact-box-header"> 
+                    <h2 className="impact-box-header"> 
                         CO<sub>2</sub> 
-                    </h1>
+                    </h2>
                     <div>
                         <div className="image-container">
                             <img alt="chimney" width="100%" src={require('./images/Co2.jpg')} />

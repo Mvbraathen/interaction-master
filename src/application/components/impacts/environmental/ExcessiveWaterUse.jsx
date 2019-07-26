@@ -6,7 +6,7 @@ class ExcessiveWaterUseMobile extends React.Component {
         return (
             <Fade duration={1000}>
                 <div className="info-box">
-                    <h1 className="impact-box-header"> Excessive water use </h1>
+                    <h2 className="impact-box-header"> Excessive water use </h2>
                     <div>
                         <div className="image-container">
                             <img alt="dry land" width="100%" src={require('./images/ExcessiveWaterUse.jpg')} />

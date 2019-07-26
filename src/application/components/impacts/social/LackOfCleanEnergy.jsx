@@ -6,10 +6,10 @@ class LackOfCleanEnergyMobile extends React.Component {
         return (
             <Fade duration={1000}>
                 <div className="info-box">
-                    <h1 
+                    <h2 
                         className="impact-box-header">
                         Lack of clean energy
-                    </h1>
+                    </h2>
                     <div>
                         <div className="image-container">
                             <img alt="burning coal" width="100%" src={require('./images/LackOfCleanEnergy.jpg')} />

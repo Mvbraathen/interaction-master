@@ -6,7 +6,7 @@ class EcotoxicityMobile extends React.Component {
         return (
             <Fade duration={1000}>
                 <div className="info-box">
-                    <h1 id="jumpToEcotoxicity" className="impact-box-header"> Ecotoxicity </h1>
+                    <h2 className="impact-box-header"> Ecotoxicity </h2>
                     <div>
                         <div className="image-container">
                             <img alt="waste" width="100%" src={require('./images/Ecotoxicity.jpg')} />

@@ -6,10 +6,10 @@ class GenderInequalityMobile extends React.Component {
         return (
             <Fade duration={1000}>
                 <div className="info-box">
-                    <h1 
+                    <h2 
                         className="impact-box-header">
                         Gender inequality 
-                    </h1>
+                    </h2>
                     <div>
                         <div className="image-container">
                             <img alt="painted wall" width="100%" src={require('./images/GenderInequality.jpg')} />
