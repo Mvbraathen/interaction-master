@@ -9,11 +9,10 @@
     margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-family: Avenir Next, 'Open Sans', sans-serif;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    font-size: 12px;
+    border: none;
+    -webkit-box-shadow: 0px 0px 5px 0px grey;
+    -moz-box-shadow: 0px 0px 5px 0px grey;
+    box-shadow: 0px 0px 5px 0px grey;
     font-weight: 400;
     padding-left: 3px;
     padding-right: 3px;
@@ -24,21 +23,21 @@
     width: 50%;
     margin-right: 10px;
     font-family: Avenir Next, 'Open Sans', sans-serif;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    font-size: 12px;
+    border: none;
+    -webkit-box-shadow: 0px 0px 5px 0px grey;
+    -moz-box-shadow: 0px 0px 5px 0px grey;
+    box-shadow: 0px 0px 5px 0px grey;
 }
 
 .social-element {
     /* flex-grow: 1; remove width and add this, to flexible width */
     width: 50%;
     background-color: rgba(189, 46, 194, 0.1);
-    font-size: 12px;
     font-family: Avenir Next, 'Open Sans', sans-serif;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    border: none;
+    -webkit-box-shadow: 0px 0px 5px 0px grey;
+    -moz-box-shadow: 0px 0px 5px 0px grey;
+    box-shadow: 0px 0px 5px 0px grey;
 }
 
 .social-element:hover, .environmental-element:hover {
@@ -48,7 +47,7 @@
 
 .button-p {
     margin-top: -12px;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 @media only screen and (max-width: 1080px) and (min-width: 851px) {
