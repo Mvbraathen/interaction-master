@@ -1,6 +1,8 @@
 /* For all images in the different pages */
 .image-container {
     position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 /* Credit tag on all Unsplash images */
 .image-credit {
