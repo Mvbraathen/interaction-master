@@ -44,7 +44,8 @@ class DesktopContent extends React.Component {
                         <div className="image-container">
                             <img 
                                 alt="iphone" 
-                                width="100%" 
+                                width="100%"
+                                style={{marginLeft: '-10px', marginRight: '-10px'}}
                                 src={require('./images/iphone.jpg')} 
                             />
                             <a
