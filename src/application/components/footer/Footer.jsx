@@ -25,12 +25,12 @@ class Footer extends React.Component {
                 shareLink: this.state.shareLink.replace('#main-content', '')
             })
         }
-        /* fallback - social sharing won't accept localhost links 
+        /* fallback - social sharing won't accept localhost links */
         if(this.state.shareLink.includes('localhost')) {
             this.setState({
                 shareLink: 'https://www.smart.uio.no/research/life-cycle-of-mobile-phones/'
             })
-        }*/
+        }
     }
 
 	render() {
