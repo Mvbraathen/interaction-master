@@ -3,7 +3,7 @@
     position: fixed;
     left: 30px;
     top: 38px;
-    font-family: Avenir Next;
+    font-family: Avenir Next, 'Open Sans', sans-serif , Helvetica;
     color: #f2f2f2;
     user-select: none;
     -webkit-user-select: none;
@@ -111,7 +111,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-item {
     text-decoration: none;
     display: inline-block;
-    font-family: Avenir Next;
+    font-family: Avenir Next, 'Open Sans', sans-serif , Helvetica;
     color: rgba(255, 255, 255, 0.6);
     font-size: 1.2em;
     padding: 10px 10px 10px 0px;
