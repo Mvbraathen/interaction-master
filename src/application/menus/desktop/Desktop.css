@@ -14,7 +14,7 @@
     /* ensure 1:1 aspect ratio, tweak 50 to make SVG larger */
     width: 60vmin;
     height: 80vmin;
-    background-color: none;
+    background-color: transparent;
     max-width: 500px;
     max-height: 1200px;
 }

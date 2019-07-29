@@ -25,7 +25,7 @@
 }
 
 .close-burger-container {
-    background-color: none;
+    background-color: transparent;
 }
 
 .custom-cross {
@@ -36,7 +36,7 @@
 
 .underline-link {
     text-decoration: underline;
-    background-color: none;
+    background-color: transparent;
     color: white;
     font-size: 1em;
 }
@@ -118,7 +118,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .menu-element {
-    background-color: none;
+    background-color: transparent;
     border-width: 2px;
     padding-left: 8px;
     margin-top: 3px;
