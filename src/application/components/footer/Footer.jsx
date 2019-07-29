@@ -56,7 +56,7 @@ class Footer extends React.Component {
                             </a>, 
 
                             master students at the Dept. of Informatics, University of Oslo. The
-                            circular lifecyle is designed by former master student Olga Skachkova. The textual content is based
+                            circular lifecyle illustration is designed by former master student Olga Skachkova. The textual content is based
                             on the SMART report <em>Sustainability Hotspots Analysis of the Mobile Phone
                             Lifecycle</em>, written by Maja van der Velden and Mark Taylor and is available in 
                             PDF format here:{' '} 
