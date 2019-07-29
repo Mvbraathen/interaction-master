@@ -75,7 +75,7 @@ class Footer extends React.Component {
                                     className="social" 
                                     style={{border: 'solid 1px white', maxWidth: '100px'}} 
                                     solid small 
-                                    message="Learn more about the mobile lifecycle!" 
+                                    message="Learn more about the mobile phone lifecycle!" 
                                     link={this.state.shareLink} 
                                 />
 
@@ -83,7 +83,7 @@ class Footer extends React.Component {
                                     className="social" 
                                     style={{border: 'solid 1px white', maxWidth: '100px'}} 
                                     solid small 
-                                    message="Learn more about the mobile lifecycle!" 
+                                    message="Learn more about the mobile phone lifecycle!" 
                                     link={this.state.shareLink}
                                 />
 
@@ -91,7 +91,7 @@ class Footer extends React.Component {
                                     className="social" 
                                     style={{border: 'solid 1px white', maxWidth: '100px'}} 
                                     solid small 
-                                    message="Learn more about the mobile lifecycle!" 
+                                    message="Learn more about the mobile phone lifecycle!" 
                                     link={this.state.shareLink}
                                 />
 
@@ -99,7 +99,7 @@ class Footer extends React.Component {
                                     className="social" 
                                     style={{border: 'solid 1px white', maxWidth: '100px'}} 
                                     solid small 
-                                    message="Learn more about the mobile lifecycle!" 
+                                    message="Learn more about the mobile phone lifecycle!" 
                                     link={this.state.shareLink}
                                 />
                             </div>
