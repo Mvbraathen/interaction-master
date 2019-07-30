@@ -18,7 +18,7 @@
     font-weight: 500;
 }
 
-@media only screen and (max-width: 1140px) and (min-width: 850px)  {
+@media only screen and (max-width: 1165px) and (min-width: 850px)  {
     .environmental-responsive {
         max-width: 150px;
     }
