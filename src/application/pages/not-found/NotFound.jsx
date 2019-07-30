@@ -6,7 +6,7 @@ import MediaQuery from "react-responsive";
 class ResourceExtraction extends Component {
 
     componentDidMount(){
-        document.title = "Resource extraction | Lifecycle";
+        document.title = "Page not found | Lifecycle";
     }
 
     render() {
