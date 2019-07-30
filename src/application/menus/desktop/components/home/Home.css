@@ -10,10 +10,6 @@
     fill: white;
 }
 
-.home {
-    pointer-events: bounding-box;
-}
-
 .home:hover {
     fill-opacity: 0.4;
 }

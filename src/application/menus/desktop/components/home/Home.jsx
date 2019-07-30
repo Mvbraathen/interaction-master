@@ -8,6 +8,8 @@ class Home extends Component {
             <g>
                 <NavLink className="home" to="/">
                     <title>Home</title>
+                    <circle fill="white" cx="215.3" cy="211.6" r="60.5"/>
+                    <circle className="circle" cx="215.3" cy="211.6" r="40.8"/>
                     <path
                         className="arrows"
                         d="M223.58,156.03l-10.47-10.81v5.86c-32.72,0.79-59.1,27.63-59.1,60.53c0,3.56,0.33,7.05,0.92,10.44l3.38-5.45
@@ -20,7 +22,7 @@ class Home extends Component {
                         L263.73,240.93z"
                         />
 
-                        <circle className="circle" cx="215.3" cy="211.6" r="40.8"/>
+                        
 
                         <path
                         className="mobile"
