@@ -11,7 +11,7 @@ class Co2Mobile extends React.Component {
                     </h2>
                     <div>
                         <div className="image-container">
-                            <img alt="chimney" width="100%" src={require('./images/Co2.jpg')} />
+                            <img alt="factory chimney with grey smoke" width="100%" src={require('./images/Co2.jpg')} />
                             <a
                                 className="image-credit" 
                                 href="https://unsplash.com/@veeterzy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
