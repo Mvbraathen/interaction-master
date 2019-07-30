@@ -12,7 +12,7 @@ class ViolentConflictMobile extends React.Component {
                     </h2>
                     <div>
                         <div className="image-container">
-                            <img alt="armed man" width="100%" src={require('./images/ViolentConflict.jpg')} />
+                            <img alt="armed soldier" width="100%" src={require('./images/ViolentConflict.jpg')} />
                             <a
                                 className="image-credit" 
                                 href="https://unsplash.com/@specna_arms_4s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 

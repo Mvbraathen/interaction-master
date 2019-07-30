@@ -12,7 +12,7 @@ class LivingInSlumsMobile extends React.Component {
                     </h2>
                     <div>
                         <div className="image-container">
-                            <img alt="child in street" width="100%" src={require('./images/LivingInSlums.jpg')} />
+                            <img alt="child in slum area" width="100%" src={require('./images/LivingInSlums.jpg')} />
                             <a  
                                 className="image-credit"
                                 href="https://unsplash.com/@derickray?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 

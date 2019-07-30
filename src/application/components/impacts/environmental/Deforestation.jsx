@@ -9,7 +9,7 @@ class DeforestationMobile extends React.Component {
                     <h2 className="impact-box-header"> Deforestation </h2>
                     <div>
                         <div className="image-container">
-                            <img alt="lumber" width="100%" src={require('./images/Deforestation.jpg')} />
+                            <img alt="Pile of lumberlumber" width="100%" src={require('./images/Deforestation.jpg')} />
                             <a
                                 className="image-credit" 
                                 href="https://unsplash.com/@alessiofurlan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 

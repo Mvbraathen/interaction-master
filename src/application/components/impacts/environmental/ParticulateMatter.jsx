@@ -9,7 +9,7 @@ class ParticulateMatterMobile extends React.Component {
                     <h2 className="impact-box-header"> Particulate matter </h2>
                     <div>
                         <div className="image-container">
-                            <img alt="burning" width="100%" src={require('./images/ParticulateMatter.jpg')} />
+                            <img alt="melting steel" width="100%" src={require('./images/ParticulateMatter.jpg')} />
                             <a
                                 className="image-credit"
                                 href="https://unsplash.com/@thesollers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 

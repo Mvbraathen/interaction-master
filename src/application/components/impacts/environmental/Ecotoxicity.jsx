@@ -9,7 +9,7 @@ class EcotoxicityMobile extends React.Component {
                     <h2 className="impact-box-header"> Ecotoxicity </h2>
                     <div>
                         <div className="image-container">
-                            <img alt="waste" width="100%" src={require('./images/Ecotoxicity.jpg')} />
+                            <img alt="waste on the ground" width="100%" src={require('./images/Ecotoxicity.jpg')} />
                             <a
                                 className="image-credit" 
                                 href="https://unsplash.com/@john_cameron?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 

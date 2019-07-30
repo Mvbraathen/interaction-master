@@ -12,7 +12,7 @@ class GenderInequalityMobile extends React.Component {
                     </h2>
                     <div>
                         <div className="image-container">
-                            <img alt="painted wall" width="100%" src={require('./images/GenderInequality.jpg')} />
+                            <img alt="painted wall with political messages" width="100%" src={require('./images/GenderInequality.jpg')} />
                             <a
                                 className="image-credit"
                                 href="https://unsplash.com/@matteopaga?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 

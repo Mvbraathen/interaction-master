@@ -9,7 +9,7 @@ class ExcessiveWaterUseMobile extends React.Component {
                     <h2 className="impact-box-header"> Excessive water use </h2>
                     <div>
                         <div className="image-container">
-                            <img alt="dry land" width="100%" src={require('./images/ExcessiveWaterUse.jpg')} />
+                            <img alt="dry cracked land" width="100%" src={require('./images/ExcessiveWaterUse.jpg')} />
                             <a
                                 className="image-credit" 
                                 href="https://unsplash.com/@mparente?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 

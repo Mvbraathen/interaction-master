@@ -9,7 +9,7 @@ class EutrophicationMobile extends React.Component {
                     <h2 className="impact-box-header"> Eutrophication </h2>
                     <div>
                         <div className="image-container">
-                            <img alt="under water" width="100%" src={require('./images/Eutrophication.jpg')} />
+                            <img alt="bubbles under water" width="100%" src={require('./images/Eutrophication.jpg')} />
                             <a 
                                 className="image-credit"
                                 href="https://unsplash.com/@turnlip19?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 

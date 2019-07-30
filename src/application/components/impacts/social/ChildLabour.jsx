@@ -12,7 +12,7 @@ class ChildLabourMobile extends React.Component {
                     </h2>
                     <div>
                         <div className="image-container">
-                            <img alt="children" width="100%" src={require('./images/ChildLabour.jpg')} />
+                            <img alt="children running" width="100%" src={require('./images/ChildLabour.jpg')} />
                             <a 
                                 className="image-credit" 
                                 href="https://unsplash.com/@sethdoylee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
