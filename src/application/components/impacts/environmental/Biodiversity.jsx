@@ -9,7 +9,7 @@ class BiodiversityMobile extends React.Component {
                     <h2 className="impact-box-header"> Biodiversity </h2>
                     <div>
                         <div className="image-container">
-                            <img alt ="panda" width="100%" src={require('./images/Biodiversity.jpg')} />
+                            <img alt ="panda sitting in a tree" width="100%" src={require('./images/Biodiversity.jpg')} />
                             <a
                                 className="image-credit" 
                                 href="https://unsplash.com/@umbriferous?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> 
