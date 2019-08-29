@@ -14,7 +14,8 @@ class Footer extends React.Component {
         };
     } 
 
-/*    componentDidMount() {
+/*  Not important. 'includes' not supported in IE   
+    componentDidMount() {
         if(this.state.shareLink.includes('#top')) {
             this.setState({
                 shareLink: this.state.shareLink.replace('#top', '')
@@ -25,8 +26,8 @@ class Footer extends React.Component {
                 shareLink: this.state.shareLink.replace('#main-content', '')
             })
         }
-        /* fallback - social sharing won't accept localhost links */
-      /*  if(this.state.shareLink.includes('localhost')) {
+    
+        if(this.state.shareLink.includes('localhost')) {
             this.setState({
                 shareLink: 'https://www.smart.uio.no/research/life-cycle-of-mobile-phones/'
             })
