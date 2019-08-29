@@ -14,7 +14,7 @@ class Footer extends React.Component {
         };
     } 
 
-    componentDidMount() {
+/*    componentDidMount() {
         if(this.state.shareLink.includes('#top')) {
             this.setState({
                 shareLink: this.state.shareLink.replace('#top', '')
@@ -26,12 +26,13 @@ class Footer extends React.Component {
             })
         }
         /* fallback - social sharing won't accept localhost links */
-        if(this.state.shareLink.includes('localhost')) {
+      /*  if(this.state.shareLink.includes('localhost')) {
             this.setState({
                 shareLink: 'https://www.smart.uio.no/research/life-cycle-of-mobile-phones/'
             })
         }
     }
+*/
 
 	render() {
         return (
